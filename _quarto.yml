@@ -1,0 +1,70 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+website:
+  title: "SciComp Workshop - Collaborative Coding with GitHub"
+  favicon: images/logos/scicomptools_hex.png
+  repo-url: https://github.com/lter/workshop-github
+  repo-actions: [issue]
+  twitter-card: true
+  sidebar:
+    style: "docked"
+    background: secondary
+    search: true
+    contents: 
+      - text: "Workshop Home"
+        href: index.qmd
+      - section: "Core Topics"
+        contents:
+          - motivations.qmd
+          - github.qmd
+          - rstudio.qmd
+      - section: "Advanced Topics"
+        contents: 
+          - conflicts.qmd
+          - branches.qmd
+          - forks.qmd
+          - git_ignore.qmd
+      - section: "Project Management"
+        contents: 
+          - issues.qmd
+          - milestones.qmd
+          - projects.qmd
+          - readmes.qmd
+          - portfolio.qmd
+      - server.qmd
+  navbar:
+    background: primary
+    right:
+      - text: "SciComp Team"
+        menu:
+          - href: https://lter.github.io/scicomp/
+            text: "Home"
+          - href: https://lter.github.io/scicomp/staff.html
+            text: "People"
+          - href: https://lter.github.io/scicomp/workshops.html
+            text: "Other Workshops"
+      - icon: github
+        href: https://github.com/lter/workshop-github
+  page-footer:
+    center: "Copyright 2024, NCEAS"
+    background: secondary
+  margin-footer: |
+    <img src="images/logos/nceas_logo_square.png" width="40%"/>
+    <img src="images/logos/lter_logo_square.png" width="40%"/>
+
+format:
+  html:
+    theme:
+       light: _extensions/lter/lter_scss-theme/theme_lter-edu-light.scss
+       dark: _extensions/lter/lter_scss-theme/theme_lter-edu-dark.scss
+    mainfont: Lato
+    toc: true
+    link-external-newwindow: true
+    link-external-icon: false
+    

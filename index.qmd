@@ -1,0 +1,150 @@
+---
+title: "Overview"
+---
+
+### Welcome!
+
+This workshop provides an overview of what "version control" systems are and how they fit into collaborative coding within your team. Specifically, **we are focusing here on an introductory approach to version control that focuses on using Git via RStudio and GitHub**. We are always happy to improve workshop content so please don't hesitate to [post an Issue](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues) on our GitHub repository if you see clear areas for improvement! 
+
+<img src = "images/logos/github_logo.png" align = "right" width = "17%" />
+
+To maximize the value of this workshop to you, **we recommend that you take the following steps before the day of the workshop**. Depending on whether you've used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the "SciComp Team" dropdown menu in the "People" page.
+
+## Workshop Preparation
+
+**For those of you with a dedicated IT team that has sole power to install software on your computer:** you will need to contact them before the workshop to do the installation bits of the prep steps we outline below.
+
+### 1. Install R
+
+Begin by installing [R](https://www.r-project.org/). If you already have R, <u>check that you have at least version 4.0.0</u> by running the following code:
+
+```{r r-ver-check, eval = F}
+version$version.string
+```
+
+If your version starts with a 3 (e.g., the above code returns "R version 3..."), please update R to make sure all packages behave as expected.
+
+### 2. Install RStudio
+
+Once you have R (ver. ≥4.0), install [RStudio](https://posit.co/download/rstudio-desktop/). If you already have RStudio installed, you may want to make sure that you're using a recent version to take advantage of some quality of life improvements that are broadly useful.
+
+### 3. Install Git
+
+With R and RStudio installed you can now install Git! Git is the software that actually does the behind-the-scenes version control operations we'll cover in this workshop. Jennifer Bryan's "Happy Git and GitHub for the useR" digital book does a really nice job covering how to install Git for different computer operating systems (i.e., Mac vs. Windows vs. Linux).
+
+Consult Dr. Bryan's [Git installation instructions](https://happygitwithr.com/install-git.html) and _be sure to follow the steps relevant for **your** operating system!_ **If you are a Windows user**, be sure to follow along with "Option 1" in the instructions linked above! That variant gives some under-the-hood tools we'll implicitly rely on later.
+
+### 4. Check that Git was installed correctly
+
+To check that Git was installed correctly, you can follow the [Git already installed?](https://happygitwithr.com/install-git.html#git-already-installed) section of Dr. Bryan's book. 
+
+In a nutshell, if you're a Mac user, [find and open the Terminal](https://happygitwithr.com/shell#macos-1). Then type `which git` to check that it exists at a valid location on your computer. 
+
+If you're a Windows user, [find and open Git Bash](https://happygitwithr.com/shell#accessing-git-bash-outside-of-rstudio). Then type `which git` to check that it exists at a valid location on your computer.
+
+Once you've installed Git successfully, RStudio should be able to detect it. Check if RStudio is able to detect it now by going to Tools -> Global Options -> Git/SVN. If you see a file path under "Git executable" then you are good to go!
+
+If you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio before checking again.
+
+### 5. Create a GitHub Account
+
+Now that you're all done installing programs, it's time to create an account on [GitHub](https://github.com/). GitHub is how you'll be able to collaborate with others. Dr. Bryan has some nice guidelines for [picking a good username](https://happygitwithr.com/github-acct#username-advice) and we also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub. 
+
+### 6. Connect Git and GitHub
+
+The last step to take before you're all set for the workshop is to get these components talking to one another! You set a password for your GitHub which is used for logging in to GitHub but to actually put your code changes from your computer up to GitHub you'll need to _authenticate_ yourself. There are two paths for authentication:
+
+1. Personal Access Token (PAT)
+2. Secure Shell (SSH) 
+
+What's the difference? Essentially, authenticating via token makes many things "just work" while authenticating via SSH will work for some things but in other contexts you would _also_ need to do token-based authentication. For a more complete discussion of the benefits and drawbacks of each, see Dr. Bryan's "[HTTPS versus SSH](https://happygitwithr.com/https-pat#https-vs-ssh)" page.
+
+Follow the steps of your chosen authentication method in the tabs below.
+
+:::panel-tabset
+#### Personal Access Token
+
+```{r token-process-1, eval = FALSE}
+# Install the `usethis` and `gitcreds` packages
+#install.packages(c("usethis", "gitcreds"))
+library(usethis); library(gitcreds)
+
+# Add your GitHub username and email
+usethis::use_git_config(user.name = "Jane Doe",
+                        user.email = "jane@example.org")
+
+# Create a token (Note this will open a GitHub browser tab)
+## See steps 6-10 in GitHub's tutorial (link below)
+usethis::create_github_token()
+```
+
+_Copy your token at the end of the above step._ Once you leave the page where your token is displayed you'll <u>never</u> get to see it again! So if you close that page without copying it you'll need to make a new one in order to continue.
+
+Once you've copied your token, run the code below to save your credentials in RStudio.
+
+```{r token-process-2, eval = FALSE}
+# Now, give your token to RStudio
+gitcreds::gitcreds_set()
+## After you run this line you'll follow some prompts in the "Console" tab of RStudio
+```
+
+This line of code will prompt you to paste your token in the "Console" tab. After you do so, your token will be safely stored in RStudio! 
+
+<p align="center">
+<img src="images/external_images/gitcreds_set.png" width="75%"/>
+</p>
+
+##### Further Information
+
+You may also find [GitHub's PAT tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or the [Happy Git with R PAT tutorial](https://happygitwithr.com/https-pat.html) helpful.
+
+#### SSH
+
+Begin by using the command line (a.k.a. "shell" or "Terminal") to check whether you already have SSH keys created on your computer. If you get a message saying that nothing exists or the path doesn't exist, you do not have SSH keys (yet).
+
+```{bash ssh-check, eval = F}
+ls -al ~/.ssh/
+```
+
+If you do need to create an SSH key pair you can do so via the command line. When you create a key pair you'll need to include a descriptive comment to help 'future you' if you ever have multiple key pairs in your life. We recommend "lter" plus your GitHub username to keep things simple.
+
+```{bash ssh-make, eval = F}
+ssh-keygen -t ed25519 -C "lter-github"
+```
+
+:::callout-tip
+## Older Computer?
+
+If you get a warning/error because your system is too old to support the Ed25519 algorithm (that's the variant recommended by GitHub) you can instead use:
+
+```{bash ssh-make-variant, eval = F}
+ssh-keygen -t rsa -b 4096 -C "lter-github"
+```
+:::
+
+Accept the prompt to save the key in the default location by hitting Enter. You will be prompted to enter a passphrase that will be required to access your SSH key later on. This step is technically optional but is considered a best practice. <u>If SSH keys are totally new to you, we recommend skipping the passphrase step.</u>
+
+Once you've generated the key pair, follow [GitHub's instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent) on adding that key pair to your computer's ssh-agent (roughly equivalent to a password manager but just for SSH key pairs).
+
+Finally, you need to share the public key with your GitHub self. Once again we'll refer you to [the phenomenal materials](https://happygitwithr.com/ssh-keys#provide-public-key-to-github) generated by Dr. Bryan on this topic. 
+
+##### Further Information
+
+You may also find [GitHub's SSH documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or the [Happy Git with R SSH tutorial](https://happygitwithr.com/ssh-keys) helpful.
+:::
+
+### 7. Celebrate!
+
+After following all the previous preparation steps, your setup should now be complete.
+
+## GitHub + Science Publications
+
+The reproducibility and collaborative benefits of GitHub for working scientists is well appreciated and increasingly well published upon. See below for brief synopses of papers published in this realm that we think may resonate with your team's disciplinary backgrounds and motivations.
+
+In the ecology and evolutionary biology sphere, Pereira Braga et al. published "[Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108)" in _Methods in Ecology & Evolution_. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper's second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) [Pereira Braga et al. 2023](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108) for more detail than we've included in this blurb.
+
+If you are concerned about the technical side of GitHub for yourself and/or your lab group, we recommend focusing on the lower technical difficulty benefits of GitHub (see the **<span style="color:blue">blue</span>** bars). We also think that some of the intermediate technical difficulty uses (**<span style="color:orange">orange</span>** bars) may be relevant to working group priorities and goals.
+
+<p align="center">
+<img src="images/external_images/Fig2_Pereira-Braga-etal_2023.jpeg" width="85%"/>
+</p>
