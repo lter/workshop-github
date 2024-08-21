@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The .gitignore – SciComp Workshop - Collaborative Coding with GitHub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/logos/scicomptools_hex.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta name="twitter:title" content="The .gitignore – SciComp Workshop - Collaborative Coding with GitHub">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SciComp Workshop - Collaborative Coding with GitHub</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-scicomp-team" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">SciComp Team</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-scicomp-team">    
+        <li>
+    <a class="dropdown-item" href="https://lter.github.io/scicomp/">
+ <span class="dropdown-text">Home</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://lter.github.io/scicomp/staff.html">
+ <span class="dropdown-text">People</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://lter.github.io/scicomp/workshops.html">
+ <span class="dropdown-text">Other Workshops</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lter/workshop-github"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./conflicts.html">Advanced Topics</a></li><li class="breadcrumb-item"><a href="./git_ignore.html">The <code>.gitignore</code></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workshop Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Core Topics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./motivations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflows</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git &amp; GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RStudio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Advanced Topics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conflicts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conflicts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./branches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./forks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Forks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git_ignore.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">The <code>.gitignore</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Project Management</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./issues.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Issues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./milestones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Milestones</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Projects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./readmes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Informative READMEs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./portfolio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub as a Portfolio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NCEAS’ Server</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#creating-a-.gitignore" id="toc-creating-a-.gitignore" class="nav-link" data-scroll-target="#creating-a-.gitignore">Creating a <code>.gitignore</code></a></li>
+  <li><a href="#interacting-with-the-.gitignore" id="toc-interacting-with-the-.gitignore" class="nav-link" data-scroll-target="#interacting-with-the-.gitignore">Interacting with the <code>.gitignore</code></a></li>
+  <li><a href="#our-recommendations" id="toc-our-recommendations" class="nav-link" data-scroll-target="#our-recommendations">Our Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#should-you-ignore-the-.rproj-file" id="toc-should-you-ignore-the-.rproj-file" class="nav-link" data-scroll-target="#should-you-ignore-the-.rproj-file">Should You Ignore the .Rproj File?</a></li>
+  </ul></li>
+  <li><a href="#ignoring-previously-tracked-content" id="toc-ignoring-previously-tracked-content" class="nav-link" data-scroll-target="#ignoring-previously-tracked-content">Ignoring Previously Tracked Content</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    <div class="quarto-margin-footer"><div class="margin-footer-item">
+<p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
+</div></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./conflicts.html">Advanced Topics</a></li><li class="breadcrumb-item"><a href="./git_ignore.html">The <code>.gitignore</code></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">The <code>.gitignore</code></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="module-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ul>
+<li><u>Create</u> a <code>.gitignore</code> in a repository using a GitHub template</li>
+<li><u>Explain</u> the purpose of a <code>.gitignore</code> in collaborative projects</li>
+<li><u>Evaluate</u> the content you think might warrant adding to the <code>.gitignore</code></li>
+</ul>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The purpose of the <code>.gitignore</code> is evident in its name: anything included in it is <em>ignored by Git</em>. This can be useful if you want to include data in your local version of your repository but don’t want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.</p>
+</section>
+<section id="creating-a-.gitignore" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-.gitignore">Creating a <code>.gitignore</code></h2>
+<p>When you first create a repository you will have the opportunity to select a template <code>.gitignore</code> based on the coding language you plan on using. In the “New Repository” process, scroll down to just below where you can choose to add a README.</p>
+<p align="center">
+<img src="images/git_ignore/ignore-2-new-repo-p2.png" width="70%">
+</p>
+<p>Underneath the title “Add .gitignore” there is a dropdown menu for various templates that starts at “None”. If you click this dropdown menu you can type in keywords that will help you identify the template that you want to use.</p>
+<p align="center">
+<img src="images/git_ignore/ignore-3-template-search.png" width="70%">
+</p>
+<p>Unfortunately for R users, typing just “R” returns all templates that contain the letter ‘r’ so you will need to scroll a bit to find the option that is actually for the R Statistical Environment. Once you find the option you want, click it and the template dropdown should change from “.gitignore template: None” to “.gitignore template: &lt;your pick&gt;”.</p>
+<p align="center">
+<img src="images/git_ignore/ignore-4-template-pick.png" width="70%">
+</p>
+<p>If you create a repository without choosing a <code>.gitignore</code> template, don’t worry! You can always create one later! When cloning a repository using RStudio, a <code>.gitignore</code> file will be automatically created when setting up the RStudio project on your local computer. If you clone via the command line <code>touch .gitignore</code> would create the necessary file.</p>
+</section>
+<section id="interacting-with-the-.gitignore" class="level2">
+<h2 class="anchored" data-anchor-id="interacting-with-the-.gitignore">Interacting with the <code>.gitignore</code></h2>
+<p>Once you have the one, you can open the <code>.gitignore</code> by clicking it from the “Files” pane of RStudio.</p>
+<p align="center">
+<img src="images/git_ignore/ignore-5-rstudio-files.png" width="65%">
+</p>
+<p>After you click it you’ll be looking at a file that looks very similar to any other file in RStudio.</p>
+<p align="center">
+<img src="images/git_ignore/ignore-6-viewing.png" width="100%">
+</p>
+<p>Now let’s add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.</p>
+<p>If we add <code>*.Rproj</code> to our <code>.gitignore</code>, the Git pane will show that the only change is that lines have been added to the <code>.gitignore</code>. The .Rproj file with the double yellow question marks next to it is gone!</p>
+<p align="center">
+<img src="images/git_ignore/ignore-7-editing.png" width="100%">
+</p>
+<p>Once you’ve edited the <code>.gitignore</code> it is generally a good practice to push those changes as soon as possible. If you flag a certain file (or folder) to be ignored while someone else is depending on it, if you wait to push the change you can risk a serious conflict. Or, they might commit a file you want ignored which is frustrating to remove (see “Exceptions to the <code>.gitignore</code>” below).</p>
+<p align="center">
+<img src="images/git_ignore/ignore-8-commit.png" width="80%">
+</p>
+<p>Only the commit is pictured above, but pushing &amp; pulling works in the same way here as it does elsewhere.</p>
+</section>
+<section id="our-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="our-recommendations">Our Recommendations</h2>
+<p>There are many different opinions on what should go into a <code>.gitignore</code> but we have a few suggestions that might prove helpful (or are at least worth considering).</p>
+<ol type="1">
+<li><p><strong>Use the GitHub <code>.gitignore</code> template for your chosen programming environment</strong></p>
+<ul>
+<li>There are a lot of small files that typical users don’t care about that your project will accumulate over its lifecycle. If you don’t flag these in the <code>.gitignore</code> it can become difficult to sort through your repository</li>
+</ul></li>
+<li><p><strong>Add <code>.DS_Store</code></strong></p>
+<ul>
+<li>Macs create a “Desktop Services Store” file (or “.DS_Store” for short) every time you open a folder. This file is invisible in your file manager but <em>can</em> be committed. This file has no practical value in your project and a separate one exists in every subfolder so tracking them can quickly clutter a repository if you use subfolders</li>
+</ul></li>
+<li><p><strong>Other Considerations</strong></p>
+<ul>
+<li>Some people recommend adding <u>everything your script creates</u> to the <code>.gitignore</code>. The theory being that if someone wants to see those outputs, they would only need to run your script(s) in order to create their own versions</li>
+<li>Another way of thinking about this is to create a dedicated folder to store products in (e.g., “data”, “exports”, etc.) and then add that folder to the <code>.gitignore</code>. This means you don’t need to worry about adding specific files to the <code>.gitignore</code> so long as all the files live in a folder you’ve already designated as something for Git to not track</li>
+</ul></li>
+<li><p>Do you have another idea for what you typically add to a <code>.gitignore</code>?</p>
+<ul>
+<li>Please share it with us by <a href="https://github.com/NCEAS/scicomptasks/issues">posting an Issue</a>; we’d love to hear from you!</li>
+</ul></li>
+</ol>
+<section id="should-you-ignore-the-.rproj-file" class="level3">
+<h3 class="anchored" data-anchor-id="should-you-ignore-the-.rproj-file">Should You Ignore the .Rproj File?</h3>
+<p>If you are an RStudio user, you <em>could</em> choose to add the R project file to your <code>.gitignore</code>. <u>However</u>, this is a somewhat thorny decision with strong arguments on both sides. We’ll try to summarize some of the big considerations below to help inform your decision.</p>
+<section id="option-a-commit-the-.rproj" class="level4">
+<h4 class="anchored" data-anchor-id="option-a-commit-the-.rproj">Option A: <strong>Commit</strong> the .Rproj</h4>
+<p>There are (in our opinion) three strong arguments for committing the .Rproj:</p>
+<ol type="1">
+<li><p>Ease of Access</p>
+<ul>
+<li>For non-R users, it can be really helpful to have just one file that they need to double click in order to open and interact with the whole R project. By committing the .Rproj, you make the post-clone start up instructions much simpler (i.e., “click the file ending in ‘.Rproj’ and you’re good to go”)</li>
+</ul></li>
+<li><p>Facilitate Cloning Outside of RStudio</p>
+<ul>
+<li>While our workshop has exclusively covered cloning a repo through RStudio, it is absolutely possible to clone without using RStudio. If someone goes this route, and the .Rproj is not already included in the repo, they will be left without one. So, after the clone they would then have an extra step to create their own .Rproj if they wanted to use RStudio to interact with the code</li>
+<li>Note that if everyone on your team is cloning via RStudio, this is not really an issue because cloning via RStudio <em>creates</em> a new .Rproj if one does not already exist</li>
+</ul></li>
+<li><p>Enforce Project Settings</p>
+<ul>
+<li>Fundamentally, the .Rproj is a list of settings that you’re using for a specific project in RStudio. If you wanted to create some defaults of those settings for anyone who cloned your repository, you could commit your .Rproj with your preferred settings</li>
+<li>That said, any member of your team who changed those settings would have the option to commit the corresponding change to the .Rproj file and the next time you <strong><span style="color:blue">pull</span></strong> you would have their settings instead</li>
+</ul></li>
+</ol>
+</section>
+<section id="option-b-ignore-the-.rproj" class="level4">
+<h4 class="anchored" data-anchor-id="option-b-ignore-the-.rproj">Option B: Ignore the .Rproj</h4>
+<p>We feel there are some serious reasons for ignoring the .Rproj as well:</p>
+<ol type="1">
+<li><p>Risk of Deletion</p>
+<ul>
+<li>Say you decide to commit your .Rproj, what happens if someone deletes it and <strong><span style="color:green">pushes</span></strong> that deletion? This can happen if team members clone their version of the repo with a different name resulting in two local .Rproj files where one is redundant from that team member’s perspective</li>
+<li>If a .Rproj is committed and then subsequently deleted, everyone who <strong><span style="color:blue">pulls</span></strong> that change will delete their local project. This results in an instant error that can be difficult to recognize if you don’t know beforehand about this risk. The only fix is for all affected users to re-clone the repository</li>
+<li>So, if you add the .Rproj to the <code>.gitignore</code> preemptively, you can avoid the risk of this happening at some later stage; you could also add it as “<code>*.Rproj</code>” so regardless of the name of the file it will be ignored if the file type is .Rproj</li>
+</ul></li>
+<li><p>Loss of Flexibility</p>
+<ul>
+<li>When you commit your .Rproj you are “locking in” the name of your project. If your preliminary data exploration and analyses bring new hypotheses and goals to light you may want to change your project name to better match this new framing. If you had previously committed your .Rproj, it can be a hassle to change its name and <strong><span style="color:green">push</span></strong> this change</li>
+<li>Alternatively, you may want to change your GitHub repository name after publication to share keywords with your final manuscript title or the journal name to make the repository more easily searchable by your readers. Technically you could change the GitHub repository name without changing the corresponding .Rproj filename but there will be some disonance there if your readers clone your code</li>
+</ul></li>
+<li><p>Preserve Team Members’ Local Filing Decisions</p>
+<ul>
+<li>Most working group members are involved in a staggering variety of pursuits in addition to their role in a synthesis working group. People tend to have their own filing systems in their computers to help them quickly and easily navigate among their different projects</li>
+<li>If you <strong>commit</strong> the .Rproj, you force everyone who clones your repository to use your naming convention which can be a hurdle (albeit likely a minor one) as they juggle their responsibilities</li>
+</ul></li>
+</ol>
+</section>
+<section id="decision" class="level4">
+<h4 class="anchored" data-anchor-id="decision">Decision</h4>
+<p>Ultimately, this is up to you and your team to decide! Hopefully our outlined reasons for and against adding the .Rproj to the <code>.gitignore</code> help inform this decision and we are happy to discuss this more if you have follow up questions!</p>
+</section>
+</section>
+</section>
+<section id="ignoring-previously-tracked-content" class="level2">
+<h2 class="anchored" data-anchor-id="ignoring-previously-tracked-content">Ignoring Previously Tracked Content</h2>
+<p>Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by Git and every time you alter that file RStudio’s “Git” pane will notify you that the file changed by placing the blue “M” next to the file’s name. Let’s say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop Git from tracking <em>future</em> changes to the file. If this is the case, you’ll need to do the following:</p>
+<ol type="1">
+<li><p>Either (A) delete the file or (B) move it out of the repository’s folder</p>
+<ul>
+<li>Either option will register as “deleting” the file from Git’s perspective</li>
+</ul></li>
+<li><p><strong>Commit</strong> the deletion</p></li>
+<li><p><strong><span style="color:green">Push</span></strong> that change</p></li>
+<li><p>Add the name of that file to your <code>.gitignore</code></p></li>
+</ol>
+<p>Once you’ve done these steps, even if you put the file back in your repository, Git won’t track its addition or any changes to it over time.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/lter\.github\.io\/workshop-github\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2024, NCEAS</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
