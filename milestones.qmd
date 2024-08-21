@@ -1,0 +1,64 @@
+---
+title: "GitHub Milestones"
+---
+
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Define</u> what is a milestone in the context of GitHub
+- <u>Explain</u> how GitHub milestones can be useful
+- <u>Create</u> a new GitHub milestone in an existing repository
+
+## What is a Milestone?
+
+If you like documenting your tasks and progress over time with GitHub issues, but the scope of your work doesn't require you to rely on GitHub projects, then GitHub milestones may be perfect for you! 
+
+GitHub milestones track issues and pull requests in a repository so you can see what tasks still need to be completed in order to achieve a particular goal. This is particularly helpful if you are doing a lot of work in a single repository and know what new features/objectives you want to implement there. 
+
+On the other hand, if your work consists of working across multiple repositories, then opening a GitHub project may be more appropriate. 
+
+## Example Milestone
+
+Milestones can help you keep track of concrete goals like version releases, which is useful when you're thinking about the next feature to accomplish for a specific project.
+
+Here is an example of what a milestone can look like:
+
+![](images/milestones/milestones-1-example.png)
+
+A milestone has been opened for this repository to keep track of an R package's resubmission to CRAN. This resubmission is about 75% of the way there, with 1 open issue and 3 closed ones. 
+
+Once you click on a milestone, you can see more details about the issues that need to be closed before the milestone is 100% complete. 
+
+![](images/milestones/milestones-2-details.png)
+
+## Creating Milestones
+
+Once you're ready to create a milestone, navigate to your repository and go to the "Issues" tab. 
+
+Click on "Milestones".
+
+![](images/milestones/milestones-3-get-started.png)
+
+Then click on either the "New milestone" or "Create a milestone" button if you haven't created a milestone yet. 
+
+![](images/milestones/milestones-4-new-milestone.png)
+
+Fill out some information about your milestone, such as the title, due date (if any), and description. Click on "Create milestone" once you're done.
+
+![](images/milestones/milestones-5-fill-info.png)
+
+You can always go back to the "Milestones" page and click "Edit" if you need to edit the title, due date, or description.
+
+![](images/milestones/milestones-6-edit.png)
+
+To add issues/pull requests to your milestone, you can click on your milestone and add them directly there. 
+
+![](images/milestones/milestones-7-add.png)
+
+Or you can go to your issues/pull requests page and select the checkboxes next to the issues/pull requests you want to associate with a milestone. Then click on the "Milestone" dropdown menu to add them to the milestone.
+
+![](images/milestones/milestones-8-add-more.png)
+
+For more information on milestones, check out its [GitHub documentation page](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones).
+

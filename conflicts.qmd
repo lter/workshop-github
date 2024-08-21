@@ -1,0 +1,129 @@
+---
+title: "Conflicts"
+---
+
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Describe</u> the causes of merge conflicts
+- <u>Explain</u> how to avoid merge conflicts
+- <u>Summarize</u> what to do if a merge conflict occurs
+
+## What is a Merge Conflict?
+
+Merge conflicts are a normal part of the Git workflow so don't get discouraged when you run into them! They occur when Git cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.
+
+## Brief Overview of Merge Conflict Workflow
+
+So the basic steps to resolving a merge conflict using RStudio are as follows:
+
+1. When a conflict happens, your local file will automatically be modified to include both possible lines (wrapped in some formatting characters described in greater detail below)
+
+2. Edit the lines in your file(s) that caused the merge conflict to your desired status
+
+3. **Commit** those changes
+
+4. **<span style="color:green">Push</span>** your changes to GitHub
+
+We can see those steps visually in the following workflow diagram:
+
+<p align="center">
+<img src="images/conflicts/git-conflict-workflow.png" width="60%"/>
+</p>
+
+## How Merge Conflicts Happen
+
+Below is a common scenario that can lead to merge conflicts and then the steps to address a conflict when it occurs.
+
+Let's say we have a repository that we've shared with a collaborator. Currently there's a `README.md` and only one script, `test-script.R`, in it.
+
+<p align="center">
+<img src="images/conflicts/conflicts-1-example-repo.png" width="80%"/>
+</p>
+
+`test-script.R` contains one line. Suppose we want to work on this script and add more lines to it.
+
+<p align="center">
+<img src="images/conflicts/conflicts-2-test-script.png" width="80%"/>
+</p>
+
+Let's go commit our edits. The green lines highlight the fact that we've added two new lines to our script, lines 2 and 3. We type out our commit message, and click **Commit**.
+
+![](images/conflicts/conflicts-3-birds.png)
+
+Great! The message "Your branch is ahead of 'origin/main' by 1 commit" lets us know that everything is proceeding smoothly. Suppose that we decided to take a break and stepped away from our computer.
+
+![](images/conflicts/conflicts-4-birds-commit.png)
+
+Then, unbeknownst to us, our collaborator made their edits to the same script and committed and pushed their changes to the GitHub repository. At the moment, here is what the shared repository looks like.
+
+<p align="center">
+<img src="images/conflicts/conflicts-5-flowers.png" width="80%"/>
+</p>
+
+When we get back to our computer, we're ready to **<span style="color:green">push</span>** our changes to GitHub, but an error shows up. Basically, it is telling us that our GitHub repository contains changes that we do not have on our local computer. To remedy this, the message suggests that we pull the changes from GitHub to our machine to catch our local machine back up.
+
+![](images/conflicts/conflicts-6-birds-push.png)
+
+After clicking **<span style="color:blue">Pull</span>**, we get a new error message: "Merge conflict in test-script.R".
+
+![](images/conflicts/conflicts-7-birds-pull.png)
+
+Looking closer, the merge conflict prompted a new version of `test-script.R` to pop up. This version contains our edits and our collaborator's edits, along with the delimiter lines that start with `<<<<<<<`, `=======`, and `>>>>>>>`. Git is urging us to manually fix the conflicted lines before continuing.
+
+<p align="center"/>
+<img src="images/conflicts/conflicts-8-conflicted-lines.png" width="80%"/>
+</p>
+
+Our file now has an **[U]{style="color:orange"}** icon, which stands for an unresolved merge conflict.
+
+<p align="center"/>
+<img src="images/conflicts/conflicts-9-unresolved.png" width="80%"/>
+</p>
+
+In general terms the steps that come before a merge conflict are displayed in the visual below. Note that though this has visual similarity to the workflow diagrams throughout this bookdown we do not recommend intentionally causing a merge conflict :)
+
+<p align="center"/>
+<img src="images/conflicts/git-conflict-cause.png" width="60%"/>
+</p>
+
+## Resolving Merge Conflicts
+
+So how do we resolve this merge conflict? We need to edit the script so that it looks like how we want it. We can either pick our lines to keep, our collaborator's lines, some combination, or something new altogether. Be sure to communicate with your collaborator to discuss exactly how it should be fixed. After merging the changes wherever appropriate, delete the delimiter lines.
+
+<p align="center">
+<img src="images/conflicts/conflicts-10-resolved.png" width="80%"/>
+</p>
+
+Then stage, commit the changes, and push them to GitHub!
+
+![](images/conflicts/conflicts-11-commit-resolved.png)
+
+Perfect! We've fixed the merge conflict!
+
+<p align="center"/>
+<img src="images/conflicts/conflicts-12-push-resolved.png" width="80%"/>
+</p>
+
+Let's check back on the shared repository. The latest commit shows that we've successfully pushed our changes to GitHub.
+
+<p align="center">
+<img src="images/conflicts/conflicts-13-merged.png" width="80%"/>
+</p>
+
+<p align="center">
+<img src="images/conflicts/conflicts-14-checking-merged.png" width="80%"/>
+</p>
+
+Navigating to the commit history, we see that first we committed our changes, then our collaborator committed and pushed their changes, causing a merge conflict since we were editing the same lines in the same file. To resolve this, we edited those lines directly in our RStudio and committed and pushed our changes once more. Finally, the merge conflict is resolved and all the necessary changes are merged.
+
+![](images/conflicts/conflicts-15-commit-history.png)
+
+## Tips on Avoiding Merge Conflicts
+
+Merge conflicts aren't exactly fun, so here are some tips to avoid them:
+
+- **Communicate with your team members _often_** to avoid working on the same files at the same time! Let each other know who is working on what
+- Commit frequently and in small chunks
+- Try **<span style="color:blue">pulling</span>** before committing
