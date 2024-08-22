@@ -47,8 +47,6 @@ website:
             text: "Home"
           - href: https://lter.github.io/scicomp/staff.html
             text: "People"
-          - href: https://lter.github.io/scicomp/workshops.html
-            text: "Other Workshops"
       - icon: github
         href: https://github.com/lter/workshop-github
   page-footer:
