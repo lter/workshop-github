@@ -68,7 +68,7 @@ If the above steps have not resulted in successfully accessing Aurora, consult [
 
 ### Connecting GitHub and the Server
 
-Your server "self" is essentially a different computer that you access via a browser (or command line in some cases). Because of this, you will need to tell GitHub that your server self is allowed to access your GitHub self's content. To do this you'll need to authenticate via personal access token or SSH key pair. Revisit our [authentication instructions](https://nceas.github.io/scicomp-workshop-collaborative-coding/#connect-git-and-github) in the "Workshop Preparation" section of the workshop home page for details.
+Your server "self" is essentially a different computer that you access via a browser (or command line in some cases). Because of this, you will need to tell GitHub that your server self is allowed to access your GitHub self's content. To do this you'll need to authenticate via personal access token or SSH key pair. Revisit our [authentication instructions](https://lter.github.io/workshop-github/#connect-git-and-github) in the "Workshop Preparation" section of the workshop home page for details.
 
 :::callout-tip
 ## Server + PAT Note

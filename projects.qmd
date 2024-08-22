@@ -94,4 +94,4 @@ It may go without saying, but projects are at their most valuable as project man
 2. "Assigning" Issues to particular users
 3. Using labels to group Issues into useful categories
 
-If your team is considering these three points, then adopting GitHub projects will further empower your ability to track your internal tasks over time. Feel free to consult [our page on Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) for more information!
+If your team is considering these three points, then adopting GitHub projects will further empower your ability to track your internal tasks over time. Feel free to consult [our page on Issues](https://lter.github.io/workshop-github/issues.html) for more information!
