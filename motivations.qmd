@@ -31,7 +31,7 @@ Another limitation of this approach is that to work collaboratively, everything 
 
 The above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.
 
-Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not *as* limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.
+Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not _as_ limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.
 
 However, for larger teams--especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)--the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.
 
@@ -57,13 +57,13 @@ Further, an inconvenience associated with this workflow is that each group membe
 
 Finally (for our purposes), you could build NCEAS' server into your workflow to not only collaborate with colleagues on code but also centralize your data storage!
 
-This method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members *on the same folder path.*
+This method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members _on the same folder path._
 
-This means that even though each group member could code separately in their own 'home' folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the 'shares' folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data *file*.
+This means that even though each group member could code separately in their own 'home' folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the 'shares' folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data _file_.
 
 Data can be moved from a specific computer onto the server by using any "**File Transfer Protocol**" (FTP) software (or "SSH FTP" a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a [tutorial on how to go about setting up an FTP or SFTP program on your computer](https://help.nceas.ucsb.edu/NCEAS/Computing/remote_file_access.html) that we are also happy to go over in greater depth as needed!
 
-Adding the server to your team's workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server *ad infinitum* thereafter.
+Adding the server to your team's workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server _ad infinitum_ thereafter.
 
 An ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)
 
