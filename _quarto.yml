@@ -53,8 +53,8 @@ website:
     center: "Copyright 2024, NCEAS"
     background: secondary
   margin-footer: |
-    <img src="images/logos/nceas_logo_square.png" width="40%"/>
-    <img src="images/logos/lter_logo_square.png" width="40%"/>
+    <img src="images/logos/nceas_logo_square.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"/>
+    <img src="images/logos/lter_logo_square.png" alt="Logo for the LTER Network Office" width="40%"/>
 
 format:
   html:
