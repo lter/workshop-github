@@ -22,19 +22,19 @@ GitHub is useful for tracking changes and hosting code which makes it a great pl
 Filling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top left corner and go to "Your profile". 
 
 <p align="center">
-<img src="images/portfolio/portfolio-profile-1.png" align="center" width="30%"/>
+<img src="images/portfolio/portfolio-profile-1.png" alt="" width="30%"/>
 </p>
 
 Then select "Edit profile" on the right hand panel. 
 
 <p align="center">
-<img src="images/portfolio/portfolio-profile-2.png" align="center" width="30%"/>
+<img src="images/portfolio/portfolio-profile-2.png" alt="" width="30%"/>
 </p>
 
 There, you will have options to edit your icon, name, biography, pronouns, workplace, location, website, and social media accounts. If you have links to other websites that contain your work, it's a good idea to cross-reference them here so people can find you elsewhere.
 
 <p align="center">
-<img src="images/portfolio/portfolio-profile-3.png" align="center" width="30%"/>
+<img src="images/portfolio/portfolio-profile-3.png" alt="" width="30%"/>
 </p>
 
 Alternatively, you can also edit your profile by clicking on your icon in the top left corner to go to "Settings", then "Public profile". 
@@ -45,7 +45,9 @@ Additionally, you can choose to pin up to 6 public repositories to show off to a
 
 To choose which repositories to pin, navigate to the "Your profile" tab again and click "Customize your pins". Once you've pinned the repositories you particularly want to highlight you can reorder your pinned repos by dragging the 6 dots at the top right corner.
 
-<img src="images/portfolio/portfolio-pinned.png" align="center" width="100%"/>
+<p align="center">
+<img src="images/portfolio/portfolio-pinned.png" alt="" width="100%"/>
+</p>
 
 When you're picking out your top repositories we recommend including repositories that:
 
@@ -61,30 +63,34 @@ A fun secret feature of GitHub is that you can have a "special README" displayed
 To get started, from your profile landing page, click on the ➕ button and select "New repository".
 
 <p align="center">
-<img src="images/portfolio/portfolio-README-1.png" align="center" width="50%"/>
+<img src="images/portfolio/portfolio-README-1.png" alt="" width="50%"/>
 </p>
 
 Name your new repo the same name as your username. A notification should pop up indicating that you're creating a special repo.
 
 <p align="center">
-<img src="images/portfolio/portfolio-README-2.png" align="center" width="80%"/>
+<img src="images/portfolio/portfolio-README-2.png" alt="" width="80%"/>
 </p>
 
 Feel free to write an optional description. Set the repo visibility to public and make sure to check the box to initialize the repo with a README file. Click on the "Create repository" button once you're done!
 
 <p align="center">
-<img src="images/portfolio/portfolio-README-3.png" align="center" width="80%"/>
+<img src="images/portfolio/portfolio-README-3.png" alt="" width="80%"/>
 </p>
 
 This is what the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the "Edit README" button to get started. Note that you _could_ clone the special repo and edit from whatever code/text editor you prefer but given that the only editing you'll do is to a markdown file that seems excessive to us.
 
-<img src="images/portfolio/portfolio-README-4.png" align="center" width="100%"/>
+<p align="center">
+<img src="images/portfolio/portfolio-README-4.png" alt="" width="100%"/>
+</p>
 
 GitHub will have already populated README.md with a template that you can use as a starting point. Edit this Markdown file to your own liking. Here is a [handy guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github) on formatting your text if you are not familiar with Markdown syntax. 
 
 Some nice sections to include in your README.md are an "About me" section that gives a background on your work and interests, a contributions/achievements section, and a section on any other communities you're involved in. 
 
-<img src="images/portfolio/portfolio-README-5.png" align="center" width="100%"/>
+<p align="center">
+<img src="images/portfolio/portfolio-README-5.png" alt="" width="100%"/>
+</p>
 
 You can add [emojis](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emoji), [images and GIFs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) so have fun editing your special README. 
 

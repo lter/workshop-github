@@ -24,13 +24,17 @@ Milestones can help you keep track of concrete goals like version releases, whic
 
 Here is an example of what a milestone can look like:
 
-![](images/milestones/milestones-1-example.png)
+<p align="center">
+<img src="images/milestones/milestones-1-example.png" alt="" width="100%" />
+</p>
 
 A milestone has been opened for this repository to keep track of an R package's resubmission to CRAN. This resubmission is about 75% of the way there, with 1 open issue and 3 closed ones. 
 
 Once you click on a milestone, you can see more details about the issues that need to be closed before the milestone is 100% complete. 
 
-![](images/milestones/milestones-2-details.png)
+<p align="center">
+<img src="images/milestones/milestones-2-details.png" alt="" width="100%" />
+</p>
 
 ## Creating Milestones
 
@@ -38,27 +42,38 @@ Once you're ready to create a milestone, navigate to your repository and go to t
 
 Click on "Milestones".
 
-![](images/milestones/milestones-3-get-started.png)
+<p align="center">
+<img src="images/milestones/milestones-3-get-started.png" alt="" width="100%" />
+</p>
 
 Then click on either the "New milestone" or "Create a milestone" button if you haven't created a milestone yet. 
 
-![](images/milestones/milestones-4-new-milestone.png)
+<p align="center">
+<img src="images/milestones/milestones-4-new-milestone.png" alt="" width="100%" />
+</p>
 
 Fill out some information about your milestone, such as the title, due date (if any), and description. Click on "Create milestone" once you're done.
 
-![](images/milestones/milestones-5-fill-info.png)
+<p align="center">
+<img src="images/milestones/milestones-5-fill-info.png" alt="" width="100%" />
+</p>
 
 You can always go back to the "Milestones" page and click "Edit" if you need to edit the title, due date, or description.
 
-![](images/milestones/milestones-6-edit.png)
+<p align="center">
+<img src="images/milestones/milestones-6-edit.png" alt="" width="100%" />
+</p>
 
 To add issues/pull requests to your milestone, you can click on your milestone and add them directly there. 
 
-![](images/milestones/milestones-7-add.png)
+<p align="center">
+<img src="images/milestones/milestones-7-add.png" alt="" width="100%" />
+</p>
 
 Or you can go to your issues/pull requests page and select the checkboxes next to the issues/pull requests you want to associate with a milestone. Then click on the "Milestone" dropdown menu to add them to the milestone.
 
-![](images/milestones/milestones-8-add-more.png)
+<p align="center">
+<img src="images/milestones/milestones-8-add-more.png" alt="" width="100%" />
+</p>
 
 For more information on milestones, check out its [GitHub documentation page](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones).
-
