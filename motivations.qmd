@@ -24,7 +24,7 @@ This approach has the advantage of relatively few moving parts but such editing 
 Another limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the "wrong" version of either the code or the data.
 
 <p align="center">
-<img src="images/workflow_options/workflow-no-version-control.png" width="65%"/>
+<img src="images/workflow_options/workflow-no-version-control.png" alt="Graphic of a blue-gray rectangle next to an emoji of a computer and a smaller person labeled 'you'. The left half of the rectangle has a folder emoji labeled 'code' while the right has a folder labeled 'data'. The 'code' half has a file with a circular arrow above it labeled 'edit and save'" width="65%"/>
 </p>
 
 ### Data Lifecycle Considerations
@@ -38,7 +38,7 @@ However, for larger teams--especially those that span disciplinary boundaries or
 Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is "version control" systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.
 
 <p align="center">
-<img src="images/workflow_options/data-lifecycle.png" width="75%"/>
+<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%"/>
 </p>
 
 ### Synthesis Workflow
@@ -50,7 +50,7 @@ However, despite its advantages for collaborative coding, version control is not
 Further, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., "home/users/me/project/data/...") will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a 'this folder does not exist' error. This is absolutely surmountable but can be a source of frustration over longer project timelines.
 
 <p align="center">
-<img src="images/workflow_options/workflow-no-server.png" width="75%"/>
+<img src="images/workflow_options/workflow-no-server.png" alt="Graphic with the same 'code/data' blue rectangle from the earlier workflow options graphic but the 'code' half has arrows connecting it to a square labeled 'GitHub' and the right has an arrow connecting to the logo for Gmail and Dropbox which then splits into many arrows going to different colored squares indicating separate individual computers" width="75%"/>
 </p>
 
 ### Synthesis Workflow on NCEAS' Server
@@ -68,7 +68,7 @@ Adding the server to your team's workflow also allows you to work on code both o
 An ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)
 
 <p align="center">
-<img src="images/workflow_options/workflow-server.png" width="75%"/>
+<img src="images/workflow_options/workflow-server.png" alt="Graphic of a triangle split into three sections. The bottom left indicates 'your' computer, the bottom right indicates GitHub shared between you and your group, and the top indicates a server environment also shared with you and your group. An arrow labeled with Cyberduck's logo connects the 'data' folder in your personal computer with the same folder in the server. Arrows labeled 'push' and 'pull' connect the 'code' folders in all three facets" width="75%"/>
 </p>
 
 ### Summary
