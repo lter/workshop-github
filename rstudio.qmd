@@ -17,7 +17,7 @@ Before we get into using Git and GitHub through RStudio, it will be helpful to r
 Beginning on your local computer, you make **<span style="color:gold">changes</span>** to a file in a folder that you have previously marked for version control tracking (i.e., a **working directory**). Once those changes are made you can **stage changes** within your local computer. After staging, it is best to <span style="color:blue">retrieve the latest file versions from the cloud</span>. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you've confirmed that you have the latest file versions, you can <span style="color:green">shift the revised file(s) to the cloud</span> where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes.
 
 <p align="center">
-<img src="images/rstudio/git-workflow.png" width="70%"/>
+<img src="images/rstudio/git-workflow.png" alt="Graphic of a white rectangle on top of a blue square. The white rectangle has a happy cloud image and is labeled 'GitHub' while the blue square has an emoji-style laptop. Numbered steps start at the bottom left and work towards the top right as follows: '1-make changes', '2-stage changes', '3-retrieve latest from GitHub', and '4-put in GitHub'" width="70%"/>
 </p>
 
 ## Git Vocabulary
@@ -33,47 +33,54 @@ Finally, it will be helpful to introduce four key pieces of vocabulary before we
 * **<span style="color:green">Push</span>** = move file(s) *to* the cloud *from* your local computer -- opposite of a "pull" (step 4)
 
 <p align="center">
-<img src="images/rstudio/git-vocabulary.png" width = "70%"/>
+<img src="images/rstudio/git-vocabulary.png" alt="Graphics demonstrating a clone (copy entire folder from GitHub to a copmputer), a commit (putting local changes into the staging area), a pull (overwriting local copies with GitHub versions of the same), and a push (overwriting GitHub versions of files with the committed local versions)" width="70%"/>
 </p>
 
 ## Cloning a Repository
 
 Now, the first step in using Git with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, **GitHub is in dark mode** while **RStudio is in light mode**. To clone a repository, follow these steps:
 
-Navigate to the repository on GitHub and click on **<span style="color:green">Code</span>**. Select **HTTPS** and copy the link.
+Navigate to the repository on GitHub and click on **<span style="color:green">Code</span>**. Select "HTTPS" and copy the link.
 
-<img src="images/rstudio/rstudio-6-new-repo-link.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-6-new-repo-link.png" alt="Screenshot of the menu that appears in a GitHub repository when someone clicks the 'code' button" width="100%"/>
+</p>
 
 Now, return to (or open!) RStudio.
 
-
-<img src="images/rstudio/rstudio-7-fresh-start.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-7-fresh-start.png" alt="Screenshot of RStudio when no project or scripts are open" width="100%"/>
+</p>
 
 Go to the **Project** tab on the top right corner and click **New Project...**
 
-<img src="images/rstudio/rstudio-8-new-project.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-8-new-project.png" alt="Screenshot of the menu that appears when someone clicks 'Project: (None)' in RStudio and hovers over the 'New Project...' button" width="100%"/>
+</p>
 
 Select **Version Control**.
 
 <p align="center">
-<img src="images/rstudio/rstudio-9-version-control.png" width="75%"/>
+<img src="images/rstudio/rstudio-9-version-control.png" alt="Screenshot of a menu with three options: 'new directory', 'existing directory', and 'version control'" width="75%"/>
 </p>
 
 Select **Git**.
 
 <p align="center">
-<img src="images/rstudio/rstudio-10-clone.png" width="75%"/>
+<img src="images/rstudio/rstudio-10-clone.png" alt="Screenshot of a menu with two options: 'git' and 'subversion'" width="75%"/>
 </p>
 
 Paste the repository URL that you just copied from GitHub. Choose a file path to save your project to. 
 
 <p align="center">
-<img src="images/rstudio/rstudio-11-clone-repo-details.png" width="75%"/>
+<img src="images/rstudio/rstudio-11-clone-repo-details.png" alt="Screenshot of a menu with three open text fields, one for the 'repository URL', one for 'project directory name' and one for 'create project as subdirectory of'" width="75%"/>
 </p>
 
 Now we have finished cloning the repository to our RStudio! Notice that we are working in our `git-practice` project and that our `README.md` file shows up under the list of files, just like in our GitHub repository. 
 
-<img src="images/rstudio/rstudio-12-finished-cloning.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-12-finished-cloning.png" alt="Screenshot of RStudio after a project has been selected. The project name--in the top right corner--is circled in red" width="100%"/>
+</p>
 
 ## Workflow Refresher
 
@@ -93,7 +100,7 @@ The typical workflow with Git goes like this:
 Here is the infographic from the start of this chapter again, which shows the same workflow:
 
 <p align="center">
-<img src="images/rstudio/git-workflow.png" width="70%"/>
+<img src="images/rstudio/git-workflow.png" alt="Graphic of a white rectangle on top of a blue square. The white rectangle has a happy cloud image and is labeled 'GitHub' while the blue square has an emoji-style laptop. Numbered steps start at the bottom left and work towards the top right as follows: '1-make changes', '2-stage changes', '3-retrieve latest from GitHub', and '4-put in GitHub'" width="70%"/>
 </p>
 
 ## Stage versus Commit
@@ -111,12 +118,14 @@ Let's try out a simple Git workflow by first creating a new file. This is **Step
 
 Once you are done, navigate to the **Git** tab on the upper left corner. You should see your new script show up there along with a `.gitignore` and `git-practice.Rproj` file. Do not worry about the `.gitignore` file for now, it was created by RStudio to make sure that some temporary files are not tracked by Git. The `git-practice.Rproj` file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.
 
-<img src="images/rstudio/rstudio-13-new-script.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-13-new-script.png" alt="Screenshot of RStudio with an open script and several uncommitted changes identified in the 'Git' pane. Lack of commit is identified by double yellow squares containing a question mark" width="100%"/>
+</p>
 
 Notice that there are color-coded icons next to the files in the "Git" tab. These icons are shorthand for the status--according to Git--of every* file in your working directory. Not technically "every" file because files that are tracked but haven't been modified are not included. See below for definitions.
 
 <p align="center">
-<img src="images/rstudio/rstudio-icons.png" width="65%"/>
+<img src="images/rstudio/rstudio-icons.png" alt="A legend of five icons RStudio uses to indicate Git status of a file. Yellow question mark = untracked (file not tracked by Git). Green 'A' = added (file marked to start tracking). Blue 'M' = modified (tracked file with changes). Red 'D' = deleted (tracked file that was deleted). Purple 'R' = renamed (tracked file that was renamed)" width="65%"/>
 </p>
 
 In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` files have never been tracked by Git (since these files were just created). Note also that the `README.md` file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.
@@ -126,7 +135,7 @@ In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` 
 Let us look at the diff of our script. Click on the **Diff** tab.
 
 <p align="center">
-<img src="images/rstudio/rstudio-13c-diff.png" width="80%"/>
+<img src="images/rstudio/rstudio-13c-diff.png" alt="Screenshot of the 'diff' button--circled in red--in the 'git' pane of RStudio" width="80%"/>
 </p>
 
 Checking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for Git. We would like to save a snapshot of this version of our script. Since we've just done **Step 1**, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:
@@ -135,11 +144,15 @@ Checking our script, we can see the new lines that we just typed are in green, w
 
 **Step 3**: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the **Commit** button to save this version of the script in the Git database.
 
-<img src="images/rstudio/rstudio-14-commit-message.png" width="90%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-14-commit-message.png" alt="Screenshot of the commit menu of RStudio where one file has been staged and an informative commit message has been entered" width="80%"/>
+</p>
 
 If all of the above steps went well, you should see something like this:
 
-<img src="images/rstudio/rstudio-15-finished-commiting.png" width="90%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-15-finished-commiting.png" alt="Screenshot of the success message after a commit has been made" width="80%"/>
+</p>
 
 Notice that Git tells us that `1 file changed` because we've just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.
 
@@ -162,16 +175,18 @@ Of course RStudio has icons for that on top of the "Git" tab, with the blue arro
 Let us do the pull and push to synchronized the remote repositories. Click on the **Pull** button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use **<span style="color:blue">blue</span>** for **pull**-related content and **<span style="color:green">green</span>** for **push**-related information. Hopefully that helps cement the two ideas in your mind!
 
 <p align="center">
-<img src="images/rstudio/rstudio-15b-pull.png" width="40%"/>
+<img src="images/rstudio/rstudio-15b-pull.png" alt="Screenshot of the blue 'pull' button and green 'push' button in RStudio" width="40%"/>
 </p>
 
 In my case, it turns out that a new script, `lyon-script`, was added to the GitHub repository by a collaborator while I was making my own script. Since I have just pulled, `lyon-script` now shows up in my RStudio files. 
 
 <p align="center">
-<img src="images/rstudio/rstudio-16-pulled.png" width="90%"/>
+<img src="images/rstudio/rstudio-16-pulled.png" alt="Screenshot of the message returned when you pull files you didn't have locally from GitHub" width="90%"/>
 </p>
 
-<img src="images/rstudio/rstudio-17-finished-pulling-new-script.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-17-finished-pulling-new-script.png" alt="Screenshot of RStudio with the 'git' pane underlined in red where it says 'your branch is ahead of origin/main by 2 commits'" width="100%"/>
+</p>
 
 A new message has popped up for me: "Your branch is ahead of 'origin/main' by two commits". This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the `README.md` and `lyon-script`. My changes are NOT in the cloud yet. You might be seeing a similar message as well.
 
@@ -180,18 +195,20 @@ A new message has popped up for me: "Your branch is ahead of 'origin/main' by tw
 So how do we send our changes back to GitHub? Locate the **Push** button on the "Git" tab and click on it. Now your script should show up in the GitHub repository!
 
 <p align="center">
-<img src="images/rstudio/rstudio-15b-pull.png" width="40%"/>
+<img src="images/rstudio/rstudio-15b-pull.png" alt="Screenshot of the blue 'pull' button and green 'push' button in RStudio" width="40%"/>
 </p>
 
 Once you click that button you should get a success screen like the one pictured below.
 
 <p align="center">
-<img src="images/rstudio/rstudio-18-pushed.png" width="90%"/>
+<img src="images/rstudio/rstudio-18-pushed.png" alt="Screenshot of the message received when a push is performed successfully from RStudio" width="90%"/>
 </p>
 
 Navigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, `angel-script.R` finally shows up in my repository.
 
-<img src="images/rstudio/rstudio-19-updated-repo.png" width="100%"/>
+<p align="center">
+<img src="images/rstudio/rstudio-19-updated-repo.png" alt="Screenshot of a GitHub repository with the commits made in earlier screenshots shown in its history" width="100%"/>
+</p>
 
 :::callout-note
 ## If RStudio ever asks for a "password"...
