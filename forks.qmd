@@ -54,7 +54,9 @@ On GitHub, navigate to the repository that you would like to fork for your own u
 
 In the top right of the repository's GitHub page there is a "Fork" button (between "Unwatch" and "Star"), click it to begin forking.
 
-![](images/forks/forks-1-start.png)
+<p align="center">
+<img src="images/forks/forks-1-start.png" alt="" width="100%" />
+</p>
 
 This redirects you to a page that is very similar to the page for creating a new repository *de novo* (see Chapter 3: Using GitHub).
 
@@ -66,13 +68,17 @@ You may notice that in this page you do not have the option to specify public ve
 
 Once you are happy with the owner of the fork, the name, and the description, click the <span style="color:green">green</span> "Create fork" button.
 
-![](images/forks/forks-2-name-fork.png)
+<p align="center">
+<img src="images/forks/forks-2-name-fork.png" alt="" width="100%" />
+</p>
 
 Depending on the amount of content in the repository you are forking and your internet speed this may take anywhere from a few seconds to 1-2 minutes so you will need to wait for a moment while GitHub creates a new duplicate repository under the control of the owner you specified.
 
 After the process completes the page will refresh and you will find yourself on the landing page for your new forked repository!
 
-![](images/forks/forks-3-fork-landing-page.png)
+<p align="center">
+<img src="images/forks/forks-3-fork-landing-page.png" alt="" width="100%" />
+</p>
 
 This repository has a fork icon in the top left (to the left of the owner/repository name) and includes a link to the repository that it came from just beneath that.
 
@@ -82,4 +88,4 @@ If the "parent" repository is updated (i.e., someone pushes changes to it after 
 
 If you decide that your changes are a meaningful improvement that the parent repository could benefit from, you can click the "Contribute" button to begin the process of submitting a pull request to integrate your edits with the parent (see Appendix B: Branches for instructions on submitting a pull request).
 
-From here on you can work within your fork as you would within any other repository! **<span style="color:purple">Clone</span>** the fork into your local computer and work as you normally would (see Chapter 4: Using GitHub via RStudio for a refresher on that workflow if needed)
+From here on you can work within your fork as you would within any other repository! **<span style="color:purple">Clone</span>** the fork into your local computer and work as you normally would.

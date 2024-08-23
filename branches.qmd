@@ -97,13 +97,17 @@ On that page GitHub will helpfully have created a button at the top of the scree
 
 Click that button.
 
-![](images/branches/branches-6-pull-request-start.png)
+<p align="center">
+<img src="images/branches/branches-6-pull-request-start.png" alt="" width="100%" />
+</p>
 
 You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.
 
 Once you're satisfied with your title and message, click the <span style="color:green">green</span> "Create pull request" button.
 
-![](images/branches/branches-7-pull-request-msg.png)
+<p align="center">
+<img src="images/branches/branches-7-pull-request-msg.png" alt="" width="100%" />
+</p>
 
 That done, GitHub will send you to a page that looks very much like a Github issue (see the chapter on issues). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.
 
@@ -115,27 +119,37 @@ You or your team can post messages on a pull request as needed (see the text box
 
 If you are ready to merge a pull request from your branch into the "main" branch click the intuitively-named <span style="color:green">green</span> "Merge pull request" button.
 
-![](images/branches/branches-8-active-pull-request.png)
+<p align="center">
+<img src="images/branches/branches-8-active-pull-request.png" alt="" width="100%" />
+</p>
 
 GitHub will open another text box where you can add a commit message to your acceptance of the pull request. If whoever opened the pull request was sufficiently detailed in their opening comment(s) this may not need to be terribly detailed but it can't hurt!
 
 Once your message is written, click the <span style="color:green">green</span> "Confirm merge" button.
 
-![](images/branches/branches-9-pull-request-accept-msg.png)
+<p align="center">
+<img src="images/branches/branches-9-pull-request-accept-msg.png" alt="" width="100%" />
+</p>
 
 The green 'open' buttons will change to purple and will use the "merge" icon of two streams combining. As with GitHub issues you can continue to post comments on a merged pull request if you feel it will be valuable for posterity to do so.
 
 GitHub will also handily create a "Delete branch" button at the bottom of the pull request's timeline. We recommend that you click it given that your branch's purpose is served and having irrelevant branches clutters your GitHub and may even cause problems if you have two similarly-named branches where one has been merged and the other has not.
 
-![](images/branches/branches-10-successful-merge.png)
+<p align="center">
+<img src="images/branches/branches-10-successful-merge.png" alt="" width="100%" />
+</p>
 
 After you click "Delete branch" it will be replaced by a "Restore branch" button so you could always reclaim it if need be.
 
-![](images/branches/branches-11-deleted-branch.png)
+<p align="center">
+<img src="images/branches/branches-11-deleted-branch.png" alt="" width="100%" />
+</p>
 
 Finally, return to the "Code" tab of your GitHub repository and you can see that the changes we implemented in the branch are now part of the repository's "main" branch. The branch name is displayed just above the last commit message and the first file in the repository but below the different tab names.
 
-![](images/branches/branches-12-github-repo-post-merge.png)
+<p align="center">
+<img src="images/branches/branches-12-github-repo-post-merge.png" alt="" width="100%" />
+</p>
 
 ## Update Local Repository
 
@@ -151,7 +165,9 @@ Notice though that our script went back to the pre-merge version but don't panic
 
 In order to update your local version of the repository all that you need to do is click the **<span style="color:blue">pull</span>** button. This brings the content you just merged via GitHub (see above) into your local repository.
 
-![](images/branches/branches-15-notice-outdated-script.png)
+<p align="center">
+<img src="images/branches/branches-15-notice-outdated-script.png" alt="" width="100%" />
+</p>
 
 You will get a success message indicating the changes to each file in the same way any other **<span style="color:blue">pull</span>** would. You can notice between this picture and the previous that the code automatically changes when the **<span style="color:blue">pull</span>** is complete.
 
