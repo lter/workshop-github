@@ -160,15 +160,15 @@ Notice that Git tells us that `1 file changed` because we've just added a new fi
 
 There are two Git commands to exchange between a local and remote versions of a repository: 
 
-- `pull`: Git will get the latest remote version and try to merge it with your local version 
+- Pull: Git will get the latest remote version and try to merge it with your local version 
 
-- `push`: Git will send your local version to the remote version of the repository (in our case GitHub)
+- Push: Git will send your local version to the remote version of the repository (in our case GitHub)
 
 **Before sending your local version to the remote**, you should always get the latest remote version first. In other words, you should pull first and push second. This is the way Git protects the remote version against incompatibilities with the local version. You always deal with potential problems on your local machine. Therefore your sequence will always be:
 
 1. Commit
-2. `pull`
-3. `push`
+2. Pull
+3. Push
 
 Of course RStudio has icons for that on top of the "Git" tab, with the blue arrow down being for pull and the green arrow up being for push. Remember the icons are organized in sequence!
 
