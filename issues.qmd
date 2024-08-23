@@ -74,13 +74,11 @@ To see the current label options, click the "Labels" text or the gear to its rig
 <img src="images/issues/issues-6-label-options.png" alt="" width="100%" />
 </p>
 
----
-
+:::callout-note
 ## Practice - Labels
 
 What are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories? 
-
----
+:::
 
 ## Opening an Issue
 
@@ -106,13 +104,11 @@ Personally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are *
 
 If issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general 'rules of thumb' for the scope of tasks identified by issues.
 
----
-
+:::callout-note
 ## Practice - Create an Issue
 
 Now that we've covered what issues are and how to open them, let's take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!
-
----
+:::
 
 ## Closing an Issue
 
