@@ -8,7 +8,7 @@ execute:
 
 website:
   title: "SciComp Workshop - Collaborative Coding with GitHub"
-  favicon: images/logos/scicomptools_hex.png
+  favicon: images/logos/hex_scicomptools.png
   repo-url: https://github.com/lter/workshop-github
   repo-actions: [issue]
   twitter-card: true
