@@ -61,7 +61,7 @@ format:
     theme:
        light: _extensions/lter/lter_scss-theme/theme_lter-edu-light.scss
        dark: _extensions/lter/lter_scss-theme/theme_lter-edu-dark.scss
-    mainfont: Lato
+    mainfont: Open Sans
     toc: true
     link-external-newwindow: true
     link-external-icon: false
