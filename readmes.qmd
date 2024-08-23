@@ -50,11 +50,11 @@ If you click that file, you can view the "raw" file which is written in "markdow
 **The main take away here is that "under the hood", this package's README landing page is generated from the formatting specified in this "raw" file.** Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!
 
 <p align="center">
-<img src="images/readme/readme-3-example-raw-1.png" width="100%"/>
+<img src="images/readme/readme-3-example-raw-1.png" alt="" width="100%"/>
 </p>
 
 <p align="center">
-<img src="images/readme/readme-4-example-raw-2.png" width="100%"/>
+<img src="images/readme/readme-4-example-raw-2.png" alt="" width="100%"/>
 </p>
 
 ## Writing a README

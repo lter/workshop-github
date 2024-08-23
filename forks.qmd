@@ -43,7 +43,7 @@ From there on you work as your normally would with GitHub: **<span style="color:
 While it is not shown in the below diagram, if needed you can submit a "pull request" (see Appendix B: Branches) to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.
 
 <p align="center">
-<img src="images/forks/git-fork-workflow.png" width="75%"/>
+<img src="images/forks/git-fork-workflow.png" alt="" width="75%"/>
 </p>
 
 Now we've covered the general operation of forking, let's go over the specifics step-by-step.

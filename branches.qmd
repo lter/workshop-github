@@ -41,7 +41,7 @@ However, deletion of the branch either locally or via GitHub **must** come *afte
 As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we've discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas*ier*) workflow for working together while avoiding conflicts (again, see "Appendix A: Conflicts").
 
 <p align="center">
-<img src="images/branches/git-branch-workflow.png" width="75%"/>
+<img src="images/branches/git-branch-workflow.png" alt="" width="75%"/>
 </p>
 
 Now we've gone over this big picture overview, let's walk step-by-step through creating, working in and ultimately merging branches!
@@ -53,7 +53,7 @@ Before you create a branch, **<span style="color:blue">pull</span>** from GitHub
 That done, click the **<span style="color:purple">purple</span>** button in the Git tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.
 
 <p align="center">
-<img src="images/branches/branches-1-new-branch-button.png" width="75%"/>
+<img src="images/branches/branches-1-new-branch-button.png" alt="" width="75%"/>
 </p>
 
 In the resulting dialogue box, give your new branch an informative name. In this example we haven't given our new branch a great name but in a "real" repository you will greatly appreciate having concise but descriptive branch names.
@@ -61,19 +61,19 @@ In the resulting dialogue box, give your new branch an informative name. In this
 Once you're happy with the name, click **"Create"** (you can ignore the other options and buttons on this dialogue box).
 
 <p align="center">
-<img src="images/branches/branches-2-name-new-branch.png" width="65%"/>
+<img src="images/branches/branches-2-name-new-branch.png" alt="" width="65%"/>
 </p>
 
 This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.
 
 <p align="center">
-<img src="images/branches/branches-2b-success-dialogue.png" width="75%"/>
+<img src="images/branches/branches-2b-success-dialogue.png" alt="" width="75%"/>
 </p>
 
 You will also notice that in your Git tab where previously it said "main" it now shows whatever name you chose for your branch.
 
 <p align="center">
-<img src="images/branches/branches-2c-new-branch.png" width="75%"/>
+<img src="images/branches/branches-2c-new-branch.png" alt="" width="75%"/>
 </p>
 
 ## Work in the Branch
@@ -158,7 +158,7 @@ Now that GitHub has been told to integrate your branch content with the "main" b
 First, click the name of the branch to see all the branch names in your repository and select the "main" branch to flip your local repository over to that branch.
 
 <p align="center">
-<img src="images/branches/branches-14-switch-local-to-main.png" width="75%"/>
+<img src="images/branches/branches-14-switch-local-to-main.png" alt="" width="75%"/>
 </p>
 
 Notice though that our script went back to the pre-merge version but don't panic!
@@ -172,7 +172,7 @@ In order to update your local version of the repository all that you need to do 
 You will get a success message indicating the changes to each file in the same way any other **<span style="color:blue">pull</span>** would. You can notice between this picture and the previous that the code automatically changes when the **<span style="color:blue">pull</span>** is complete.
 
 <p align="center">
-<img src="images/branches/branches-16-pull-merged-repo.png" width="75%"/>
+<img src="images/branches/branches-16-pull-merged-repo.png" alt="" width="75%"/>
 </p>
 
 Now that you merged your branch with the main branch on GitHub and pulled that merged content down to your local version you have successfully start-to-finish used branches in your workflow.
