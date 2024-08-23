@@ -35,10 +35,9 @@ Let's distinguish between Git and GitHub:
 	
 **GitHub is a company that hosts Git repositories online** and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.
 
-- **GitHub.com**: <https://github.com>
-- **A user account**: <https://github.com/brunj7>
-- **An organization account**: <https://github.com/nceas>
-- **NCEAS GitHub instance**: <https://github.nceas.ucsb.edu/> 
+- **GitHub.com**: [github.com](https://github.com/)
+- **A user account**: [github.com/angelchen7](https://github.com/angelchen7)
+- **An organization account**: [github.com/lter](https://github.com/lter)
 
 ## Exploring GitHub
 
