@@ -19,7 +19,7 @@ A README is almost always either a Markdown file (ending in ".md") or an R markd
 
 ## Example README
 
-<img src="images/logos/hex_lterpalettefinder.png" align="right" width="20%"/>
+<img src="images/logos/hex_lterpalettefinder.png" alt="Hex logo for the 'lterpalettefinder' R package" align="right" width="20%"/>
 
 Let's check out [the README for the R package `lterpalettefinder`](https://github.com/lter/lterpalettefinder#readme) as one example of an informative README. This R package was developed by the LTER Network Office to share official palettes derived from photos taken at LTER sites and evolved to include a suite of R functions that allow color palettes to be extracted from _any_ user-supplied photo.
 
@@ -34,7 +34,7 @@ The README for `lterpalettefinder` is crucial because it provides the following 
 Visitors to [the README](https://github.com/lter/lterpalettefinder#readme) see the following:
 
 <p align="center">
-<img src="images/readme/readme-1-example.png" alt="" width="100%"/>
+<img src="images/readme/readme-1-example.png" alt="Screenshot of the full README on the GitHub repository of the 'lterpalettefinder' R package" width="100%"/>
 </p>
 
 This README contains a bunch of "bonus" information including nice aesthetic touches and various "badges" denoting timing of last commit and that the package has no errors among other things.
@@ -42,7 +42,7 @@ This README contains a bunch of "bonus" information including nice aesthetic tou
 The "README.Rmd" file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).
 
 <p align="center">
-<img src="images/readme/readme-2-example-home.png" alt="" width="100%"/>
+<img src="images/readme/readme-2-example-home.png" alt="Screenshot of the files in the 'lterpalettefinder' R package GitHub repository showing that there is both a README.md and a README.Rmd" width="100%"/>
 </p>
 
 If you click that file, you can view the "raw" file which is written in "markdown syntax". Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.
@@ -50,11 +50,11 @@ If you click that file, you can view the "raw" file which is written in "markdow
 **The main take away here is that "under the hood", this package's README landing page is generated from the formatting specified in this "raw" file.** Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!
 
 <p align="center">
-<img src="images/readme/readme-3-example-raw-1.png" alt="" width="100%"/>
+<img src="images/readme/readme-3-example-raw-1.png" alt="Screenshot of the 'raw' view of the top half of the README.Rmd file from the previous screenshot" width="100%"/>
 </p>
 
 <p align="center">
-<img src="images/readme/readme-4-example-raw-2.png" alt="" width="100%"/>
+<img src="images/readme/readme-4-example-raw-2.png" alt="Screenshot of the 'raw' view of the bottom half of the README.Rmd file from the previous screenshot" width="100%"/>
 </p>
 
 ## Writing a README

@@ -19,13 +19,13 @@ Projects are GitHub's primary strategic project management tool. While issues ca
 Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the project. The list of all projects owned by an Organization/User can be accessed via the "projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
 
 <p align="center">
-<img src="images/projects/projects-1-org.png" alt="" width="100%"/>
+<img src="images/projects/projects-1-org.png" alt="Screenshot of the 'projects' tab of a GitHub organization" width="100%"/>
 </p>
 
 Once a project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository ("lter-sparc-soil-p").
 
 <p align="center">
-<img src="images/projects/projects-2-linking.png" alt="" width="100%"/>
+<img src="images/projects/projects-2-linking.png" alt="Screenshot of the 'projects' tab of a particular repository" width="100%"/>
 </p>
 
 ## Using Projects
@@ -35,7 +35,7 @@ Within the team that created this workshop, we use GitHub Issues to track and do
 See below for a screenshot of what such a project looks like for one team member.
 
 <p align="center">
-<img src="images/projects/projects-3-example.png" alt="" width="100%"/>
+<img src="images/projects/projects-3-example.png" alt="Screenshot of an open project in 'board' view with many open issues categorized into user-defined columns" width="100%"/>
 </p>
 
 When using a project you can add or remove the columns (the above example has four columns) and individual issue "cards" can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this project are automatically moved to the "Done" column).
@@ -45,7 +45,7 @@ When using a project you can add or remove the columns (the above example has fo
 GitHub supports three different view options within projects. You can have as many views as you'd like, including duplicates of the same category of view. Views can be created or toggled between in the top left of the screen, just beneath the project title.
 
 <p align="center">
-<img src="images/projects/projects-4-view-tabs.png" alt="" width="45%">
+<img src="images/projects/projects-4-view-tabs.png" alt="Screenshot of the 'project views' section of an open GitHub project" width="45%">
 </p>
 
 Accepted project view options are "Board", "Table", and "Roadmap." We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).
@@ -55,7 +55,7 @@ Accepted project view options are "Board", "Table", and "Roadmap." We will highl
 The first view option (and in our opinion the best for working groups) is the "board" option. In this view, issues are tracked in vertical columns and can be dragged among columns at will. Columns are often used to denote issue status such that columns further to the right are closer to finished. Column names, colors, and description text can all be edited to fit your team's needs.
 
 <p align="center">
-<img src="images/projects/projects-3-example.png" alt="" width="100%"/>
+<img src="images/projects/projects-3-example.png" alt="Screenshot of an open project in 'board' view with many open issues categorized into user-defined columns" width="100%"/>
 </p>
 
 ### Table View
@@ -63,7 +63,7 @@ The first view option (and in our opinion the best for working groups) is the "b
 The second view option is the 'table' option. This view stacks all current tasks vertically and automatically sorts them by the task status (equivalent to the columns in the board view). If your team typically uses an MS Excel / Google Sheet file to track your ongoing work, this project view would represent the closest user interface match.
 
 <p align="center">
-<img src="images/projects/projects-5-table.png" alt="" width="100%">
+<img src="images/projects/projects-5-table.png" alt="Screenshot of an open project in 'table' view where issues are shown in a stack instead of in separate columns" width="100%">
 </p>
 
 ### Roadmap View
@@ -71,7 +71,7 @@ The second view option is the 'table' option. This view stacks all current tasks
 The final view option is the 'roadmap'. This view allows for tracking of issues through time more explicitly than the other two view options. You can choose the temporal specificity that makes most sense for your work (allowed options include daily, monthly, quarterly, and yearly breakdowns). Tasks then show up as a long bar in their row extending from whatever their start date is to the user-defined end date. Note that for this view to work you will need to add specific start/end dates to _every_ issue.
 
 <p align="center">
-<img src="images/projects/projects-6-roadmap.png" alt="" width="100%">
+<img src="images/projects/projects-6-roadmap.png" alt="Screenshot of an open project in 'roadmap' view where a project is shown with issues in rows ordered by the due dates defined in each" width="100%">
 </p>
 
 ## Integrating Issues
@@ -83,13 +83,13 @@ Once you've created the project(s) you want, issues can be added to them as desi
 When you first create an issue you can add it to one or more projects by clicking the gear icon in the sidebar of options on the right side of the screen.
 
 <p align="center">
-<img src="images/projects/projects-7a-add-from-issue.png" alt="" width="100%"/>
+<img src="images/projects/projects-7a-add-from-issue.png" alt="Screenshot of a new issue being created in GitHub" width="100%"/>
 </p>
 
 Upon clicking that icon, a small window will pop up and will allow you to choose any project (A) you've interacted with recently, (B) that is linked to this particular repository, and/or (C) that is owned by the Organization/User that owns the repository. If there are many projects that meet these criteria there is also a handy search bar that lets you search through for a specific project by name.
 
 <p align="center">
-<img src="images/projects/projects-7b-add-from-issue.png" alt="" width="40%"/>
+<img src="images/projects/projects-7b-add-from-issue.png" alt="Screenshot of the small pop-up menu that opens when you try to add an issue to an existing project" width="40%"/>
 </p>
 
 ### Adding from a Project
@@ -97,7 +97,7 @@ Upon clicking that icon, a small window will pop up and will allow you to choose
 If you'd prefer, you can add existing issues to a project from the project's home screen. Once in the project, click the "Add item" button at the bottom of the screen and begin typing the name of the issue. Clicking an issue's name will then automatically add it to the project and will allow you to "triage" it (i.e., add the issue to the column indicating its current status).
 
 <p align="center">
-<img src="images/projects/projects-8-add-from-project.png" alt="" width="75%"/>
+<img src="images/projects/projects-8-add-from-project.png" alt="Screenshot of part of a 'board' view GitHub project with the 'add item' button conspicuous at the bottom of each column" width="75%"/>
 </p>
 
 ## Maximizing Project Utility
