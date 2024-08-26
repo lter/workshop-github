@@ -43,7 +43,7 @@ From there on you work as your normally would with GitHub: **<span style="color:
 While it is not shown in the below diagram, if needed you can submit a "pull request" (see Appendix B: Branches) to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.
 
 <p align="center">
-<img src="images/forks/git-fork-workflow.png" alt="" width="75%"/>
+<img src="images/forks/git-fork-workflow.png" alt="Graphic of the workflow when using forks. Begins by forking someone else's repository then working in your fork as you normally would" width="75%"/>
 </p>
 
 Now we've covered the general operation of forking, let's go over the specifics step-by-step.
@@ -55,7 +55,7 @@ On GitHub, navigate to the repository that you would like to fork for your own u
 In the top right of the repository's GitHub page there is a "Fork" button (between "Unwatch" and "Star"), click it to begin forking.
 
 <p align="center">
-<img src="images/forks/forks-1-start.png" alt="" width="100%" />
+<img src="images/forks/forks-1-start.png" alt="Screenshot of the top of a GitHub repository including the 'fork' button in the top right (in-line with the name of the repository)" width="100%" />
 </p>
 
 This redirects you to a page that is very similar to the page for creating a new repository *de novo* (see Chapter 3: Using GitHub).
@@ -69,7 +69,7 @@ You may notice that in this page you do not have the option to specify public ve
 Once you are happy with the owner of the fork, the name, and the description, click the <span style="color:green">green</span> "Create fork" button.
 
 <p align="center">
-<img src="images/forks/forks-2-name-fork.png" alt="" width="100%" />
+<img src="images/forks/forks-2-name-fork.png" alt="Screenshot of the GitHub interface for making a fork (where the repository can be renamed and have a description added)" width="100%" />
 </p>
 
 Depending on the amount of content in the repository you are forking and your internet speed this may take anywhere from a few seconds to 1-2 minutes so you will need to wait for a moment while GitHub creates a new duplicate repository under the control of the owner you specified.
@@ -77,7 +77,7 @@ Depending on the amount of content in the repository you are forking and your in
 After the process completes the page will refresh and you will find yourself on the landing page for your new forked repository!
 
 <p align="center">
-<img src="images/forks/forks-3-fork-landing-page.png" alt="" width="100%" />
+<img src="images/forks/forks-3-fork-landing-page.png" alt="Screenshot of the forked repository owned by a different owner than the original repository" width="100%" />
 </p>
 
 This repository has a fork icon in the top left (to the left of the owner/repository name) and includes a link to the repository that it came from just beneath that.
