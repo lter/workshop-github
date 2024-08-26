@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logos/scicomptools_hex.png" rel="icon" type="image/png">
+<link href="./images/logos/hex_scicomptools.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -284,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
+<p><img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"> <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -326,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This approach has the advantage of relatively few moving parts but such editing of your code loses all previous versions that aren’t explicitly preserved (as well as a record of the changes).</p>
 <p>Another limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.</p>
 <p align="center">
-<img src="images/workflow_options/workflow-no-version-control.png" width="65%">
+<img src="images/workflow_options/workflow-no-version-control.png" alt="Graphic of a blue-gray rectangle next to an emoji of a computer and a smaller person labeled 'you'. The left half of the rectangle has a folder emoji labeled 'code' while the right has a folder labeled 'data'. The 'code' half has a file with a circular arrow above it labeled 'edit and save'" width="65%">
 </p>
 </section>
 <section id="data-lifecycle-considerations" class="level3">
@@ -336,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
 <p>However, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.</p>
 <p>Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.</p>
 <p align="center">
-<img src="images/workflow_options/data-lifecycle.png" width="75%">
+<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%">
 </p>
 </section>
 <section id="synthesis-workflow" class="level3">
@@ -345,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
 <p>However, despite its advantages for collaborative coding, version control is not meant for preserving data so you would need to share data with your collaborators either via email or by storing data in the cloud and sharing links with team members. Depending upon how you implement either route for sharing data (email vs.&nbsp;cloud) your group is still at risk for group members using different versions of the data–especially if your group is involved in ongoing data collection.</p>
 <p>Further, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., “home/users/me/project/data/…”) will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a ‘this folder does not exist’ error. This is absolutely surmountable but can be a source of frustration over longer project timelines.</p>
 <p align="center">
-<img src="images/workflow_options/workflow-no-server.png" width="75%">
+<img src="images/workflow_options/workflow-no-server.png" alt="Graphic with the same 'code/data' blue rectangle from the earlier workflow options graphic but the 'code' half has arrows connecting it to a square labeled 'GitHub' and the right has an arrow connecting to the logo for Gmail and Dropbox which then splits into many arrows going to different colored squares indicating separate individual computers" width="75%">
 </p>
 </section>
 <section id="synthesis-workflow-on-nceas-server" class="level3">
@@ -357,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Adding the server to your team’s workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server <em>ad infinitum</em> thereafter.</p>
 <p>An ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)</p>
 <p align="center">
-<img src="images/workflow_options/workflow-server.png" width="75%">
+<img src="images/workflow_options/workflow-server.png" alt="Graphic of a triangle split into three sections. The bottom left indicates 'your' computer, the bottom right indicates GitHub shared between you and your group, and the top indicates a server environment also shared with you and your group. An arrow labeled with Cyberduck's logo connects the 'data' folder in your personal computer with the same folder in the server. Arrows labeled 'push' and 'pull' connect the 'code' folders in all three facets" width="75%">
 </p>
 </section>
 <section id="summary" class="level3">

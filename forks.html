@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logos/scicomptools_hex.png" rel="icon" type="image/png">
+<link href="./images/logos/hex_scicomptools.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -280,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
+<p><img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"> <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -337,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
 <p>From there on you work as your normally would with GitHub: <strong><span style="color:gold">edit</span></strong>, <strong>commit</strong>, <strong><span style="color:blue">pull</span></strong>, and <strong><span style="color:green">push</span></strong>.</p>
 <p>While it is not shown in the below diagram, if needed you can submit a “pull request” (see Appendix B: Branches) to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.</p>
 <p align="center">
-<img src="images/forks/git-fork-workflow.png" width="75%">
+<img src="images/forks/git-fork-workflow.png" alt="Graphic of the workflow when using forks. Begins by forking someone else's repository then working in your fork as you normally would" width="75%">
 </p>
 <p>Now we’ve covered the general operation of forking, let’s go over the specifics step-by-step.</p>
 </section>
@@ -345,21 +345,27 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="create-a-fork">Create a Fork</h2>
 <p>On GitHub, navigate to the repository that you would like to fork for your own use. Note that in this case the repository we created to take these screen captures is very new but this need not be the case!</p>
 <p>In the top right of the repository’s GitHub page there is a “Fork” button (between “Unwatch” and “Star”), click it to begin forking.</p>
-<p><img src="images/forks/forks-1-start.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/forks/forks-1-start.png" alt="Screenshot of the top of a GitHub repository including the 'fork' button in the top right (in-line with the name of the repository)" width="100%">
+</p>
 <p>This redirects you to a page that is very similar to the page for creating a new repository <em>de novo</em> (see Chapter 3: Using GitHub).</p>
 <p>Here you can select who you want to own the repository from a dropdown including any organizations you are a member of and your username if you want to personally own the fork.</p>
 <p>You can also change the repository name (though the default is to retain the same name) and add a description of your purpose for the fork.</p>
 <p>You may notice that in this page you do not have the option to specify public versus private or any of the ‘initialize’ steps (e.g., README, gitignore, or licence). Forks will inherit these settings from the repository they are forked from so they do not need to specified here.</p>
 <p>Once you are happy with the owner of the fork, the name, and the description, click the <span style="color:green">green</span> “Create fork” button.</p>
-<p><img src="images/forks/forks-2-name-fork.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/forks/forks-2-name-fork.png" alt="Screenshot of the GitHub interface for making a fork (where the repository can be renamed and have a description added)" width="100%">
+</p>
 <p>Depending on the amount of content in the repository you are forking and your internet speed this may take anywhere from a few seconds to 1-2 minutes so you will need to wait for a moment while GitHub creates a new duplicate repository under the control of the owner you specified.</p>
 <p>After the process completes the page will refresh and you will find yourself on the landing page for your new forked repository!</p>
-<p><img src="images/forks/forks-3-fork-landing-page.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/forks/forks-3-fork-landing-page.png" alt="Screenshot of the forked repository owned by a different owner than the original repository" width="100%">
+</p>
 <p>This repository has a fork icon in the top left (to the left of the owner/repository name) and includes a link to the repository that it came from just beneath that.</p>
 <p>The other salient difference is that between the branch and “Code” buttons and the list of files there is a bar that indicates whether the fork is up to date with the repository it was forked from.</p>
 <p>If the “parent” repository is updated (i.e., someone pushes changes to it after you forked) you can click the “Fetch upstream” button to integrate those changes with your fork.</p>
 <p>If you decide that your changes are a meaningful improvement that the parent repository could benefit from, you can click the “Contribute” button to begin the process of submitting a pull request to integrate your edits with the parent (see Appendix B: Branches for instructions on submitting a pull request).</p>
-<p>From here on you can work within your fork as you would within any other repository! <strong><span style="color:purple">Clone</span></strong> the fork into your local computer and work as you normally would (see Chapter 4: Using GitHub via RStudio for a refresher on that workflow if needed)</p>
+<p>From here on you can work within your fork as you would within any other repository! <strong><span style="color:purple">Clone</span></strong> the fork into your local computer and work as you normally would.</p>
 
 
 </section>

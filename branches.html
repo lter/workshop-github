@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logos/scicomptools_hex.png" rel="icon" type="image/png">
+<link href="./images/logos/hex_scicomptools.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
+<p><img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"> <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -334,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
 <p>However, deletion of the branch either locally or via GitHub <strong>must</strong> come <em>after</em> step 5!</p>
 <p>As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts (again, see “Appendix A: Conflicts”).</p>
 <p align="center">
-<img src="images/branches/git-branch-workflow.png" width="75%">
+<img src="images/branches/git-branch-workflow.png" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" width="75%">
 </p>
 <p>Now we’ve gone over this big picture overview, let’s walk step-by-step through creating, working in and ultimately merging branches!</p>
 </section>
@@ -343,20 +343,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Before you create a branch, <strong><span style="color:blue">pull</span></strong> from GitHub as a precaution so that you are certain your local repository has the most up-to-date content.</p>
 <p>That done, click the <strong><span style="color:purple">purple</span></strong> button in the Git tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.</p>
 <p align="center">
-<img src="images/branches/branches-1-new-branch-button.png" width="75%">
+<img src="images/branches/branches-1-new-branch-button.png" alt="Screenshot of the set of buttons in RStudio's Git pane" width="75%">
 </p>
 <p>In the resulting dialogue box, give your new branch an informative name. In this example we haven’t given our new branch a great name but in a “real” repository you will greatly appreciate having concise but descriptive branch names.</p>
-<p>Once you’re happy with the name, click <strong>“Create”</strong> (you can ignore the other options and buttons on this dialogue box).</p>
+<p>Once you’re happy with the name, click “<strong>Create</strong>” (you can ignore the other options and buttons on this dialogue box).</p>
 <p align="center">
-<img src="images/branches/branches-2-name-new-branch.png" width="65%">
+<img src="images/branches/branches-2-name-new-branch.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="65%">
 </p>
 <p>This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.</p>
 <p align="center">
-<img src="images/branches/branches-2b-success-dialogue.png" width="75%">
+<img src="images/branches/branches-2b-success-dialogue.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="75%">
 </p>
 <p>You will also notice that in your Git tab where previously it said “main” it now shows whatever name you chose for your branch.</p>
 <p align="center">
-<img src="images/branches/branches-2c-new-branch.png" width="75%">
+<img src="images/branches/branches-2c-new-branch.png" alt="Screenshot of RStudio's Git pane where it can be seen that the branch name has changed to the new branch created earlier" width="75%">
 </p>
 </section>
 <section id="work-in-the-branch" class="level2">
@@ -376,40 +376,56 @@ ul.task-list li input[type="checkbox"] {
 <p>Once you’ve completely finished working in your branch, <strong><span style="color:green">push</span></strong> your work (if your local files are ahead of the GitHub versions) and go to your repository’s GitHub page.</p>
 <p>On that page GitHub will helpfully have created a button at the top of the screen notifying you that your branch had recent pushes and will offer a <span style="color:green">green</span> button to “Compare &amp; pull request”.</p>
 <p>Click that button.</p>
-<p><img src="images/branches/branches-6-pull-request-start.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-6-pull-request-start.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="100%">
+</p>
 <p>You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.</p>
 <p>Once you’re satisfied with your title and message, click the <span style="color:green">green</span> “Create pull request” button.</p>
-<p><img src="images/branches/branches-7-pull-request-msg.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-7-pull-request-msg.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%">
+</p>
 <p>That done, GitHub will send you to a page that looks very much like a Github issue (see the chapter on issues). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.</p>
 <p>Those commits are “live” and function as hyperlinks in case you want to view how your code is preserved in GitHub.</p>
 <p>Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to RStudio and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.</p>
 <p>You or your team can post messages on a pull request as needed (see the text box at the bottom of the below picture).</p>
 <p>If you are ready to merge a pull request from your branch into the “main” branch click the intuitively-named <span style="color:green">green</span> “Merge pull request” button.</p>
-<p><img src="images/branches/branches-8-active-pull-request.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-8-active-pull-request.png" alt="Screenshot of an open pull request on GitHub" width="100%">
+</p>
 <p>GitHub will open another text box where you can add a commit message to your acceptance of the pull request. If whoever opened the pull request was sufficiently detailed in their opening comment(s) this may not need to be terribly detailed but it can’t hurt!</p>
 <p>Once your message is written, click the <span style="color:green">green</span> “Confirm merge” button.</p>
-<p><img src="images/branches/branches-9-pull-request-accept-msg.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-9-pull-request-accept-msg.png" alt="Screenshot of the menu that opens on GitHub when you click 'merge pull request' where you are prompted to add an optional description before clicking 'confirm merge'" width="100%">
+</p>
 <p>The green ‘open’ buttons will change to purple and will use the “merge” icon of two streams combining. As with GitHub issues you can continue to post comments on a merged pull request if you feel it will be valuable for posterity to do so.</p>
 <p>GitHub will also handily create a “Delete branch” button at the bottom of the pull request’s timeline. We recommend that you click it given that your branch’s purpose is served and having irrelevant branches clutters your GitHub and may even cause problems if you have two similarly-named branches where one has been merged and the other has not.</p>
-<p><img src="images/branches/branches-10-successful-merge.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-10-successful-merge.png" alt="Screenshot of a closed pull request on GitHub with a 'delete branch' button provided" width="100%">
+</p>
 <p>After you click “Delete branch” it will be replaced by a “Restore branch” button so you could always reclaim it if need be.</p>
-<p><img src="images/branches/branches-11-deleted-branch.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-11-deleted-branch.png" alt="Screenshot of a pull request on GitHub after the 'delete branc' button has been clicked and replaced by a 'restore branch' button" width="100%">
+</p>
 <p>Finally, return to the “Code” tab of your GitHub repository and you can see that the changes we implemented in the branch are now part of the repository’s “main” branch. The branch name is displayed just above the last commit message and the first file in the repository but below the different tab names.</p>
-<p><img src="images/branches/branches-12-github-repo-post-merge.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-12-github-repo-post-merge.png" alt="Screenshot of the GitHub repository after the pull request was merged showing that the most recent commit was the merging of the PR" width="100%">
+</p>
 </section>
 <section id="update-local-repository" class="level2">
 <h2 class="anchored" data-anchor-id="update-local-repository">Update Local Repository</h2>
 <p>Now that GitHub has been told to integrate your branch content with the “main” branch, you need to let RStudio know that integration has taken place!</p>
 <p>First, click the name of the branch to see all the branch names in your repository and select the “main” branch to flip your local repository over to that branch.</p>
 <p align="center">
-<img src="images/branches/branches-14-switch-local-to-main.png" width="75%">
+<img src="images/branches/branches-14-switch-local-to-main.png" alt="Screenshot of RStudio after the branch name was clicked (in the Git pane) showing that the new branch and the 'main' branch are options" width="75%">
 </p>
 <p>Notice though that our script went back to the pre-merge version but don’t panic!</p>
 <p>In order to update your local version of the repository all that you need to do is click the <strong><span style="color:blue">pull</span></strong> button. This brings the content you just merged via GitHub (see above) into your local repository.</p>
-<p><img src="images/branches/branches-15-notice-outdated-script.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/branches/branches-15-notice-outdated-script.png" alt="Screenshot of RStudio after showing the original (pre-pull request) version of the script" width="100%">
+</p>
 <p>You will get a success message indicating the changes to each file in the same way any other <strong><span style="color:blue">pull</span></strong> would. You can notice between this picture and the previous that the code automatically changes when the <strong><span style="color:blue">pull</span></strong> is complete.</p>
 <p align="center">
-<img src="images/branches/branches-16-pull-merged-repo.png" width="75%">
+<img src="images/branches/branches-16-pull-merged-repo.png" alt="Screenshot of the message in RStudio when you pull after merging a pull request on GitHub" width="75%">
 </p>
 <p>Now that you merged your branch with the main branch on GitHub and pulled that merged content down to your local version you have successfully start-to-finish used branches in your workflow.</p>
 <p>Many branches can exist at the same time and sometimes it helpful to create a branch starting from another branch, but these special cases obey the same basic structure described above and are outside the scope of this primer.</p>

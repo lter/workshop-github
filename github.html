@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logos/scicomptools_hex.png" rel="icon" type="image/png">
+<link href="./images/logos/hex_scicomptools.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -284,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
+<p><img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"> <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -323,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Version control systems (including Git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).</p>
 <p><strong>Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.</strong></p>
 <p align="center">
-<img src="images/comics/phd_comics_final.png" align="center" width="60%">
+<img src="images/comics/phd_comics_final.png" alt="Comic of a graduate student naming a file 'final.doc' then getting progressively more frustrated and making worse file names as that file received iterative comments from an advisor" width="60%">
 </p>
 </section>
 <section id="git-specific-background" class="level2">
@@ -340,41 +340,60 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><strong>GitHub is a company that hosts Git repositories online</strong> and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.</p>
 <ul>
-<li><strong>GitHub.com</strong>: <a href="https://github.com" class="uri">https://github.com</a></li>
-<li><strong>A user account</strong>: <a href="https://github.com/brunj7" class="uri">https://github.com/brunj7</a></li>
-<li><strong>An organization account</strong>: <a href="https://github.com/nceas" class="uri">https://github.com/nceas</a></li>
-<li><strong>NCEAS GitHub instance</strong>: <a href="https://github.nceas.ucsb.edu/" class="uri">https://github.nceas.ucsb.edu/</a></li>
+<li><strong>GitHub.com</strong>: <a href="https://github.com/">github.com</a></li>
+<li><strong>A user account</strong>: <a href="https://github.com/angelchen7">github.com/angelchen7</a></li>
+<li><strong>An organization account</strong>: <a href="https://github.com/lter">github.com/lter</a></li>
 </ul>
 </section>
 <section id="exploring-github" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-github">Exploring GitHub</h2>
 <p>Let’s navigate over to <a href="https://github.com/">GitHub</a> and explore some of its features. Here is what the home screen looks like as of February 2022.</p>
-<p><img src="images/github/github-1-website.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-1-website.png" alt="Screenshot of the GitHub landing page when you go to 'github.com' and are not signed in" width="100%">
+</p>
 <p>Log in with your GitHub account that you should have created prior to this workshop.</p>
 <p align="center">
-<img src="images/github/github-2-login.png" width="40%">
+<img src="images/github/github-2-login.png" alt="Screenshot of the pop-up that appears when you click 'sign in' on GitHub" width="40%">
 </p>
 <p>Once you’ve logged in, you should see something like this:</p>
-<p><img src="images/github/github-3-signed-in.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-3-signed-in.png" alt="Screenshot of GitHub home page after you've signed in" width="100%">
+</p>
 <p>This landing page has a nice summary of your recent repositories and activity on the left panel. Click on your icon at the top left corner and navigate to your profile.</p>
-<p><img src="images/github/github-4-profile-light.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-4-profile-light.png" alt="Screenshot of the landing page on a particular GitHub profile" width="100%">
+</p>
 <p>Your profile page shows the organizations that you’re a part of, as well as a more detailed view of your GitHub contributions/activities over time. There are also tabs at the top that lead you to your repositories, projects, packages, and starred repositories. If you would like, you can change your GitHub theme to dark mode by clicking on your icon at the top left corner and going to <strong>Settings</strong> then <strong>Appearances</strong>. For the purposes of this workshop, the rest of the screenshots for the GitHub website will be in dark mode to differentiate it from RStudio.</p>
-<p><img src="images/github/github-5-dark-mode.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-5-dark-mode.png" alt="Screenshot of the 'appearance' section of a GitHub user's settings area" width="100%">
+</p>
 <p>If there is anything else you would like to change about your account, the user settings page should have it.</p>
 <section id="looking-at-a-github-repository" class="level3">
 <h3 class="anchored" data-anchor-id="looking-at-a-github-repository">Looking at a GitHub Repository</h3>
 <p>To check the repositories that you’ve created, click on the <strong>Repositories</strong> tab. Note that the top left corner has a green button that will allow you to create new repositories. We will come back to that later. Let’s take a closer look at what the ucsb-ds-capstone-2021.github.io repository contains.</p>
-<p><img src="images/github/github-6-my-repos.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-6-my-repos.png" alt="Screenshot of the 'repositories' tab of a user on GitHub" width="100%">
+</p>
 <p>This screen shows the copy of a repository stored on GitHub, with its <span style="color:red">list of files</span>, <span style="color:green">when the files and directories were last modified</span>, and <span style="color:blue">some information on who made the most recent changes.</span></p>
-<p><img src="images/github/github-7-example-repo.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-7-example-repo.png" alt="Screenshot of the landing page for a particular repository. A blue rectangle surrounds the information about the most recent commit, a green box surrounds the 'last modified' date for all files in the repository (on the right side of the page), and a red box surrounds the the file and folder names (left side of the page)" width="100%">
+</p>
 <p>If we look at the blue rectangle, we can see that there have been 151 commits made to this repository. By clicking on them, we can see the history of changes made to all of the files. Looks like 3 users were making changes in April.</p>
-<p><img src="images/github/github-8-commit-history.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-8-commit-history.png" alt="Screenshot of the commit history of a single repository. Shows a list of commits in reverse chronological order (i.e., most recent on top) along with their dates and their respective commit messages" width="100%">
+</p>
 <p>And finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:</p>
-<p><img src="images/github/github-9-specific-changes.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-9-specific-changes.png" alt="Screenshot of the changes made to a single file in one commit. Added lines are in green while deleting lines are in red" width="100%">
+</p>
 <p>The red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what Git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.</p>
 <p>Note: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead.</p>
-<p><img src="images/github/github-10-edit-file.png" width="100%"></p>
-<p><img src="images/github/github-11-add-file.png" width="100%"></p>
+<p align="center">
+<img src="images/github/github-10-edit-file.png" alt="Screenshot of a file being viewed in GitHub with a yellow circle around the pencil icon on the top right corner of the file. The pencil has a hovering message above it labeled 'edit this file'" width="100%">
+</p>
+<p align="center">
+<img src="images/github/github-11-add-file.png" alt="Screenshot of a GitHub repository landing page where the 'add file' button has been clicked and a yellow circle surrounds the 'create new file' and 'upload files' buttons in the sub-menu that created" width="100%">
+</p>
 </section>
 <section id="creating-a-repository-on-github" class="level3">
 <h3 class="anchored" data-anchor-id="creating-a-repository-on-github">Creating a Repository on GitHub</h3>
@@ -384,24 +403,32 @@ ul.task-list li input[type="checkbox"] {
 <li>Navigate to your profile page and click on the <strong>Repositories</strong> tab.</li>
 <li>Click on <span style="color:green"><strong>New</strong></span>.</li>
 </ul>
-<p><img src="images/github/rstudio-1-github-profile.png" width="100%"></p>
+<p align="center">
+<img src="images/github/rstudio-1-github-profile.png" alt="Screenshot of the 'repositories' landing page of a particular GitHub user" width="100%">
+</p>
 <ul>
-<li><p>Enter a descriptive name for your new repository, here we named it <code>git-practice</code> (avoid upper case and use <code>-</code> instead of spaces or <code>_</code>).</p></li>
+<li><p>Enter a descriptive name for your new repository, here we named it <code>git-practice</code> (avoid upper case and use <code>-</code> or <code>_</code> instead of spaces).</p></li>
 <li><p>Write a 1-sentence description about the repository content.</p></li>
 <li><p>Choose <strong>Public</strong> (as of January 2019, GitHub now offers unlimited free private repositories with a maximum of 3 collaborators).</p></li>
 <li><p>Check <strong>Add a README file</strong>.</p></li>
 </ul>
-<p><img src="images/github/rstudio-3-new-repo-edits.png" width="100%"></p>
+<p align="center">
+<img src="images/github/rstudio-3-new-repo-edits.png" alt="Screenshot of the page on GitHub that appears when you click 'new repository'. Contains empty dialogue fields for the repository name and description as well as options for public versus private repositories among other initialization options" width="60%">
+</p>
 <p>Yay! We’ve just created a new repository! Here is what the landing page should look like:</p>
-<p><img src="images/github/rstudio-5-new-repo-code-tab.png" width="100%"></p>
+<p align="center">
+<img src="images/github/rstudio-5-new-repo-code-tab.png" alt="Screenshot of a new repository containing only a README file" width="100%">
+</p>
 <p>This repository is currently public, so it’s visible to anyone, but since we are working in groups, we will need to give access to your group members. Click on the <strong>Settings</strong> tab for your repository and go to <strong>Collaborators</strong>.</p>
-<p><img src="images/github/rstudio-5b-collabs-2-settings-collabs.png" width="100%"></p>
+<p align="center">
+<img src="images/github/rstudio-5b-collabs-2-settings-collabs.png" alt="Screenshot of the 'settings' pane of the new repository shown in the prior image" width="100%">
+</p>
 <p>Click on <span style="color:green"><strong>Add people</strong></span>. Now let’s get the usernames of all of your group members and add them as collaborators to your repository.</p>
 <p align="center">
-<img src="images/github/rstudio-5b-collabs-3-search-for-users.png" width="40%">
+<img src="images/github/rstudio-5b-collabs-3-search-for-users.png" alt="Screenshot of the dialogue box prompting the viewer to enter names or emails of people to add as collaborators" width="40%">
 </p>
 <p align="center">
-<img src="images/github/rstudio-5b-collabs-4-added-new-user.png" width="40%">
+<img src="images/github/rstudio-5b-collabs-4-added-new-user.png" alt="Screenshot of the confirmation message to add a collaborator once they've been selected based on their username or email" width="40%">
 </p>
 <p>Great! Now everyone in the group should have access to the repository.</p>
 </section>

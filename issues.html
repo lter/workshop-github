@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/logos/scicomptools_hex.png" rel="icon" type="image/png">
+<link href="./images/logos/hex_scicomptools.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -278,15 +278,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#issues-example-with-the-googledrive-package" id="toc-issues-example-with-the-googledrive-package" class="nav-link" data-scroll-target="#issues-example-with-the-googledrive-package">Issues Example with the <code>googledrive</code> Package</a></li>
   </ul></li>
   <li><a href="#creating-your-first-issue" id="toc-creating-your-first-issue" class="nav-link" data-scroll-target="#creating-your-first-issue">Creating your First Issue</a></li>
-  <li><a href="#practice---labels" id="toc-practice---labels" class="nav-link" data-scroll-target="#practice---labels">Practice - Labels</a></li>
   <li><a href="#opening-an-issue" id="toc-opening-an-issue" class="nav-link" data-scroll-target="#opening-an-issue">Opening an Issue</a></li>
   <li><a href="#appropriate-issue-scope" id="toc-appropriate-issue-scope" class="nav-link" data-scroll-target="#appropriate-issue-scope">Appropriate Issue Scope</a></li>
-  <li><a href="#practice---create-an-issue" id="toc-practice---create-an-issue" class="nav-link" data-scroll-target="#practice---create-an-issue">Practice - Create an Issue</a></li>
   <li><a href="#closing-an-issue" id="toc-closing-an-issue" class="nav-link" data-scroll-target="#closing-an-issue">Closing an Issue</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
+<p><img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"> <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -328,33 +326,54 @@ ul.task-list li input[type="checkbox"] {
 <section id="issues-example-with-the-googledrive-package" class="level3">
 <h3 class="anchored" data-anchor-id="issues-example-with-the-googledrive-package">Issues Example with the <code>googledrive</code> Package</h3>
 <p>Below is the GitHub landing page for the <code>googldrive</code> package and you can see that next to the underlined “Code” tab is an “Issues” tab with a gray circle with the number 22 in it. This number notifies us that as of this screen capture, there were twenty two open issues on this package’s GitHub repository. Note that your GitHub interface may be white but it will not change the position of buttons or tabs.</p>
-<p><img src="images/issues/issues-1-location-on-repo-page.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-1-location-on-repo-page.png" alt="Screenshot of the GitHub repository for the 'googledrive' R package with many open issues" width="100%">
+</p>
 <p>If you click over to the issues tab you will see the titles of all current “open” (i.e., ongoing) issues on the repository. Each issue has a title and beneath that a unique number following a <code>#</code> as well as how long ago the issue was opened and the GitHub username of the person who opened the issue. On the right side of each issue’s thumbnail you can see the number of comments added to it.</p>
-<p><img src="images/issues/issues-2-main-page.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-2-main-page.png" alt="Screenshot of the issues tab of the 'googledrive' R package" width="100%">
+</p>
 <p>Comments can be used to have a full dialogue among different users – potentially both in and outside of the team responsible for managing the code! The conversational aspect of issues can make them functionally similar to an email thread or messaging app chain. This communication can help keep the solutions to tasks well-documented while ensuring that every member of your group can have their voice heard.</p>
-<p><img src="images/issues/issues-2b-dialogue.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-2b-dialogue.png" alt="Screenshot of the conversation between a user and a package maintainer in a particular issue" width="100%">
+</p>
 </section>
 </section>
 <section id="creating-your-first-issue" class="level2">
 <h2 class="anchored" data-anchor-id="creating-your-first-issue">Creating your First Issue</h2>
 <p>When you first visit the Issues tab of your repository it won’t include any open issues and will look like this.</p>
-<p><img src="images/issues/issues-4-create-first-issue.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-4-create-first-issue.png" alt="Screenshot of the issues tab for a repository without any issues" width="100%">
+</p>
 <p>To create an issue, click the <strong><span style="color:green">green button</span></strong> and a new page will open that looks like the below.</p>
-<p><img src="images/issues/issues-5-issue-options.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-5-issue-options.png" alt="Screenshot of a newly-opened issue with empty fields for the title and description" width="100%">
+</p>
 <p>In this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.</p>
 <p>While issue comments are completely free for you to use as you see fit, it is important to remember that <strong>your most frequent collaborator is yourself in the future</strong> so a future version of yourself will absolutely thank you for including extra information when you first open an issue. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.</p>
 <p>In addition to the title and main body of the issue you can also see a sidebar on the right containing other options for adding detail to an issue. In particular, the <strong>“Assignees”</strong> and <strong>“Labels”</strong> sections can be useful in delegating a task to a specific person or naming the category that this task falls under respectively.</p>
 <p>Returning to our <code>googledrive</code> example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.</p>
-<p><img src="images/issues/issues-3-label-example.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-3-label-example.png" alt="Screenshot of several issues open on the 'googledrive' R package, each of which has more than one 'label' to help categorize issues" width="100%">
+</p>
 <p>When you are creating your first issue however you won’t have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.</p>
 <p>To see the current label options, click the “Labels” text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click “Edit labels” to create new labels or modify the template labels.</p>
-<p><img src="images/issues/issues-6-label-options.png" class="img-fluid"></p>
-<hr>
-</section>
-<section id="practice---labels" class="level2">
-<h2 class="anchored" data-anchor-id="practice---labels">Practice - Labels</h2>
+<p align="center">
+<img src="images/issues/issues-6-label-options.png" alt="Screenshot of the dropdown that appears when adding a label (from the available set of options) to an issue" width="100%">
+</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practice - Labels
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>What are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories?</p>
-<hr>
+</div>
+</div>
 </section>
 <section id="opening-an-issue" class="level2">
 <h2 class="anchored" data-anchor-id="opening-an-issue">Opening an Issue</h2>
@@ -362,7 +381,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Issues are automatically viewed as a sequential series of events from the first comment so all future additions to the issue will be added beneath that first comment that defines the title of the issue.</p>
 <p>At the bottom of the issue there will be an open text box that you can add to with whatever information you feel is valuable in the context of this task. We will talk about closing issues in a moment but even when issues are closed they are always accessible so all documentation within an issue can be used later and is well worth any energy investment you can make.</p>
 <p>There is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful.</p>
-<p><img src="images/issues/issues-7-started-issue.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-7-started-issue.png" alt="Screenshot of an opened issue with an informative yet concise title and two labels" width="100%">
+</p>
 </section>
 <section id="appropriate-issue-scope" class="level2">
 <h2 class="anchored" data-anchor-id="appropriate-issue-scope">Appropriate Issue Scope</h2>
@@ -370,24 +391,39 @@ ul.task-list li input[type="checkbox"] {
 <p>Essentially, an issue should- as much as possible-directly correspond to either a single task or a single conversation. It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.</p>
 <p>Personally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are <strong>S</strong>pecific, <strong>M</strong>easurable, <strong>A</strong>ttainable, <strong>R</strong>elevant, and <strong>T</strong>ime-specific), but there are many established ways of partitioning a larger project to achievable sub-tasks and you should use whichever is most intuitive to you.</p>
 <p>If issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general ‘rules of thumb’ for the scope of tasks identified by issues.</p>
-<hr>
-</section>
-<section id="practice---create-an-issue" class="level2">
-<h2 class="anchored" data-anchor-id="practice---create-an-issue">Practice - Create an Issue</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practice - Create an Issue
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Now that we’ve covered what issues are and how to open them, let’s take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!</p>
-<hr>
+</div>
+</div>
 </section>
 <section id="closing-an-issue" class="level2">
 <h2 class="anchored" data-anchor-id="closing-an-issue">Closing an Issue</h2>
 <p>So, let’s imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.</p>
 <p>If you scroll to the bottom of that issue (where the adding comment textbox is) you will see a <strong><span style="color:purple">purple</span></strong> button titled “Close issue”.</p>
-<p><img src="images/issues/issues-8-prepping-to-close-issue.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-8-prepping-to-close-issue.png" alt="Screenshot of the bottom of a Github issue where the purple 'close issue' button can be found" width="100%">
+</p>
 <p>After clicking that button a <strong><span style="color:purple">purple</span></strong> check mark will appear on the bottom of the issue’s timeline that identifies the issue as closed and credits the user who closed it.</p>
-<p><img src="images/issues/issues-9-closed-issue.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-9-closed-issue.png" alt="Screenshot of a closed GitHub issue where a purple checkmark is included in the history of the issue to indicate that it is closed" width="100%">
+</p>
 <p>When you return to your issue list you will see that issue is now absent from the list. However, next to the “[number] Open” button you can see a check mark with the number of closed issues.</p>
-<p><img src="images/issues/issues-10-revisiting-issue-list.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-10-revisiting-issue-list.png" alt="Screenshot of the 'issues' tab of a GitHub issue where there is one closed issue but no open ones" width="100%">
+</p>
 <p>Clicking that “Closed” button will access all past issues that are now closed.</p>
-<p><img src="images/issues/issues-11-finding-closed-issues.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/issues/issues-11-finding-closed-issues.png" alt="Screenshot of the list of closed issues on a GitHub repository" width="100%">
+</p>
 <p>So, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.</p>
 <p>This greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.</p>
 <p>As pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we’d encourage you to try using them in case they do prove helpful to your team!</p>
