@@ -110,7 +110,7 @@ Note: it is possible to edit and add files entirely on the GitHub website, by na
 </p>
 
 <p align="center">
-<img src="images/github/github-11-add-file.png" alt="Screenshot of a GitHub repository landing page where the 'add file' button has been clicked and a yellow circle surrounds the 'create new file' and 'upload files' buttons in the sub-menu that created" width="100%"/>
+<img src="images/github/github-11-add-file.png" alt="Screenshot of a GitHub repository landing page where the 'add file' button has been clicked and a yellow circle surrounds the 'create new file' and 'upload files' buttons in the sub-menu that action created" width="100%"/>
 </p>
 
 ### Creating a Repository on GitHub
