@@ -8,7 +8,7 @@ execute:
 
 website:
   title: "SciComp Workshop - Collaborative Coding with GitHub"
-  favicon: images/logos/scicomptools_hex.png
+  favicon: images/logos/hex_scicomptools.png
   repo-url: https://github.com/lter/workshop-github
   repo-actions: [issue]
   twitter-card: true
@@ -53,15 +53,15 @@ website:
     center: "Copyright 2024, NCEAS"
     background: secondary
   margin-footer: |
-    <img src="images/logos/nceas_logo_square.png" width="40%"/>
-    <img src="images/logos/lter_logo_square.png" width="40%"/>
+    <img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"/>
+    <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"/>
 
 format:
   html:
     theme:
        light: _extensions/lter/lter_scss-theme/theme_lter-edu-light.scss
        dark: _extensions/lter/lter_scss-theme/theme_lter-edu-dark.scss
-    mainfont: Lato
+    mainfont: Open Sans
     toc: true
     link-external-newwindow: true
     link-external-icon: false

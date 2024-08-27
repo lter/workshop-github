@@ -30,13 +30,13 @@ The only software that you will need on your personal computer to get set up on 
 You likely have worked in the "Console" tab of RStudio  (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
 
 <p align="center">
-<img src="images/server/server-login-1-console.png" width="85%"/>
+<img src="images/server/server-login-1-console.png" alt="" width="85%"/>
 </p>
 
 The Terminal does not accept R syntax (and the Console doesn't accept Terminal syntax) so you may notice that some of the code we'll walk you through below is formatted differently than you would write an R script.
 
 <p align="center">
-<img src="images/server/server-login-2-terminal.png" width="85%"/>
+<img src="images/server/server-login-2-terminal.png" alt="" width="85%"/>
 </p>
 
 ### Get Invited!
@@ -53,7 +53,7 @@ An example of what that email may look like is included below but there are two 
 If you have not received that email, check your Spam folder for emails from Thomas Hetmank (hetmank@nceas.ucsb.edu) or Nick Outin (outin@nceas.ucsb.edu). If you have not received the email and it is not in your Spam, reach out to our team and we will work to get an invite sent to you.
 
 <p align="center">
-<img src="images/server/server-login-3-invite-email.png" width="85%"/>
+<img src="images/server/server-login-3-invite-email.png" alt="" width="85%"/>
 </p>
 
 ### Signing into the Server
@@ -119,31 +119,31 @@ You'll find working on the server to be dramatically faster for computationally-
 If you are uploading a single file, it may be most convenient to use RStudio's data upload capabilities. In the "Files" pane (default is top right but it may differ on your computer), you can click the button that is a white rectangle with a **<span style="color:gold">yellow</span>** circle with an upward facing arrow inside of it. In the below image the relevant button is in a **<span style="color:red">red</span>** square.
 
 <p align="center">
-<img src="images/server/server-upload-1.png" width="75%"/>
+<img src="images/server/server-upload-1.png" alt="" width="75%"/>
 </p>
 
 Clicking that button allows you to choose (1) where you want the uploaded file to go and (2) which file you want to upload.
 
 <p align="center">
-<img src="images/server/server-upload-2.png" width="75%"/>
+<img src="images/server/server-upload-2.png" alt="" width="75%"/>
 </p>
 
 You can also download data via the RStudio interface. To download a file, check the box next to it in the "Files" pane.
 
 <p align="center">
-<img src="images/server/server-download-1.png" width="75%"/>
+<img src="images/server/server-download-1.png" alt="" width="75%"/>
 </p>
 
 Once the box is checked, click the gear icon then click the "Export..." option (about halfway down). In the image below this option is surrounded by a **<span style="color:red">red</span>** square
 
 <p align="center">
-<img src="images/server/server-download-2.png" width="75%"/>
+<img src="images/server/server-download-2.png" alt="" width="75%"/>
 </p>
 
 In the resulting box you can choose to rename the file before downloading to your local computer. After renaming the file (or keeping its original name), click the "Download" button and the download should begin after a moment.
 
 <p align="center">
-<img src="images/server/server-download-3.png" width="65%"/>
+<img src="images/server/server-download-3.png" alt="" width="65%"/>
 </p>
 
 These methods are effective for one or a few files being up/downloaded to the same directory but can quickly become cumbersome if you want to handle many files or a few files to several different folders.
@@ -161,7 +161,7 @@ Here we briefly demonstrate how to set up a connection between Cyberduck and NCE
 1. In the Cyberduck window, click the "Open Connection" button with an icon of a globe with a plus sign. In the below image the button has a **<span style="color:red">red</span>** square around it.
 
 <p align="center">
-<img src="images/server/server-cyberduck-1.png" width="100%"/>
+<img src="images/server/server-cyberduck-1.png" alt="" width="100%"/>
 </p>
 
 2. In the resulting window, input the following information:
@@ -172,13 +172,13 @@ Here we briefly demonstrate how to set up a connection between Cyberduck and NCE
     - "Port" -- change it to "22" (it will start as "21")
 
 <p align="center">
-<img src="images/server/server-cyberduck-2.png" width="85%"/>
+<img src="images/server/server-cyberduck-2.png" alt="" width="85%"/>
 </p>
 
 3. Also, click the dropdown menu at the top that says "FTP (File Transfer Protocol) and select "SFTP (SSH File Transfer Protocol)" from the set of available options.
 
 <p align="center">
-<img src="images/server/server-cyberduck-3.png" width="85%"/>
+<img src="images/server/server-cyberduck-3.png" alt="" width="85%"/>
 </p>
 
 4. Once you've input the above information, click the "Connect" button and you should have access to the server! You can now click around the different folders you have access to and upload or download from there.
@@ -194,7 +194,7 @@ This portion of the tutorial is focused on using the command line to interact wi
 
 #### CLI Option A: `scp`
 
-The `scp` command can be used to *upload* a file or folder from your computer to the server.
+The `scp` command can be used to _upload_ a file or folder from your computer to the server.
 
 1A. Navigate to the folder <u>on your computer</u> containing the file(s) you want to upload
 

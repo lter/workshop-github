@@ -19,19 +19,19 @@ The purpose of the `.gitignore` is evident in its name: anything included in it 
 When you first create a repository you will have the opportunity to select a template `.gitignore` based on the coding language you plan on using. In the "New Repository" process, scroll down to just below where you can choose to add a README.
 
 <p align="center">
-<img src="images/git_ignore/ignore-2-new-repo-p2.png" width = "70%"/>
+<img src="images/git_ignore/ignore-2-new-repo-p2.png" alt="Screenshot of the bottom part of the interface on GitHub that appears when you are creating a repository. The 'add .gitignore' dropdown menu is centered in the screenshot" width="70%"/>
 </p>
 
 Underneath the title "Add .gitignore" there is a dropdown menu for various templates that starts at "None". If you click this dropdown menu you can type in keywords that will help you identify the template that you want to use.
 
 <p align="center">
-<img src="images/git_ignore/ignore-3-template-search.png" width = "70%"/>
+<img src="images/git_ignore/ignore-3-template-search.png" alt="Screenshot of the dropdown menu in the gitignore template part of making a new repository where 'R' has been entered and is about to be chosen from the list of available templates" width="70%"/>
 </p>
 
 Unfortunately for R users, typing just "R" returns all templates that contain the letter 'r' so you will need to scroll a bit to find the option that is actually for the R Statistical Environment. Once you find the option you want, click it and the template dropdown should change from ".gitignore template: None" to ".gitignore template: \<your pick\>".
 
 <p align="center">
-<img src="images/git_ignore/ignore-4-template-pick.png" width = "70%"/>
+<img src="images/git_ignore/ignore-4-template-pick.png" alt="Screenshot of GitHub after the 'R' template has been chosen for the gitignore from the available options" width="70%"/>
 </p>
 
 If you create a repository without choosing a `.gitignore` template, don't worry! You can always create one later! When cloning a repository using RStudio, a `.gitignore` file will be automatically created when setting up the RStudio project on your local computer. If you clone via the command line `touch .gitignore` would create the necessary file.
@@ -41,13 +41,13 @@ If you create a repository without choosing a `.gitignore` template, don't worry
 Once you have the one, you can open the `.gitignore` by clicking it from the "Files" pane of RStudio.
 
 <p align="center">
-<img src="images/git_ignore/ignore-5-rstudio-files.png" width = "65%"/>
+<img src="images/git_ignore/ignore-5-rstudio-files.png" alt="Screenshot of the 'files' pane in RStudio which includes the .Rproj file, the README, and the gitignore" width="65%"/>
 </p>
 
 After you click it you'll be looking at a file that looks very similar to any other file in RStudio.
 
 <p align="center">
-<img src="images/git_ignore/ignore-6-viewing.png" width = "100%"/>
+<img src="images/git_ignore/ignore-6-viewing.png" alt="Screenshot of the gitignore open in RStudio looking similar to any other file in RStudio" width="100%"/>
 </p>
 
 Now let's add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.
@@ -55,13 +55,13 @@ Now let's add something to it! As you can see from the Git pane of the above ima
 If we add `*.Rproj` to our `.gitignore`, the Git pane will show that the only change is that lines have been added to the `.gitignore`. The .Rproj file with the double yellow question marks next to it is gone!
 
 <p align="center">
-<img src="images/git_ignore/ignore-7-editing.png" width = "100%"/>
+<img src="images/git_ignore/ignore-7-editing.png" alt="Screenshot of RStudio demonstrating that when a file name or extension is added to the gitignore and that change is saved then the file in question disappears from RStudio's Git pane" width="100%"/>
 </p>
 
 Once you've edited the `.gitignore` it is generally a good practice to push those changes as soon as possible. If you flag a certain file (or folder) to be ignored while someone else is depending on it, if you wait to push the change you can risk a serious conflict. Or, they might commit a file you want ignored which is frustrating to remove (see "Exceptions to the `.gitignore`" below).
 
 <p align="center">
-<img src="images/git_ignore/ignore-8-commit.png" width = "80%"/>
+<img src="images/git_ignore/ignore-8-commit.png" alt="Screenshot of RStudio's commit window where the change to the gitignore is being committed" width="80%"/>
 </p>
 
 Only the commit is pictured above, but pushing & pulling works in the same way here as it does elsewhere.
@@ -85,7 +85,7 @@ There are many different opinions on what should go into a `.gitignore` but we h
 
 4. Do you have another idea for what you typically add to a `.gitignore`?
 
-    - Please share it with us by [posting an Issue](https://github.com/NCEAS/scicomptasks/issues); we'd love to hear from you!
+    - Please share it with us by [posting an Issue](https://github.com/lter/workshop-github/issues); we'd love to hear from you!
 
 ### Should You Ignore the .Rproj File?
 

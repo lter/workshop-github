@@ -24,21 +24,21 @@ This approach has the advantage of relatively few moving parts but such editing 
 Another limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the "wrong" version of either the code or the data.
 
 <p align="center">
-<img src="images/workflow_options/workflow-no-version-control.png" width="65%"/>
+<img src="images/workflow_options/workflow-no-version-control.png" alt="Graphic of a blue-gray rectangle next to an emoji of a computer and a smaller person labeled 'you'. The left half of the rectangle has a folder emoji labeled 'code' while the right has a folder labeled 'data'. The 'code' half has a file with a circular arrow above it labeled 'edit and save'" width="65%"/>
 </p>
 
 ### Data Lifecycle Considerations
 
 The above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.
 
-Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not *as* limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.
+Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not _as_ limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.
 
 However, for larger teams--especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)--the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.
 
 Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is "version control" systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.
 
 <p align="center">
-<img src="images/workflow_options/data-lifecycle.png" width="75%"/>
+<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%"/>
 </p>
 
 ### Synthesis Workflow
@@ -50,25 +50,25 @@ However, despite its advantages for collaborative coding, version control is not
 Further, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., "home/users/me/project/data/...") will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a 'this folder does not exist' error. This is absolutely surmountable but can be a source of frustration over longer project timelines.
 
 <p align="center">
-<img src="images/workflow_options/workflow-no-server.png" width="75%"/>
+<img src="images/workflow_options/workflow-no-server.png" alt="Graphic with the same 'code/data' blue rectangle from the earlier workflow options graphic but the 'code' half has arrows connecting it to a square labeled 'GitHub' and the right has an arrow connecting to the logo for Gmail and Dropbox which then splits into many arrows going to different colored squares indicating separate individual computers" width="75%"/>
 </p>
 
 ### Synthesis Workflow on NCEAS' Server
 
 Finally (for our purposes), you could build NCEAS' server into your workflow to not only collaborate with colleagues on code but also centralize your data storage!
 
-This method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members *on the same folder path.*
+This method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members _on the same folder path._
 
-This means that even though each group member could code separately in their own 'home' folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the 'shares' folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data *file*.
+This means that even though each group member could code separately in their own 'home' folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the 'shares' folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data _file_.
 
 Data can be moved from a specific computer onto the server by using any "**File Transfer Protocol**" (FTP) software (or "SSH FTP" a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a [tutorial on how to go about setting up an FTP or SFTP program on your computer](https://help.nceas.ucsb.edu/NCEAS/Computing/remote_file_access.html) that we are also happy to go over in greater depth as needed!
 
-Adding the server to your team's workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server *ad infinitum* thereafter.
+Adding the server to your team's workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server _ad infinitum_ thereafter.
 
 An ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)
 
 <p align="center">
-<img src="images/workflow_options/workflow-server.png" width="75%"/>
+<img src="images/workflow_options/workflow-server.png" alt="Graphic of a triangle split into three sections. The bottom left indicates 'your' computer, the bottom right indicates GitHub shared between you and your group, and the top indicates a server environment also shared with you and your group. An arrow labeled with Cyberduck's logo connects the 'data' folder in your personal computer with the same folder in the server. Arrows labeled 'push' and 'pull' connect the 'code' folders in all three facets" width="75%"/>
 </p>
 
 ### Summary

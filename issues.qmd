@@ -24,25 +24,35 @@ To see a more complete example of how issues can be used we can examine the open
 
 Below is the GitHub landing page for the `googldrive` package and you can see that next to the underlined "Code" tab is an "Issues" tab with a gray circle with the number 22 in it. This number notifies us that as of this screen capture, there were twenty two open issues on this package's GitHub repository. Note that your GitHub interface may be white but it will not change the position of buttons or tabs.
 
-![](images/issues/issues-1-location-on-repo-page.png)
+<p align="center">
+<img src="images/issues/issues-1-location-on-repo-page.png" alt="Screenshot of the GitHub repository for the 'googledrive' R package with many open issues" width="100%" />
+</p>
 
 If you click over to the issues tab you will see the titles of all current "open" (i.e., ongoing) issues on the repository. Each issue has a title and beneath that a unique number following a `#` as well as how long ago the issue was opened and the GitHub username of the person who opened the issue. On the right side of each issue's thumbnail you can see the number of comments added to it.
 
-![](images/issues/issues-2-main-page.png)
+<p align="center">
+<img src="images/issues/issues-2-main-page.png" alt="Screenshot of the issues tab of the 'googledrive' R package" width="100%" />
+</p>
 
 Comments can be used to have a full dialogue among different users -- potentially both in and outside of the team responsible for managing the code! The conversational aspect of issues can make them functionally similar to an email thread or messaging app chain. This communication can help keep the solutions to tasks well-documented while ensuring that every member of your group can have their voice heard.
 
-![](images/issues/issues-2b-dialogue.png)
+<p align="center">
+<img src="images/issues/issues-2b-dialogue.png" alt="Screenshot of the conversation between a user and a package maintainer in a particular issue" width="100%" />
+</p>
 
 ## Creating your First Issue
 
 When you first visit the Issues tab of your repository it won't include any open issues and will look like this.
 
-![](images/issues/issues-4-create-first-issue.png)
+<p align="center">
+<img src="images/issues/issues-4-create-first-issue.png" alt="Screenshot of the issues tab for a repository without any issues" width="100%" />
+</p>
 
 To create an issue, click the **<span style="color:green">green button</span>** and a new page will open that looks like the below.
 
-![](images/issues/issues-5-issue-options.png)
+<p align="center">
+<img src="images/issues/issues-5-issue-options.png" alt="Screenshot of a newly-opened issue with empty fields for the title and description" width="100%" />
+</p>
 
 In this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.
 
@@ -52,21 +62,23 @@ In addition to the title and main body of the issue you can also see a sidebar o
 
 Returning to our `googledrive` example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.
 
-![](images/issues/issues-3-label-example.png)
+<p align="center">
+<img src="images/issues/issues-3-label-example.png" alt="Screenshot of several issues open on the 'googledrive' R package, each of which has more than one 'label' to help categorize issues" width="100%" />
+</p>
 
 When you are creating your first issue however you won't have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.
 
 To see the current label options, click the "Labels" text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click "Edit labels" to create new labels or modify the template labels.
 
-![](images/issues/issues-6-label-options.png)
+<p align="center">
+<img src="images/issues/issues-6-label-options.png" alt="Screenshot of the dropdown that appears when adding a label (from the available set of options) to an issue" width="100%" />
+</p>
 
----
-
+:::callout-note
 ## Practice - Labels
 
 What are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories? 
-
----
+:::
 
 ## Opening an Issue
 
@@ -78,7 +90,9 @@ At the bottom of the issue there will be an open text box that you can add to wi
 
 There is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful.
 
-![](images/issues/issues-7-started-issue.png)
+<p align="center">
+<img src="images/issues/issues-7-started-issue.png" alt="Screenshot of an opened issue with an informative yet concise title and two labels" width="100%" />
+</p>
 
 ## Appropriate Issue Scope
 
@@ -90,13 +104,11 @@ Personally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are *
 
 If issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general 'rules of thumb' for the scope of tasks identified by issues.
 
----
-
+:::callout-note
 ## Practice - Create an Issue
 
 Now that we've covered what issues are and how to open them, let's take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!
-
----
+:::
 
 ## Closing an Issue
 
@@ -104,19 +116,27 @@ So, let's imagine that you have worked through whatever task you identified and 
 
 If you scroll to the bottom of that issue (where the adding comment textbox is) you will see a **<span style="color:purple">purple</span>** button titled "Close issue".
 
-![](images/issues/issues-8-prepping-to-close-issue.png)
+<p align="center">
+<img src="images/issues/issues-8-prepping-to-close-issue.png" alt="Screenshot of the bottom of a Github issue where the purple 'close issue' button can be found" width="100%" />
+</p>
 
 After clicking that button a **<span style="color:purple">purple</span>** check mark will appear on the bottom of the issue's timeline that identifies the issue as closed and credits the user who closed it.
 
-![](images/issues/issues-9-closed-issue.png)
+<p align="center">
+<img src="images/issues/issues-9-closed-issue.png" alt="Screenshot of a closed GitHub issue where a purple checkmark is included in the history of the issue to indicate that it is closed" width="100%" />
+</p>
 
 When you return to your issue list you will see that issue is now absent from the list. However, next to the "[number] Open" button you can see a check mark with the number of closed issues.
 
-![](images/issues/issues-10-revisiting-issue-list.png)
+<p align="center">
+<img src="images/issues/issues-10-revisiting-issue-list.png" alt="Screenshot of the 'issues' tab of a GitHub issue where there is one closed issue but no open ones" width="100%" />
+</p>
 
 Clicking that "Closed" button will access all past issues that are now closed.
 
-![](images/issues/issues-11-finding-closed-issues.png)
+<p align="center">
+<img src="images/issues/issues-11-finding-closed-issues.png" alt="Screenshot of the list of closed issues on a GitHub repository" width="100%" />
+</p>
 
 So, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.
 
