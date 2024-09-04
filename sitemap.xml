@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lter.github.io/workshop-github/github.html</loc>
-    <lastmod>2024-08-27T14:26:27.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/index.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/issues.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/git_ignore.html</loc>
-    <lastmod>2024-08-27T14:26:27.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/portfolio.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/server.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/conflicts.html</loc>
-    <lastmod>2024-08-27T14:26:27.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/branches.html</loc>
-    <lastmod>2024-08-27T14:26:27.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/projects.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/rstudio.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/workshop-github/milestones.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
+    <loc>https://lter.github.io/workshop-github/forks.html</loc>
+    <lastmod>2024-09-04T16:39:34.345Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/workshop-github/readmes.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
   </url>
   <url>
-    <loc>https://lter.github.io/workshop-github/forks.html</loc>
-    <lastmod>2024-08-27T14:26:27.200Z</lastmod>
+    <loc>https://lter.github.io/workshop-github/branches.html</loc>
+    <lastmod>2024-09-04T16:39:34.345Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/index.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/portfolio.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/CONTRIBUTING.html</loc>
+    <lastmod>2024-09-04T16:39:34.337Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/issues.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/conflicts.html</loc>
+    <lastmod>2024-09-04T16:39:34.345Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/github.html</loc>
+    <lastmod>2024-09-04T16:39:34.345Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/git_ignore.html</loc>
+    <lastmod>2024-09-04T16:39:34.345Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/milestones.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/workshop-github/motivations.html</loc>
-    <lastmod>2024-08-27T14:26:27.456Z</lastmod>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/rstudio.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/projects.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/workshop-github/server.html</loc>
+    <lastmod>2024-09-04T16:39:34.597Z</lastmod>
   </url>
 </urlset>

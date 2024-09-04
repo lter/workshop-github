@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NCEAS’ Server – SciComp Workshop - Collaborative Coding with GitHub</title>
+<title>contributing – SciComp Workshop - Collaborative Coding with GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -105,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta name="twitter:title" content="NCEAS’ Server – SciComp Workshop - Collaborative Coding with GitHub">
+<meta name="twitter:title" content="SciComp Workshop - Collaborative Coding with GitHub">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -159,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./server.html">NCEAS’ Server</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -292,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./server.html" class="sidebar-item-text sidebar-link active">
+  <a href="./server.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NCEAS’ Server</span></a>
   </div>
 </li>
@@ -306,23 +272,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#getting-started-on-the-server" id="toc-getting-started-on-the-server" class="nav-link" data-scroll-target="#getting-started-on-the-server">Getting Started on the Server</a>
-  <ul class="collapse">
-  <li><a href="#necessary-software" id="toc-necessary-software" class="nav-link" data-scroll-target="#necessary-software">Necessary Software</a></li>
-  <li><a href="#get-invited" id="toc-get-invited" class="nav-link" data-scroll-target="#get-invited">Get Invited!</a></li>
-  <li><a href="#signing-into-the-server" id="toc-signing-into-the-server" class="nav-link" data-scroll-target="#signing-into-the-server">Signing into the Server</a></li>
-  <li><a href="#connecting-github-and-the-server" id="toc-connecting-github-and-the-server" class="nav-link" data-scroll-target="#connecting-github-and-the-server">Connecting GitHub and the Server</a></li>
-  <li><a href="#optional-other-steps" id="toc-optional-other-steps" class="nav-link" data-scroll-target="#optional-other-steps">Optional Other Steps</a></li>
-  </ul></li>
-  <li><a href="#working-on-the-server" id="toc-working-on-the-server" class="nav-link" data-scroll-target="#working-on-the-server">Working on the Server</a></li>
-  <li><a href="#uploading-data-to-the-server" id="toc-uploading-data-to-the-server" class="nav-link" data-scroll-target="#uploading-data-to-the-server">Uploading Data to the Server</a>
-  <ul class="collapse">
-  <li><a href="#via-rstudio" id="toc-via-rstudio" class="nav-link" data-scroll-target="#via-rstudio">Via RStudio</a></li>
-  <li><a href="#via-sftp-software" id="toc-via-sftp-software" class="nav-link" data-scroll-target="#via-sftp-software">Via sFTP Software</a></li>
-  <li><a href="#via-the-command-line" id="toc-via-the-command-line" class="nav-link" data-scroll-target="#via-the-command-line">Via the Command Line</a></li>
-  </ul></li>
+  <li><a href="#contributing-guidelines" id="toc-contributing-guidelines" class="nav-link active" data-scroll-target="#contributing-guidelines">Contributing Guidelines</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -331,275 +281,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">NCEAS’ Server</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
+<section id="contributing-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="contributing-guidelines">Contributing Guidelines</h2>
+<p>When contributing to this project, please see our team’s <a href="https://github.com/lter/scicomp/blob/main/CONTRIBUTING.md">primary contributing guidelines document</a> and follow the guidance there.</p>
 
 
-</header>
-
-
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
-<p>By the end of this module, you will be able to:</p>
-<ul>
-<li><u>Summarize</u> the primary steps for getting set up on a server</li>
-<li><u>Connect</u> your GitHub self with your server self</li>
-<li><u>Explain</u> at least one way of uploading data to a server</li>
-</ul>
-</section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Working on <a href="https://aurora.nceas.ucsb.edu/">NCEAS’ Server</a> is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work. This means that you need to go through the steps of connecting GitHub to your “RStudio” again for the instance of RStudio accessed through Aurora. GitHub’s Personal Access Token is referred to as “token” hereafter for simplicity. Note that our server also runs other analytical tools such as JupyterHub for python users.</p>
-<p>Often the reason to engage with the server is to increase the scale of your analyses far beyond what your personal computer can handle. There are other advantages such as:</p>
-<ul>
-<li><strong>Storage Capacity</strong> – More disk space &amp; faster storage</li>
-<li><strong>Computing Power</strong> – More CPUs &amp; RAM (384GB!!)</li>
-<li><strong>Security</strong> – Nightly backups and data are distributed across multiple drives</li>
-<li><strong>Collaboration</strong> – Shared data &amp; consistent software versions accessible to everyone on your team</li>
-</ul>
-</section>
-<section id="getting-started-on-the-server" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started-on-the-server">Getting Started on the Server</h2>
-<section id="necessary-software" class="level3">
-<h3 class="anchored" data-anchor-id="necessary-software">Necessary Software</h3>
-<p>The only software that you will need on your personal computer to get set up on NCEAS’ server is RStudio!</p>
-<p>You likely have worked in the “Console” tab of RStudio (where run lines and outputs appear; see below) but RStudio has another tab to the right of the “Console” called “Terminal” which offers RStudio users access to the <strong>command line</strong> (a.k.a. the <strong>shell</strong>). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a> on Windows but for the sake of keeping your tool kit streamlined, we’ll walk through getting set up on NCEAS’ server using only RStudio’s Terminal tab.</p>
-<p align="center">
-<img src="images/server/server-login-1-console.png" alt="" width="85%">
-</p>
-<p>The Terminal does not accept R syntax (and the Console doesn’t accept Terminal syntax) so you may notice that some of the code we’ll walk you through below is formatted differently than you would write an R script.</p>
-<p align="center">
-<img src="images/server/server-login-2-terminal.png" alt="" width="85%">
-</p>
-</section>
-<section id="get-invited" class="level3">
-<h3 class="anchored" data-anchor-id="get-invited">Get Invited!</h3>
-<p>In order to access the server (and follow the instructions below) we’ll need to create an account on the server for you. Please email <a href="https://lter.github.io/scicomp/staff.html">someone on our team</a> or <strong>scicomp@nceas.ucsb.edu</strong> so that we can contact NCEAS’ IT team and get an invite email sent to you.</p>
-<p>In that email, please include the name and email addresses of all of your team members who want to access the server. After that information has been received, NCEAS’ IT team will create accounts for all of those people and will send you an invitation email to set up your account on the server.</p>
-<p>An example of what that email may look like is included below but there are two key pieces of information:</p>
-<ol type="1">
-<li>Your username</li>
-<li>Your temporary password (covered by a <strong><span style="color:red">red bar</span></strong> in the screenshot).</li>
-</ol>
-<p>If you have not received that email, check your Spam folder for emails from Thomas Hetmank (hetmank@nceas.ucsb.edu) or Nick Outin (outin@nceas.ucsb.edu). If you have not received the email and it is not in your Spam, reach out to our team and we will work to get an invite sent to you.</p>
-<p align="center">
-<img src="images/server/server-login-3-invite-email.png" alt="" width="85%">
-</p>
-</section>
-<section id="signing-into-the-server" class="level3">
-<h3 class="anchored" data-anchor-id="signing-into-the-server">Signing into the Server</h3>
-<p>In the following instructions, all words that look <code>like this</code> should be typed into the Terminal tab and run by pressing return or enter. Note that typing these commands into an R script or R Markdown will not work because it will attempt to run in the Console. All words that look <code>[like this]</code> (i.e., bracketed) should also be typed into the Terminal tab but the specific text should be replaced in a user-specific way that is clarified in the nearby text.</p>
-<ol type="1">
-<li><p>In the Terminal pane of RStudio, you will “ssh” into the server by running the following code: <code>ssh [your username]@aurora.nceas.ucsb.edu</code>. It is <span class="citation" data-cites="aurora">@aurora</span> because <strong>the name of the server is Aurora</strong>.</p></li>
-<li><p>If this is the first time you’ve accessed the server you will need to enter <code>yes</code> to accept the server’s SSH key.</p></li>
-<li><p>You will then be prompted to enter your <code>[temporary password]</code> (see the above email example). <strong>Note that the cursor will not advance as you type but it is registering your entries! There will be no indication that you are typing (such as: “•••••••••”)</strong> This throws off many users so hopefully the above note helps set your mind at ease.</p></li>
-<li><p>You will then be prompted to change your “expired” password. We consider your temporary password to be expired as soon as you use it because sharing passwords via email is not secure and this “expiration” lets you set the password to something that only you know at the outset of your time in the server. <strong>Note again that the cursor will not advance as you type but it is working!</strong> To update your password, enter your <code>[temporary password]</code>, then <code>[your strong new password]</code> and finally re-type <code>[your strong new password]</code> to confirm it. Note that your new password should not be “your strong new password” :)</p></li>
-<li><p>You are ready to go! Run <code>exit</code> to log out of the server in the Terminal tab.</p></li>
-<li><p>Now that you have set a new password, use your favorite web browser (e.g., Firefox, Chrome, etc.) to access <a href="https://aurora.nceas.ucsb.edu/">Aurora</a> and click “Login to RStudio Server”</p></li>
-<li><p>In the resulting page, you can sign in with the same username and password you just signed in on the Terminal tab with.</p></li>
-<li><p>You should now be in something that looks very much like RStudio but is housed in a tab on your browser! We will work together from here on out so once you have reached this point, let our team know and we can gather the group before continuing.</p></li>
-</ol>
-<p>If the above steps have not resulted in successfully accessing Aurora, consult <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/first_login_to_nceas_analytical_server">NCEAS’ instructions on first login</a> and/or <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh.html">SSH-specific instructions for Mac vs.&nbsp;Windows</a> and/or email us!</p>
-</section>
-<section id="connecting-github-and-the-server" class="level3">
-<h3 class="anchored" data-anchor-id="connecting-github-and-the-server">Connecting GitHub and the Server</h3>
-<p>Your server “self” is essentially a different computer that you access via a browser (or command line in some cases). Because of this, you will need to tell GitHub that your server self is allowed to access your GitHub self’s content. To do this you’ll need to authenticate via personal access token or SSH key pair. Revisit our <a href="https://lter.github.io/workshop-github/#connect-git-and-github">authentication instructions</a> in the “Workshop Preparation” section of the workshop home page for details.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Server + PAT Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you choose token-based authentication you’ll also need to tell the server to store your token for some amount of time otherwise the server will “forget” it between sessions.</p>
-<p>In the Terminal pane of the server’s RStudio session run the following code:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> credential.helper <span class="st">'cache --timeout=10000000'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>This tells your server self to remember your token for 10 million minutes (roughly 20 years).</p>
-</div>
-</div>
-</section>
-<section id="optional-other-steps" class="level3">
-<h3 class="anchored" data-anchor-id="optional-other-steps">Optional Other Steps</h3>
-<p>You may want to configure additional settings, such as:</p>
-<ul>
-<li>The default branch name (for new repositories)</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_default_branch_configure</span>(<span class="at">name =</span> <span class="st">"main"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-<section id="working-on-the-server" class="level2">
-<h2 class="anchored" data-anchor-id="working-on-the-server">Working on the Server</h2>
-<p>Once you’re properly set up, working on the server should be completely seamless! Instead of opening RStudio on your computer you’ll open a browser and work on the server from there but otherwise the feeling and process of version control should be identical. Eventually you may even want to make commits on your computer, push them to GitHub (after pulling!), then pull those same commits down to your server self and continue working there.</p>
-<p>You’ll find working on the server to be dramatically faster for computationally-intense operations so we hope this guide has been helpful in getting you prepared to take advantage of that benefit!</p>
-</section>
-<section id="uploading-data-to-the-server" class="level2">
-<h2 class="anchored" data-anchor-id="uploading-data-to-the-server">Uploading Data to the Server</h2>
-<section id="via-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="via-rstudio">Via RStudio</h3>
-<p>If you are uploading a single file, it may be most convenient to use RStudio’s data upload capabilities. In the “Files” pane (default is top right but it may differ on your computer), you can click the button that is a white rectangle with a <strong><span style="color:gold">yellow</span></strong> circle with an upward facing arrow inside of it. In the below image the relevant button is in a <strong><span style="color:red">red</span></strong> square.</p>
-<p align="center">
-<img src="images/server/server-upload-1.png" alt="" width="75%">
-</p>
-<p>Clicking that button allows you to choose (1) where you want the uploaded file to go and (2) which file you want to upload.</p>
-<p align="center">
-<img src="images/server/server-upload-2.png" alt="" width="75%">
-</p>
-<p>You can also download data via the RStudio interface. To download a file, check the box next to it in the “Files” pane.</p>
-<p align="center">
-<img src="images/server/server-download-1.png" alt="" width="75%">
-</p>
-<p>Once the box is checked, click the gear icon then click the “Export…” option (about halfway down). In the image below this option is surrounded by a <strong><span style="color:red">red</span></strong> square</p>
-<p align="center">
-<img src="images/server/server-download-2.png" alt="" width="75%">
-</p>
-<p>In the resulting box you can choose to rename the file before downloading to your local computer. After renaming the file (or keeping its original name), click the “Download” button and the download should begin after a moment.</p>
-<p align="center">
-<img src="images/server/server-download-3.png" alt="" width="65%">
-</p>
-<p>These methods are effective for one or a few files being up/downloaded to the same directory but can quickly become cumbersome if you want to handle many files or a few files to several different folders.</p>
-</section>
-<section id="via-sftp-software" class="level3">
-<h3 class="anchored" data-anchor-id="via-sftp-software">Via sFTP Software</h3>
-<p>If you want to upload or download many files we recommend using sFTP software (<u>s</u>ecure <u>F</u>ile <u>T</u>ransfer <u>P</u>rotocol). We use <a href="https://cyberduck.io/">Cyberduck</a> internally, though there are alternatives like <a href="https://winscp.net/eng/index.php">WinSCP</a>. Both programs are free to use and more than capable of uploading and download many files to/from the server quickly and easily.</p>
-<p>Once you have installed one of these programs, you can sign in to the server from the sFTP program using your server username and password and can then upload or download files from your personal computer in the same way as you would move files among folders within your personal computer.</p>
-<section id="cyberduck-set-up-tutorial" class="level4">
-<h4 class="anchored" data-anchor-id="cyberduck-set-up-tutorial">Cyberduck Set Up Tutorial</h4>
-<p>Here we briefly demonstrate how to set up a connection between Cyberduck and NCEAS’ Server. Note that you must have already installed Cyberduck to follow these steps.</p>
-<ol type="1">
-<li>In the Cyberduck window, click the “Open Connection” button with an icon of a globe with a plus sign. In the below image the button has a <strong><span style="color:red">red</span></strong> square around it.</li>
-</ol>
-<p align="center">
-<img src="images/server/server-cyberduck-1.png" alt="" width="100%">
-</p>
-<ol start="2" type="1">
-<li><p>In the resulting window, input the following information:</p>
-<ul>
-<li>“Server” – “aurora.nceas.ucsb.edu”</li>
-<li>“Username” – whatever your username on the server is</li>
-<li>“Password” – your password to the server</li>
-<li>“Port” – change it to “22” (it will start as “21”)</li>
-</ul></li>
-</ol>
-<p align="center">
-<img src="images/server/server-cyberduck-2.png" alt="" width="85%">
-</p>
-<ol start="3" type="1">
-<li>Also, click the dropdown menu at the top that says “FTP (File Transfer Protocol) and select”SFTP (SSH File Transfer Protocol)” from the set of available options.</li>
-</ol>
-<p align="center">
-<img src="images/server/server-cyberduck-3.png" alt="" width="85%">
-</p>
-<ol start="4" type="1">
-<li>Once you’ve input the above information, click the “Connect” button and you should have access to the server! You can now click around the different folders you have access to and upload or download from there.</li>
-</ol>
-<ul>
-<li>To download: click the files/folders that you want and they should begin downloading to your personal computer</li>
-<li>To upload: drag and drop the files where you want them</li>
-</ul>
-</section>
-</section>
-<section id="via-the-command-line" class="level3">
-<h3 class="anchored" data-anchor-id="via-the-command-line">Via the Command Line</h3>
-<p>If you are more comfortable with a CLI (<u>C</u>ommand <u>L</u>ine <u>I</u>nterface) you can also use that method of uploading/downloading. The command line includes the Terminal pane in RStudio, Terminal app for Macs, PuTTY, and gitBash among others. CLI can be a great tool to leverage filenames or types to filter specific files you would like to upload / download. Text in code chunks below are command line commands and any bracketed text <code>[like this]</code> should be replaced by some user-specific information before running.</p>
-<p>This portion of the tutorial is focused on using the command line to interact with the server. That said, if you’re interested in the command line more generally or for other purposes, please reach out to <a href="https://lter.github.io/scicomp/staff.html">our team</a>!</p>
-<section id="cli-option-a-scp" class="level4">
-<h4 class="anchored" data-anchor-id="cli-option-a-scp">CLI Option A: <code>scp</code></h4>
-<p>The <code>scp</code> command can be used to <em>upload</em> a file or folder from your computer to the server.</p>
-<p>1A. Navigate to the folder <u>on your computer</u> containing the file(s) you want to upload</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">folder</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Note that if the folder name has spaces you’ll need to “escape” the space by using a backslash (<code>\</code>)</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">folder</span><span class="dt">\ </span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>2A. Now you can upload that file to the server!</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="pp">[</span><span class="ss">file_name</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">user</span><span class="pp">]</span>@aurora.nceas.ucsb.edu:/<span class="pp">[</span><span class="ss">path/to/destination_folder/</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>If instead you’d like to upload all of the files in a folder, do the following:</p>
-<p>1B. Navigate to the folder containing the folder on your computer you want to upload (using <code>cd</code>)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">folder</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>2B. Use <code>scp</code> with the recursive option (<code>-r</code>) to upload all of the files in that folder</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="at">-r</span> <span class="pp">[</span><span class="ss">folder</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">user</span><span class="pp">]</span>@aurora.nceas.ucsb.edu:/<span class="pp">[</span><span class="ss">path/to/destination_folder/</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Note that this uploads all of the files in the folder <em>not</em> the folder itself so you may want to create a new folder on the server to upload your local folder’s contents into.</li>
-</ul>
-<p>Finally, note that you can also <em>download</em> files from the server to your local machine by simply switching the order of the machines:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> <span class="pp">[</span><span class="ss">user</span><span class="pp">]</span>@aurora.nceas.ucsb.edu:/<span class="pp">[</span><span class="ss">path/to/server_folder/file_name</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">local_folder</span><span class="pp">]</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="cli-option-b-sftp" class="level4">
-<h4 class="anchored" data-anchor-id="cli-option-b-sftp">CLI Option B: <code>sftp</code></h4>
-<p>The <code>get</code> command can be used to <em>download</em> a file.</p>
-<ol type="1">
-<li>Connect to the server</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sftp</span> <span class="pp">[</span><span class="ss">user</span><span class="pp">]</span>@aurora.nceas.ucsb.edu:/home/shares</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Your prompt at the shell should now have switched to <code>sftp&gt;</code> and although it is the same window you are now looking at the files on the server! Try it by typing the <code>ls</code> command at the prompts. This will list all the files and folders within the <code>shares</code> folder on Aurora.</p>
-<ol start="2" type="1">
-<li>Enter your group’s folder in the <code>shares</code> folder</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">your_group_folder</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="3" type="1">
-<li>If needed, continue using <code>cd</code> to get to the subfolder you want to access. Remember to “escape” any spaces in the folder name with backslashes!</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">subfolder</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Note that most of the bash command will work, so you can use <code>ls</code> to list files and <code>pwd</code> to check your current path.</p>
-<ol start="4" type="1">
-<li>When you are in the folder containing the file(s) you want, download the file you want</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">get</span> <span class="pp">[</span><span class="ss">file_name_server</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="5" type="1">
-<li>You can also upload a local file to the server by using the <code>put</code> sFTP command</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">put</span> <span class="pp">[</span><span class="ss">file_name_local</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="6" type="1">
-<li>When you are done downloading, close the connection to the server</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
-
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
