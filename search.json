@@ -125,7 +125,7 @@
     "href": "readmes.html#other-resources-for-readmes",
     "title": "Informative READMEs",
     "section": "Other Resources for READMEs",
-    "text": "Other Resources for READMEs\nNavendu Pottekkat made a really cool “Awesome README” that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. This type of aesthetic modification is not required but can be a fun way of making your README stand out!",
+    "text": "Other Resources for READMEs\nSam Csik created guidelines for READMEs for the Master of Environmental Data Science (MEDS) program at UCSB with a companion slide deck and both are extremely useful for the what/when/where of great READMEs.\nNavendu Pottekkat made a really cool “Awesome README” that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. This type of aesthetic modification is not required but can be a fun way of making your README stand out!",
     "crumbs": [
       "Project Management",
       "Informative READMEs"
