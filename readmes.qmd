@@ -71,4 +71,6 @@ We recommend that you edit your README to include (some of) the following compon
 
 ## Other Resources for READMEs
 
+[Sam Csik](https://samanthacsik.github.io/) created [guidelines for READMEs](https://ucsb-meds.github.io/README-guidelines/) for the Master of Environmental Data Science (MEDS) program at UCSB with a companion [slide deck](https://ucsb-meds.github.io/EDS-296-DS-portfolios/course-materials/materials/readme-guidelines-slides.html#/title-slide) and both are extremely useful for the what/when/where of great READMEs.
+
 [Navendu Pottekkat](https://github.com/navendu-pottekkat) made [a really cool "Awesome README"](https://github.com/navendu-pottekkat/awesome-readme/tree/master#readme) that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. _This type of aesthetic modification is **not** required_ but can be a fun way of making your README stand out!
