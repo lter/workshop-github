@@ -67,4 +67,5 @@ format:
     toc: true
     link-external-newwindow: true
     link-external-icon: false
+    code-annotations: hover
     
