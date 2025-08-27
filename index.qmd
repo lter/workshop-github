@@ -10,6 +10,12 @@ This workshop provides an overview of what "version control" systems are and how
 
 To maximize the value of this workshop to you, **we recommend that you take the following steps before the day of the workshop**. Depending on whether you've used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the "SciComp Team" dropdown menu in the "People" page.
 
+### Citing These Materials
+
+If you'd like to cite these materials, please use the following citation:
+
+> Lyon, N.J., Chen, A., and Brun, J. (2025). Collaborative Coding with GitHub (v1.3). Zenodo. [https://doi.org/10.5281/zenodo.16966957](https://doi.org/10.5281/zenodo.16966957)
+
 ## Workshop Preparation
 
 The below preparation includes some code chunks for making sure everything is installed as it should be. All code is either R code ({{< fa brands r-project >}}) or is command line code ({{< fa terminal >}}). **In both cases, you'll run all provided code <u>in RStudio</u>**. {{< fa brands r-project >}} R code should be run in the "Console" tab of RStudio while {{< fa terminal >}} command line code should be run in the "Terminal" tab of RStudio.
