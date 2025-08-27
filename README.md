@@ -1,6 +1,6 @@
 # LTER Scientific Computing Workshop - Collaborative Coding with GitHub
 
-[![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281/zenodo.16966957-green.svg)](https://doi.org/10.5281/zenodo.16966957)
+[![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281/zenodo.16966957-blue.svg)](https://doi.org/10.5281/zenodo.16966957)
 
 ## Repository Explanation
 
