@@ -2,6 +2,10 @@
 
 This reflects the current state of the repository. Changes from the preceding version/GitHub release are listed here as they are made.
 
+- No changes (yet)
+
+## Version 1.3
+
 - Streamlined / clarified workshop preparation steps
 
 ## Version 1.2
