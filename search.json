@@ -132,319 +132,273 @@
     ]
   },
   {
-    "objectID": "portfolio.html",
-    "href": "portfolio.html",
-    "title": "GitHub as a Portfolio",
+    "objectID": "prep-steps/install_rstudio.html",
+    "href": "prep-steps/install_rstudio.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nExplain the benefits of using GitHub as a portfolio\nIdentify ways to strengthen your profile’s presence on GitHub\nCreate a “special README” on your profile\nAdd informative READMEs to your repositories",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
+    "text": "Once you have R (ver. ≥4.0), install RStudio. If you already have RStudio installed, you may want to make sure that you’re using a recent version to take advantage of some quality of life improvements that are broadly useful."
   },
   {
-    "objectID": "portfolio.html#module-learning-objectives",
-    "href": "portfolio.html#module-learning-objectives",
-    "title": "GitHub as a Portfolio",
+    "objectID": "prep-steps/install_git.html",
+    "href": "prep-steps/install_git.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nExplain the benefits of using GitHub as a portfolio\nIdentify ways to strengthen your profile’s presence on GitHub\nCreate a “special README” on your profile\nAdd informative READMEs to your repositories",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
+    "text": "You can now install Git! Git is the software that actually does the behind-the-scenes version control operations we’ll cover in this workshop. Installing Git differs slightly depending on your operating system so check out the tabs below for the right option for you. These instructions are modified from Jennifer Bryan’s excellent “Happy Git and GitHub for the useR” ebook.\n\n Mac Windows Linux\n\n\nRun the following  command line code.\nxcode-select --install\nFor more detailed instructions, see here.\n\n\nInstall Git for Windows (a.k.a. “Git Bash”). When asked about “Adjusting your PATH environment”, select “Git from the command line and also from 3rd-party software”.\nFor more detailed instructions, see here.\n\n\nInstall Git via your distro’s package manager (in the  Terminal).\nIf you use Ubuntu or Debian Linux that  code is as follows:\nsudo apt-get install git\nIf instead you use Fedora or RedHat Linux the  code is instead:\nsudo yum install git\nFor more detailed instructions, see here."
   },
   {
-    "objectID": "portfolio.html#why-use-github-as-a-portfolio",
-    "href": "portfolio.html#why-use-github-as-a-portfolio",
-    "title": "GitHub as a Portfolio",
-    "section": "Why Use GitHub as a Portfolio?",
-    "text": "Why Use GitHub as a Portfolio?\nGitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work. A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you’ve accomplished as well! You can utilize GitHub’s existing functionalities to curate your own portfolio.",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
-  },
-  {
-    "objectID": "portfolio.html#strengthen-your-presence-on-github",
-    "href": "portfolio.html#strengthen-your-presence-on-github",
-    "title": "GitHub as a Portfolio",
-    "section": "Strengthen your presence on GitHub",
-    "text": "Strengthen your presence on GitHub\n\nFlesh out your profile\nFilling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top left corner and go to “Your profile”.\n\n\n\nThen select “Edit profile” on the right hand panel.\n\n\n\nThere, you will have options to edit your icon, name, biography, pronouns, workplace, location, website, and social media accounts. If you have links to other websites that contain your work, it’s a good idea to cross-reference them here so people can find you elsewhere.\n\n\n\nAlternatively, you can also edit your profile by clicking on your icon in the top left corner to go to “Settings”, then “Public profile”.\n\n\nPin repositories\nAdditionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility to visitors.\nTo choose which repositories to pin, navigate to the “Your profile” tab again and click “Customize your pins”. Once you’ve pinned the repositories you particularly want to highlight you can reorder your pinned repos by dragging the 6 dots at the top right corner.\n\n\n\nWhen you’re picking out your top repositories we recommend including repositories that:\n\nYou’re excited about (passion is always worth highlighting!)\nShowcase a breadth of skills\nDemonstrate significant expertise in a narrow range of skills\nYou’re proud of / were significant to your career",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
-  },
-  {
-    "objectID": "portfolio.html#special-readme",
-    "href": "portfolio.html#special-readme",
-    "title": "GitHub as a Portfolio",
-    "section": "Special README",
-    "text": "Special README\nA fun secret feature of GitHub is that you can have a “special README” displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile.\nTo get started, from your profile landing page, click on the ➕ button and select “New repository”.\n\n\n\nName your new repo the same name as your username. A notification should pop up indicating that you’re creating a special repo.\n\n\n\nFeel free to write an optional description. Set the repo visibility to public and make sure to check the box to initialize the repo with a README file. Click on the “Create repository” button once you’re done!\n\n\n\nThis is what the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the “Edit README” button to get started. Note that you could clone the special repo and edit from whatever code/text editor you prefer but given that the only editing you’ll do is to a markdown file that seems excessive to us.\n\n\n\nGitHub will have already populated README.md with a template that you can use as a starting point. Edit this Markdown file to your own liking. Here is a handy guide on formatting your text if you are not familiar with Markdown syntax.\nSome nice sections to include in your README.md are an “About me” section that gives a background on your work and interests, a contributions/achievements section, and a section on any other communities you’re involved in.\n\n\n\nYou can add emojis, images and GIFs so have fun editing your special README.",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
-  },
-  {
-    "objectID": "portfolio.html#informative-readmes",
-    "href": "portfolio.html#informative-readmes",
-    "title": "GitHub as a Portfolio",
-    "section": "Informative READMEs",
-    "text": "Informative READMEs\nOn a related note, an informative README in each repository is crucial to orienting your audience to the files in and purpose of each repository. It’s good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the Scientific Computing team’s guide to writing informative READMEs here!",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
-  },
-  {
-    "objectID": "portfolio.html#how-to-stand-out",
-    "href": "portfolio.html#how-to-stand-out",
-    "title": "GitHub as a Portfolio",
-    "section": "How to Stand Out",
-    "text": "How to Stand Out\nIf you act on the suggestions we’ve outlined above you will already be well on the way to fully leveraging GitHub as a professional portfolio. That said, there are always means of making yourself and your work stand out even more! Below is a non-exhaustive list of some ideas for continuing to improve your portfolio.\n\nCreate a Personal Website\nPersonal websites are a cool way to visually convey everything that goes into a portfolio–your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone’s personal website rather than their GitHub profile. A further benefit of creating a personal website is that you will learn (and demonstrate!) a suite of additional skills that contribute to your portfolio in and of themselves.\nAlthough the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you’re interested, check out the SciComp team’s tutorial on building a website with Quarto. Also feel free to check out Sam Csik’s tutorials on how to create and customize your website using Quarto.\nSince this will be a personal website deployed through GitHub Pages, remember to name your Quarto project and GitHub repo: &lt;YOUR-GITHUB-USERNAME&gt;.github.io, replacing &lt;YOUR-GITHUB-USERNAME&gt; with your actual username. You’re only allowed one user website with the github.io suffix. Follow the instructions in the linked tutorials to deploy the website via GitHub when you’re done! If all goes well, your website will be live at: https://&lt;YOUR-GITHUB-USERNAME&gt;.github.io/\nIf you’re looking for some inspiration, check out Angel’s (angelchen7.github.io) and Nick’s websites (njlyon0.github.io)!\n\n\nTeam up with Peers\nWithin any career path some of the best people to get professional feedback from are your peers! Your colleagues have applied to the same types of positions that you have and often have crucial insight that can help you learn from both the successes and the pitfalls that they have encountered. In addition, they can a well-trained critical eye that can help you improve your portfolio in ways you may never have imagined by yourself.\nOnce you have a draft portfolio, share it with your peers, advisers, and mentors for feedback. Write down their suggestions and act on all of the ones that seem reasonable to you. If you’d like, repeat this process of iterative revision for as long as you feel that it is needed! It may also make sense to gather other peers without GitHub portfolios into a journal club-style group and meet regularly to develop and critique one another’s materials.",
-    "crumbs": [
-      "Other Topics",
-      "GitHub as a Portfolio"
-    ]
-  },
-  {
-    "objectID": "milestones.html",
-    "href": "milestones.html",
-    "title": "GitHub Milestones",
+    "objectID": "prep-steps/connect_git-github.html",
+    "href": "prep-steps/connect_git-github.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
+    "text": "The last step to take before you’re all set for the workshop is to get these components talking to one another! You set a password for your GitHub which is used for logging in to GitHub but to actually put your code changes from your computer up to GitHub you’ll need to authenticate yourself. There are two paths for authentication:\n\nPersonal Access Token (PAT)\nSecure Shell (SSH)\n\nWhat’s the difference? Essentially, authenticating via token makes many things “just work” while authenticating via SSH will work for some things but in other contexts you would also need to do token-based authentication. For a more complete discussion of the benefits and drawbacks of each, see Dr. Bryan’s “HTTPS versus SSH” page.\nFollow the steps of your chosen authentication method in the tabs below.\n\nPersonal Access Token with RStudioSSH\n\n\nAll of the code chunks for authenticating with a token are  R code that should be run in the “Console” pane of RStudio. You may also create a script and run the code from there if you so desire but you’ll likely only need this code once so the script’s value would be short-lived.\n\n# Install the `usethis` and `gitcreds` packages\ninstall.packages(c(\"usethis\", \"gitcreds\"))\n\n# Create a token (Note this will open a GitHub browser tab)\n## See steps 6-10 in GitHub's PAT tutorial (link below)\n1usethis::create_github_token()\n\n\n1\n\nLeave parentheses empty\n\n\n\n\nCopy your token at the end of the above step. Once you leave the page where your token is displayed you’ll never get to see it again! So if you close that page without copying it you’ll need to make a new one in order to continue.\nOnce you’ve copied your token, run the code below to save your credentials in RStudio.\n\n# Now, give your token to RStudio\n## After you run this line follow the prompts in the \"Console\" tab of RStudio\n2gitcreds::gitcreds_set()\n\n\n2\n\nLeave parentheses empty here as well!\n\n\n\n\nThis line of code will prompt you to paste your token in the “Console” tab. After you do so (and hit “Enter”), your token will be safely stored in RStudio!\n\nFurther Information\nYou may also find GitHub’s PAT tutorial (this is the link referenced in the first token-authentication code chunk!) or the Happy Git with R PAT tutorial helpful.\n\n\n\nAll of the code chunks for authenticating with SSH are  command line code that should be agnostic to your programming language.\nFirst, we need to check whether you already have SSH keys created on your computer. If you get a message saying that nothing exists or the path doesn’t exist, you do not (yet) have SSH keys.\n\nls -al ~/.ssh/\n\nIf you do need to create an SSH key pair you can do so via the command line. When you create a key pair you’ll need to include a descriptive comment to help ‘future you’ if you ever have multiple key pairs in your life. We recommend “lter” plus your GitHub username to keep things simple.\n\nssh-keygen -t ed25519 -C \"lter-github\"\n\n\n\n\n\n\n\nTipOlder Computer?\n\n\n\nIf you get a warning/error because your system is too old to support the Ed25519 algorithm (that’s the variant recommended by GitHub) you can instead use:\n\nssh-keygen -t rsa -b 4096 -C \"lter-github\"\n\n\n\nAccept the prompt to save the key in the default location by hitting Enter. You will be prompted to enter a passphrase that will be required to access your SSH key later on. This step is technically optional but is considered a best practice. If SSH keys are totally new to you, we recommend skipping the passphrase step.\nOnce you’ve generated the key pair, follow GitHub’s instructions on adding that key pair to your computer’s ssh-agent (roughly equivalent to a password manager but just for SSH key pairs).\nFinally, you need to share the public key with your GitHub self. Once again we’ll refer you to the phenomenal materials generated by Dr. Bryan on this topic.\n\nFurther Information\nYou may also find GitHub’s SSH documentation or the Happy Git with R SSH tutorial helpful."
+  },
+  {
+    "objectID": "prep-steps/celebrate.html",
+    "href": "prep-steps/celebrate.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
+    "section": "",
+    "text": "After following all the previous preparation steps, your setup should now be complete."
+  },
+  {
+    "objectID": "motivations.html",
+    "href": "motivations.html",
+    "title": "Workflows",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products",
+    "crumbs": [
+      "Core Topics",
+      "Workflows"
+    ]
+  },
+  {
+    "objectID": "motivations.html#module-learning-objectives",
+    "href": "motivations.html#module-learning-objectives",
+    "title": "Workflows",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products",
+    "crumbs": [
+      "Core Topics",
+      "Workflows"
+    ]
+  },
+  {
+    "objectID": "motivations.html#workflow-options",
+    "href": "motivations.html#workflow-options",
+    "title": "Workflows",
+    "section": "Workflow Options",
+    "text": "Workflow Options\nIf you are working on any file that is the product of iterative edits, you have had to develop a workflow to approach that task. This could be a scientific paper, analytic code, or a presentation. There are many possible ways you could approach this task leveraging any number of software and hardware options but before we get into our discussion today about collaborative research using GitHub we would like to–briefly–outline some of the typical forms these workflows can take and how they fit into a broader framework of individual and synthesis science.\n\nIndividual Workflow\nAt its simplest, you could be storing your data and code on your local machine and doing the entirety of your work alone. When working on your code you would iteratively edit and save the same code file and you would have a static folder (or folders) for data that you added to as you collected and entered or downloaded additional data.\nThere are variants of this where you may be archiving everything on your hard drive (e.g., Time Machine on Mac OS, etc.) and you may be using a “save as” feature to preserve some iterations of your code. You may also perform this same operation within a cloud-based storage system (e.g., Box, Dropbox, Google Drive, etc.) so that some versions of both code and data are preserved based on time stamps.\nThis approach has the advantage of relatively few moving parts but such editing of your code loses all previous versions that aren’t explicitly preserved (as well as a record of the changes).\nAnother limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.\n\n\n\n\n\nData Lifecycle Considerations\nThe above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.\nIndividual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not as limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.\nHowever, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.\nCollaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.\n\n\n\n\n\nSynthesis Workflow\nVersion control systems preserve the iterative changes you and your team make to code and allow for informative titles and messages to be attached to these snapshots. This offers a clear advantage over ambiguous time-stamped versions preserved by cloud storage systems as it facilitates re-visiting code long after or by new team members who were not present for the initial writing. This approach is what we will be covering in greater depth in a few moments but the broad strokes are that you would preserve the history of your work and ensure that everyone uses the “right” version of the code.\nHowever, despite its advantages for collaborative coding, version control is not meant for preserving data so you would need to share data with your collaborators either via email or by storing data in the cloud and sharing links with team members. Depending upon how you implement either route for sharing data (email vs. cloud) your group is still at risk for group members using different versions of the data–especially if your group is involved in ongoing data collection.\nFurther, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., “home/users/me/project/data/…”) will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a ‘this folder does not exist’ error. This is absolutely surmountable but can be a source of frustration over longer project timelines.\n\n\n\n\n\nSynthesis Workflow on NCEAS’ Server\nFinally (for our purposes), you could build NCEAS’ server into your workflow to not only collaborate with colleagues on code but also centralize your data storage!\nThis method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members on the same folder path.\nThis means that even though each group member could code separately in their own ‘home’ folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the ‘shares’ folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data file.\nData can be moved from a specific computer onto the server by using any “File Transfer Protocol” (FTP) software (or “SSH FTP” a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a tutorial on how to go about setting up an FTP or SFTP program on your computer that we are also happy to go over in greater depth as needed!\nAdding the server to your team’s workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server ad infinitum thereafter.\nAn ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)\n\n\n\n\n\nSummary\nWhile each approach offers its own strengths and weaknesses, in our experience many scientists avoid the latter two options due to knowledge barriers about how to get set up in these programs and websites, much less how to actually navigate those systems once set up!\nToday, we will strive to cover the fundamentals of using a version control system in your workflow (Option 2) and–for some groups, depending on interest–how to extend that workflow further and leverage NCEAS’ server to share data and work on code.\nPlease don’t hesitate to ask questions and remember that this link is a resource that you should feel free to refer back to if you ever need a refresher or wish to teach peers! There are supplementary appendices as well which we do not anticipate being able to get to today but we do think are likely to be valuable to you as your confidence with these systems grows.",
+    "crumbs": [
+      "Core Topics",
+      "Workflows"
+    ]
+  },
+  {
+    "objectID": "issues.html",
+    "href": "issues.html",
+    "title": "GitHub Issues",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
     "crumbs": [
       "Project Management",
-      "GitHub Milestones"
+      "GitHub Issues"
     ]
   },
   {
-    "objectID": "milestones.html#module-learning-objectives",
-    "href": "milestones.html#module-learning-objectives",
-    "title": "GitHub Milestones",
+    "objectID": "issues.html#module-learning-objectives",
+    "href": "issues.html#module-learning-objectives",
+    "title": "GitHub Issues",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
+    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
     "crumbs": [
       "Project Management",
-      "GitHub Milestones"
+      "GitHub Issues"
     ]
   },
   {
-    "objectID": "milestones.html#what-is-a-milestone",
-    "href": "milestones.html#what-is-a-milestone",
-    "title": "GitHub Milestones",
-    "section": "What is a Milestone?",
-    "text": "What is a Milestone?\nIf you like documenting your tasks and progress over time with GitHub issues, but the scope of your work doesn’t require you to rely on GitHub projects, then GitHub milestones may be perfect for you!\nGitHub milestones track issues and pull requests in a repository so you can see what tasks still need to be completed in order to achieve a particular goal. This is particularly helpful if you are doing a lot of work in a single repository and know what new features/objectives you want to implement there.\nOn the other hand, if your work consists of working across multiple repositories, then opening a GitHub project may be more appropriate.",
+    "objectID": "issues.html#what-is-an-issue",
+    "href": "issues.html#what-is-an-issue",
+    "title": "GitHub Issues",
+    "section": "What is an Issue?",
+    "text": "What is an Issue?\nIssues are a convenient way of identifying and delegating tasks within a repository as well as documenting progress over time. They can also be used as a digital ‘lab notebook’ for personal use to brainstorm on a novel topic or preserve important links or supplementary material for easy distribution across a whole team.\nImportantly, while issues can definitely be helpful they are not required to successfully use GitHub for collaborating as a team. Issues absolutely have the potential to facilitate division of labor within a team though and are thus worth covering in this training.\nAn additional function that may be outside of the scope of what you need to use within your team is that it allows non-members to flag issues that they’ve had with code written by your team or request additional functionality that doesn’t yet exist in your framework. Depending on your use of packages in R you may have already opened an issue on an existing R package to do just that!\nTo see a more complete example of how issues can be used we can examine the open issues of an established R package.\n\nIssues Example with the googledrive Package\nBelow is the GitHub landing page for the googldrive package and you can see that next to the underlined “Code” tab is an “Issues” tab with a gray circle with the number 22 in it. This number notifies us that as of this screen capture, there were twenty two open issues on this package’s GitHub repository. Note that your GitHub interface may be white but it will not change the position of buttons or tabs.\n\n\n\nIf you click over to the issues tab you will see the titles of all current “open” (i.e., ongoing) issues on the repository. Each issue has a title and beneath that a unique number following a # as well as how long ago the issue was opened and the GitHub username of the person who opened the issue. On the right side of each issue’s thumbnail you can see the number of comments added to it.\n\n\n\nComments can be used to have a full dialogue among different users – potentially both in and outside of the team responsible for managing the code! The conversational aspect of issues can make them functionally similar to an email thread or messaging app chain. This communication can help keep the solutions to tasks well-documented while ensuring that every member of your group can have their voice heard.",
     "crumbs": [
       "Project Management",
-      "GitHub Milestones"
+      "GitHub Issues"
     ]
   },
   {
-    "objectID": "milestones.html#example-milestone",
-    "href": "milestones.html#example-milestone",
-    "title": "GitHub Milestones",
-    "section": "Example Milestone",
-    "text": "Example Milestone\nMilestones can help you keep track of concrete goals like version releases, which is useful when you’re thinking about the next feature to accomplish for a specific project.\nHere is an example of what a milestone can look like:\n\n\n\nA milestone has been opened for this repository to keep track of an R package’s resubmission to CRAN. This resubmission is about 75% of the way there, with 1 open issue and 3 closed ones.\nOnce you click on a milestone, you can see more details about the issues that need to be closed before the milestone is 100% complete.",
+    "objectID": "issues.html#creating-your-first-issue",
+    "href": "issues.html#creating-your-first-issue",
+    "title": "GitHub Issues",
+    "section": "Creating your First Issue",
+    "text": "Creating your First Issue\nWhen you first visit the Issues tab of your repository it won’t include any open issues and will look like this.\n\n\n\nTo create an issue, click the green button and a new page will open that looks like the below.\n\n\n\nIn this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.\nWhile issue comments are completely free for you to use as you see fit, it is important to remember that your most frequent collaborator is yourself in the future so a future version of yourself will absolutely thank you for including extra information when you first open an issue. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.\nIn addition to the title and main body of the issue you can also see a sidebar on the right containing other options for adding detail to an issue. In particular, the “Assignees” and “Labels” sections can be useful in delegating a task to a specific person or naming the category that this task falls under respectively.\nReturning to our googledrive example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.\n\n\n\nWhen you are creating your first issue however you won’t have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.\nTo see the current label options, click the “Labels” text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click “Edit labels” to create new labels or modify the template labels.\n\n\n\n\n\n\n\n\n\nNotePractice - Labels\n\n\n\nWhat are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories?",
     "crumbs": [
       "Project Management",
-      "GitHub Milestones"
+      "GitHub Issues"
     ]
   },
   {
-    "objectID": "milestones.html#creating-milestones",
-    "href": "milestones.html#creating-milestones",
-    "title": "GitHub Milestones",
-    "section": "Creating Milestones",
-    "text": "Creating Milestones\nOnce you’re ready to create a milestone, navigate to your repository and go to the “Issues” tab.\nClick on “Milestones”.\n\n\n\nThen click on either the “New milestone” or “Create a milestone” button if you haven’t created a milestone yet.\n\n\n\nFill out some information about your milestone, such as the title, due date (if any), and description. Click on “Create milestone” once you’re done.\n\n\n\nYou can always go back to the “Milestones” page and click “Edit” if you need to edit the title, due date, or description.\n\n\n\nTo add issues/pull requests to your milestone, you can click on your milestone and add them directly there.\n\n\n\nOr you can go to your issues/pull requests page and select the checkboxes next to the issues/pull requests you want to associate with a milestone. Then click on the “Milestone” dropdown menu to add them to the milestone.\n\n\n\nFor more information on milestones, check out its GitHub documentation page.",
+    "objectID": "issues.html#opening-an-issue",
+    "href": "issues.html#opening-an-issue",
+    "title": "GitHub Issues",
+    "section": "Opening an Issue",
+    "text": "Opening an Issue\nOnce you’ve filled out the title and comment of the issue the green “Submit new issue” button will become clickable and you can click it to open your issue. You can either add labels or assign users to the issue during the initial opening phase or after the fact.\nIssues are automatically viewed as a sequential series of events from the first comment so all future additions to the issue will be added beneath that first comment that defines the title of the issue.\nAt the bottom of the issue there will be an open text box that you can add to with whatever information you feel is valuable in the context of this task. We will talk about closing issues in a moment but even when issues are closed they are always accessible so all documentation within an issue can be used later and is well worth any energy investment you can make.\nThere is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful.",
     "crumbs": [
       "Project Management",
-      "GitHub Milestones"
+      "GitHub Issues"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Overview",
+    "objectID": "issues.html#appropriate-issue-scope",
+    "href": "issues.html#appropriate-issue-scope",
+    "title": "GitHub Issues",
+    "section": "Appropriate Issue Scope",
+    "text": "Appropriate Issue Scope\nAs a brief aside from the nuts and bolts of how to create and manage an issue, it is important to discuss appropriate issue scope.\nEssentially, an issue should- as much as possible-directly correspond to either a single task or a single conversation. It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.\nPersonally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are Specific, Measurable, Attainable, Relevant, and Time-specific), but there are many established ways of partitioning a larger project to achievable sub-tasks and you should use whichever is most intuitive to you.\nIf issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general ‘rules of thumb’ for the scope of tasks identified by issues.\n\n\n\n\n\n\nNotePractice - Create an Issue\n\n\n\nNow that we’ve covered what issues are and how to open them, let’s take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!",
+    "crumbs": [
+      "Project Management",
+      "GitHub Issues"
+    ]
+  },
+  {
+    "objectID": "issues.html#closing-an-issue",
+    "href": "issues.html#closing-an-issue",
+    "title": "GitHub Issues",
+    "section": "Closing an Issue",
+    "text": "Closing an Issue\nSo, let’s imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.\nIf you scroll to the bottom of that issue (where the adding comment textbox is) you will see a purple button titled “Close issue”.\n\n\n\nAfter clicking that button a purple check mark will appear on the bottom of the issue’s timeline that identifies the issue as closed and credits the user who closed it.\n\n\n\nWhen you return to your issue list you will see that issue is now absent from the list. However, next to the “[number] Open” button you can see a check mark with the number of closed issues.\n\n\n\nClicking that “Closed” button will access all past issues that are now closed.\n\n\n\nSo, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.\nThis greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.\nAs pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we’d encourage you to try using them in case they do prove helpful to your team!",
+    "crumbs": [
+      "Project Management",
+      "GitHub Issues"
+    ]
+  },
+  {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "Git & GitHub",
     "section": "",
-    "text": "This workshop provides an overview of what “version control” systems are and how they fit into collaborative coding within your team. Specifically, we are focusing here on an introductory approach to version control that focuses on using Git via RStudio and GitHub. We are always happy to improve workshop content so please don’t hesitate to post an Issue on our GitHub repository if you see clear areas for improvement!\n\nTo maximize the value of this workshop to you, we recommend that you take the following steps before the day of the workshop. Depending on whether you’ve used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the “SciComp Team” dropdown menu in the “People” page.",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between Git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface",
     "crumbs": [
-      "Workshop Home"
+      "Core Topics",
+      "Git & GitHub"
     ]
   },
   {
-    "objectID": "index.html#workshop-preparation",
-    "href": "index.html#workshop-preparation",
-    "title": "Overview",
-    "section": "Workshop Preparation",
-    "text": "Workshop Preparation\nThe below preparation includes some code chunks for making sure everything is installed as it should be. All code is either R code () or is command line code (). In both cases, you’ll run all provided code in RStudio.  R code should be run in the “Console” tab of RStudio while  command line code should be run in the “Terminal” tab of RStudio.\nIf you get errors with the provided code, double check that you are running it in the right place!\n\n\n\n\n\n\nNoteInstitution-Owned Computers\n\n\n\nIf your institution has a dedicated IT team that has sole power to install software on your computer, you will need to contact them before the workshop to do the installation bits of the prep steps we outline below.\n\n\n\n1. Install R\nBegin by installing R. If you already have R, check that you have at least version 4.0.0 by running the following  R code:\n\n# Run me in RStudio's \"Console\"\nversion$version.string\n\nIf your version starts with a 3 (e.g., the above code returns “R version 3…”), please update R to make sure all packages behave as expected.\n\n\n2. Install RStudio\nOnce you have R (ver. ≥4.0), install RStudio. If you already have RStudio installed, you may want to make sure that you’re using a recent version to take advantage of some quality of life improvements that are broadly useful.\n\n\n3. Install Git\nWith R and RStudio installed you can now install Git! Git is the software that actually does the behind-the-scenes version control operations we’ll cover in this workshop. Installing Git differs slightly depending on your operating system so check out the tabs below for the right option for you. These instructions are modified from Jennifer Bryan’s excellent “Happy Git and GitHub for the useR” ebook.\n\n Mac Windows Linux\n\n\nIn RStudio’s “Terminal” pane, run the following  command line code.\n# Run me in RStudio's \"Terminal\"\nxcode-select --install\nFor more detailed instructions, see here.\n\n\nInstall Git for Windows (a.k.a. “Git Bash”). When asked about “Adjusting your PATH environment”, select “Git from the command line and also from 3rd-party software”.\nFor more detailed instructions, see here.\n\n\nInstall Git via your distro’s package manager (in the  Terminal).\nIf you use Ubuntu or Debian Linux that  code is as follows:\nsudo apt-get install git\nIf instead you use Fedora or RedHat Linux the  code is instead:\nsudo yum install git\nFor more detailed instructions, see here.\n\n\n\n\n\n4. Check Git’s Installation Worked\nRegardless of your operating system, once you’ve installed Git, check that worked with the following  command line code. All operating systems should be able to run this in the “Terminal” pane of RStudio.\n# Run me in RStudio's \"Terminal\"\nwhich git\nRStudio should be able to detect Git so let’s check from that side too. In RStudio click through the following menus: “Tools”  “Global Options”  “Git / SVN” (cardboard box icon in left sidebar). If you see a file path under “Git executable” then you are good to go!\n\n\n\n\n\n\nNoteGit Not Detected?\n\n\n\nIf you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio before checking again.\n\n\n\n\n5. Create a GitHub Account\nNow that you’re all done installing programs, it’s time to create an account on GitHub. GitHub is how you’ll be able to collaborate with others. Dr. Bryan has some nice guidelines for picking a good username and we also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub.\n\n\n6. Connect Git and GitHub\nThe last step to take before you’re all set for the workshop is to get these components talking to one another! You set a password for your GitHub which is used for logging in to GitHub but to actually put your code changes from your computer up to GitHub you’ll need to authenticate yourself. There are two paths for authentication:\n\nPersonal Access Token (PAT)\nSecure Shell (SSH)\n\nWhat’s the difference? Essentially, authenticating via token makes many things “just work” while authenticating via SSH will work for some things but in other contexts you would also need to do token-based authentication. For a more complete discussion of the benefits and drawbacks of each, see Dr. Bryan’s “HTTPS versus SSH” page.\nFollow the steps of your chosen authentication method in the tabs below.\n\nPersonal Access TokenSSH\n\n\nAll of the code chunks for authenticating with a token are  R code that should be run in the “Console” pane of RStudio. You may also create a script and run the code from there if you so desire but you’ll likely only need this code once so the script’s value would be short-lived.\n\n# Install the `usethis` and `gitcreds` packages\ninstall.packages(c(\"usethis\", \"gitcreds\"))\n\n# Create a token (Note this will open a GitHub browser tab)\n## See steps 6-10 in GitHub's PAT tutorial (link below)\n1usethis::create_github_token()\n\n\n1\n\nLeave parentheses empty\n\n\n\n\nCopy your token at the end of the above step. Once you leave the page where your token is displayed you’ll never get to see it again! So if you close that page without copying it you’ll need to make a new one in order to continue.\nOnce you’ve copied your token, run the code below to save your credentials in RStudio.\n\n# Now, give your token to RStudio\n## After you run this line follow the prompts in the \"Console\" tab of RStudio\n2gitcreds::gitcreds_set()\n\n\n2\n\nLeave parentheses empty here as well!\n\n\n\n\nThis line of code will prompt you to paste your token in the “Console” tab. After you do so, your token will be safely stored in RStudio!\n\n\n\n\nFurther Information\nYou may also find GitHub’s PAT tutorial (this is the link referenced in the first token-authentication code chunk!) or the Happy Git with R PAT tutorial helpful.\n\n\n\nAll of the code chunks for authenticating with SSH are  command line code that should be run in the “Terminal” pane of RStudio.\nFirst, we need to check whether you already have SSH keys created on your computer. If you get a message saying that nothing exists or the path doesn’t exist, you do not have SSH keys (yet).\n\nls -al ~/.ssh/\n\nIf you do need to create an SSH key pair you can do so via the command line. When you create a key pair you’ll need to include a descriptive comment to help ‘future you’ if you ever have multiple key pairs in your life. We recommend “lter” plus your GitHub username to keep things simple.\n\nssh-keygen -t ed25519 -C \"lter-github\"\n\n\n\n\n\n\n\nTipOlder Computer?\n\n\n\nIf you get a warning/error because your system is too old to support the Ed25519 algorithm (that’s the variant recommended by GitHub) you can instead use:\n\nssh-keygen -t rsa -b 4096 -C \"lter-github\"\n\n\n\nAccept the prompt to save the key in the default location by hitting Enter. You will be prompted to enter a passphrase that will be required to access your SSH key later on. This step is technically optional but is considered a best practice. If SSH keys are totally new to you, we recommend skipping the passphrase step.\nOnce you’ve generated the key pair, follow GitHub’s instructions on adding that key pair to your computer’s ssh-agent (roughly equivalent to a password manager but just for SSH key pairs).\nFinally, you need to share the public key with your GitHub self. Once again we’ll refer you to the phenomenal materials generated by Dr. Bryan on this topic.\n\nFurther Information\nYou may also find GitHub’s SSH documentation or the Happy Git with R SSH tutorial helpful.\n\n\n\n\n\n\n7. Celebrate!\nAfter following all the previous preparation steps, your setup should now be complete.",
-    "crumbs": [
-      "Workshop Home"
-    ]
-  },
-  {
-    "objectID": "index.html#github-science-publications",
-    "href": "index.html#github-science-publications",
-    "title": "Overview",
-    "section": "GitHub + Science Publications",
-    "text": "GitHub + Science Publications\nThe reproducibility and collaborative benefits of GitHub for working scientists is well appreciated and increasingly well published upon. See below for brief synopses of papers published in this realm that we think may resonate with your team’s disciplinary backgrounds and motivations.\nIn the ecology and evolutionary biology sphere, Pereira Braga et al. published “Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution” in Methods in Ecology & Evolution. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper’s second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) Pereira Braga et al. 2023 for more detail than we’ve included in this blurb.\nIf you are concerned about the technical side of GitHub for yourself and/or your lab group, we recommend focusing on the lower technical difficulty benefits of GitHub (see the blue bars). We also think that some of the intermediate technical difficulty uses (orange bars) may be relevant to working group priorities and goals.",
-    "crumbs": [
-      "Workshop Home"
-    ]
-  },
-  {
-    "objectID": "git_ignore.html",
-    "href": "git_ignore.html",
-    "title": "The .gitignore",
+    "objectID": "github.html#module-learning-objectives",
+    "href": "github.html#module-learning-objectives",
+    "title": "Git & GitHub",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nCreate a .gitignore in a repository using a GitHub template\nExplain the purpose of a .gitignore in collaborative projects\nEvaluate the content you think might warrant adding to the .gitignore",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between Git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface",
     "crumbs": [
-      "Advanced Topics",
-      "The `.gitignore`"
+      "Core Topics",
+      "Git & GitHub"
     ]
   },
   {
-    "objectID": "git_ignore.html#module-learning-objectives",
-    "href": "git_ignore.html#module-learning-objectives",
-    "title": "The .gitignore",
+    "objectID": "github.html#version-control-background",
+    "href": "github.html#version-control-background",
+    "title": "Git & GitHub",
+    "section": "Version Control Background",
+    "text": "Version Control Background\nVersion control systems (including Git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).\nVersion control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.",
+    "crumbs": [
+      "Core Topics",
+      "Git & GitHub"
+    ]
+  },
+  {
+    "objectID": "github.html#git-specific-background",
+    "href": "github.html#git-specific-background",
+    "title": "Git & GitHub",
+    "section": "Git-Specific Background",
+    "text": "Git-Specific Background\nGit can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In Git (and other version control systems) terms, this “tracked folder” is called a repository (which formally is a specific data structure storing versioning information).\nAlthough there many ways to start a new repository, GitHub (or any other cloud solutions, such as GitLab) provide among the most convenient way of starting a repository.\nLet’s distinguish between Git and GitHub:\n\nGit: version control software used to track files in a folder (a repository)\n\nGit creates the versioned history of a repository\n\nGitHub: website that allows users to store their Git repositories and share them with others (i.e. a graphical user interface or “GUI”)\n\nGitHub is a company that hosts Git repositories online and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.\n\nGitHub.com: github.com\nA user account: github.com/angelchen7\nAn organization account: github.com/lter",
+    "crumbs": [
+      "Core Topics",
+      "Git & GitHub"
+    ]
+  },
+  {
+    "objectID": "github.html#exploring-github",
+    "href": "github.html#exploring-github",
+    "title": "Git & GitHub",
+    "section": "Exploring GitHub",
+    "text": "Exploring GitHub\nLet’s navigate over to GitHub and explore some of its features. Here is what the home screen looks like as of February 2022.\n\n\n\nLog in with your GitHub account that you should have created prior to this workshop.\n\n\n\nOnce you’ve logged in, you should see something like this:\n\n\n\nThis landing page has a nice summary of your recent repositories and activity on the left panel. Click on your icon at the top left corner and navigate to your profile.\n\n\n\nYour profile page shows the organizations that you’re a part of, as well as a more detailed view of your GitHub contributions/activities over time. There are also tabs at the top that lead you to your repositories, projects, packages, and starred repositories. If you would like, you can change your GitHub theme to dark mode by clicking on your icon at the top left corner and going to Settings then Appearances. For the purposes of this workshop, the rest of the screenshots for the GitHub website will be in dark mode to differentiate it from RStudio.\n\n\n\nIf there is anything else you would like to change about your account, the user settings page should have it.\n\nLooking at a GitHub Repository\nTo check the repositories that you’ve created, click on the Repositories tab. Note that the top left corner has a green button that will allow you to create new repositories. We will come back to that later. Let’s take a closer look at what the ucsb-ds-capstone-2021.github.io repository contains.\n\n\n\nThis screen shows the copy of a repository stored on GitHub, with its list of files, when the files and directories were last modified, and some information on who made the most recent changes.\n\n\n\nIf we look at the blue rectangle, we can see that there have been 151 commits made to this repository. By clicking on them, we can see the history of changes made to all of the files. Looks like 3 users were making changes in April.\n\n\n\nAnd finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:\n\n\n\nThe red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what Git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.\nNote: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead.\n\n\n\n\n\n\n\n\nCreating a Repository on GitHub\nTo stimulate a collaborative GitHub/RStudio workflow, we are going to have 1 person from each group create a new repository on their GitHub account. This will be the repository where everyone shares their files and code.\nTo create a new repository, follow these steps:\n\nNavigate to your profile page and click on the Repositories tab.\nClick on New.\n\n\n\n\n\nEnter a descriptive name for your new repository, here we named it git-practice (avoid upper case and use - or _ instead of spaces).\nWrite a 1-sentence description about the repository content.\nChoose Public (as of January 2019, GitHub now offers unlimited free private repositories with a maximum of 3 collaborators).\nCheck Add a README file.\n\n\n\n\nYay! We’ve just created a new repository! Here is what the landing page should look like:\n\n\n\nThis repository is currently public, so it’s visible to anyone, but since we are working in groups, we will need to give access to your group members. Click on the Settings tab for your repository and go to Collaborators.\n\n\n\nClick on Add people. Now let’s get the usernames of all of your group members and add them as collaborators to your repository.\n\n\n\n\n\n\nGreat! Now everyone in the group should have access to the repository.",
+    "crumbs": [
+      "Core Topics",
+      "Git & GitHub"
+    ]
+  },
+  {
+    "objectID": "github.html#create-a-repository-on-github",
+    "href": "github.html#create-a-repository-on-github",
+    "title": "Git & GitHub",
+    "section": "Create a Repository on GitHub",
+    "text": "Create a Repository on GitHub\n\n\n\n\n\n\nNotePractice\n\n\n\nNow that we’ve walked through how to create a repository on GitHub let’s try to make our own! Click over to GitHub and create your own repository (with a README.md). We’ll split into breakout groups to try this out and please let us know if any questions come up.",
+    "crumbs": [
+      "Core Topics",
+      "Git & GitHub"
+    ]
+  },
+  {
+    "objectID": "forks.html",
+    "href": "forks.html",
+    "title": "Forks",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nCreate a .gitignore in a repository using a GitHub template\nExplain the purpose of a .gitignore in collaborative projects\nEvaluate the content you think might warrant adding to the .gitignore",
+    "text": "By the end of this module, you will be able to:\n\nDefine “fork” in the context of Git/GitHub\nContrast forks with branches\nUse the fork feature on GitHub for an existing repository",
     "crumbs": [
       "Advanced Topics",
-      "The `.gitignore`"
+      "Forks"
     ]
   },
   {
-    "objectID": "git_ignore.html#overview",
-    "href": "git_ignore.html#overview",
-    "title": "The .gitignore",
-    "section": "Overview",
-    "text": "Overview\nThe purpose of the .gitignore is evident in its name: anything included in it is ignored by Git. This can be useful if you want to include data in your local version of your repository but don’t want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.",
-    "crumbs": [
-      "Advanced Topics",
-      "The `.gitignore`"
-    ]
-  },
-  {
-    "objectID": "git_ignore.html#creating-a-.gitignore",
-    "href": "git_ignore.html#creating-a-.gitignore",
-    "title": "The .gitignore",
-    "section": "Creating a .gitignore",
-    "text": "Creating a .gitignore\nWhen you first create a repository you will have the opportunity to select a template .gitignore based on the coding language you plan on using. In the “New Repository” process, scroll down to just below where you can choose to add a README.\n\n\n\nUnderneath the title “Add .gitignore” there is a dropdown menu for various templates that starts at “None”. If you click this dropdown menu you can type in keywords that will help you identify the template that you want to use.\n\n\n\nUnfortunately for R users, typing just “R” returns all templates that contain the letter ‘r’ so you will need to scroll a bit to find the option that is actually for the R Statistical Environment. Once you find the option you want, click it and the template dropdown should change from “.gitignore template: None” to “.gitignore template: &lt;your pick&gt;”.\n\n\n\nIf you create a repository without choosing a .gitignore template, don’t worry! You can always create one later! When cloning a repository using RStudio, a .gitignore file will be automatically created when setting up the RStudio project on your local computer. If you clone via the command line touch .gitignore would create the necessary file.",
-    "crumbs": [
-      "Advanced Topics",
-      "The `.gitignore`"
-    ]
-  },
-  {
-    "objectID": "git_ignore.html#interacting-with-the-.gitignore",
-    "href": "git_ignore.html#interacting-with-the-.gitignore",
-    "title": "The .gitignore",
-    "section": "Interacting with the .gitignore",
-    "text": "Interacting with the .gitignore\nOnce you have the one, you can open the .gitignore by clicking it from the “Files” pane of RStudio.\n\n\n\nAfter you click it you’ll be looking at a file that looks very similar to any other file in RStudio.\n\n\n\nNow let’s add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.\nIf we add *.Rproj to our .gitignore, the Git pane will show that the only change is that lines have been added to the .gitignore. The .Rproj file with the double yellow question marks next to it is gone!\n\n\n\nOnce you’ve edited the .gitignore it is generally a good practice to push those changes as soon as possible. If you flag a certain file (or folder) to be ignored while someone else is depending on it, if you wait to push the change you can risk a serious conflict. Or, they might commit a file you want ignored which is frustrating to remove (see “Exceptions to the .gitignore” below).\n\n\n\nOnly the commit is pictured above, but pushing & pulling works in the same way here as it does elsewhere.",
-    "crumbs": [
-      "Advanced Topics",
-      "The `.gitignore`"
-    ]
-  },
-  {
-    "objectID": "git_ignore.html#our-recommendations",
-    "href": "git_ignore.html#our-recommendations",
-    "title": "The .gitignore",
-    "section": "Our Recommendations",
-    "text": "Our Recommendations\nThere are many different opinions on what should go into a .gitignore but we have a few suggestions that might prove helpful (or are at least worth considering).\n\nUse the GitHub .gitignore template for your chosen programming environment\n\nThere are a lot of small files that typical users don’t care about that your project will accumulate over its lifecycle. If you don’t flag these in the .gitignore it can become difficult to sort through your repository\n\nAdd .DS_Store\n\nMacs create a “Desktop Services Store” file (or “.DS_Store” for short) every time you open a folder. This file is invisible in your file manager but can be committed. This file has no practical value in your project and a separate one exists in every subfolder so tracking them can quickly clutter a repository if you use subfolders\n\nOther Considerations\n\nSome people recommend adding everything your script creates to the .gitignore. The theory being that if someone wants to see those outputs, they would only need to run your script(s) in order to create their own versions\nAnother way of thinking about this is to create a dedicated folder to store products in (e.g., “data”, “exports”, etc.) and then add that folder to the .gitignore. This means you don’t need to worry about adding specific files to the .gitignore so long as all the files live in a folder you’ve already designated as something for Git to not track\n\nDo you have another idea for what you typically add to a .gitignore?\n\nPlease share it with us by posting an Issue; we’d love to hear from you!\n\n\n\nShould You Ignore the .Rproj File?\nIf you are an RStudio user, you could choose to add the R project file to your .gitignore. However, this is a somewhat thorny decision with strong arguments on both sides. We’ll try to summarize some of the big considerations below to help inform your decision.\n\nOption A: Commit the .Rproj\nThere are (in our opinion) three strong arguments for committing the .Rproj:\n\nEase of Access\n\nFor non-R users, it can be really helpful to have just one file that they need to double click in order to open and interact with the whole R project. By committing the .Rproj, you make the post-clone start up instructions much simpler (i.e., “click the file ending in ‘.Rproj’ and you’re good to go”)\n\nFacilitate Cloning Outside of RStudio\n\nWhile our workshop has exclusively covered cloning a repo through RStudio, it is absolutely possible to clone without using RStudio. If someone goes this route, and the .Rproj is not already included in the repo, they will be left without one. So, after the clone they would then have an extra step to create their own .Rproj if they wanted to use RStudio to interact with the code\nNote that if everyone on your team is cloning via RStudio, this is not really an issue because cloning via RStudio creates a new .Rproj if one does not already exist\n\nEnforce Project Settings\n\nFundamentally, the .Rproj is a list of settings that you’re using for a specific project in RStudio. If you wanted to create some defaults of those settings for anyone who cloned your repository, you could commit your .Rproj with your preferred settings\nThat said, any member of your team who changed those settings would have the option to commit the corresponding change to the .Rproj file and the next time you pull you would have their settings instead\n\n\n\n\nOption B: Ignore the .Rproj\nWe feel there are some serious reasons for ignoring the .Rproj as well:\n\nRisk of Deletion\n\nSay you decide to commit your .Rproj, what happens if someone deletes it and pushes that deletion? This can happen if team members clone their version of the repo with a different name resulting in two local .Rproj files where one is redundant from that team member’s perspective\nIf a .Rproj is committed and then subsequently deleted, everyone who pulls that change will delete their local project. This results in an instant error that can be difficult to recognize if you don’t know beforehand about this risk. The only fix is for all affected users to re-clone the repository\nSo, if you add the .Rproj to the .gitignore preemptively, you can avoid the risk of this happening at some later stage; you could also add it as “*.Rproj” so regardless of the name of the file it will be ignored if the file type is .Rproj\n\nLoss of Flexibility\n\nWhen you commit your .Rproj you are “locking in” the name of your project. If your preliminary data exploration and analyses bring new hypotheses and goals to light you may want to change your project name to better match this new framing. If you had previously committed your .Rproj, it can be a hassle to change its name and push this change\nAlternatively, you may want to change your GitHub repository name after publication to share keywords with your final manuscript title or the journal name to make the repository more easily searchable by your readers. Technically you could change the GitHub repository name without changing the corresponding .Rproj filename but there will be some disonance there if your readers clone your code\n\nPreserve Team Members’ Local Filing Decisions\n\nMost working group members are involved in a staggering variety of pursuits in addition to their role in a synthesis working group. People tend to have their own filing systems in their computers to help them quickly and easily navigate among their different projects\nIf you commit the .Rproj, you force everyone who clones your repository to use your naming convention which can be a hurdle (albeit likely a minor one) as they juggle their responsibilities\n\n\n\n\nDecision\nUltimately, this is up to you and your team to decide! Hopefully our outlined reasons for and against adding the .Rproj to the .gitignore help inform this decision and we are happy to discuss this more if you have follow up questions!",
-    "crumbs": [
-      "Advanced Topics",
-      "The `.gitignore`"
-    ]
-  },
-  {
-    "objectID": "git_ignore.html#ignoring-previously-tracked-content",
-    "href": "git_ignore.html#ignoring-previously-tracked-content",
-    "title": "The .gitignore",
-    "section": "Ignoring Previously Tracked Content",
-    "text": "Ignoring Previously Tracked Content\nImagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by Git and every time you alter that file RStudio’s “Git” pane will notify you that the file changed by placing the blue “M” next to the file’s name. Let’s say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop Git from tracking future changes to the file. If this is the case, you’ll need to do the following:\n\nEither (A) delete the file or (B) move it out of the repository’s folder\n\nEither option will register as “deleting” the file from Git’s perspective\n\nCommit the deletion\nPush that change\nAdd the name of that file to your .gitignore\n\nOnce you’ve done these steps, even if you put the file back in your repository, Git won’t track its addition or any changes to it over time.",
-    "crumbs": [
-      "Advanced Topics",
-      "The `.gitignore`"
-    ]
-  },
-  {
-    "objectID": "conflicts.html",
-    "href": "conflicts.html",
-    "title": "Conflicts",
+    "objectID": "forks.html#module-learning-objectives",
+    "href": "forks.html#module-learning-objectives",
+    "title": "Forks",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the causes of merge conflicts\nExplain how to avoid merge conflicts\nSummarize what to do if a merge conflict occurs",
+    "text": "By the end of this module, you will be able to:\n\nDefine “fork” in the context of Git/GitHub\nContrast forks with branches\nUse the fork feature on GitHub for an existing repository",
     "crumbs": [
       "Advanced Topics",
-      "Conflicts"
+      "Forks"
     ]
   },
   {
-    "objectID": "conflicts.html#module-learning-objectives",
-    "href": "conflicts.html#module-learning-objectives",
-    "title": "Conflicts",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the causes of merge conflicts\nExplain how to avoid merge conflicts\nSummarize what to do if a merge conflict occurs",
+    "objectID": "forks.html#what-is-a-fork",
+    "href": "forks.html#what-is-a-fork",
+    "title": "Forks",
+    "section": "What is a Fork?",
+    "text": "What is a Fork?\nA fork is a duplicate of a Git repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.\nThe difference between forks and branches is a source of great confusion for many (even veteran!) Git users but hopefully this list helps to clarify:\n\nA fork creates a new repository while a branch exists within a given repository\nA fork is owned by a different user/organization than the original, a branch does not change repository ownership\nA fork’s “parent” repository is not recognized by Git but Git does ‘know’ which branch a given branch originates from.",
     "crumbs": [
       "Advanced Topics",
-      "Conflicts"
+      "Forks"
     ]
   },
   {
-    "objectID": "conflicts.html#what-is-a-merge-conflict",
-    "href": "conflicts.html#what-is-a-merge-conflict",
-    "title": "Conflicts",
-    "section": "What is a Merge Conflict?",
-    "text": "What is a Merge Conflict?\nMerge conflicts are a normal part of the Git workflow so don’t get discouraged when you run into them! They occur when Git cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.",
+    "objectID": "forks.html#choosing-whether-to-fork-or-to-branch",
+    "href": "forks.html#choosing-whether-to-fork-or-to-branch",
+    "title": "Forks",
+    "section": "Choosing Whether to Fork or to Branch",
+    "text": "Choosing Whether to Fork or to Branch\nA good rule of thumb for whether you should fork or branch a repository is based on whether you’re working independently from the owner of the repository versus collaborating actively with them.\nIf you are largely independent from the repository’s owner, fork that repository to get your own copy to independently work in. If you are actively collaborating, it is likely that you’ll want to work in a branch.\nIt is important to note that both forks and branches can be merged back into their source (the “main” branch for branches and the original repository for forks) via pull request so you need not worry that choosing one or the other will preclude integration with the source.",
     "crumbs": [
       "Advanced Topics",
-      "Conflicts"
+      "Forks"
     ]
   },
   {
-    "objectID": "conflicts.html#brief-overview-of-merge-conflict-workflow",
-    "href": "conflicts.html#brief-overview-of-merge-conflict-workflow",
-    "title": "Conflicts",
-    "section": "Brief Overview of Merge Conflict Workflow",
-    "text": "Brief Overview of Merge Conflict Workflow\nSo the basic steps to resolving a merge conflict using RStudio are as follows:\n\nWhen a conflict happens, your local file will automatically be modified to include both possible lines (wrapped in some formatting characters described in greater detail below)\nEdit the lines in your file(s) that caused the merge conflict to your desired status\nCommit those changes\nPush your changes to GitHub\n\nWe can see those steps visually in the following workflow diagram:",
+    "objectID": "forks.html#brief-overview-of-fork-workflow",
+    "href": "forks.html#brief-overview-of-fork-workflow",
+    "title": "Forks",
+    "section": "Brief Overview of Fork Workflow",
+    "text": "Brief Overview of Fork Workflow\nForking is (arguably) one of the more straightforward Git workflows but before we cover it in detail, let’s review the broader context.\nYou begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient “Fork” button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository in your profile’s repository list.\nOnce the fork is created, you simply clone the repository as you would when beginning work with any other GitHub repository.\nFrom there on you work as your normally would with GitHub: edit, commit, pull, and push.\nWhile it is not shown in the below diagram, if needed you can submit a “pull request” (see Appendix B: Branches) to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.\n\n\n\nNow we’ve covered the general operation of forking, let’s go over the specifics step-by-step.",
     "crumbs": [
       "Advanced Topics",
-      "Conflicts"
+      "Forks"
     ]
   },
   {
-    "objectID": "conflicts.html#how-merge-conflicts-happen",
-    "href": "conflicts.html#how-merge-conflicts-happen",
-    "title": "Conflicts",
-    "section": "How Merge Conflicts Happen",
-    "text": "How Merge Conflicts Happen\nBelow is a common scenario that can lead to merge conflicts and then the steps to address a conflict when it occurs.\nLet’s say we have a repository that we’ve shared with a collaborator. Currently there’s a README.md and only one script, test-script.R, in it.\n\n\n\ntest-script.R contains one line. Suppose we want to work on this script and add more lines to it.\n\n\n\nLet’s go commit our edits. The green lines highlight the fact that we’ve added two new lines to our script, lines 2 and 3. We type out our commit message, and click Commit.\n\n\n\nGreat! The message “Your branch is ahead of ‘origin/main’ by 1 commit” lets us know that everything is proceeding smoothly. Suppose that we decided to take a break and stepped away from our computer.\n\n\n\nThen, unbeknownst to us, our collaborator made their edits to the same script and committed and pushed their changes to the GitHub repository. At the moment, here is what the shared repository looks like.\n\n\n\nWhen we get back to our computer, we’re ready to push our changes to GitHub, but an error shows up. Basically, it is telling us that our GitHub repository contains changes that we do not have on our local computer. To remedy this, the message suggests that we pull the changes from GitHub to our machine to catch our local machine back up.\n\n\n\nAfter clicking Pull, we get a new error message: “Merge conflict in test-script.R”.\n\n\n\nLooking closer, the merge conflict prompted a new version of test-script.R to pop up. This version contains our edits and our collaborator’s edits, along with the delimiter lines that start with &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt;. Git is urging us to manually fix the conflicted lines before continuing.\n\n\n\nOur file now has an U icon, which stands for an unresolved merge conflict.\n\n\n\nIn general terms the steps that come before a merge conflict are displayed in the visual below. Note that though this has visual similarity to the workflow diagrams throughout this bookdown we do not recommend intentionally causing a merge conflict :)",
+    "objectID": "forks.html#create-a-fork",
+    "href": "forks.html#create-a-fork",
+    "title": "Forks",
+    "section": "Create a Fork",
+    "text": "Create a Fork\nOn GitHub, navigate to the repository that you would like to fork for your own use. Note that in this case the repository we created to take these screen captures is very new but this need not be the case!\nIn the top right of the repository’s GitHub page there is a “Fork” button (between “Unwatch” and “Star”), click it to begin forking.\n\n\n\nThis redirects you to a page that is very similar to the page for creating a new repository de novo (see Chapter 3: Using GitHub).\nHere you can select who you want to own the repository from a dropdown including any organizations you are a member of and your username if you want to personally own the fork.\nYou can also change the repository name (though the default is to retain the same name) and add a description of your purpose for the fork.\nYou may notice that in this page you do not have the option to specify public versus private or any of the ‘initialize’ steps (e.g., README, gitignore, or licence). Forks will inherit these settings from the repository they are forked from so they do not need to specified here.\nOnce you are happy with the owner of the fork, the name, and the description, click the green “Create fork” button.\n\n\n\nDepending on the amount of content in the repository you are forking and your internet speed this may take anywhere from a few seconds to 1-2 minutes so you will need to wait for a moment while GitHub creates a new duplicate repository under the control of the owner you specified.\nAfter the process completes the page will refresh and you will find yourself on the landing page for your new forked repository!\n\n\n\nThis repository has a fork icon in the top left (to the left of the owner/repository name) and includes a link to the repository that it came from just beneath that.\nThe other salient difference is that between the branch and “Code” buttons and the list of files there is a bar that indicates whether the fork is up to date with the repository it was forked from.\nIf the “parent” repository is updated (i.e., someone pushes changes to it after you forked) you can click the “Fetch upstream” button to integrate those changes with your fork.\nIf you decide that your changes are a meaningful improvement that the parent repository could benefit from, you can click the “Contribute” button to begin the process of submitting a pull request to integrate your edits with the parent (see Appendix B: Branches for instructions on submitting a pull request).\nFrom here on you can work within your fork as you would within any other repository! Clone the fork into your local computer and work as you normally would.",
     "crumbs": [
       "Advanced Topics",
-      "Conflicts"
-    ]
-  },
-  {
-    "objectID": "conflicts.html#resolving-merge-conflicts",
-    "href": "conflicts.html#resolving-merge-conflicts",
-    "title": "Conflicts",
-    "section": "Resolving Merge Conflicts",
-    "text": "Resolving Merge Conflicts\nSo how do we resolve this merge conflict? We need to edit the script so that it looks like how we want it. We can either pick our lines to keep, our collaborator’s lines, some combination, or something new altogether. Be sure to communicate with your collaborator to discuss exactly how it should be fixed. After merging the changes wherever appropriate, delete the delimiter lines.\n\n\n\nThen stage, commit the changes, and push them to GitHub!\n\n\n\nPerfect! We’ve fixed the merge conflict!\n\n\n\nLet’s check back on the shared repository. The latest commit shows that we’ve successfully pushed our changes to GitHub.\n\n\n\n\n\n\nNavigating to the commit history, we see that first we committed our changes, then our collaborator committed and pushed their changes, causing a merge conflict since we were editing the same lines in the same file. To resolve this, we edited those lines directly in our RStudio and committed and pushed our changes once more. Finally, the merge conflict is resolved and all the necessary changes are merged.",
-    "crumbs": [
-      "Advanced Topics",
-      "Conflicts"
-    ]
-  },
-  {
-    "objectID": "conflicts.html#tips-on-avoiding-merge-conflicts",
-    "href": "conflicts.html#tips-on-avoiding-merge-conflicts",
-    "title": "Conflicts",
-    "section": "Tips on Avoiding Merge Conflicts",
-    "text": "Tips on Avoiding Merge Conflicts\nMerge conflicts aren’t exactly fun, so here are some tips to avoid them:\n\nCommunicate with your team members often to avoid working on the same files at the same time! Let each other know who is working on what\nCommit frequently and in small chunks\nTry pulling before committing",
-    "crumbs": [
-      "Advanced Topics",
-      "Conflicts"
+      "Forks"
     ]
   },
   {
@@ -536,246 +490,341 @@
     ]
   },
   {
-    "objectID": "forks.html",
-    "href": "forks.html",
-    "title": "Forks",
+    "objectID": "conflicts.html",
+    "href": "conflicts.html",
+    "title": "Conflicts",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine “fork” in the context of Git/GitHub\nContrast forks with branches\nUse the fork feature on GitHub for an existing repository",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the causes of merge conflicts\nExplain how to avoid merge conflicts\nSummarize what to do if a merge conflict occurs",
     "crumbs": [
       "Advanced Topics",
-      "Forks"
+      "Conflicts"
     ]
   },
   {
-    "objectID": "forks.html#module-learning-objectives",
-    "href": "forks.html#module-learning-objectives",
-    "title": "Forks",
+    "objectID": "conflicts.html#module-learning-objectives",
+    "href": "conflicts.html#module-learning-objectives",
+    "title": "Conflicts",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine “fork” in the context of Git/GitHub\nContrast forks with branches\nUse the fork feature on GitHub for an existing repository",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the causes of merge conflicts\nExplain how to avoid merge conflicts\nSummarize what to do if a merge conflict occurs",
     "crumbs": [
       "Advanced Topics",
-      "Forks"
+      "Conflicts"
     ]
   },
   {
-    "objectID": "forks.html#what-is-a-fork",
-    "href": "forks.html#what-is-a-fork",
-    "title": "Forks",
-    "section": "What is a Fork?",
-    "text": "What is a Fork?\nA fork is a duplicate of a Git repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.\nThe difference between forks and branches is a source of great confusion for many (even veteran!) Git users but hopefully this list helps to clarify:\n\nA fork creates a new repository while a branch exists within a given repository\nA fork is owned by a different user/organization than the original, a branch does not change repository ownership\nA fork’s “parent” repository is not recognized by Git but Git does ‘know’ which branch a given branch originates from.",
+    "objectID": "conflicts.html#what-is-a-merge-conflict",
+    "href": "conflicts.html#what-is-a-merge-conflict",
+    "title": "Conflicts",
+    "section": "What is a Merge Conflict?",
+    "text": "What is a Merge Conflict?\nMerge conflicts are a normal part of the Git workflow so don’t get discouraged when you run into them! They occur when Git cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.",
     "crumbs": [
       "Advanced Topics",
-      "Forks"
+      "Conflicts"
     ]
   },
   {
-    "objectID": "forks.html#choosing-whether-to-fork-or-to-branch",
-    "href": "forks.html#choosing-whether-to-fork-or-to-branch",
-    "title": "Forks",
-    "section": "Choosing Whether to Fork or to Branch",
-    "text": "Choosing Whether to Fork or to Branch\nA good rule of thumb for whether you should fork or branch a repository is based on whether you’re working independently from the owner of the repository versus collaborating actively with them.\nIf you are largely independent from the repository’s owner, fork that repository to get your own copy to independently work in. If you are actively collaborating, it is likely that you’ll want to work in a branch.\nIt is important to note that both forks and branches can be merged back into their source (the “main” branch for branches and the original repository for forks) via pull request so you need not worry that choosing one or the other will preclude integration with the source.",
+    "objectID": "conflicts.html#brief-overview-of-merge-conflict-workflow",
+    "href": "conflicts.html#brief-overview-of-merge-conflict-workflow",
+    "title": "Conflicts",
+    "section": "Brief Overview of Merge Conflict Workflow",
+    "text": "Brief Overview of Merge Conflict Workflow\nSo the basic steps to resolving a merge conflict using RStudio are as follows:\n\nWhen a conflict happens, your local file will automatically be modified to include both possible lines (wrapped in some formatting characters described in greater detail below)\nEdit the lines in your file(s) that caused the merge conflict to your desired status\nCommit those changes\nPush your changes to GitHub\n\nWe can see those steps visually in the following workflow diagram:",
     "crumbs": [
       "Advanced Topics",
-      "Forks"
+      "Conflicts"
     ]
   },
   {
-    "objectID": "forks.html#brief-overview-of-fork-workflow",
-    "href": "forks.html#brief-overview-of-fork-workflow",
-    "title": "Forks",
-    "section": "Brief Overview of Fork Workflow",
-    "text": "Brief Overview of Fork Workflow\nForking is (arguably) one of the more straightforward Git workflows but before we cover it in detail, let’s review the broader context.\nYou begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient “Fork” button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository in your profile’s repository list.\nOnce the fork is created, you simply clone the repository as you would when beginning work with any other GitHub repository.\nFrom there on you work as your normally would with GitHub: edit, commit, pull, and push.\nWhile it is not shown in the below diagram, if needed you can submit a “pull request” (see Appendix B: Branches) to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.\n\n\n\nNow we’ve covered the general operation of forking, let’s go over the specifics step-by-step.",
+    "objectID": "conflicts.html#how-merge-conflicts-happen",
+    "href": "conflicts.html#how-merge-conflicts-happen",
+    "title": "Conflicts",
+    "section": "How Merge Conflicts Happen",
+    "text": "How Merge Conflicts Happen\nBelow is a common scenario that can lead to merge conflicts and then the steps to address a conflict when it occurs.\nLet’s say we have a repository that we’ve shared with a collaborator. Currently there’s a README.md and only one script, test-script.R, in it.\n\n\n\ntest-script.R contains one line. Suppose we want to work on this script and add more lines to it.\n\n\n\nLet’s go commit our edits. The green lines highlight the fact that we’ve added two new lines to our script, lines 2 and 3. We type out our commit message, and click Commit.\n\n\n\nGreat! The message “Your branch is ahead of ‘origin/main’ by 1 commit” lets us know that everything is proceeding smoothly. Suppose that we decided to take a break and stepped away from our computer.\n\n\n\nThen, unbeknownst to us, our collaborator made their edits to the same script and committed and pushed their changes to the GitHub repository. At the moment, here is what the shared repository looks like.\n\n\n\nWhen we get back to our computer, we’re ready to push our changes to GitHub, but an error shows up. Basically, it is telling us that our GitHub repository contains changes that we do not have on our local computer. To remedy this, the message suggests that we pull the changes from GitHub to our machine to catch our local machine back up.\n\n\n\nAfter clicking Pull, we get a new error message: “Merge conflict in test-script.R”.\n\n\n\nLooking closer, the merge conflict prompted a new version of test-script.R to pop up. This version contains our edits and our collaborator’s edits, along with the delimiter lines that start with &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt;. Git is urging us to manually fix the conflicted lines before continuing.\n\n\n\nOur file now has an U icon, which stands for an unresolved merge conflict.\n\n\n\nIn general terms the steps that come before a merge conflict are displayed in the visual below. Note that though this has visual similarity to the workflow diagrams throughout this bookdown we do not recommend intentionally causing a merge conflict :)",
     "crumbs": [
       "Advanced Topics",
-      "Forks"
+      "Conflicts"
     ]
   },
   {
-    "objectID": "forks.html#create-a-fork",
-    "href": "forks.html#create-a-fork",
-    "title": "Forks",
-    "section": "Create a Fork",
-    "text": "Create a Fork\nOn GitHub, navigate to the repository that you would like to fork for your own use. Note that in this case the repository we created to take these screen captures is very new but this need not be the case!\nIn the top right of the repository’s GitHub page there is a “Fork” button (between “Unwatch” and “Star”), click it to begin forking.\n\n\n\nThis redirects you to a page that is very similar to the page for creating a new repository de novo (see Chapter 3: Using GitHub).\nHere you can select who you want to own the repository from a dropdown including any organizations you are a member of and your username if you want to personally own the fork.\nYou can also change the repository name (though the default is to retain the same name) and add a description of your purpose for the fork.\nYou may notice that in this page you do not have the option to specify public versus private or any of the ‘initialize’ steps (e.g., README, gitignore, or licence). Forks will inherit these settings from the repository they are forked from so they do not need to specified here.\nOnce you are happy with the owner of the fork, the name, and the description, click the green “Create fork” button.\n\n\n\nDepending on the amount of content in the repository you are forking and your internet speed this may take anywhere from a few seconds to 1-2 minutes so you will need to wait for a moment while GitHub creates a new duplicate repository under the control of the owner you specified.\nAfter the process completes the page will refresh and you will find yourself on the landing page for your new forked repository!\n\n\n\nThis repository has a fork icon in the top left (to the left of the owner/repository name) and includes a link to the repository that it came from just beneath that.\nThe other salient difference is that between the branch and “Code” buttons and the list of files there is a bar that indicates whether the fork is up to date with the repository it was forked from.\nIf the “parent” repository is updated (i.e., someone pushes changes to it after you forked) you can click the “Fetch upstream” button to integrate those changes with your fork.\nIf you decide that your changes are a meaningful improvement that the parent repository could benefit from, you can click the “Contribute” button to begin the process of submitting a pull request to integrate your edits with the parent (see Appendix B: Branches for instructions on submitting a pull request).\nFrom here on you can work within your fork as you would within any other repository! Clone the fork into your local computer and work as you normally would.",
+    "objectID": "conflicts.html#resolving-merge-conflicts",
+    "href": "conflicts.html#resolving-merge-conflicts",
+    "title": "Conflicts",
+    "section": "Resolving Merge Conflicts",
+    "text": "Resolving Merge Conflicts\nSo how do we resolve this merge conflict? We need to edit the script so that it looks like how we want it. We can either pick our lines to keep, our collaborator’s lines, some combination, or something new altogether. Be sure to communicate with your collaborator to discuss exactly how it should be fixed. After merging the changes wherever appropriate, delete the delimiter lines.\n\n\n\nThen stage, commit the changes, and push them to GitHub!\n\n\n\nPerfect! We’ve fixed the merge conflict!\n\n\n\nLet’s check back on the shared repository. The latest commit shows that we’ve successfully pushed our changes to GitHub.\n\n\n\n\n\n\nNavigating to the commit history, we see that first we committed our changes, then our collaborator committed and pushed their changes, causing a merge conflict since we were editing the same lines in the same file. To resolve this, we edited those lines directly in our RStudio and committed and pushed our changes once more. Finally, the merge conflict is resolved and all the necessary changes are merged.",
     "crumbs": [
       "Advanced Topics",
-      "Forks"
+      "Conflicts"
     ]
   },
   {
-    "objectID": "github.html",
-    "href": "github.html",
-    "title": "Git & GitHub",
+    "objectID": "conflicts.html#tips-on-avoiding-merge-conflicts",
+    "href": "conflicts.html#tips-on-avoiding-merge-conflicts",
+    "title": "Conflicts",
+    "section": "Tips on Avoiding Merge Conflicts",
+    "text": "Tips on Avoiding Merge Conflicts\nMerge conflicts aren’t exactly fun, so here are some tips to avoid them:\n\nCommunicate with your team members often to avoid working on the same files at the same time! Let each other know who is working on what\nCommit frequently and in small chunks\nTry pulling before committing",
+    "crumbs": [
+      "Advanced Topics",
+      "Conflicts"
+    ]
+  },
+  {
+    "objectID": "git_ignore.html",
+    "href": "git_ignore.html",
+    "title": "The .gitignore",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between Git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface",
+    "text": "By the end of this module, you will be able to:\n\nCreate a .gitignore in a repository using a GitHub template\nExplain the purpose of a .gitignore in collaborative projects\nEvaluate the content you think might warrant adding to the .gitignore",
     "crumbs": [
-      "Core Topics",
-      "Git & GitHub"
+      "Advanced Topics",
+      "The `.gitignore`"
     ]
   },
   {
-    "objectID": "github.html#module-learning-objectives",
-    "href": "github.html#module-learning-objectives",
-    "title": "Git & GitHub",
+    "objectID": "git_ignore.html#module-learning-objectives",
+    "href": "git_ignore.html#module-learning-objectives",
+    "title": "The .gitignore",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between Git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface",
+    "text": "By the end of this module, you will be able to:\n\nCreate a .gitignore in a repository using a GitHub template\nExplain the purpose of a .gitignore in collaborative projects\nEvaluate the content you think might warrant adding to the .gitignore",
     "crumbs": [
-      "Core Topics",
-      "Git & GitHub"
+      "Advanced Topics",
+      "The `.gitignore`"
     ]
   },
   {
-    "objectID": "github.html#version-control-background",
-    "href": "github.html#version-control-background",
-    "title": "Git & GitHub",
-    "section": "Version Control Background",
-    "text": "Version Control Background\nVersion control systems (including Git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).\nVersion control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.",
+    "objectID": "git_ignore.html#overview",
+    "href": "git_ignore.html#overview",
+    "title": "The .gitignore",
+    "section": "Overview",
+    "text": "Overview\nThe purpose of the .gitignore is evident in its name: anything included in it is ignored by Git. This can be useful if you want to include data in your local version of your repository but don’t want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.",
     "crumbs": [
-      "Core Topics",
-      "Git & GitHub"
+      "Advanced Topics",
+      "The `.gitignore`"
     ]
   },
   {
-    "objectID": "github.html#git-specific-background",
-    "href": "github.html#git-specific-background",
-    "title": "Git & GitHub",
-    "section": "Git-Specific Background",
-    "text": "Git-Specific Background\nGit can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In Git (and other version control systems) terms, this “tracked folder” is called a repository (which formally is a specific data structure storing versioning information).\nAlthough there many ways to start a new repository, GitHub (or any other cloud solutions, such as GitLab) provide among the most convenient way of starting a repository.\nLet’s distinguish between Git and GitHub:\n\nGit: version control software used to track files in a folder (a repository)\n\nGit creates the versioned history of a repository\n\nGitHub: website that allows users to store their Git repositories and share them with others (i.e. a graphical user interface or “GUI”)\n\nGitHub is a company that hosts Git repositories online and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.\n\nGitHub.com: github.com\nA user account: github.com/angelchen7\nAn organization account: github.com/lter",
+    "objectID": "git_ignore.html#creating-a-.gitignore",
+    "href": "git_ignore.html#creating-a-.gitignore",
+    "title": "The .gitignore",
+    "section": "Creating a .gitignore",
+    "text": "Creating a .gitignore\nWhen you first create a repository you will have the opportunity to select a template .gitignore based on the coding language you plan on using. In the “New Repository” process, scroll down to just below where you can choose to add a README.\n\n\n\nUnderneath the title “Add .gitignore” there is a dropdown menu for various templates that starts at “None”. If you click this dropdown menu you can type in keywords that will help you identify the template that you want to use.\n\n\n\nUnfortunately for R users, typing just “R” returns all templates that contain the letter ‘r’ so you will need to scroll a bit to find the option that is actually for the R Statistical Environment. Once you find the option you want, click it and the template dropdown should change from “.gitignore template: None” to “.gitignore template: &lt;your pick&gt;”.\n\n\n\nIf you create a repository without choosing a .gitignore template, don’t worry! You can always create one later! When cloning a repository using RStudio, a .gitignore file will be automatically created when setting up the RStudio project on your local computer. If you clone via the command line touch .gitignore would create the necessary file.",
     "crumbs": [
-      "Core Topics",
-      "Git & GitHub"
+      "Advanced Topics",
+      "The `.gitignore`"
     ]
   },
   {
-    "objectID": "github.html#exploring-github",
-    "href": "github.html#exploring-github",
-    "title": "Git & GitHub",
-    "section": "Exploring GitHub",
-    "text": "Exploring GitHub\nLet’s navigate over to GitHub and explore some of its features. Here is what the home screen looks like as of February 2022.\n\n\n\nLog in with your GitHub account that you should have created prior to this workshop.\n\n\n\nOnce you’ve logged in, you should see something like this:\n\n\n\nThis landing page has a nice summary of your recent repositories and activity on the left panel. Click on your icon at the top left corner and navigate to your profile.\n\n\n\nYour profile page shows the organizations that you’re a part of, as well as a more detailed view of your GitHub contributions/activities over time. There are also tabs at the top that lead you to your repositories, projects, packages, and starred repositories. If you would like, you can change your GitHub theme to dark mode by clicking on your icon at the top left corner and going to Settings then Appearances. For the purposes of this workshop, the rest of the screenshots for the GitHub website will be in dark mode to differentiate it from RStudio.\n\n\n\nIf there is anything else you would like to change about your account, the user settings page should have it.\n\nLooking at a GitHub Repository\nTo check the repositories that you’ve created, click on the Repositories tab. Note that the top left corner has a green button that will allow you to create new repositories. We will come back to that later. Let’s take a closer look at what the ucsb-ds-capstone-2021.github.io repository contains.\n\n\n\nThis screen shows the copy of a repository stored on GitHub, with its list of files, when the files and directories were last modified, and some information on who made the most recent changes.\n\n\n\nIf we look at the blue rectangle, we can see that there have been 151 commits made to this repository. By clicking on them, we can see the history of changes made to all of the files. Looks like 3 users were making changes in April.\n\n\n\nAnd finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:\n\n\n\nThe red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what Git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.\nNote: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead.\n\n\n\n\n\n\n\n\nCreating a Repository on GitHub\nTo stimulate a collaborative GitHub/RStudio workflow, we are going to have 1 person from each group create a new repository on their GitHub account. This will be the repository where everyone shares their files and code.\nTo create a new repository, follow these steps:\n\nNavigate to your profile page and click on the Repositories tab.\nClick on New.\n\n\n\n\n\nEnter a descriptive name for your new repository, here we named it git-practice (avoid upper case and use - or _ instead of spaces).\nWrite a 1-sentence description about the repository content.\nChoose Public (as of January 2019, GitHub now offers unlimited free private repositories with a maximum of 3 collaborators).\nCheck Add a README file.\n\n\n\n\nYay! We’ve just created a new repository! Here is what the landing page should look like:\n\n\n\nThis repository is currently public, so it’s visible to anyone, but since we are working in groups, we will need to give access to your group members. Click on the Settings tab for your repository and go to Collaborators.\n\n\n\nClick on Add people. Now let’s get the usernames of all of your group members and add them as collaborators to your repository.\n\n\n\n\n\n\nGreat! Now everyone in the group should have access to the repository.",
+    "objectID": "git_ignore.html#interacting-with-the-.gitignore",
+    "href": "git_ignore.html#interacting-with-the-.gitignore",
+    "title": "The .gitignore",
+    "section": "Interacting with the .gitignore",
+    "text": "Interacting with the .gitignore\nOnce you have the one, you can open the .gitignore by clicking it from the “Files” pane of RStudio.\n\n\n\nAfter you click it you’ll be looking at a file that looks very similar to any other file in RStudio.\n\n\n\nNow let’s add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.\nIf we add *.Rproj to our .gitignore, the Git pane will show that the only change is that lines have been added to the .gitignore. The .Rproj file with the double yellow question marks next to it is gone!\n\n\n\nOnce you’ve edited the .gitignore it is generally a good practice to push those changes as soon as possible. If you flag a certain file (or folder) to be ignored while someone else is depending on it, if you wait to push the change you can risk a serious conflict. Or, they might commit a file you want ignored which is frustrating to remove (see “Exceptions to the .gitignore” below).\n\n\n\nOnly the commit is pictured above, but pushing & pulling works in the same way here as it does elsewhere.",
     "crumbs": [
-      "Core Topics",
-      "Git & GitHub"
+      "Advanced Topics",
+      "The `.gitignore`"
     ]
   },
   {
-    "objectID": "github.html#create-a-repository-on-github",
-    "href": "github.html#create-a-repository-on-github",
-    "title": "Git & GitHub",
-    "section": "Create a Repository on GitHub",
-    "text": "Create a Repository on GitHub\n\n\n\n\n\n\nNotePractice\n\n\n\nNow that we’ve walked through how to create a repository on GitHub let’s try to make our own! Click over to GitHub and create your own repository (with a README.md). We’ll split into breakout groups to try this out and please let us know if any questions come up.",
+    "objectID": "git_ignore.html#our-recommendations",
+    "href": "git_ignore.html#our-recommendations",
+    "title": "The .gitignore",
+    "section": "Our Recommendations",
+    "text": "Our Recommendations\nThere are many different opinions on what should go into a .gitignore but we have a few suggestions that might prove helpful (or are at least worth considering).\n\nUse the GitHub .gitignore template for your chosen programming environment\n\nThere are a lot of small files that typical users don’t care about that your project will accumulate over its lifecycle. If you don’t flag these in the .gitignore it can become difficult to sort through your repository\n\nAdd .DS_Store\n\nMacs create a “Desktop Services Store” file (or “.DS_Store” for short) every time you open a folder. This file is invisible in your file manager but can be committed. This file has no practical value in your project and a separate one exists in every subfolder so tracking them can quickly clutter a repository if you use subfolders\n\nOther Considerations\n\nSome people recommend adding everything your script creates to the .gitignore. The theory being that if someone wants to see those outputs, they would only need to run your script(s) in order to create their own versions\nAnother way of thinking about this is to create a dedicated folder to store products in (e.g., “data”, “exports”, etc.) and then add that folder to the .gitignore. This means you don’t need to worry about adding specific files to the .gitignore so long as all the files live in a folder you’ve already designated as something for Git to not track\n\nDo you have another idea for what you typically add to a .gitignore?\n\nPlease share it with us by posting an Issue; we’d love to hear from you!\n\n\n\nShould You Ignore the .Rproj File?\nIf you are an RStudio user, you could choose to add the R project file to your .gitignore. However, this is a somewhat thorny decision with strong arguments on both sides. We’ll try to summarize some of the big considerations below to help inform your decision.\n\nOption A: Commit the .Rproj\nThere are (in our opinion) three strong arguments for committing the .Rproj:\n\nEase of Access\n\nFor non-R users, it can be really helpful to have just one file that they need to double click in order to open and interact with the whole R project. By committing the .Rproj, you make the post-clone start up instructions much simpler (i.e., “click the file ending in ‘.Rproj’ and you’re good to go”)\n\nFacilitate Cloning Outside of RStudio\n\nWhile our workshop has exclusively covered cloning a repo through RStudio, it is absolutely possible to clone without using RStudio. If someone goes this route, and the .Rproj is not already included in the repo, they will be left without one. So, after the clone they would then have an extra step to create their own .Rproj if they wanted to use RStudio to interact with the code\nNote that if everyone on your team is cloning via RStudio, this is not really an issue because cloning via RStudio creates a new .Rproj if one does not already exist\n\nEnforce Project Settings\n\nFundamentally, the .Rproj is a list of settings that you’re using for a specific project in RStudio. If you wanted to create some defaults of those settings for anyone who cloned your repository, you could commit your .Rproj with your preferred settings\nThat said, any member of your team who changed those settings would have the option to commit the corresponding change to the .Rproj file and the next time you pull you would have their settings instead\n\n\n\n\nOption B: Ignore the .Rproj\nWe feel there are some serious reasons for ignoring the .Rproj as well:\n\nRisk of Deletion\n\nSay you decide to commit your .Rproj, what happens if someone deletes it and pushes that deletion? This can happen if team members clone their version of the repo with a different name resulting in two local .Rproj files where one is redundant from that team member’s perspective\nIf a .Rproj is committed and then subsequently deleted, everyone who pulls that change will delete their local project. This results in an instant error that can be difficult to recognize if you don’t know beforehand about this risk. The only fix is for all affected users to re-clone the repository\nSo, if you add the .Rproj to the .gitignore preemptively, you can avoid the risk of this happening at some later stage; you could also add it as “*.Rproj” so regardless of the name of the file it will be ignored if the file type is .Rproj\n\nLoss of Flexibility\n\nWhen you commit your .Rproj you are “locking in” the name of your project. If your preliminary data exploration and analyses bring new hypotheses and goals to light you may want to change your project name to better match this new framing. If you had previously committed your .Rproj, it can be a hassle to change its name and push this change\nAlternatively, you may want to change your GitHub repository name after publication to share keywords with your final manuscript title or the journal name to make the repository more easily searchable by your readers. Technically you could change the GitHub repository name without changing the corresponding .Rproj filename but there will be some disonance there if your readers clone your code\n\nPreserve Team Members’ Local Filing Decisions\n\nMost working group members are involved in a staggering variety of pursuits in addition to their role in a synthesis working group. People tend to have their own filing systems in their computers to help them quickly and easily navigate among their different projects\nIf you commit the .Rproj, you force everyone who clones your repository to use your naming convention which can be a hurdle (albeit likely a minor one) as they juggle their responsibilities\n\n\n\n\nDecision\nUltimately, this is up to you and your team to decide! Hopefully our outlined reasons for and against adding the .Rproj to the .gitignore help inform this decision and we are happy to discuss this more if you have follow up questions!",
     "crumbs": [
-      "Core Topics",
-      "Git & GitHub"
+      "Advanced Topics",
+      "The `.gitignore`"
     ]
   },
   {
-    "objectID": "issues.html",
-    "href": "issues.html",
-    "title": "GitHub Issues",
+    "objectID": "git_ignore.html#ignoring-previously-tracked-content",
+    "href": "git_ignore.html#ignoring-previously-tracked-content",
+    "title": "The .gitignore",
+    "section": "Ignoring Previously Tracked Content",
+    "text": "Ignoring Previously Tracked Content\nImagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by Git and every time you alter that file RStudio’s “Git” pane will notify you that the file changed by placing the blue “M” next to the file’s name. Let’s say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop Git from tracking future changes to the file. If this is the case, you’ll need to do the following:\n\nEither (A) delete the file or (B) move it out of the repository’s folder\n\nEither option will register as “deleting” the file from Git’s perspective\n\nCommit the deletion\nPush that change\nAdd the name of that file to your .gitignore\n\nOnce you’ve done these steps, even if you put the file back in your repository, Git won’t track its addition or any changes to it over time.",
+    "crumbs": [
+      "Advanced Topics",
+      "The `.gitignore`"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
+    "text": "This workshop provides an overview of what “version control” systems are and how they fit into collaborative coding within your team. Specifically, we are focusing here on an introductory approach to version control that focuses on using GitHub either by itself or with Git via RStudio. We are always happy to improve workshop content so please don’t hesitate to post an Issue on our GitHub repository if you see clear areas for improvement!",
     "crumbs": [
-      "Project Management",
-      "GitHub Issues"
+      "Workshop Home"
     ]
   },
   {
-    "objectID": "issues.html#module-learning-objectives",
-    "href": "issues.html#module-learning-objectives",
-    "title": "GitHub Issues",
+    "objectID": "index.html#workshop-preparation",
+    "href": "index.html#workshop-preparation",
+    "title": "Overview",
+    "section": "Workshop Preparation",
+    "text": "Workshop Preparation\nTo maximize the value of this workshop to you, we recommend that you take the following steps before the day of the workshop. You may have already completed some or all of these steps but please read through and confirm that you’ve done all of the steps that are relevant to you to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the “SciComp Team” dropdown menu in the “People” page.\n\n\n\n\n\n\nNoteInstitution-Owned Computers\n\n\n\nIf your institution has a dedicated IT team that has sole power to install software on your computer, you will need to contact them before the workshop to do the installation bits of the prep steps we outline below.\n\n\nThere are a couple of distinct use-cases you might have for GitHub that will affect what preparation you need to do before this workshop. Consider the tabs below and follow all of the numbered steps in the choice that best fits your needs.\n\nGitHub By ItselfGitHub with RStudio\n\n\n\n1. Create a GitHub Account\nStart by creating an account on GitHub. GitHub is how you’ll be able to collaborate with others in a way that tracks changes over time while facilitating a range of project management tools.\nDr. Jennifer Bryan has some nice guidelines for picking a good username so choose carefully when you make your profile. We also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub.\n\n\n2. Celebrate!\nAfter following all the previous preparation steps, your setup should now be complete.\n\n\n\n\n\n\n\n\n\nNoteRunning Code in Following Steps\n\n\n\nThe below preparation steps includes some code for making sure everything is installed as it should be. All code is either R code () or is command line code (). In either case, you’ll run all provided code in RStudio.  R code should be run in the “Console” tab of RStudio while  command line code should be run in the “Terminal” tab of RStudio.\nIf you get errors with the provided code, double check that you are running it in the right place!\n\n\n\n1. Create a GitHub Account\nStart by creating an account on GitHub. GitHub is how you’ll be able to collaborate with others in a way that tracks changes over time while facilitating a range of project management tools.\nDr. Jennifer Bryan has some nice guidelines for picking a good username so choose carefully when you make your profile. We also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub.\n\n\n2. Install R\nNow you should install R on your computer. If you already have R, check that you have at least version 4.0.0 by running the following  R code:\n\n# Run me in RStudio's \"Console\"\nversion$version.string\n\nIf your version starts with a 3 (e.g., the above code returns “R version 3…”), please update R to make sure all packages behave as expected.\n\n\n3. Install RStudio\nOnce you have R (ver. ≥4.0), install RStudio. If you already have RStudio installed, you may want to make sure that you’re using a recent version to take advantage of some quality of life improvements that are broadly useful.\n\n\n4. Install Git\nYou can now install Git! Git is the software that actually does the behind-the-scenes version control operations we’ll cover in this workshop. Installing Git differs slightly depending on your operating system so check out the tabs below for the right option for you. These instructions are modified from Jennifer Bryan’s excellent “Happy Git and GitHub for the useR” ebook.\n\n Mac Windows Linux\n\n\nRun the following  command line code.\nxcode-select --install\nFor more detailed instructions, see here.\n\n\nInstall Git for Windows (a.k.a. “Git Bash”). When asked about “Adjusting your PATH environment”, select “Git from the command line and also from 3rd-party software”.\nFor more detailed instructions, see here.\n\n\nInstall Git via your distro’s package manager (in the  Terminal).\nIf you use Ubuntu or Debian Linux that  code is as follows:\nsudo apt-get install git\nIf instead you use Fedora or RedHat Linux the  code is instead:\nsudo yum install git\nFor more detailed instructions, see here.\n\n\n\n\n\n5. Check that Git’s Installation Worked\nRegardless of your operating system, once you’ve installed Git, check that worked with the following  command line code. All operating systems should be able to run this code.\nwhich git\n\nConfirm Connection in RStudio\n\n\nRStudio should also be able to detect Git so let’s check from that side too. In RStudio click through the following menus: “Tools”  “Global Options”  “Git / SVN” (cardboard box icon in left sidebar). If you see a file path under “Git executable” then you are good to go!\nIf Git was not detected, this may be caused by having your RStudio session open while you installed Git for the first time. In that case, please close and restart RStudio before checking again.\n\n\n\n\n\n6. Connect Git and GitHub\nThe last step to take before you’re all set for the workshop is to get these components talking to one another! You set a password for your GitHub which is used for logging in to GitHub but to actually put your code changes from your computer up to GitHub you’ll need to authenticate yourself. There are two paths for authentication:\n\nPersonal Access Token (PAT)\nSecure Shell (SSH)\n\nWhat’s the difference? Essentially, authenticating via token makes many things “just work” while authenticating via SSH will work for some things but in other contexts you would also need to do token-based authentication. For a more complete discussion of the benefits and drawbacks of each, see Dr. Bryan’s “HTTPS versus SSH” page.\nFollow the steps of your chosen authentication method in the tabs below.\n\nPersonal Access Token with RStudioSSH\n\n\nAll of the code chunks for authenticating with a token are  R code that should be run in the “Console” pane of RStudio. You may also create a script and run the code from there if you so desire but you’ll likely only need this code once so the script’s value would be short-lived.\n\n# Install the `usethis` and `gitcreds` packages\ninstall.packages(c(\"usethis\", \"gitcreds\"))\n\n# Create a token (Note this will open a GitHub browser tab)\n## See steps 6-10 in GitHub's PAT tutorial (link below)\n1usethis::create_github_token()\n\n\n1\n\nLeave parentheses empty\n\n\n\n\nCopy your token at the end of the above step. Once you leave the page where your token is displayed you’ll never get to see it again! So if you close that page without copying it you’ll need to make a new one in order to continue.\nOnce you’ve copied your token, run the code below to save your credentials in RStudio.\n\n# Now, give your token to RStudio\n## After you run this line follow the prompts in the \"Console\" tab of RStudio\n2gitcreds::gitcreds_set()\n\n\n2\n\nLeave parentheses empty here as well!\n\n\n\n\nThis line of code will prompt you to paste your token in the “Console” tab. After you do so (and hit “Enter”), your token will be safely stored in RStudio!\n\nFurther Information\nYou may also find GitHub’s PAT tutorial (this is the link referenced in the first token-authentication code chunk!) or the Happy Git with R PAT tutorial helpful.\n\n\n\nAll of the code chunks for authenticating with SSH are  command line code that should be agnostic to your programming language.\nFirst, we need to check whether you already have SSH keys created on your computer. If you get a message saying that nothing exists or the path doesn’t exist, you do not (yet) have SSH keys.\n\nls -al ~/.ssh/\n\nIf you do need to create an SSH key pair you can do so via the command line. When you create a key pair you’ll need to include a descriptive comment to help ‘future you’ if you ever have multiple key pairs in your life. We recommend “lter” plus your GitHub username to keep things simple.\n\nssh-keygen -t ed25519 -C \"lter-github\"\n\n\n\n\n\n\n\nTipOlder Computer?\n\n\n\nIf you get a warning/error because your system is too old to support the Ed25519 algorithm (that’s the variant recommended by GitHub) you can instead use:\n\nssh-keygen -t rsa -b 4096 -C \"lter-github\"\n\n\n\nAccept the prompt to save the key in the default location by hitting Enter. You will be prompted to enter a passphrase that will be required to access your SSH key later on. This step is technically optional but is considered a best practice. If SSH keys are totally new to you, we recommend skipping the passphrase step.\nOnce you’ve generated the key pair, follow GitHub’s instructions on adding that key pair to your computer’s ssh-agent (roughly equivalent to a password manager but just for SSH key pairs).\nFinally, you need to share the public key with your GitHub self. Once again we’ll refer you to the phenomenal materials generated by Dr. Bryan on this topic.\n\nFurther Information\nYou may also find GitHub’s SSH documentation or the Happy Git with R SSH tutorial helpful.\n\n\n\n\n\n\n7. Celebrate!\nAfter following all the previous preparation steps, your setup should now be complete.",
+    "crumbs": [
+      "Workshop Home"
+    ]
+  },
+  {
+    "objectID": "index.html#github-science-publications",
+    "href": "index.html#github-science-publications",
+    "title": "Overview",
+    "section": "GitHub + Science Publications",
+    "text": "GitHub + Science Publications\nThe reproducibility and collaborative benefits of GitHub for working scientists is well appreciated and increasingly well published upon. See below for brief synopses of papers published in this realm that we think may resonate with your team’s disciplinary backgrounds and motivations.\nIn the ecology and evolutionary biology sphere, Pereira Braga et al. published “Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution” in Methods in Ecology & Evolution. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper’s second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) Pereira Braga et al. 2023 for more detail than we’ve included in this blurb.\nIf you are concerned about the technical side of GitHub for yourself and/or your lab group, we recommend focusing on the lower technical difficulty benefits of GitHub (see the blue bars). We also think that some of the intermediate technical difficulty uses (orange bars) may be relevant to working group priorities and goals.",
+    "crumbs": [
+      "Workshop Home"
+    ]
+  },
+  {
+    "objectID": "milestones.html",
+    "href": "milestones.html",
+    "title": "GitHub Milestones",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
+    "text": "By the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
     "crumbs": [
       "Project Management",
-      "GitHub Issues"
+      "GitHub Milestones"
     ]
   },
   {
-    "objectID": "issues.html#what-is-an-issue",
-    "href": "issues.html#what-is-an-issue",
-    "title": "GitHub Issues",
-    "section": "What is an Issue?",
-    "text": "What is an Issue?\nIssues are a convenient way of identifying and delegating tasks within a repository as well as documenting progress over time. They can also be used as a digital ‘lab notebook’ for personal use to brainstorm on a novel topic or preserve important links or supplementary material for easy distribution across a whole team.\nImportantly, while issues can definitely be helpful they are not required to successfully use GitHub for collaborating as a team. Issues absolutely have the potential to facilitate division of labor within a team though and are thus worth covering in this training.\nAn additional function that may be outside of the scope of what you need to use within your team is that it allows non-members to flag issues that they’ve had with code written by your team or request additional functionality that doesn’t yet exist in your framework. Depending on your use of packages in R you may have already opened an issue on an existing R package to do just that!\nTo see a more complete example of how issues can be used we can examine the open issues of an established R package.\n\nIssues Example with the googledrive Package\nBelow is the GitHub landing page for the googldrive package and you can see that next to the underlined “Code” tab is an “Issues” tab with a gray circle with the number 22 in it. This number notifies us that as of this screen capture, there were twenty two open issues on this package’s GitHub repository. Note that your GitHub interface may be white but it will not change the position of buttons or tabs.\n\n\n\nIf you click over to the issues tab you will see the titles of all current “open” (i.e., ongoing) issues on the repository. Each issue has a title and beneath that a unique number following a # as well as how long ago the issue was opened and the GitHub username of the person who opened the issue. On the right side of each issue’s thumbnail you can see the number of comments added to it.\n\n\n\nComments can be used to have a full dialogue among different users – potentially both in and outside of the team responsible for managing the code! The conversational aspect of issues can make them functionally similar to an email thread or messaging app chain. This communication can help keep the solutions to tasks well-documented while ensuring that every member of your group can have their voice heard.",
-    "crumbs": [
-      "Project Management",
-      "GitHub Issues"
-    ]
-  },
-  {
-    "objectID": "issues.html#creating-your-first-issue",
-    "href": "issues.html#creating-your-first-issue",
-    "title": "GitHub Issues",
-    "section": "Creating your First Issue",
-    "text": "Creating your First Issue\nWhen you first visit the Issues tab of your repository it won’t include any open issues and will look like this.\n\n\n\nTo create an issue, click the green button and a new page will open that looks like the below.\n\n\n\nIn this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.\nWhile issue comments are completely free for you to use as you see fit, it is important to remember that your most frequent collaborator is yourself in the future so a future version of yourself will absolutely thank you for including extra information when you first open an issue. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.\nIn addition to the title and main body of the issue you can also see a sidebar on the right containing other options for adding detail to an issue. In particular, the “Assignees” and “Labels” sections can be useful in delegating a task to a specific person or naming the category that this task falls under respectively.\nReturning to our googledrive example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.\n\n\n\nWhen you are creating your first issue however you won’t have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.\nTo see the current label options, click the “Labels” text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click “Edit labels” to create new labels or modify the template labels.\n\n\n\n\n\n\n\n\n\nNotePractice - Labels\n\n\n\nWhat are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories?",
-    "crumbs": [
-      "Project Management",
-      "GitHub Issues"
-    ]
-  },
-  {
-    "objectID": "issues.html#opening-an-issue",
-    "href": "issues.html#opening-an-issue",
-    "title": "GitHub Issues",
-    "section": "Opening an Issue",
-    "text": "Opening an Issue\nOnce you’ve filled out the title and comment of the issue the green “Submit new issue” button will become clickable and you can click it to open your issue. You can either add labels or assign users to the issue during the initial opening phase or after the fact.\nIssues are automatically viewed as a sequential series of events from the first comment so all future additions to the issue will be added beneath that first comment that defines the title of the issue.\nAt the bottom of the issue there will be an open text box that you can add to with whatever information you feel is valuable in the context of this task. We will talk about closing issues in a moment but even when issues are closed they are always accessible so all documentation within an issue can be used later and is well worth any energy investment you can make.\nThere is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful.",
-    "crumbs": [
-      "Project Management",
-      "GitHub Issues"
-    ]
-  },
-  {
-    "objectID": "issues.html#appropriate-issue-scope",
-    "href": "issues.html#appropriate-issue-scope",
-    "title": "GitHub Issues",
-    "section": "Appropriate Issue Scope",
-    "text": "Appropriate Issue Scope\nAs a brief aside from the nuts and bolts of how to create and manage an issue, it is important to discuss appropriate issue scope.\nEssentially, an issue should- as much as possible-directly correspond to either a single task or a single conversation. It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.\nPersonally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are Specific, Measurable, Attainable, Relevant, and Time-specific), but there are many established ways of partitioning a larger project to achievable sub-tasks and you should use whichever is most intuitive to you.\nIf issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general ‘rules of thumb’ for the scope of tasks identified by issues.\n\n\n\n\n\n\nNotePractice - Create an Issue\n\n\n\nNow that we’ve covered what issues are and how to open them, let’s take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!",
-    "crumbs": [
-      "Project Management",
-      "GitHub Issues"
-    ]
-  },
-  {
-    "objectID": "issues.html#closing-an-issue",
-    "href": "issues.html#closing-an-issue",
-    "title": "GitHub Issues",
-    "section": "Closing an Issue",
-    "text": "Closing an Issue\nSo, let’s imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.\nIf you scroll to the bottom of that issue (where the adding comment textbox is) you will see a purple button titled “Close issue”.\n\n\n\nAfter clicking that button a purple check mark will appear on the bottom of the issue’s timeline that identifies the issue as closed and credits the user who closed it.\n\n\n\nWhen you return to your issue list you will see that issue is now absent from the list. However, next to the “[number] Open” button you can see a check mark with the number of closed issues.\n\n\n\nClicking that “Closed” button will access all past issues that are now closed.\n\n\n\nSo, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.\nThis greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.\nAs pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we’d encourage you to try using them in case they do prove helpful to your team!",
-    "crumbs": [
-      "Project Management",
-      "GitHub Issues"
-    ]
-  },
-  {
-    "objectID": "motivations.html",
-    "href": "motivations.html",
-    "title": "Workflows",
+    "objectID": "milestones.html#module-learning-objectives",
+    "href": "milestones.html#module-learning-objectives",
+    "title": "GitHub Milestones",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products",
+    "text": "By the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
     "crumbs": [
-      "Core Topics",
-      "Workflows"
+      "Project Management",
+      "GitHub Milestones"
     ]
   },
   {
-    "objectID": "motivations.html#module-learning-objectives",
-    "href": "motivations.html#module-learning-objectives",
-    "title": "Workflows",
+    "objectID": "milestones.html#what-is-a-milestone",
+    "href": "milestones.html#what-is-a-milestone",
+    "title": "GitHub Milestones",
+    "section": "What is a Milestone?",
+    "text": "What is a Milestone?\nIf you like documenting your tasks and progress over time with GitHub issues, but the scope of your work doesn’t require you to rely on GitHub projects, then GitHub milestones may be perfect for you!\nGitHub milestones track issues and pull requests in a repository so you can see what tasks still need to be completed in order to achieve a particular goal. This is particularly helpful if you are doing a lot of work in a single repository and know what new features/objectives you want to implement there.\nOn the other hand, if your work consists of working across multiple repositories, then opening a GitHub project may be more appropriate.",
+    "crumbs": [
+      "Project Management",
+      "GitHub Milestones"
+    ]
+  },
+  {
+    "objectID": "milestones.html#example-milestone",
+    "href": "milestones.html#example-milestone",
+    "title": "GitHub Milestones",
+    "section": "Example Milestone",
+    "text": "Example Milestone\nMilestones can help you keep track of concrete goals like version releases, which is useful when you’re thinking about the next feature to accomplish for a specific project.\nHere is an example of what a milestone can look like:\n\n\n\nA milestone has been opened for this repository to keep track of an R package’s resubmission to CRAN. This resubmission is about 75% of the way there, with 1 open issue and 3 closed ones.\nOnce you click on a milestone, you can see more details about the issues that need to be closed before the milestone is 100% complete.",
+    "crumbs": [
+      "Project Management",
+      "GitHub Milestones"
+    ]
+  },
+  {
+    "objectID": "milestones.html#creating-milestones",
+    "href": "milestones.html#creating-milestones",
+    "title": "GitHub Milestones",
+    "section": "Creating Milestones",
+    "text": "Creating Milestones\nOnce you’re ready to create a milestone, navigate to your repository and go to the “Issues” tab.\nClick on “Milestones”.\n\n\n\nThen click on either the “New milestone” or “Create a milestone” button if you haven’t created a milestone yet.\n\n\n\nFill out some information about your milestone, such as the title, due date (if any), and description. Click on “Create milestone” once you’re done.\n\n\n\nYou can always go back to the “Milestones” page and click “Edit” if you need to edit the title, due date, or description.\n\n\n\nTo add issues/pull requests to your milestone, you can click on your milestone and add them directly there.\n\n\n\nOr you can go to your issues/pull requests page and select the checkboxes next to the issues/pull requests you want to associate with a milestone. Then click on the “Milestone” dropdown menu to add them to the milestone.\n\n\n\nFor more information on milestones, check out its GitHub documentation page.",
+    "crumbs": [
+      "Project Management",
+      "GitHub Milestones"
+    ]
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "GitHub as a Portfolio",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products",
+    "text": "By the end of this module, you will be able to:\n\nExplain the benefits of using GitHub as a portfolio\nIdentify ways to strengthen your profile’s presence on GitHub\nCreate a “special README” on your profile\nAdd informative READMEs to your repositories",
     "crumbs": [
-      "Core Topics",
-      "Workflows"
+      "Other Topics",
+      "GitHub as a Portfolio"
     ]
   },
   {
-    "objectID": "motivations.html#workflow-options",
-    "href": "motivations.html#workflow-options",
-    "title": "Workflows",
-    "section": "Workflow Options",
-    "text": "Workflow Options\nIf you are working on any file that is the product of iterative edits, you have had to develop a workflow to approach that task. This could be a scientific paper, analytic code, or a presentation. There are many possible ways you could approach this task leveraging any number of software and hardware options but before we get into our discussion today about collaborative research using GitHub we would like to–briefly–outline some of the typical forms these workflows can take and how they fit into a broader framework of individual and synthesis science.\n\nIndividual Workflow\nAt its simplest, you could be storing your data and code on your local machine and doing the entirety of your work alone. When working on your code you would iteratively edit and save the same code file and you would have a static folder (or folders) for data that you added to as you collected and entered or downloaded additional data.\nThere are variants of this where you may be archiving everything on your hard drive (e.g., Time Machine on Mac OS, etc.) and you may be using a “save as” feature to preserve some iterations of your code. You may also perform this same operation within a cloud-based storage system (e.g., Box, Dropbox, Google Drive, etc.) so that some versions of both code and data are preserved based on time stamps.\nThis approach has the advantage of relatively few moving parts but such editing of your code loses all previous versions that aren’t explicitly preserved (as well as a record of the changes).\nAnother limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.\n\n\n\n\n\nData Lifecycle Considerations\nThe above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.\nIndividual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not as limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.\nHowever, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.\nCollaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.\n\n\n\n\n\nSynthesis Workflow\nVersion control systems preserve the iterative changes you and your team make to code and allow for informative titles and messages to be attached to these snapshots. This offers a clear advantage over ambiguous time-stamped versions preserved by cloud storage systems as it facilitates re-visiting code long after or by new team members who were not present for the initial writing. This approach is what we will be covering in greater depth in a few moments but the broad strokes are that you would preserve the history of your work and ensure that everyone uses the “right” version of the code.\nHowever, despite its advantages for collaborative coding, version control is not meant for preserving data so you would need to share data with your collaborators either via email or by storing data in the cloud and sharing links with team members. Depending upon how you implement either route for sharing data (email vs. cloud) your group is still at risk for group members using different versions of the data–especially if your group is involved in ongoing data collection.\nFurther, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., “home/users/me/project/data/…”) will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a ‘this folder does not exist’ error. This is absolutely surmountable but can be a source of frustration over longer project timelines.\n\n\n\n\n\nSynthesis Workflow on NCEAS’ Server\nFinally (for our purposes), you could build NCEAS’ server into your workflow to not only collaborate with colleagues on code but also centralize your data storage!\nThis method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members on the same folder path.\nThis means that even though each group member could code separately in their own ‘home’ folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the ‘shares’ folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data file.\nData can be moved from a specific computer onto the server by using any “File Transfer Protocol” (FTP) software (or “SSH FTP” a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a tutorial on how to go about setting up an FTP or SFTP program on your computer that we are also happy to go over in greater depth as needed!\nAdding the server to your team’s workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server ad infinitum thereafter.\nAn ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)\n\n\n\n\n\nSummary\nWhile each approach offers its own strengths and weaknesses, in our experience many scientists avoid the latter two options due to knowledge barriers about how to get set up in these programs and websites, much less how to actually navigate those systems once set up!\nToday, we will strive to cover the fundamentals of using a version control system in your workflow (Option 2) and–for some groups, depending on interest–how to extend that workflow further and leverage NCEAS’ server to share data and work on code.\nPlease don’t hesitate to ask questions and remember that this link is a resource that you should feel free to refer back to if you ever need a refresher or wish to teach peers! There are supplementary appendices as well which we do not anticipate being able to get to today but we do think are likely to be valuable to you as your confidence with these systems grows.",
+    "objectID": "portfolio.html#module-learning-objectives",
+    "href": "portfolio.html#module-learning-objectives",
+    "title": "GitHub as a Portfolio",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nExplain the benefits of using GitHub as a portfolio\nIdentify ways to strengthen your profile’s presence on GitHub\nCreate a “special README” on your profile\nAdd informative READMEs to your repositories",
     "crumbs": [
-      "Core Topics",
-      "Workflows"
+      "Other Topics",
+      "GitHub as a Portfolio"
     ]
+  },
+  {
+    "objectID": "portfolio.html#why-use-github-as-a-portfolio",
+    "href": "portfolio.html#why-use-github-as-a-portfolio",
+    "title": "GitHub as a Portfolio",
+    "section": "Why Use GitHub as a Portfolio?",
+    "text": "Why Use GitHub as a Portfolio?\nGitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work. A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you’ve accomplished as well! You can utilize GitHub’s existing functionalities to curate your own portfolio.",
+    "crumbs": [
+      "Other Topics",
+      "GitHub as a Portfolio"
+    ]
+  },
+  {
+    "objectID": "portfolio.html#strengthen-your-presence-on-github",
+    "href": "portfolio.html#strengthen-your-presence-on-github",
+    "title": "GitHub as a Portfolio",
+    "section": "Strengthen your presence on GitHub",
+    "text": "Strengthen your presence on GitHub\n\nFlesh out your profile\nFilling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top left corner and go to “Your profile”.\n\n\n\nThen select “Edit profile” on the right hand panel.\n\n\n\nThere, you will have options to edit your icon, name, biography, pronouns, workplace, location, website, and social media accounts. If you have links to other websites that contain your work, it’s a good idea to cross-reference them here so people can find you elsewhere.\n\n\n\nAlternatively, you can also edit your profile by clicking on your icon in the top left corner to go to “Settings”, then “Public profile”.\n\n\nPin repositories\nAdditionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility to visitors.\nTo choose which repositories to pin, navigate to the “Your profile” tab again and click “Customize your pins”. Once you’ve pinned the repositories you particularly want to highlight you can reorder your pinned repos by dragging the 6 dots at the top right corner.\n\n\n\nWhen you’re picking out your top repositories we recommend including repositories that:\n\nYou’re excited about (passion is always worth highlighting!)\nShowcase a breadth of skills\nDemonstrate significant expertise in a narrow range of skills\nYou’re proud of / were significant to your career",
+    "crumbs": [
+      "Other Topics",
+      "GitHub as a Portfolio"
+    ]
+  },
+  {
+    "objectID": "portfolio.html#special-readme",
+    "href": "portfolio.html#special-readme",
+    "title": "GitHub as a Portfolio",
+    "section": "Special README",
+    "text": "Special README\nA fun secret feature of GitHub is that you can have a “special README” displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile.\nTo get started, from your profile landing page, click on the ➕ button and select “New repository”.\n\n\n\nName your new repo the same name as your username. A notification should pop up indicating that you’re creating a special repo.\n\n\n\nFeel free to write an optional description. Set the repo visibility to public and make sure to check the box to initialize the repo with a README file. Click on the “Create repository” button once you’re done!\n\n\n\nThis is what the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the “Edit README” button to get started. Note that you could clone the special repo and edit from whatever code/text editor you prefer but given that the only editing you’ll do is to a markdown file that seems excessive to us.\n\n\n\nGitHub will have already populated README.md with a template that you can use as a starting point. Edit this Markdown file to your own liking. Here is a handy guide on formatting your text if you are not familiar with Markdown syntax.\nSome nice sections to include in your README.md are an “About me” section that gives a background on your work and interests, a contributions/achievements section, and a section on any other communities you’re involved in.\n\n\n\nYou can add emojis, images and GIFs so have fun editing your special README.",
+    "crumbs": [
+      "Other Topics",
+      "GitHub as a Portfolio"
+    ]
+  },
+  {
+    "objectID": "portfolio.html#informative-readmes",
+    "href": "portfolio.html#informative-readmes",
+    "title": "GitHub as a Portfolio",
+    "section": "Informative READMEs",
+    "text": "Informative READMEs\nOn a related note, an informative README in each repository is crucial to orienting your audience to the files in and purpose of each repository. It’s good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the Scientific Computing team’s guide to writing informative READMEs here!",
+    "crumbs": [
+      "Other Topics",
+      "GitHub as a Portfolio"
+    ]
+  },
+  {
+    "objectID": "portfolio.html#how-to-stand-out",
+    "href": "portfolio.html#how-to-stand-out",
+    "title": "GitHub as a Portfolio",
+    "section": "How to Stand Out",
+    "text": "How to Stand Out\nIf you act on the suggestions we’ve outlined above you will already be well on the way to fully leveraging GitHub as a professional portfolio. That said, there are always means of making yourself and your work stand out even more! Below is a non-exhaustive list of some ideas for continuing to improve your portfolio.\n\nCreate a Personal Website\nPersonal websites are a cool way to visually convey everything that goes into a portfolio–your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone’s personal website rather than their GitHub profile. A further benefit of creating a personal website is that you will learn (and demonstrate!) a suite of additional skills that contribute to your portfolio in and of themselves.\nAlthough the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you’re interested, check out the SciComp team’s tutorial on building a website with Quarto. Also feel free to check out Sam Csik’s tutorials on how to create and customize your website using Quarto.\nSince this will be a personal website deployed through GitHub Pages, remember to name your Quarto project and GitHub repo: &lt;YOUR-GITHUB-USERNAME&gt;.github.io, replacing &lt;YOUR-GITHUB-USERNAME&gt; with your actual username. You’re only allowed one user website with the github.io suffix. Follow the instructions in the linked tutorials to deploy the website via GitHub when you’re done! If all goes well, your website will be live at: https://&lt;YOUR-GITHUB-USERNAME&gt;.github.io/\nIf you’re looking for some inspiration, check out Angel’s (angelchen7.github.io) and Nick’s websites (njlyon0.github.io)!\n\n\nTeam up with Peers\nWithin any career path some of the best people to get professional feedback from are your peers! Your colleagues have applied to the same types of positions that you have and often have crucial insight that can help you learn from both the successes and the pitfalls that they have encountered. In addition, they can a well-trained critical eye that can help you improve your portfolio in ways you may never have imagined by yourself.\nOnce you have a draft portfolio, share it with your peers, advisers, and mentors for feedback. Write down their suggestions and act on all of the ones that seem reasonable to you. If you’d like, repeat this process of iterative revision for as long as you feel that it is needed! It may also make sense to gather other peers without GitHub portfolios into a journal club-style group and meet regularly to develop and critique one another’s materials.",
+    "crumbs": [
+      "Other Topics",
+      "GitHub as a Portfolio"
+    ]
+  },
+  {
+    "objectID": "prep-steps/check_git-installation.html",
+    "href": "prep-steps/check_git-installation.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
+    "section": "",
+    "text": "Regardless of your operating system, once you’ve installed Git, check that worked with the following  command line code. All operating systems should be able to run this code.\nwhich git\n\nConfirm Connection in RStudio\n\n\nRStudio should also be able to detect Git so let’s check from that side too. In RStudio click through the following menus: “Tools”  “Global Options”  “Git / SVN” (cardboard box icon in left sidebar). If you see a file path under “Git executable” then you are good to go!\nIf Git was not detected, this may be caused by having your RStudio session open while you installed Git for the first time. In that case, please close and restart RStudio before checking again."
+  },
+  {
+    "objectID": "prep-steps/create_github-acct.html",
+    "href": "prep-steps/create_github-acct.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
+    "section": "",
+    "text": "Start by creating an account on GitHub. GitHub is how you’ll be able to collaborate with others in a way that tracks changes over time while facilitating a range of project management tools.\nDr. Jennifer Bryan has some nice guidelines for picking a good username so choose carefully when you make your profile. We also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub."
+  },
+  {
+    "objectID": "prep-steps/install_r.html",
+    "href": "prep-steps/install_r.html",
+    "title": "SciComp Workshop - Collaborative Coding with GitHub",
+    "section": "",
+    "text": "Now you should install R on your computer. If you already have R, check that you have at least version 4.0.0 by running the following  R code:\n\n# Run me in RStudio's \"Console\"\nversion$version.string\n\nIf your version starts with a 3 (e.g., the above code returns “R version 3…”), please update R to make sure all packages behave as expected."
   },
   {
     "objectID": "projects.html",
