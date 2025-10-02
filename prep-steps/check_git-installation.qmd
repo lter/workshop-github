@@ -1,0 +1,14 @@
+Regardless of your operating system, once you've installed Git, check that worked with the following {{< fa terminal >}} command line code. All operating systems should be able to run this code.
+
+```
+which git
+```
+
+:::{.panel-tabset}
+#### Confirm Connection in RStudio
+
+RStudio should also be able to detect Git so let's check from that side too. In RStudio click through the following menus: "Tools" {{< fa arrow-right >}} "Global Options" {{< fa arrow-right >}} "Git / SVN" (cardboard box icon in left sidebar). **If you see a file path under "Git executable" then you are good to go!**
+
+If Git was _not_ detected, this may be caused by having your RStudio session open while you installed Git for the first time. **In that case, please close and restart RStudio before checking again.**
+
+:::

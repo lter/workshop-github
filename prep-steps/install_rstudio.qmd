@@ -1,0 +1,1 @@
+Once you have R (ver. ≥4.0), [install RStudio](https://posit.co/download/rstudio-desktop/). If you already have RStudio installed, you may want to make sure that you're using a recent version to take advantage of some quality of life improvements that are broadly useful.
