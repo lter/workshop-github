@@ -37,9 +37,11 @@ website:
           - issues.qmd
           - milestones.qmd
           - projects.qmd
-          - readmes.qmd
+      - section: "Other Topics"
+        contents:
           - portfolio.qmd
-      - server.qmd
+          - readmes.qmd
+          - server.qmd
   navbar:
     background: primary
     right:
