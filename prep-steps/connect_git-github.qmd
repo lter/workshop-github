@@ -35,7 +35,7 @@ gitcreds::gitcreds_set()  # <2>
 ```
 2. Leave parentheses empty here as well!
 
-This line of code will prompt you to paste your token in the "Console" tab. After you do so, your token will be safely stored in RStudio! 
+This line of code will prompt you to paste your token in the "Console" tab. After you do so (and hit "Enter"), your token will be safely stored in RStudio! 
 
 ##### Further Information
 
@@ -76,4 +76,5 @@ Finally, you need to share the public key with your GitHub self. Once again we'l
 ##### Further Information
 
 You may also find [GitHub's SSH documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or the [Happy Git with R SSH tutorial](https://happygitwithr.com/ssh-keys) helpful.
+
 ::::

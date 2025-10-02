@@ -63,7 +63,7 @@ The below preparation steps includes some code for making sure everything is ins
 
 {{< include prep-steps/install_git.qmd >}}
 
-#### 5. Check Git's Installation Worked
+#### 5. Check that Git's Installation Worked
 
 {{< include prep-steps/check_git-installation.qmd >}}
 
