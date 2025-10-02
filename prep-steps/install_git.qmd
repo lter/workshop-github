@@ -3,10 +3,9 @@ You can now install Git! Git is the software that actually does the behind-the-s
 :::{.panel-tabset}
 #### {{< fa brands apple >}} Mac
 
-In RStudio's "Terminal" pane, run the following {{< fa terminal >}} command line code.
+Run the following {{< fa terminal >}} command line code.
 
 ```
-# Run me in RStudio's "Terminal"
 xcode-select --install
 ```
 

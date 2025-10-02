@@ -37,7 +37,7 @@ There are a couple of distinct use-cases you might have for GitHub that will aff
 
 {{< include prep-steps/celebrate.qmd >}}
 
-### GitHub with Git & RStudio
+### GitHub with RStudio
 
 :::{.callout-note}
 #### Running Code in Following Steps
