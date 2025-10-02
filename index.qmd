@@ -4,11 +4,9 @@ title: "Overview"
 
 ### Welcome!
 
-This workshop provides an overview of what "version control" systems are and how they fit into collaborative coding within your team. Specifically, **we are focusing here on an introductory approach to version control that focuses on using Git via RStudio and GitHub**. We are always happy to improve workshop content so please don't hesitate to [post an Issue](https://github.com/lter/workshop-github/issues) on our GitHub repository if you see clear areas for improvement! 
-
 <img src="images/logos/github.png" alt="Logo for GitHub" align="right" width="17%" />
 
-To maximize the value of this workshop to you, **we recommend that you take the following steps before the day of the workshop**. Depending on whether you've used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the "SciComp Team" dropdown menu in the "People" page.
+This workshop provides an overview of what "version control" systems are and how they fit into collaborative coding within your team. Specifically, **we are focusing here on an introductory approach to version control that focuses on using GitHub either by itself or with Git via RStudio**. We are always happy to improve workshop content so please don't hesitate to [post an Issue](https://github.com/lter/workshop-github/issues) on our GitHub repository if you see clear areas for improvement! 
 
 ### Citing These Materials
 
@@ -18,9 +16,7 @@ If you'd like to cite these materials, please use the following citation:
 
 ## Workshop Preparation
 
-The below preparation includes some code chunks for making sure everything is installed as it should be. All code is either R code ({{< fa brands r-project >}}) or is command line code ({{< fa terminal >}}). **In both cases, you'll run all provided code <u>in RStudio</u>**. {{< fa brands r-project >}} R code should be run in the "Console" tab of RStudio while {{< fa terminal >}} command line code should be run in the "Terminal" tab of RStudio.
-
-<u>If you get errors with the provided code, _double check that you are running it in the right place</u>!_
+To maximize the value of this workshop to you, **we recommend that you take the following steps before the day of the workshop**. You may have already completed some or all of these steps but please read through and confirm that you've done all of the steps that are relevant to you to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the "SciComp Team" dropdown menu in the "People" page.
 
 :::{.callout-note}
 #### Institution-Owned Computers
@@ -28,7 +24,27 @@ The below preparation includes some code chunks for making sure everything is in
 If your institution has a dedicated IT team that has sole power to install software on your computer, you will need to contact them before the workshop to do the installation bits of the prep steps we outline below.
 :::
 
-### 1. Install R
+There are a couple of distinct use-cases you might have for GitHub that will affect what preparation you need to do before this workshop. Consider the tabs below and follow all of the numbered steps in the choice that best fits your needs.
+
+:::{.panel-tabset}
+### GitHub By Itself
+
+#### 1. Create a GitHub Account
+
+Start by creating an account on [GitHub](https://github.com/). GitHub is how you'll be able to collaborate with others in a way that tracks changes over time while facilitating a range of project management tools. 
+
+Dr. Jennifer Bryan has some nice guidelines for [picking a good username](https://happygitwithr.com/github-acct#username-advice) so choose carefully when you make your profile. We also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub.
+
+### GitHub with Git & RStudio
+
+The below preparation includes some code chunks for making sure everything is installed as it should be. All code is either R code ({{< fa brands r-project >}}) or is command line code ({{< fa terminal >}}). **In both cases, you'll run all provided code <u>in RStudio</u>**. {{< fa brands r-project >}} R code should be run in the "Console" tab of RStudio while {{< fa terminal >}} command line code should be run in the "Terminal" tab of RStudio.
+
+<u>If you get errors with the provided code, _double check that you are running it in the right place</u>!_
+
+:::
+
+
+### 2. Install R
 
 Begin by [installing R](https://www.r-project.org/). If you already have R, <u>check that you have at least version 4.0.0</u> by running the following {{< fa brands r-project >}} R code:
 
@@ -41,11 +57,11 @@ version$version.string
 
 If your version starts with a 3 (e.g., the above code returns "R version 3..."), please update R to make sure all packages behave as expected.
 
-### 2. Install RStudio
+### 3. Install RStudio
 
 Once you have R (ver. ≥4.0), [install RStudio](https://posit.co/download/rstudio-desktop/). If you already have RStudio installed, you may want to make sure that you're using a recent version to take advantage of some quality of life improvements that are broadly useful.
 
-### 3. Install Git
+### 4. Install Git
 
 With R and RStudio installed you can now install Git! Git is the software that actually does the behind-the-scenes version control operations we'll cover in this workshop. Installing Git differs slightly depending on your operating system so check out the tabs below for the right option for you. These instructions are modified from Jennifer Bryan's excellent "[Happy Git and GitHub for the useR](https://happygitwithr.com/)" ebook.
 
@@ -87,7 +103,7 @@ For more detailed instructions, see [here](https://happygitwithr.com/install-git
 
 :::
 
-### 4. Check Git's Installation Worked
+### 5. Check Git's Installation Worked
 
 Regardless of your operating system, once you've installed Git, check that worked with the following {{< fa terminal >}} command line code. All operating systems should be able to run this in the "Terminal" pane of RStudio.
 
@@ -103,10 +119,6 @@ RStudio should be able to detect Git so let's check from that side too. In RStud
 
 If you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio before checking again.
 :::
-
-### 5. Create a GitHub Account
-
-Now that you're all done installing programs, it's time to create an account on [GitHub](https://github.com/). GitHub is how you'll be able to collaborate with others. Dr. Bryan has some nice guidelines for [picking a good username](https://happygitwithr.com/github-acct#username-advice) and we also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub. 
 
 ### 6. Connect Git and GitHub
 
