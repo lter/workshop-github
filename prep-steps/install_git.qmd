@@ -1,0 +1,39 @@
+You can now install Git! Git is the software that actually does the behind-the-scenes version control operations we'll cover in this workshop. Installing Git differs slightly depending on your operating system so check out the tabs below for the right option for you. These instructions are modified from Jennifer Bryan's excellent "[Happy Git and GitHub for the useR](https://happygitwithr.com/)" ebook.
+
+:::{.panel-tabset}
+#### {{< fa brands apple >}} Mac
+
+In RStudio's "Terminal" pane, run the following {{< fa terminal >}} command line code.
+
+```
+# Run me in RStudio's "Terminal"
+xcode-select --install
+```
+
+For more detailed instructions, see [here](https://happygitwithr.com/install-git#macos).
+
+#### {{< fa brands windows >}} Windows
+
+[Install Git for Windows](https://gitforwindows.org/) (a.k.a. "Git Bash"). When asked about "Adjusting your PATH environment", **select "Git from the command line and also from 3rd-party software"**.
+
+For more detailed instructions, see [here](https://happygitwithr.com/install-git#install-git-windows).
+
+#### {{< fa brands linux >}} Linux
+
+Install Git via your distro's package manager (in the {{< fa terminal >}} Terminal).
+
+If you use Ubuntu or Debian Linux that {{< fa terminal >}} code is as follows:
+
+```
+sudo apt-get install git
+```
+
+If instead you use Fedora or RedHat Linux the {{< fa terminal >}} code is instead:
+
+```
+sudo yum install git
+```
+
+For more detailed instructions, see [here](https://happygitwithr.com/install-git#linux).
+
+:::

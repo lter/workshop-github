@@ -1,0 +1,10 @@
+Now you should [install R](https://www.r-project.org/) on your computer. If you already have R, <u>check that you have at least version 4.0.0</u> by running the following {{< fa brands r-project >}} R code:
+
+```{r r-ver-check}
+#| eval: false
+
+# Run me in RStudio's "Console"
+version$version.string
+```
+
+If your version starts with a 3 (e.g., the above code returns "R version 3..."), please update R to make sure all packages behave as expected.
