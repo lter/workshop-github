@@ -1,0 +1,1 @@
+Once you have R (ver. ≥4.0), [install Positron](https://positron.posit.co/). If you already have Positron installed, you may want to make sure that you're using a recent version to take advantage of the features available in the most recent version.
