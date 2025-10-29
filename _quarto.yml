@@ -25,12 +25,12 @@ website:
         contents: 
           - motivations.qmd
           - git-background.qmd
-      - section: "GitHub by Itself"
+      - section: "Using GitHub..."
         contents:
-          - github.qmd
-      - section: "GitHub with an IDE"
-        contents:
-          - rstudio.qmd
+          - text: "With a Browser"
+            href: github.qmd
+          - text: "With an IDE"
+            href: rstudio.qmd
       - section: "Advanced Topics"
         contents: 
           - conflicts.qmd
