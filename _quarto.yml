@@ -30,7 +30,7 @@ website:
           - text: "With a Browser"
             href: github.qmd
           - text: "With an IDE"
-            href: rstudio.qmd
+            href: ide.qmd
       - section: "Advanced Topics"
         contents: 
           - conflicts.qmd
