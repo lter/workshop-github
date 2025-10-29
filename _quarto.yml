@@ -22,10 +22,14 @@ website:
       - text: "Workshop Home"
         href: index.qmd
       - text: "General Background"
-        href: motivations.qmd
-      - section: "Core Topics"
+        contents: 
+          - motivations.qmd
+          - git-background.qmd
+      - section: "GitHub by Itself"
         contents:
           - github.qmd
+      - section: "GitHub with an IDE"
+        contents:
           - rstudio.qmd
       - section: "Advanced Topics"
         contents: 
