@@ -1,20 +1,26 @@
 ---
-title: "RStudio"
+title: "Using GitHub with an IDE"
 ---
 
 ## Module Learning Objectives
 
 By the end of this module, you will be able to:
 
-- <u>Describe</u> the computer-to-GitHub order of operations
+- <u>Describe</u> the IDE-to-GitHub order of operations
 - <u>Define</u> fundamental Git vocabulary
 - <u>Create</u> a local version-controlled repository that is connected to GitHub
 
 ## Overview of Git Workflow
 
-Before we get into using Git and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.
+Before we get into using Git and GitHub through an IDE (<u>I</u>ntegrated <u>D</u>evelopment <u>E</u>nvironment), it will be helpful to review the major steps of including version control as you work on code. Also, note that "IDE" is the technical term for a piece of software that is used to create software; RStudio, Visual Studio Code, and Positron are all examples of IDEs with which you may already be familiar.
 
 Beginning on your local computer, you make **<span style="color:gold">changes</span>** to a file in a folder that you have previously marked for version control tracking (i.e., a **working directory**). Once those changes are made you can **stage changes** within your local computer. After staging, it is best to <span style="color:blue">retrieve the latest file versions from the cloud</span>. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you've confirmed that you have the latest file versions, you can <span style="color:green">shift the revised file(s) to the cloud</span> where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes.
+
+:::{.callout-note}
+#### "Pull & Push" vs. "Sync"
+
+Some IDEs (e.g., Positron, VS Code) combine pulling and pushing into a single operation called "sync". These IDEs also support pulling and pushing separately so you may want to do those operations separately until you are completely comfortable with the necessary order of operations.
+:::
 
 <p align="center">
 <img src="images/rstudio/git-workflow.png" alt="Graphic of a white rectangle on top of a blue square. The white rectangle has a happy cloud image and is labeled 'GitHub' while the blue square has an emoji-style laptop. Numbered steps start at the bottom left and work towards the top right as follows: '1-make changes', '2-stage changes', '3-retrieve latest from GitHub', and '4-put in GitHub'" width="70%"/>

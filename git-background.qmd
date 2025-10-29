@@ -1,0 +1,38 @@
+---
+title: "Git Background"
+---
+
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Define</u> "version control"
+- <u>Describe</u> the difference between Git and GitHub
+
+## Version Control Background
+
+Version control systems (including Git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don't necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).
+
+**Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.**
+
+<p align="center">
+<img src="images/comics/phd_comics_final.png" alt="Comic of a graduate student naming a file 'final.doc' then getting progressively more frustrated and making worse file names as that file received iterative comments from an advisor" width="60%"/>
+</p>
+
+## Git-Specific Background
+
+Git can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In Git (and other version control systems) terms, this "tracked folder" is called a **repository** (which formally is a specific data structure storing versioning information).
+
+Although there many ways to start a new repository, [GitHub](https://github.com/) (or any other cloud solutions, such as [GitLab](https://about.gitlab.com/)) provide among the most convenient way of starting a repository.
+
+Let's distinguish between Git and GitHub:
+
+- **Git**: version control software used to track files in a folder (a repository)
+    - Git creates the versioned history of a repository
+- **GitHub**: website that allows users to store their Git repositories and share them with others (i.e. a graphical user interface or "GUI")
+	
+**GitHub is a company that hosts Git repositories online** and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.
+
+- **GitHub.com**: [github.com](https://github.com/)
+- **A user account**: [github.com/angelchen7](https://github.com/angelchen7)
+- **An organization account**: [github.com/lter](https://github.com/lter)

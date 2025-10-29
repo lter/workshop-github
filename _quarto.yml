@@ -21,11 +21,16 @@ website:
     contents: 
       - text: "Workshop Home"
         href: index.qmd
-      - section: "Core Topics"
-        contents:
+      - text: "General Background"
+        contents: 
           - motivations.qmd
-          - github.qmd
-          - rstudio.qmd
+          - git-background.qmd
+      - section: "Using GitHub..."
+        contents:
+          - text: "With a Browser"
+            href: github.qmd
+          - text: "With an IDE"
+            href: rstudio.qmd
       - section: "Advanced Topics"
         contents: 
           - conflicts.qmd
