@@ -26,7 +26,7 @@ If your institution has a dedicated IT team that has sole power to install softw
 
 There are a couple of distinct use-cases you might have for GitHub that will affect what preparation you need to do before this workshop. Consider the tabs below and follow all of the numbered steps in the choice that best fits your needs.
 
-:::{.panel-tabset}
+::::{.panel-tabset}
 ### GitHub By Itself
 
 #### 1. Create a GitHub Account
@@ -65,17 +65,51 @@ The below preparation steps includes some code for making sure everything is ins
 
 #### 5. Check that Git's Installation Worked
 
-{{< include prep-steps/check_git-installation.qmd >}}
+{{< include prep-steps/check_git-install_rstudio.qmd >}}
 
-#### 6. Connect Git and GitHub
+#### 6. Connect RStudio/Git and GitHub
 
-{{< include prep-steps/connect_git-github.qmd >}}
+{{< include prep-steps/connect_git-github_rstudio.qmd >}}
 
 #### 7. Celebrate!
 
 {{< include prep-steps/celebrate.qmd >}}
 
+### GitHub with Positron
+
+:::{.callout-note}
+#### Positron vs. Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/) (a.k.a. VS Code) is an IDE favored by many software developers. Positron itself is actually a "fork" of VS Code's software! However, Positron offers some additional functionalities to support R users and--given that most working group members are primarily R coders if they code--Positron is what we will be using in this workshop.
+
+However, if you are a VS Code user, much of the Positron content will actually work for you with some (or potentially _no_) adjustment.
 :::
+
+#### 1. Create a GitHub Account
+
+{{< include prep-steps/create_github-acct.qmd >}}
+
+#### 2. Install R
+
+{{< include prep-steps/install_r.qmd >}}
+ 
+#### 3. Install Positron
+
+{{< include prep-steps/install_positron.qmd >}}
+
+#### 4. Install Git
+
+{{< include prep-steps/install_git.qmd >}}
+
+#### 5. Connect Positron/Git and GitHub
+
+{{< include prep-steps/connect_git-github_positron.qmd >}}
+
+#### 6. Celebrate!
+
+{{< include prep-steps/celebrate.qmd >}}
+
+::::
 
 ## GitHub + Science Publications
 
