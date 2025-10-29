@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>install_git – SciComp Workshop - Collaborative Coding with GitHub</title>
+<title>Git Background – SciComp Workshop - Collaborative Coding with GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,31 +23,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/logos/hex_scicomptools.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b57e1bc1b8ac0aad98d9d543ffd833ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/logos/hex_scicomptools.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b57e1bc1b8ac0aad98d9d543ffd833ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,9 +75,13 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="SciComp Workshop - Collaborative Coding with GitHub">
+<meta name="twitter:title" content="Git Background – SciComp Workshop - Collaborative Coding with GitHub">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lter.github.io/workshop-github/images/comics/phd_comics_final.png">
+<meta name="twitter:image:alt" content="Comic of a graduate student naming a file 'final.doc' then getting progressively more frustrated and making worse file names as that file received iterative comments from an advisor">
+<meta name="twitter:image-height" content="1676">
+<meta name="twitter:image-width" content="1230">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -251,9 +253,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">SciComp Workshop - Collaborative Coding with GitHub</span>
     </a>
   </div>
@@ -295,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./motivations.html">General Background</a></li><li class="breadcrumb-item"><a href="./git-background.html">Git Background</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -309,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
+      <a href="./index.html" class="sidebar-logo-link">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -321,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Workshop Home</span></a>
   </div>
 </li>
@@ -336,13 +338,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../motivations.html" class="sidebar-item-text sidebar-link">
+  <a href="./motivations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Workflows</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git-background.html" class="sidebar-item-text sidebar-link">
+  <a href="./git-background.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Git Background</span></a>
   </div>
 </li>
@@ -359,13 +361,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github.html" class="sidebar-item-text sidebar-link">
+  <a href="./github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">With a Browser</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../rstudio.html" class="sidebar-item-text sidebar-link">
+  <a href="./rstudio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">With an IDE</span></a>
   </div>
 </li>
@@ -382,25 +384,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../conflicts.html" class="sidebar-item-text sidebar-link">
+  <a href="./conflicts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Conflicts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../branches.html" class="sidebar-item-text sidebar-link">
+  <a href="./branches.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Branches</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../forks.html" class="sidebar-item-text sidebar-link">
+  <a href="./forks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Forks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../git_ignore.html" class="sidebar-item-text sidebar-link">
+  <a href="./git_ignore.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The <code>.gitignore</code></span></a>
   </div>
 </li>
@@ -417,19 +419,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../issues.html" class="sidebar-item-text sidebar-link">
+  <a href="./issues.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Issues</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../milestones.html" class="sidebar-item-text sidebar-link">
+  <a href="./milestones.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Milestones</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects.html" class="sidebar-item-text sidebar-link">
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Projects</span></a>
   </div>
 </li>
@@ -446,19 +448,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../portfolio.html" class="sidebar-item-text sidebar-link">
+  <a href="./portfolio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub as a Portfolio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../readmes.html" class="sidebar-item-text sidebar-link">
+  <a href="./readmes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Informative READMEs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../server.html" class="sidebar-item-text sidebar-link">
+  <a href="./server.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">NCEAS’ Server</span></a>
   </div>
 </li>
@@ -470,42 +472,78 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
+  <li><a href="#version-control-background" id="toc-version-control-background" class="nav-link" data-scroll-target="#version-control-background">Version Control Background</a></li>
+  <li><a href="#git-specific-background" id="toc-git-specific-background" class="nav-link" data-scroll-target="#git-specific-background">Git-Specific Background</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p><img src="images/logos/nceas.png" alt="Logo for NCEAS (National Center for Ecological Analysis and Synthesis)" width="40%"> <img src="images/logos/lter.png" alt="Logo for the LTER Network Office" width="40%"></p>
 </div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
 
-
-
-
-<p>You can now install Git! Git is the software that actually does the behind-the-scenes version control operations we’ll cover in this workshop. Installing Git differs slightly depending on your operating system so check out the tabs below for the right option for you. These instructions are modified from Jennifer Bryan’s excellent “<a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a>” ebook.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><i class="fa-brands fa-apple" aria-label="apple"></i> Mac</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href=""><i class="fa-brands fa-windows" aria-label="windows"></i> Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href=""><i class="fa-brands fa-linux" aria-label="linux"></i> Linux</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Run the following <i class="fa-solid fa-terminal" aria-label="terminal"></i> command line code.</p>
-<pre><code>xcode-select --install</code></pre>
-<p>For more detailed instructions, see <a href="https://happygitwithr.com/install-git#macos">here</a>.</p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><a href="https://gitforwindows.org/">Install Git for Windows</a> (a.k.a. “Git Bash”). When asked about “Adjusting your PATH environment”, <strong>select “Git from the command line and also from 3rd-party software”</strong>.</p>
-<p>For more detailed instructions, see <a href="https://happygitwithr.com/install-git#install-git-windows">here</a>.</p>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Install Git via your distro’s package manager (in the <i class="fa-solid fa-terminal" aria-label="terminal"></i> Terminal).</p>
-<p>If you use Ubuntu or Debian Linux that <i class="fa-solid fa-terminal" aria-label="terminal"></i> code is as follows:</p>
-<pre><code>sudo apt-get install git</code></pre>
-<p>If instead you use Fedora or RedHat Linux the <i class="fa-solid fa-terminal" aria-label="terminal"></i> code is instead:</p>
-<pre><code>sudo yum install git</code></pre>
-<p>For more detailed instructions, see <a href="https://happygitwithr.com/install-git#linux">here</a>.</p>
-</div>
-</div>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./motivations.html">General Background</a></li><li class="breadcrumb-item"><a href="./git-background.html">Git Background</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Git Background</h1>
 </div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="module-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ul>
+<li><u>Define</u> “version control”</li>
+<li><u>Describe</u> the difference between Git and GitHub</li>
+</ul>
+</section>
+<section id="version-control-background" class="level2">
+<h2 class="anchored" data-anchor-id="version-control-background">Version Control Background</h2>
+<p>Version control systems (including Git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).</p>
+<p><strong>Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.</strong></p>
+<p align="center">
+<img src="images/comics/phd_comics_final.png" alt="Comic of a graduate student naming a file 'final.doc' then getting progressively more frustrated and making worse file names as that file received iterative comments from an advisor" width="60%">
+</p>
+</section>
+<section id="git-specific-background" class="level2">
+<h2 class="anchored" data-anchor-id="git-specific-background">Git-Specific Background</h2>
+<p>Git can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In Git (and other version control systems) terms, this “tracked folder” is called a <strong>repository</strong> (which formally is a specific data structure storing versioning information).</p>
+<p>Although there many ways to start a new repository, <a href="https://github.com/">GitHub</a> (or any other cloud solutions, such as <a href="https://about.gitlab.com/">GitLab</a>) provide among the most convenient way of starting a repository.</p>
+<p>Let’s distinguish between Git and GitHub:</p>
+<ul>
+<li><strong>Git</strong>: version control software used to track files in a folder (a repository)
+<ul>
+<li>Git creates the versioned history of a repository</li>
+</ul></li>
+<li><strong>GitHub</strong>: website that allows users to store their Git repositories and share them with others (i.e.&nbsp;a graphical user interface or “GUI”)</li>
+</ul>
+<p><strong>GitHub is a company that hosts Git repositories online</strong> and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.</p>
+<ul>
+<li><strong>GitHub.com</strong>: <a href="https://github.com/">github.com</a></li>
+<li><strong>A user account</strong>: <a href="https://github.com/angelchen7">github.com/angelchen7</a></li>
+<li><strong>An organization account</strong>: <a href="https://github.com/lter">github.com/lter</a></li>
+</ul>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -973,7 +1011,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2024, NCEAS</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
