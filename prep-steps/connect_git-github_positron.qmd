@@ -1,0 +1,70 @@
+The last step to take before you’re all set for the workshop is to get these components talking to one another! One reason to use Positron instead of RStudio is because of how much simpler this step is for Positron. Instead of needing to write code, we can do a little authentication dance with buttons in the browser and afterwards, everything will 'just work.'
+
+To begin, open Positron. You should have a screen that looks something like the below screen capture. Note that you might be in "light mode" depending on your computer settings but that should not affect which buttons to click or where they can be found.
+
+<p align="center">
+<img src="images/positron/positron-setup-01_home.png" alt="Screen capture of the default starting page of the Positron app" width="100%"/>
+</p>
+
+From there, go to the left sidebar and click the branch icon ( {{< fa code-branch >}} ). It should be the third option from the top. Once you are there, **click "Clone Repository".**
+
+<p align="center">
+<img src="images/positron/positron-setup-02_git-sidebar.png" alt="Screen capture of the left sidebar of Positron inside of the 'source control' option" width="50%"/>
+</p>
+
+This should automatically open the search bar in the top middle of Positron and present you with a single option titled "Clone from GitHub". **Click that option.**
+
+<p align="center">
+<img src="images/positron/positron-setup-03_start-clone.png" alt="Screen capture of top middle of Positron with highlighted prompt to 'Clone from GitHub'" width="80%"/>
+</p>
+
+Once you've clicked that option, you should be presented with the following pop up where Positron is telling you that Positron's GitHub extension wants to talk to the online version of GitHub. **Click "Allow".**
+
+<p align="center">
+<img src="images/positron/positron-setup-04_gh-popup.png" alt="Screen capture of pop-up window where an extension called 'GitHub' is asking to sign in via GitHub with 'allow' and 'cancel' options" width="40%"/>
+</p>
+
+Positron will now allow provide you with a code of random letters/numbers that you'll need to share with GitHub. Helpfully, a new pop-up will appear where one of the options is "Copy & Continue to Github"; **click that option.**
+
+<p align="center">
+<img src="images/positron/positron-setup-05_positron-code.png" alt="Screen capture of pop-up window with a red rectangle covering a code and buttons for either copying that code and continuing to GitHub or cancelling" width="40%"/>
+</p>
+
+Once you click "Copy & Continue to Github" button, you should automatically be sent to your default web browser application and be prompted to choose which GitHub account to use. Most users will have only one option so go ahead and **click "Continue" next to that profile.**
+
+<p align="center">
+<img src="images/positron/positron-setup-06_gh-user-select.png" alt="Screen capture of GitHub window with a single GitHub user option and a blue 'continue' button to the right of that profile" width="60%"/>
+</p>
+
+You'll next need to put in the code that you got from Positron. You should be able to simply paste it in because you just copied it! **_After you've entered the code_, click "Continue".**
+
+<p align="center">
+<img src="images/positron/positron-setup-07_gh-code.png" alt="Screen capture of a GitHub window prompting the user to provide an eight-digit code with a blue 'continue' button beneath the empty code field" width="60%"/>
+</p>
+
+GitHub will now provide you with a list of the permissions that Positron is asking for and ask you to approve them. These permissions are required for you to work with Positron so feel free to read through them but ultimately you must scroll down and **click "Authorize".**
+
+If you are a member of any GitHub organizations, they will be listed below the list of requested permissions but you should just ignore those and scroll past them.
+
+<p align="center">
+<img src="images/positron/positron-setup-08_gh-authorize-p1.png" alt="First part of a screenshot of a GitHub webpage asking for confirmation to authorize the Positron application to access a GitHub user's content and account information" width="70%"/>
+<img src="images/positron/positron-setup-08_gh-authorize-p2.png" alt="Second part of a screenshot of a GitHub webpage asking for confirmation to authorize the Positron application to access a GitHub user's content and account information" width="70%"/>
+</p>
+
+:::{.callout-note}
+#### GitHub Login Prompt
+
+If you have not recently logged in to GitHub, you will be sent to the standard GitHub login page. If you are sent there, log in as normal (i.e., either by using your username/password or with the 2FA option provided by the GitHub Mobile app).
+:::
+
+Once you've worked through the above step, you should get a confirmation page from GitHub that looks like the following screen capture.
+
+<p align="center">
+<img src="images/positron/positron-setup-10_confirmation.png" alt="Screen capture of a GitHub browser window that says 'congratulations, you are all set!'" width="60%"/>
+</p>
+
+You will know that you've followed these steps correctly if, when you return to  Positron, the search bar in the top middle (that said "Clone from GitHub" before) now has a list of repositories to which you have access.
+
+<p align="center">
+<img src="images/positron/positron-setup-11_success.png" alt="Screen capture of Positron where the search bar in the middle displays a number of GitHub repositories" width="100%"/>
+</p>
