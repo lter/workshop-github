@@ -21,9 +21,10 @@ website:
     contents: 
       - text: "Workshop Home"
         href: index.qmd
+      - text: "General Background"
+        href: motivations.qmd
       - section: "Core Topics"
         contents:
-          - motivations.qmd
           - github.qmd
           - rstudio.qmd
       - section: "Advanced Topics"
