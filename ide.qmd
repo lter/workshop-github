@@ -44,6 +44,9 @@ Finally, it will be helpful to introduce four key pieces of vocabulary before we
 
 ## Cloning a Repository
 
+:::{.panel-tabset}
+### In RStudio
+
 Now, the first step in using Git with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, **GitHub is in dark mode** while **RStudio is in light mode**. To clone a repository, follow these steps:
 
 Navigate to the repository on GitHub and click on **<span style="color:green">Code</span>**. Select "HTTPS" and copy the link.
@@ -88,16 +91,28 @@ Now we have finished cloning the repository to our RStudio! Notice that we are w
 <img src="images/rstudio/rstudio-12-finished-cloning.png" alt="Screenshot of RStudio after a project has been selected. The project name--in the top right corner--is circled in red" width="100%"/>
 </p>
 
+### In Positron
+
+:::
+
 ## Workflow Refresher
 
 The typical workflow with Git goes like this:
 
 **Step 1**: You modify files in your working directory and save them as usual.
 
-**Step 2**: You **stage** files to mark your intention to "commit" them and then **commit** that version of those files.
+**Step 2**: You **stage** files to mark your intention to "commit" them and then **commit** that version of those files. Committing files permanently stores them as snapshots to your Git directory.
 
-    - In RStudio, "staging" is done by checking the box next to a given file in the "Git" tab
-    - Committing files permanently stores them as snapshots to your Git directory
+:::{.panel-tabset}
+### RStudio Commits
+
+In RStudio, staging is done by checking the box next to a file in the "Git" tab
+
+### Positron Commits
+
+In Positron, staging is done by clicking the plus sign next to a file in the "Source Control" menu in the left sidebar
+
+:::
 
 **Step 3**: You **pull** the most recent changes to make sure you've been editing the latest versions.
 
@@ -120,6 +135,9 @@ This 2-step process enables you to flexibly group files into a specific commit. 
 
 ## Creating a New File
 
+::::{.panel-tabset}
+### In RStudio
+
 Let's try out a simple Git workflow by first creating a new file. This is **Step 1** of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to **File** > **New File** > **R Script**. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `angel-script.R`. 
 
 Once you are done, navigate to the **Git** tab on the upper left corner. You should see your new script show up there along with a `.gitignore` and `git-practice.Rproj` file. Do not worry about the `.gitignore` file for now, it was created by RStudio to make sure that some temporary files are not tracked by Git. The `git-practice.Rproj` file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.
@@ -136,7 +154,7 @@ Notice that there are color-coded icons next to the files in the "Git" tab. Thes
 
 In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` files have never been tracked by Git (since these files were just created). Note also that the `README.md` file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.
 
-### Adding our Script to the Next Commit
+#### Adding Our Script to the Next Commit
 
 Let us look at the diff of our script. Click on the **Diff** tab.
 
@@ -162,7 +180,7 @@ If all of the above steps went well, you should see something like this:
 
 Notice that Git tells us that `1 file changed` because we've just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.
 
-### Getting the Latest Updates
+#### Getting the Latest Updates
 
 There are two Git commands to exchange between a local and remote versions of a repository: 
 
@@ -178,7 +196,7 @@ There are two Git commands to exchange between a local and remote versions of a 
 
 Of course RStudio has icons for that on top of the "Git" tab, with the blue arrow down being for pull and the green arrow up being for push. Remember the icons are organized in sequence!
 
-Let us do the pull and push to synchronized the remote repositories. Click on the **Pull** button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use **<span style="color:blue">blue</span>** for **pull**-related content and **<span style="color:green">green</span>** for **push**-related information. Hopefully that helps cement the two ideas in your mind!
+Let us do the pull and push to synchronize the remote repositories. Click on the **Pull** button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use **<span style="color:blue">blue</span>** for **pull**-related content and **<span style="color:green">green</span>** for **push**-related information. Hopefully that helps cement the two ideas in your mind!
 
 <p align="center">
 <img src="images/rstudio/rstudio-15b-pull.png" alt="Screenshot of the blue 'pull' button and green 'push' button in RStudio" width="40%"/>
@@ -196,7 +214,7 @@ In my case, it turns out that a new script, `lyon-script`, was added to the GitH
 
 A new message has popped up for me: "Your branch is ahead of 'origin/main' by two commits". This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the `README.md` and `lyon-script`. My changes are NOT in the cloud yet. You might be seeing a similar message as well.
 
-### Sending Changes back to GitHub
+#### Sending Changes back to GitHub
 
 So how do we send our changes back to GitHub? Locate the **Push** button on the "Git" tab and click on it. Now your script should show up in the GitHub repository!
 
@@ -217,13 +235,31 @@ Navigate back to the GitHub website and find your repository. Check to see if yo
 </p>
 
 :::callout-note
-## If RStudio ever asks for a "password"...
+#### If RStudio ever asks for a "password"...
 
 If your personal access token (PAT) was not set up correctly with RStudio or if it expired, then RStudio will ask for your GitHub username and password in a pop-up when you try to push. **Please be aware that when they ask for a "password", they actually meant your token!** Enter your token in the field and you should be able to push now. Make sure to run `gitcreds::gitcreds_set()` to set a valid token afterwards so you don't have to enter it manually every time!  
 :::
 
-### Rinse and Repeat
+### In Positron
 
-Great! Now that your script has been added to the group repository, you should try to repeat the same workflow over again just to get a feel for how it works. Go back to RStudio and edit your own script. Save those edits, add your edited file to the staging area, write a commit message, then commit your changes. After committing, make sure to pull first then push after! When you pull, you might notice that scripts from your group members/collaborators will show up in your RStudio files. 
+Let's try out a simple Git workflow by first creating a new file. This is **Step 1** of the process. We can add new R scripts and files to our repository through Positron. Try creating a new script by going to **File** > **New File...** > and choosing the type of file that you want to create. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `lyon-script.R`. 
+
+
+
+
+
+#### Adding Our Script to the Next Commit
+
+
+#### Getting the Latest Updates
+
+
+#### Sending Changes Back to GitHub
+
+::::
+
+## Rinse and Repeat
+
+Great! Now that your script has been added to the group repository, you should try to repeat the same workflow over again just to get a feel for how it works. Go back to your IDE and edit your own script. Save those edits, add your edited file to the staging area, write a commit message, then commit your changes. After committing, make sure to pull first then push after! When you pull, you might notice that scripts from your group members/collaborators will show up in your working directory. 
 
 Make sure to work on your own script. If you and another group member work on the same script at the same time, this may lead to merge conflicts with Git. If two people were to work on the same script, they may be making different edits on the same lines, and Git would not know which edits to keep. To avoid merge conflicts, be mindful of what files you are working on and always communicate this to your group members!
