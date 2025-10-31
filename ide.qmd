@@ -179,21 +179,23 @@ This 2-step process enables you to flexibly group files into a specific commit. 
 
 ## Creating a New File
 
+Let's try out a simple Git workflow by first creating a new file. This is **Step 1** of the process. To begin, go to your IDE of choice and open it.
+
 ::::{.panel-tabset}
 ### In RStudio
 
-Let's try out a simple Git workflow by first creating a new file. This is **Step 1** of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to **File** > **New File** > **R Script**. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `angel-script.R`. 
+In RStudio, you can make a file by going to **File** > **New File** > **R Script**. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `angel-script.R`. 
 
-Once you are done, navigate to the **Git** tab on the upper left corner. You should see your new script show up there along with a `.gitignore` and `git-practice.Rproj` file. Do not worry about the `.gitignore` file for now, it was created by RStudio to make sure that some temporary files are not tracked by Git. The `git-practice.Rproj` file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.
+Once you are done, navigate to the **Git** tab on the upper right corner. You should see your new script show up there along with a `.gitignore` and `git-practice.Rproj` file. Do not worry about the `.gitignore` file for now, it was created by RStudio to make sure that some unwanted files are not tracked by Git. The `git-practice.Rproj` file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.
 
 <p align="center">
-<img src="images/rstudio/rstudio-13-new-script.png" alt="Screenshot of RStudio with an open script and several uncommitted changes identified in the 'Git' pane. Lack of commit is identified by double yellow squares containing a question mark" width="100%"/>
+<img src="images/commit/rstudio-01_new-file.png" alt="Screenshot of RStudio with an open script and several uncommitted changes identified in the 'Git' pane. Lack of commit is identified by double yellow squares containing a question mark" width="100%"/>
 </p>
 
-Notice that there are color-coded icons next to the files in the "Git" tab. These icons are shorthand for the status--according to Git--of every* file in your working directory. Not technically "every" file because files that are tracked but haven't been modified are not included. See below for definitions.
+Notice that there are color-coded icons next to the files in the "Git" tab. These icons are shorthand for the Git status for any file whose status has changed since the last commit that you made.
 
 <p align="center">
-<img src="images/rstudio/rstudio-icons.png" alt="A legend of five icons RStudio uses to indicate Git status of a file. Yellow question mark = untracked (file not tracked by Git). Green 'A' = added (file marked to start tracking). Blue 'M' = modified (tracked file with changes). Red 'D' = deleted (tracked file that was deleted). Purple 'R' = renamed (tracked file that was renamed)" width="65%"/>
+<img src="images/graphics/rstudio-icons.png" alt="A legend of five icons RStudio uses to indicate Git status of a file. Yellow question mark = untracked (file not tracked by Git). Green 'A' = added (file marked to start tracking). Blue 'M' = modified (tracked file with changes). Red 'D' = deleted (tracked file that was deleted). Purple 'R' = renamed (tracked file that was renamed)" width="50%"/>
 </p>
 
 In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` files have never been tracked by Git (since these files were just created). Note also that the `README.md` file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.
@@ -203,26 +205,26 @@ In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` 
 Let us look at the diff of our script. Click on the **Diff** tab.
 
 <p align="center">
-<img src="images/rstudio/rstudio-13c-diff.png" alt="Screenshot of the 'diff' button--circled in red--in the 'git' pane of RStudio" width="80%"/>
+<img src="images/commit/rstudio-02_diff.png" alt="Screenshot of the 'diff' button--circled in red--in the 'Git' pane of RStudio" width="60%"/>
 </p>
 
 Checking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for Git. We would like to save a snapshot of this version of our script. Since we've just done **Step 1**, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:
 
-**Step 2**: Add the file to the next commit by checking the box in front of the file name. Note that the two `?` icons will change to a single `A` on the left to show you that this file is now staged to be part of the next commit.
+**Step 2**: Add the file to the next commit (i.e., "stage" the edits to that file) by checking the box in front of the file name. Note that the two `?` icons will change to a single `A` on the left to show you that this file is now staged to be part of the next commit.
 
 **Step 3**: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the **Commit** button to save this version of the script in the Git database.
 
 <p align="center">
-<img src="images/rstudio/rstudio-14-commit-message.png" alt="Screenshot of the commit menu of RStudio where one file has been staged and an informative commit message has been entered" width="80%"/>
+<img src="images/commit/rstudio-03_commit-message.png" alt="Screenshot of the commit menu of RStudio where one file has been staged and an informative commit message has been entered" width="80%"/>
 </p>
 
 If all of the above steps went well, you should see something like this:
 
 <p align="center">
-<img src="images/rstudio/rstudio-15-finished-commiting.png" alt="Screenshot of the success message after a commit has been made" width="80%"/>
+<img src="images/commit/rstudio-04_commit-message-success.png" alt="Screenshot of the success message after a commit has been made" width="80%"/>
 </p>
 
-Notice that Git tells us that `1 file changed` because we've just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.
+Notice that Git tells us that "1 file changed" because we've just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.
 
 #### Getting the Latest Updates
 
@@ -243,39 +245,33 @@ Of course RStudio has icons for that on top of the "Git" tab, with the blue arro
 Let us do the pull and push to synchronize the remote repositories. Click on the **Pull** button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use **<span style="color:blue">blue</span>** for **pull**-related content and **<span style="color:green">green</span>** for **push**-related information. Hopefully that helps cement the two ideas in your mind!
 
 <p align="center">
-<img src="images/rstudio/rstudio-15b-pull.png" alt="Screenshot of the blue 'pull' button and green 'push' button in RStudio" width="40%"/>
+<img src="images/commit/rstudio-05_pull-push-button.png" alt="Screenshot of the blue 'pull' button and green 'push' button in RStudio" width="40%"/>
 </p>
 
-In my case, it turns out that a new script, `lyon-script`, was added to the GitHub repository by a collaborator while I was making my own script. Since I have just pulled, `lyon-script` now shows up in my RStudio files. 
+In my case, it turns out that a new script, `lyon-script.R`, was added to the GitHub repository by a collaborator while I was making my own script. The pull will succeed because there is no conflict but RStudio will let us know that it retrieved a copy of the file when we pulled.
 
 <p align="center">
-<img src="images/rstudio/rstudio-16-pulled.png" alt="Screenshot of the message returned when you pull files you didn't have locally from GitHub" width="90%"/>
+<img src="images/commit/rstudio-06_pulled-message.png" alt="Screenshot of the message returned when you pull files you didn't have locally from GitHub" width="70%"/>
 </p>
+
+Since I have just pulled, `lyon-script.R` now shows up in my RStudio files. A new message has also popped up for me: "Your branch is ahead of 'origin/main' by two commits". This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the `README.md` and `lyon-script.R`. My changes are _not_ in GitHub yet. You might be seeing a similar message as well.
 
 <p align="center">
-<img src="images/rstudio/rstudio-17-finished-pulling-new-script.png" alt="Screenshot of RStudio with the 'git' pane underlined in red where it says 'your branch is ahead of origin/main by 2 commits'" width="100%"/>
+<img src="images/commit/rstudio-06b_pulled-file.png" alt="Screenshot of RStudio with the 'git' pane underlined in red where it says 'your branch is ahead of origin/main by 2 commits'" width="100%"/>
 </p>
-
-A new message has popped up for me: "Your branch is ahead of 'origin/main' by two commits". This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the `README.md` and `lyon-script`. My changes are NOT in the cloud yet. You might be seeing a similar message as well.
 
 #### Sending Changes back to GitHub
 
-So how do we send our changes back to GitHub? Locate the **Push** button on the "Git" tab and click on it. Now your script should show up in the GitHub repository!
+So how do we send our changes back to GitHub? Locate the **Push** button on the "Git" tab and click on it. Now your script should show up in the GitHub repository! Once you click that button you should get a success screen like the one pictured below.
 
 <p align="center">
-<img src="images/rstudio/rstudio-15b-pull.png" alt="Screenshot of the blue 'pull' button and green 'push' button in RStudio" width="40%"/>
-</p>
-
-Once you click that button you should get a success screen like the one pictured below.
-
-<p align="center">
-<img src="images/rstudio/rstudio-18-pushed.png" alt="Screenshot of the message received when a push is performed successfully from RStudio" width="90%"/>
+<img src="images/commit/rstudio-07_push.png" alt="Screenshot of the message received when a push is performed successfully from RStudio" width="70%"/>
 </p>
 
 Navigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, `angel-script.R` finally shows up in my repository.
 
 <p align="center">
-<img src="images/rstudio/rstudio-19-updated-repo.png" alt="Screenshot of a GitHub repository with the commits made in earlier screenshots shown in its history" width="100%"/>
+<img src="images/commit/github-02b_updated-repo.png" alt="Screenshot of a GitHub repository with the commits made in earlier screenshots shown in its history" width="100%"/>
 </p>
 
 :::callout-note
