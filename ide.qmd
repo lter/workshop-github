@@ -282,19 +282,63 @@ If your personal access token (PAT) was not set up correctly with RStudio or if 
 
 ### In Positron
 
-Let's try out a simple Git workflow by first creating a new file. This is **Step 1** of the process. We can add new R scripts and files to our repository through Positron. Try creating a new script by going to **File** > **New File...** > and choosing the type of file that you want to create. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `lyon-script.R`. 
+In Positron, you can make a file by going to **File** > **New File...** > and choosing the type of file that you want to create. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `lyon-script.R`.
 
+Once you are done making the file, navigate to the "Source Control" ({{< fa code-branch >}}) piece of the left sidebar of Positron. You should see your new script show up there. Your other files all still exist in your working directory but this facet of Positron will only identify files that have changed since your last commit.
 
+<p align="center">
+<img src="images/commit/positron-01_new-file.png" alt="Screen capture of Positron source control page with one new file" width="100%"/>
+</p>
 
-
+Note that there are abbreviations next to the files in the "Source Control" facet of Positron. These indicate the Git status for any file whose status has changed since the last commit that you made. You should see "U" next to your new file because it is currently "untracked" by Git.
 
 #### Adding Our Script to the Next Commit
 
+We would like to save a snapshot of this version of our script. Since we’ve just done **Step 1**, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:
 
-#### Getting the Latest Updates
+**Step 2**: Add the file to the next commit (i.e., “stage” the edits to that file) by clicking the plus sign ({{< fa plus >}}) next to the file's name in the source control menu. Note that the `U` will turn into an `A` to show you that this file is now staged to be part of the next commit.
 
+**Step 3**: In the left sidebar, above where you staged the file, type a short but descriptive commit message detailing what you have done so far. Then click on the "Commit" button to save this version of the script in the Git database.
 
-#### Sending Changes Back to GitHub
+<p align="center">
+<img src="images/commit/positron-02_commit-message.png" alt="Screen capture of Positron source control pane with a staged file" width="100%"/>
+</p>
+
+If that commit went well, the "Commit" button should now be a "Sync Changes" button.
+
+<p align="center">
+<img src="images/commit/positron-03_ready-to-sync.png" alt="Screen capture of Positron source control pane with the 'sync changes' button active" width="100%"/>
+</p>
+
+#### Other Git Actions
+
+If you've previously used other IDEs, you may notice that Positron's single centralized button (while making normal use _dramatically_ simpler) does hide other Git actions you may want to do. For example, if you edit several files, commit the changes to one, and want to sync just that commit, the "Sync" button is absent because the "Commit" button takes precedence.
+
+In order to see a full list of Git options, hover your mouse over the "changes" panel (just above the commit message field) and click the ellipses (`...`) that will appear when you are hovering there.
+
+You should now see a full list of the normal suite of Git actions that you can perform through Positron. If you want to sync, see the first option under the heading "Pull, Push" (about two thirds of the way down the dropdown menu).
+
+<p align="center">
+<img src="images/commit/positron-03b_other-git-actions.png" alt="Screen capture of Positron source control pane with dropdown menu of Git actions open and visible" width="70%"/>
+</p>
+
+For our purposes here, the sync button is sufficient but you may want these other tools in the future.
+
+#### Syncing the Clone and GitHub
+
+Once you're ready to sync changes between your clone and the GitHub repository it is in contact with, you can click the "sync changes" button. 
+
+If this is the first time you are doing this, you may get a warning like the following screenshot. If you get that message, click "OK, Don't Show Again".
+
+<p align="center">
+<img src="images/commit/positron-04_sync-alert.png" alt="Screen capture of Positron warning about what 'sync changes' will do" width="40%"/>
+</p>
+
+You will know that the sync worked because the file that you just committed will be absent from the "changes" list. In our case, because that was the only file with any changes, it means there is nothing in that list and the "Commit" button is grayed out and inactive.
+
+<p align="center">
+<img src="images/commit/positron-05_synced.png" alt="Screen capture of Positron source control pane when there are no new changes to be committed or synced" width="70%"/>
+</p>
 
 ::::
 
