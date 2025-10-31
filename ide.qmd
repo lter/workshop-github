@@ -49,46 +49,56 @@ Regardless of which IDE you are using, the first step of using using Git with th
 :::{.panel-tabset}
 ### In RStudio
 
-Navigate to the repository on GitHub and click on **<span style="color:green">Code</span>**. Select "HTTPS" and copy the link.
+Navigate to the GitHub homepage of the repository that you'd like to clone.
 
 <p align="center">
-<img src="images/rstudio/rstudio-6-new-repo-link.png" alt="Screenshot of the menu that appears in a GitHub repository when someone clicks the 'code' button" width="100%"/>
+<img src="images/clone/github-01_repo-home.png" alt="Screen capture of the home page of a GitHub repository named 'git-practice'" width="100%"/>
+</p>
+
+Once you are there, click the **"<span style="color:blue">Code</span>"** button then **select "HTTPS" and copy the link.**
+
+<p align="center">
+<img src="images/clone/github-02_repo-code-tab.png" alt="Screen capture of the menu that appears in a GitHub repository when someone clicks the 'code' button" width="100%"/>
 </p>
 
 Now, return to (or open!) RStudio.
 
 <p align="center">
-<img src="images/rstudio/rstudio-7-fresh-start.png" alt="Screenshot of RStudio when no project or scripts are open" width="100%"/>
+<img src="images/clone/rstudio-01_home.png" alt="Screenshot of RStudio when no project or scripts are open" width="100%"/>
 </p>
+
+In the top right corner of RStudio, **click the dropdown menu with a glass box containing a capital "R".** This button may have the name of the current RStudio project (i.e., the working directory) if you have previously used RStudio but may otherwise be just the glass box icon with "Project: (None)".
 
 Go to the **Project** tab on the top right corner and click **New Project...**
 
 <p align="center">
-<img src="images/rstudio/rstudio-8-new-project.png" alt="Screenshot of the menu that appears when someone clicks 'Project: (None)' in RStudio and hovers over the 'New Project...' button" width="100%"/>
+<img src="images/clone/rstudio-02_new-project.png" alt="Screenshot of the menu that appears when someone clicks 'Project: (None)' in RStudio and hovers over the 'New Project...' button" width="100%"/>
 </p>
 
-Select **Version Control**.
+In the resulting pop-up window, **select "Version Control".**
 
 <p align="center">
-<img src="images/rstudio/rstudio-9-version-control.png" alt="Screenshot of a menu with three options: 'new directory', 'existing directory', and 'version control'" width="75%"/>
+<img src="images/clone/rstudio-03_version-control.png" alt="Screenshot of a menu with three options: 'new directory', 'existing directory', and 'version control'" width="50%"/>
 </p>
 
-Select **Git**.
+In the next page of the pop-up menu, **select "Git".**
 
 <p align="center">
-<img src="images/rstudio/rstudio-10-clone.png" alt="Screenshot of a menu with two options: 'git' and 'subversion'" width="75%"/>
+<img src="images/clone/rstudio-04_git.png" alt="Screenshot of a menu with two options: 'git' and 'subversion'" width="50%"/>
 </p>
 
-Paste the repository URL that you just copied from GitHub. Choose a file path to save your project to. 
+In the final page of the pop-up window, you can paste in the link from the **"<span style="color:blue">Code</span>"** button dropdown menu of the repository homepage that you copied earlier. You can also choose the local name of the folder for this clone and where on your computer you want to create the clone; the example below just clones into the "Documents" folder but you may want to place the clone elsewhere depending on how you organize your files.
+
+Once you have pasted in the relevant link and are happy with the local name and where the clone will be made, **click "Create Project".**
 
 <p align="center">
-<img src="images/rstudio/rstudio-11-clone-repo-details.png" alt="Screenshot of a menu with three open text fields, one for the 'repository URL', one for 'project directory name' and one for 'create project as subdirectory of'" width="75%"/>
+<img src="images/clone/rstudio-05_clone-repo-details.png" alt="Screenshot of a menu with three open text fields, one for the 'repository URL', one for 'project directory name' and one for 'create project as subdirectory of'" width="50%"/>
 </p>
 
-Now we have finished cloning the repository to our RStudio! Notice that we are working in our `git-practice` project and that our `README.md` file shows up under the list of files, just like in our GitHub repository. 
+Now we have finished cloning the repository via RStudio! Notice that we are now working in the "git-practice" project (see the name next to project dropdown menu in top right corner) and that our `README.md` shows up under the list of files (bottom right quadrant), just like in our GitHub repository.
 
 <p align="center">
-<img src="images/rstudio/rstudio-12-finished-cloning.png" alt="Screenshot of RStudio after a project has been selected. The project name--in the top right corner--is circled in red" width="100%"/>
+<img src="images/clone/rstudio-06_finished-cloning.png" alt="Screen capture of the RStudio home page after cloning has been completed" width="100%"/>
 </p>
 
 ### In Positron
@@ -124,7 +134,7 @@ Once you have pasted in the repository link and chosen where to download its fil
 Now we have finished cloning the repository via Positron! Notice that we are now working in the "git-practice" folder (see the name next to folder dropdown menu in top right corner) and that our `README.md` shows up under the list of files (left sidebar), just like in our GitHub repository.
 
 <p align="center">
-<img src="images/clone/positron-04_finished-cloning.png" alt="Screen capture of the Positron pop-up menu where a GitHub repository's details may be entered in order to clone it locally" width="100%"/>
+<img src="images/clone/positron-04_finished-cloning.png" alt="Screen capture of the Positron home page after cloning has been completed" width="100%"/>
 </p>
 
 :::
