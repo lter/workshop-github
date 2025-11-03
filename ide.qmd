@@ -69,7 +69,7 @@ Now, return to (or open!) RStudio.
 
 In the top right corner of RStudio, **click the dropdown menu with a glass box containing a capital "R".** This button may have the name of the current RStudio project (i.e., the working directory) if you have previously used RStudio but may otherwise be just the glass box icon with "Project: (None)".
 
-Go to the **Project** tab on the top right corner and click **New Project...**
+Once you have clicked that button and opened its dropdown menu, click **New Project...**
 
 <p align="center">
 <img src="images/clone/rstudio-02_new-project.png" alt="Screenshot of the menu that appears when someone clicks 'Project: (None)' in RStudio and hovers over the 'New Project...' button" width="100%"/>
