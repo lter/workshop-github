@@ -10,132 +10,135 @@ By the end of this module, you will be able to:
 - <u>Explain</u> how to avoid merge conflicts
 - <u>Summarize</u> what to do if a merge conflict occurs
 
-## What is a Merge Conflict?
+## Merge Conflict Definition
 
-Merge conflicts are a normal part of the Git workflow so don't get discouraged when you run into them! They occur when Git cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.
+Merge conflicts (a.k.a. "conflicts") are a normal part of the Git workflow so _don't get discouraged when you run into them!_ **They occur when Git cannot figure out how to automatically merge new changes together.** The most common cause of a merge conflict is when you and a collaborator both edit the same lines in the same file and one of you pushes without first pulling the most recent version from GitHub.
 
-## Brief Overview of Merge Conflict Workflow
+For a visual demonstration of this, see the graphic below. Note that though this has visual similarity to the workflow diagrams that can be found throughout this website we do not recommend intentionally causing a merge conflict {{< fa face-laugh-wink >}}
 
-So the basic steps to resolving a merge conflict using RStudio are as follows:
+<p align="center">
+<img src="images/graphics/git-conflict-cause.png" alt="Graphic of three vertical rectangles, the left and right ones labeled 'you' and 'other' while the center has a happy cloud emoji. Both side rectangles pull a given file from Github then edit that file in different ways. The first person is able to successfully push without issue but the second person to push gets a conflict" width="60%"/>
+</p>
 
-1. When a conflict happens, your local file will automatically be modified to include both possible lines (wrapped in some formatting characters described in greater detail below)
+## General Conflict Resolution Strategy
 
-2. Edit the lines in your file(s) that caused the merge conflict to your desired status
-
-3. **Commit** those changes
-
-4. **<span style="color:green">Push</span>** your changes to GitHub
+If you encounter a conflict, Git will combine your local version of the conflicted file with its equivalent in GitHub. In order to resolve the conflict, you'll need to manually tweak the local file(s) to decide what the script should look like then commit/push that file as normal.
 
 We can see those steps visually in the following workflow diagram:
 
 <p align="center">
-<img src="images/conflicts/git-conflict-workflow.png" alt="Graphic indicating the process of resolving a conflict when one occurs. After the initial conflict (caused when pushing a file from your machine differs from the GitHub version of that file), the combined file is auto-generated on your machine and you must then resolve the changes manually. These changes can then be committed and pushed up to GitHub" width="60%"/>
+<img src="images/graphics/git-conflict-workflow.png" alt="Graphic indicating the process of resolving a conflict when one occurs. After the initial conflict (caused when pushing a file from your machine differs from the GitHub version of that file), the combined file is auto-generated on your machine and you must then resolve the changes manually. These changes can then be committed and pushed up to GitHub" width="60%"/>
 </p>
 
-## How Merge Conflicts Happen
+## Fixing Conflicts
 
-Below is a common scenario that can lead to merge conflicts and then the steps to address a conflict when it occurs.
+In order to make this discussion more grounded, we will demonstrate how a conflict can be repaired after one has been encountered. For context, the conflict shown below was caused by editing a file on GitHub (`lyon-script.r`), then editing the same line of that same file locally in our IDE and pushing _without_ pulling first. **If we had pulled before committing our local change, <u>there would be no conflict!</u>**
 
-Let's say we have a repository that we've shared with a collaborator. Currently there's a `README.md` and only one script, `test-script.R`, in it.
+::::{.panel-tabset}
+### In RStudio
+
+After we attempt to push our local commit in RStudio, we get an intimidating dialog that looks like the following image. If we look at the lines of that message that start with `hint: ` you can see that RStudio is warning us about why the push failed and how to go about fixing it in reasonably human-readable terms.
 
 <p align="center">
-<img src="images/conflicts/conflicts-1-example-repo.png" alt="Screenshot of a simple GitHub repository containing only a single script and a README" width="80%"/>
+<img src="images/conflicts/rstudio-01_conflict.png" alt="Screen capture of RStudio message warning about a merge conflict" width="80%"/>
 </p>
 
-`test-script.R` contains one line. Suppose we want to work on this script and add more lines to it.
+Let's follow RStudio's advice and **pull the latest changes from GitHub.** This will cause another scary dialog about how the 'automatic merge' failed but this means we are on the road to a resolution.
 
 <p align="center">
-<img src="images/conflicts/conflicts-2-test-script.png" alt="Screenshot of a script with a single comment line" width="80%"/>
+<img src="images/conflicts/rstudio-02_pull-conflict.png" alt="Screen capture of RStudio message warning about post-merge conflict auto-merge failure" width="80%"/>
 </p>
 
-Let's go commit our edits. The green lines highlight the fact that we've added two new lines to our script, lines 2 and 3. We type out our commit message, and click **Commit**.
+If we look at the offending file, we'll see a horrible-looking chimera file of the version we had locally versus what it looked like on GitHub before we attempted to push. You will see that Git inserted a line of `<<<<`, `====`, and `>>>>` to encapsulate the version of the original lines we had locally versus what was on GitHub respectively.
 
 <p align="center">
-<img src="images/conflicts/conflicts-3-birds.png" alt="Screenshot of a staged file with a commit message where a vector of bird names is being added" width="100%" />
+<img src="images/conflicts/rstudio-03_auto-merge.png" alt="Screen capture of RStudio where a conflicted file has been auto-merged by GitHub" width="100%"/>
 </p>
 
-Great! The message "Your branch is ahead of 'origin/main' by 1 commit" lets us know that everything is proceeding smoothly. Suppose that we decided to take a break and stepped away from our computer.
+:::{.callout-note}
+#### Finding Conflicts in Long Scripts
+
+These weird special lines can make finding merge conflicts in longs scripts _much_ easier! Simply use your IDE's search function to look for four `<<<<` next to one another as it is unlikely such a line would normally be included in your code.
+:::
+
+Once Git has combined the two versions of the file, **it is up to us to read through the script and edit it so that it looks right to us.** At a minimum, this involves deleting the weird lines (in the screen capture below they are liens 1, 5, and 8) but in more difficult cases you may need to consider which version of the line is the one you want to retain.
+
+In this case, we can retain both lines of code without damaging either so let's just delete the special character lines.
 
 <p align="center">
-<img src="images/conflicts/conflicts-4-birds-commit.png" alt="Screenshot of RStudio after a successful commit" width="100%" />
+<img src="images/conflicts/rstudio-04_repair-script.png" alt="Screen capture of a script in RStudio where the merge conflict lines have been removed" width="100%"/>
 </p>
 
-Then, unbeknownst to us, our collaborator made their edits to the same script and committed and pushed their changes to the GitHub repository. At the moment, here is what the shared repository looks like.
+Once you are confident you've fixed the conflict, **commit the changes you made to resolve the conflict.** This is done in the same way that you'd normally make a commit.
 
 <p align="center">
-<img src="images/conflicts/conflicts-5-flowers.png" alt="Screenshot of the earlier GitHub repository where someone has made edits to the script" width="80%"/>
+<img src="images/conflicts/rstudio-05_commit-repairs.png" alt="Screen capture of a commit in RStudio with the message 'fixing conflict'" width="80%"/>
 </p>
 
-When we get back to our computer, we're ready to **<span style="color:green">push</span>** our changes to GitHub, but an error shows up. Basically, it is telling us that our GitHub repository contains changes that we do not have on our local computer. To remedy this, the message suggests that we pull the changes from GitHub to our machine to catch our local machine back up.
+Before you push, **take note that the Git pane is telling you that you are two commits ahead of 'origin/main'.** This is because both your original commit and your second commit (fixing the conflict) have yet to be pushed back up to GitHub--your first push failed because of the merge conflict. Once you've noted that, **push your changes.**
 
 <p align="center">
-<img src="images/conflicts/conflicts-6-birds-push.png" alt="Screenshot of the message you get when a push is rejected because of a conflict" width="80%" />
+<img src="images/conflicts/rstudio-06_push.png" alt="Screen capture of a script in RStudio where the merge conflict lines have been removed" width="100%"/>
 </p>
 
-After clicking **<span style="color:blue">Pull</span>**, we get a new error message: "Merge conflict in test-script.R".
+Your RStudio should now look how it did before you got the conflict and you can continue working normally--hopefully having learned a lesson in proactive communication with your collaborators.
 
 <p align="center">
-<img src="images/conflicts/conflicts-7-birds-pull.png" alt="Screenshot of the message you get when you pull after getting a conflict and Git (through RStudio) warns you that it created an automatic merge" width="80%" />
+<img src="images/conflicts/rstudio-07_fixed.png" alt="Screen capture of RStudio with an open script" width="100%"/>
 </p>
 
-Looking closer, the merge conflict prompted a new version of `test-script.R` to pop up. This version contains our edits and our collaborator's edits, along with the delimiter lines that start with `<<<<<<<`, `=======`, and `>>>>>>>`. Git is urging us to manually fix the conflicted lines before continuing.
+### In Positron
 
-<p align="center"/>
-<img src="images/conflicts/conflicts-8-conflicted-lines.png" alt="Screenshot of a script where there was a conflict now having rows of symbols separating the two versions of the conflicting line" width="80%"/>
-</p>
-
-Our file now has an **<span style="color:orange">U</span>** icon, which stands for an unresolved merge conflict.
-
-<p align="center"/>
-<img src="images/conflicts/conflicts-9-unresolved.png" alt="Screenshot of Rstudio's Git pane where the script with conflict now has two orange 'U' icons (for 'unresolved')" width="80%"/>
-</p>
-
-In general terms the steps that come before a merge conflict are displayed in the visual below. Note that though this has visual similarity to the workflow diagrams throughout this bookdown we do not recommend intentionally causing a merge conflict :)
-
-<p align="center"/>
-<img src="images/conflicts/git-conflict-cause.png" alt="Graphic of three vertical rectangles, the left and right ones labeled 'you' and 'other' while the center has a happy cloud emoji. Both side rectangles pull a given file from Github then edit that file in different ways. The first person is able to successfully push without issue but the second person to push gets a conflict" width="60%"/>
-</p>
-
-## Resolving Merge Conflicts
-
-So how do we resolve this merge conflict? We need to edit the script so that it looks like how we want it. We can either pick our lines to keep, our collaborator's lines, some combination, or something new altogether. Be sure to communicate with your collaborator to discuss exactly how it should be fixed. After merging the changes wherever appropriate, delete the delimiter lines.
+After we attempt to sync our local commit in Positron, we get an intimidating warning about a merge conflict (see pop-up in the bottom right) and our script header is filled with gross special chacters in red text.
 
 <p align="center">
-<img src="images/conflicts/conflicts-10-resolved.png" alt="Screenshot of the script where the special characters have been removed and the conflict has been resolved" width="80%"/>
+<img src="images/conflicts/positron-01_conflict.png" alt="Screen capture of Positron message warning about a merge conflict" width="100%"/>
 </p>
 
-Then stage, commit the changes, and push them to GitHub!
+Because Positron's default Git interaction is "sync" (a combination of a push and a pull) the local version of our script and the version on GitHub have already been auto-merged by Git. This means we are on the road to a resolution.
+
+If we look at the offending file, we'll see a horrible-looking chimera file of the version we had locally versus what it looked like on GitHub before we attempted to push. You will see that Git inserted a line of `<<<<`, `====`, and `>>>>` to encapsulate the version of the original lines we had locally versus what was on GitHub respectively.
+
+:::{.callout-note}
+#### Finding Conflicts in Long Scripts
+
+These weird special lines can make finding merge conflicts in longs scripts _much_ easier! Simply use your IDE's search function to look for four `<<<<` next to one another as it is unlikely such a line would normally be included in your code.
+:::
+
+Once Git has combined the two versions of the file, **it is up to us to read through the script and edit it so that it looks right to us.** At a minimum, this involves deleting the weird lines (in the screen capture below they are liens 1, 5, and 8) but in more difficult cases you may need to consider which version of the line is the one you want to retain.
+
+Positron also helpfully provides buttons over each merge that allow us to quickly choose which version of the code we want but we could also edit the script manually.
+
+In this case, we can retain both lines of code without damaging either so let's just delete the special character lines.
 
 <p align="center">
-<img src="images/conflicts/conflicts-11-commit-resolved.png" alt="Screenshot of RStudio where the once-conflicted script is being staged and committed with issues resolved" width="100%" />
+<img src="images/conflicts/positron-02_repair-script.png" alt="Screen capture of a script in Positron without merge conflict lines" width="60%"/>
 </p>
 
-Perfect! We've fixed the merge conflict!
-
-<p align="center"/>
-<img src="images/conflicts/conflicts-12-push-resolved.png" alt="Screenshot of the success message from RStudio when a push works as desired" width="80%"/>
-</p>
-
-Let's check back on the shared repository. The latest commit shows that we've successfully pushed our changes to GitHub.
+Once you are confident you've fixed the conflict, **commit the changes you made to resolve the conflict.** This is done in the same way that you'd normally make a commit. Note you will likely want to **replace the default merge conflict commit message with something that is more human-readable.**
 
 <p align="center">
-<img src="images/conflicts/conflicts-13-merged.png" alt="Screenshot of a GitHub repository with the the repaired file included" width="80%"/>
+<img src="images/conflicts/positron-03_commit-repairs.png" alt="Screen capture of a commit in Positron with the message 'fixing conflict'" width="60%"/>
 </p>
+
+Before you sync, **take note that the "Sync Changes" button is telling you that you have two changes to contribute.** This is because both your original commit and your second commit (fixing the conflict) have yet to be pushed back up to GitHub--your first push failed because of the merge conflict. Once you've noted that, **sync your changes.**
 
 <p align="center">
-<img src="images/conflicts/conflicts-14-checking-merged.png" alt="Screenshot of the repaired file in Github showing the latest changes" width="80%"/>
+<img src="images/conflicts/positron-04_sync.png" alt="Screen capture of a script in Positron where the merge conflict lines have been removed" width="60%"/>
 </p>
 
-Navigating to the commit history, we see that first we committed our changes, then our collaborator committed and pushed their changes, causing a merge conflict since we were editing the same lines in the same file. To resolve this, we edited those lines directly in our RStudio and committed and pushed our changes once more. Finally, the merge conflict is resolved and all the necessary changes are merged.
+Your Positron should now look how it did before you got the conflict and you can continue working normally--hopefully having learned a lesson in proactive communication with your collaborators.
 
 <p align="center">
-<img src="images/conflicts/conflicts-15-commit-history.png" alt="Screenshot of the commit history of the GitHub repository showing where the conflict appears in the history" width="100%" />
+<img src="images/conflicts/positron-05_fixed.png" alt="Screen capture of Positron with an open script" width="60%"/>
 </p>
 
-## Tips on Avoiding Merge Conflicts
+::::
+
+## Avoiding Conflicts
 
 Merge conflicts aren't exactly fun, so here are some tips to avoid them:
 
 - **Communicate with your team members _often_** to avoid working on the same files at the same time! Let each other know who is working on what
-- Commit frequently and in small chunks
-- Try **<span style="color:blue">pulling</span>** before committing
+- **<span style="color:blue">Pull</span>** early and often
+- **Push your commits frequently** (always pulling before pushing!)
