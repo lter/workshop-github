@@ -20,7 +20,6 @@ Let's navigate over to [GitHub](https://github.com/) and explore some of its fea
 Depending on your GitHub settings, key buttons will either be **<span style="color:green">green</span>** or **<span style="color:blue">blue</span>.** _This has no functional effect_ but is mentioned here just to note that some of the screen captures in this workshop will show green buttons while others have blue buttons.
 :::
 
-
 <p align="center">
 <img src="images/browser/browser-01_github-home.png" alt="Screenshot of the GitHub landing page when you go to 'github.com' and are not signed in" width="100%"/>
 </p>
