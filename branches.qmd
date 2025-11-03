@@ -26,7 +26,7 @@ Before diving into the specifics of how to use branches while working with Git, 
 
 As with many other Git operations, the first thing to do is **<span style="color:blue">pull</span>** from GitHub to your local repository to ensure that you're working with the most up-to-date version of everything in the repo (see **Step 1** below).
 
-Once that is done, you can create a branch on your local machine (automatically shifting your RStudio project into that new branch). Doing this on your machine also updates GitHub to show that there are multiple branches (see **Step 2** below).
+Once that is done, you can create a branch on your local machine. This will automatically shift your IDE into that new branch. Doing this on your machine also updates GitHub to show that there are multiple branches (see **Step 2** below).
 
 Once you have created a branch you can work in it locally (and via GitHub directly) as you would normally. You can **<span style="color:gold">edit</span>** your files locally, **commit** those changes, **<span style="color:blue">pull</span>** from GitHub (within the branch), and **<span style="color:green">push</span>** to GitHub (see **Steps 3-4** below).
 
@@ -41,7 +41,7 @@ However, deletion of the branch either locally or via GitHub **must** come *afte
 As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we've discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas*ier*) workflow for working together while avoiding conflicts (again, see "Appendix A: Conflicts").
 
 <p align="center">
-<img src="images/branches/git-branch-workflow.png" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" width="75%"/>
+<img src="images/graphics/git-branch-workflow.png" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" width="75%"/>
 </p>
 
 Now we've gone over this big picture overview, let's walk step-by-step through creating, working in and ultimately merging branches!
@@ -78,16 +78,14 @@ You will also notice that in your Git tab where previously it said "main" it now
 
 ## Work in the Branch
 
-You can now work in a branch *in the same way* that you work with GitHub via RStudio when you are not using branches.
+You can now work in a branch *in the same way* that you work with GitHub via your IDE of choice when you are not using branches.
 
 1. Make **<span style="color:gold">edits</span>**
 2. **Commit** changes locally
 3. **<span style="color:blue">Pull</span>** from GitHub to reduce the chances of a conflict
 4. **<span style="color:green">Push</span>** your committed changes to GitHub
 
-The reason you use the same workflow is--as previously stated--even if you don't typically use branches, all work in Git is functionally done in the "main" branch of your repository.
-
-For a more in-depth review of the RStudio-GitHub workflow, see Chapter 3: Using GitHub via Rstudio
+The reason you use the same workflow is--as previously stated--even if you don't typically use branches, all work in Git is functionally done in the "main" branch of your repository so your work in this new branch should use the same order of operations as work done in the "main" branch.
 
 ## Closing a Branch
 
