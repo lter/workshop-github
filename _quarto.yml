@@ -28,7 +28,7 @@ website:
       - section: "Using GitHub..."
         contents:
           - text: "With a Browser"
-            href: github.qmd
+            href: browser.qmd
           - text: "With an IDE"
             href: ide.qmd
       - section: "Advanced Topics"
