@@ -12,7 +12,7 @@ By the end of this module, you will be able to:
 
 ## What is a Branch?
 
-A **branch** is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don't want to risk damaging the version of your code that already works. Note that "branch" can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., "commit", "push", etc.).
+A **"branch"** is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don't want to risk damaging the version of your code that already works. Note that "branch" can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., "commit", "push", etc.).
 
 Branches are typically created with **the intent to put the work in the branch back into the main branch when you are done with it.** Implicit in that rationale is the fact that most branches are created with a specific task/sub-task in mind and known to be temporary from the outset.
 
@@ -20,7 +20,7 @@ As an example, imagine that you want to put a better engine in your car but you 
 
 Even if you think you've never worked with Git branches you actually have! All Git repositories actually start in a branch named "main" so even if you've never intentionally created a branch, you've been working in your "main" branch all along.
 
-## Brief Overview of Branch Workflow
+## Branch Workflow Overview
 
 Before diving into the specifics of how to use branches while working with Git, let's take a look at a general overview of that process.
 
@@ -48,39 +48,63 @@ Now we've gone over this big picture overview, let's walk step-by-step through c
 
 ## Create a Branch
 
-_Before_ you create a branch **<span style="color:blue">pull</span>** from GitHub as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your banch and want to merge it back into the main flow of your repository.
+**_Before_ you create a branch, <span style="color:blue">pull</span> from/sync with GitHub** as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your banch and want to merge it back into the main flow of your repository.
 
 :::{.panel-tabset}
+
 ### In RStudio
 
-To create a branch, click the **<span style="color:purple">purple</span>** button in the Git tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.
+To create a branch, click the **<span style="color:purple">purple</span>** button in the "Git" tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.
 
 <p align="center">
-<img src="images/branches/rstudio-01_branch-button.png" alt="Screenshot of the set of buttons in RStudio's Git pane" width="75%"/>
+<img src="images/branches/rstudio-01_start.png" alt="Screen capture of RStudio" width="100%"/>
 </p>
 
-In the resulting dialogue box, give your new branch an informative name. In this example we haven't given our new branch a great name but in a "real" repository you will greatly appreciate having concise but descriptive branch names.
-
-Once you're happy with the name, click "**Create**" (you can ignore the other options and buttons on this dialogue box).
+In the resulting dialogue box, **give your new branch an informative name.** In this example we haven't given our new branch a great name but in a "real" repository you will greatly appreciate having concise but descriptive branch names. Once you're happy with the name, **click the "Create" button** (you can ignore the other options and buttons on this dialogue box).
 
 <p align="center">
-<img src="images/branches/rstudio-02_name-branch.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="65%"/>
+<img src="images/branches/rstudio-02_branch-details.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="50%"/>
 </p>
 
 This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.
 
 <p align="center">
-<img src="images/branches/rstudio-03_new-branch-message.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="75%"/>
+<img src="images/branches/rstudio-03_branch-message.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="80%"/>
 </p>
 
-You will also notice that in your Git tab where previously it said "main" it now shows whatever name you chose for your branch.
-
-<p align="center">
-<img src="images/branches/rstudio-04_new-branch-success.png" alt="Screenshot of RStudio's Git pane where it can be seen that the branch name has changed to the new branch created earlier" width="75%"/>
-</p>
+You may also notice that in your Git tab where previously it said "main" it now shows whatever name you chose for your branch.
 
 ### In Positron
 
+To begin, **go to the "source control" section of Positron.**
+
+<p align="center">
+<img src="images/branches/positron-01_start.png" alt="Screen capture of Positron" width="100%"/>
+</p>
+
+To create a branch, **hover over the "Changes" dropdown menu and click `...`** to expand the set of Git operations that are visible. From there, **scroll down to "Branch" and click it.** Finally, **click "Create Branch...".**
+
+<p align="center">
+<img src="images/branches/positron-02_new-branch.png" alt="Screenshot of the dropdown menu in Positron for creating a new branch" width="80%"/>
+</p>
+
+In the resulting field (top middle of Positron), **give your new branch an informative name.** In this example we haven't given our new branch a great name but in a "real" repository you will greatly appreciate having concise but descriptive branch names. Once you're happy with the name, **hit the Enter key on your computer.**
+
+<p align="center">
+<img src="images/branches/positron-03_branch-details.png" alt="Screenshot of the field in Positron where you type new branch names" width="100%"/>
+</p>
+
+Now that you've made your new branch locally, you need to send it up to GitHub. Positron calls this "Publishing" but this isn't conceptually different from any other sync/push--essentially you're just letting GitHub know that you have a branch locally that it doesn't have a record of yet. To publish the branch, **click the "Publish Branch" button.**
+
+<p align="center">
+<img src="images/branches/positron-04_publish-branch.png" alt="Screenshot of the Positron 'source control' pane where the 'Publish Branch' button is active" width="80%"/>
+</p>
+
+You'll know that this worked when you look at the branch diagram in the bottom left corner of Positron's source control menu. Note how the second commit from the top has the "origin/main" label while the top-most one has the label that matches whatever you named your new branch.
+
+<p align="center">
+<img src="images/branches/positron-05_published.png" alt="Screenshot of the Positron 'source control' pane after a new branch has been published" width="80%"/>
+</p>
 
 :::
 
