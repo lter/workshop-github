@@ -79,6 +79,9 @@ You will also notice that in your Git tab where previously it said "main" it now
 <img src="images/branches/rstudio-04_new-branch-success.png" alt="Screenshot of RStudio's Git pane where it can be seen that the branch name has changed to the new branch created earlier" width="75%"/>
 </p>
 
+### In Positron
+
+
 :::
 
 ## Work in the Branch
@@ -92,13 +95,11 @@ You can now work in a branch *in the same way* that you work with GitHub via you
 
 The reason you use the same workflow is--as previously stated--even if you don't typically use branches, all work in Git is functionally done in the "main" branch of your repository so your work in this new branch should use the same order of operations as work done in the "main" branch.
 
-## Closing a Branch
+## Finish Working in a Branch
 
-Once you've completely finished working in your branch, **<span style="color:green">push</span>** your work (if your local files are ahead of the GitHub versions) and go to your repository's GitHub page.
+Once you've completely finished working in your branch, you'll want to merge the content from your branch back into the "main" branch. To do this, we'll need to a GitHub operation called a "pull request".
 
-On that page GitHub will helpfully have created a button at the top of the screen notifying you that your branch had recent pushes and will offer a <span style="color:green">green</span> button to "Compare & pull request".
-
-Click that button.
+To start this process,  **<span style="color:green">push</span>/sync all of your local commits to your GitHub repository.** Your GitHub repository will now have a brand new button titled "Compare & pull request". **Click that button.**
 
 <p align="center">
 <img src="images/branches/branches-6-pull-request-start.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="100%" />
@@ -106,21 +107,21 @@ Click that button.
 
 You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.
 
-Once you're satisfied with your title and message, click the <span style="color:green">green</span> "Create pull request" button.
+Once you're satisfied with your title and message, **click the "Create pull request" button.**
 
 <p align="center">
 <img src="images/branches/branches-7-pull-request-msg.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%" />
 </p>
 
-That done, GitHub will send you to a page that looks very much like a Github issue (see the chapter on issues). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.
+That done, GitHub will send you to a page that looks very much like a Github issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.
 
 Those commits are "live" and function as hyperlinks in case you want to view how your code is preserved in GitHub.
 
-Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to RStudio and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.
+Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to your IDE and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.
 
-You or your team can post messages on a pull request as needed (see the text box at the bottom of the below picture).
+You or your team can also post messages on a pull request as needed (see the text box at the bottom of the below picture).
 
-If you are ready to merge a pull request from your branch into the "main" branch click the intuitively-named <span style="color:green">green</span> "Merge pull request" button.
+If you are ready to merge a pull request from your branch into the "main" branch **click the "Merge pull request" button.**
 
 <p align="center">
 <img src="images/branches/branches-8-active-pull-request.png" alt="Screenshot of an open pull request on GitHub" width="100%" />
