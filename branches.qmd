@@ -119,14 +119,14 @@ You can now work in a branch *in the same way* that you work with GitHub via you
 
 The reason you use the same workflow is--as previously stated--even if you don't typically use branches, all work in Git is functionally done in the "main" branch of your repository so your work in this new branch should use the same order of operations as work done in the "main" branch.
 
-## Finish Working in a Branch
+## Merging Branches
 
-Once you've completely finished working in your branch, you'll want to merge the content from your branch back into the "main" branch. To do this, we'll need to a GitHub operation called a "pull request".
+When you are done with your work in the branch, you will want to merge your new branch with the "main" branch of the repository. This branch merging is most easily done via GitHub so the following instructions are agnostic to IDE and purposefully exclude the repository name from the screen capture area.
 
-To start this process,  **<span style="color:green">push</span>/sync all of your local commits to your GitHub repository.** Your GitHub repository will now have a brand new button titled "Compare & pull request". **Click that button.**
+To start, **<span style="color:green">push</span>/sync your final commit(s) from your local branch with GitHub.** GitHub should recognize this and automatically create a button at the top of your repository's home page for you to start the process of creating a "pull request." To start the branch merging process, **click the "Compare & pull request" button**
 
 <p align="center">
-<img src="images/branches/branches-6-pull-request-start.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="100%" />
+<img src="images/branches/github-01_pr-button.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="80%"/>
 </p>
 
 You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.
@@ -134,8 +134,17 @@ You will then be prompted to write a title and message for your pull request to 
 Once you're satisfied with your title and message, **click the "Create pull request" button.**
 
 <p align="center">
-<img src="images/branches/branches-7-pull-request-msg.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%" />
+<img src="images/branches/github-02_pr-details.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%"/>
 </p>
+
+
+
+# BASEMENT
+
+## Finish Working in a Branch
+
+
+
 
 That done, GitHub will send you to a page that looks very much like a Github issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.
 
