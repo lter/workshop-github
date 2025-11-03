@@ -48,12 +48,15 @@ Now we've gone over this big picture overview, let's walk step-by-step through c
 
 ## Create a Branch
 
-Before you create a branch, **<span style="color:blue">pull</span>** from GitHub as a precaution so that you are certain your local repository has the most up-to-date content.
+_Before_ you create a branch **<span style="color:blue">pull</span>** from GitHub as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your banch and want to merge it back into the main flow of your repository.
 
-That done, click the **<span style="color:purple">purple</span>** button in the Git tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.
+:::{.panel-tabset}
+### In RStudio
+
+To create a branch, click the **<span style="color:purple">purple</span>** button in the Git tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.
 
 <p align="center">
-<img src="images/branches/branches-1-new-branch-button.png" alt="Screenshot of the set of buttons in RStudio's Git pane" width="75%"/>
+<img src="images/branches/rstudio-01_branch-button.png" alt="Screenshot of the set of buttons in RStudio's Git pane" width="75%"/>
 </p>
 
 In the resulting dialogue box, give your new branch an informative name. In this example we haven't given our new branch a great name but in a "real" repository you will greatly appreciate having concise but descriptive branch names.
@@ -61,20 +64,22 @@ In the resulting dialogue box, give your new branch an informative name. In this
 Once you're happy with the name, click "**Create**" (you can ignore the other options and buttons on this dialogue box).
 
 <p align="center">
-<img src="images/branches/branches-2-name-new-branch.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="65%"/>
+<img src="images/branches/rstudio-02_name-branch.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="65%"/>
 </p>
 
 This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.
 
 <p align="center">
-<img src="images/branches/branches-2b-success-dialogue.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="75%"/>
+<img src="images/branches/rstudio-03_new-branch-message.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="75%"/>
 </p>
 
 You will also notice that in your Git tab where previously it said "main" it now shows whatever name you chose for your branch.
 
 <p align="center">
-<img src="images/branches/branches-2c-new-branch.png" alt="Screenshot of RStudio's Git pane where it can be seen that the branch name has changed to the new branch created earlier" width="75%"/>
+<img src="images/branches/rstudio-04_new-branch-success.png" alt="Screenshot of RStudio's Git pane where it can be seen that the branch name has changed to the new branch created earlier" width="75%"/>
 </p>
+
+:::
 
 ## Work in the Branch
 
