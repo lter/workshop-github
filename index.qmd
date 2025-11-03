@@ -6,7 +6,7 @@ title: "Overview"
 
 <img src="images/logos/github.png" alt="Logo for GitHub" align="right" width="17%" />
 
-This workshop provides an overview of what "version control" systems are and how they fit into collaborative coding within your team. Specifically, **we are focusing here on an introductory approach to version control that focuses on using GitHub either by itself or with Git via RStudio**. We are always happy to improve workshop content so please don't hesitate to [post an Issue](https://github.com/lter/workshop-github/issues) on our GitHub repository if you see clear areas for improvement! 
+This workshop provides an overview of what "version control" systems are and how they fit into collaborative coding within your team. Specifically, **we are focusing here on an introductory approach to version control that focuses on using GitHub either through a browser or through software installed on your computer.** We are always happy to improve workshop content so please don't hesitate to [post an Issue](https://github.com/lter/workshop-github/issues) on our GitHub repository if you see clear areas for improvement! 
 
 ### Citing These Materials
 
