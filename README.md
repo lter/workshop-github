@@ -1,13 +1,13 @@
 # LTER Scientific Computing Workshop - Collaborative Coding with GitHub
 
-[![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281/zenodo.16966957-blue.svg)](https://doi.org/10.5281/zenodo.16966957)
+[![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281/zenodo.16966956-blue.svg)](https://doi.org/10.5281/zenodo.16966956)
 
 ## Citing these Materials
 
 We hope this workshop is useful to you and encourage you to use these materials! If you do use these materials, please use the following citation:
 
 ```
-Lyon, N.J., Chen, A., and Brun, J. (2025). Collaborative Coding with GitHub (v1.3). Zenodo. https://doi.org/10.5281/zenodo.16966957
+Lyon, N.J., Chen, A., and Brun, J. (2025). Collaborative Coding with GitHub (v2.0). Zenodo. https://doi.org/10.5281/zenodo.16966956
 ```
 
 ## Funding Acknowledgment

@@ -12,7 +12,7 @@ This workshop provides an overview of what "version control" systems are and how
 
 If you'd like to cite these materials, please use the following citation:
 
-> Lyon, N.J., Chen, A., and Brun, J. (2025). Collaborative Coding with GitHub (v1.3). Zenodo. [https://doi.org/10.5281/zenodo.16966957](https://doi.org/10.5281/zenodo.16966957)
+> Lyon, N.J., Chen, A., and Brun, J. (2025). Collaborative Coding with GitHub (v2.0). Zenodo. [https://doi.org/10.5281/zenodo.16966956](https://doi.org/10.5281/zenodo.16966956)   
 
 ## Workshop Preparation
 
