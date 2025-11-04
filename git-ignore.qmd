@@ -91,8 +91,6 @@ Once you **save the edits to the `.gitignore`**, you'll notice that the Git pane
 <img src="images/ignore/rstudio-05_ignore-saved.png" alt="Screen capture of RStudio where the Git pane shows un-committed edits to the '.gitignore'" width="100%"/>
 </p>
 
-::::
-
 ### In Positron
 
 To begin, we can **check the "source control" pane of Positron to confirm that Git does see "data.csv"** even though Git is not tracking it currently.
@@ -131,122 +129,46 @@ Once you **save the edits to the `.gitignore`**, you'll notice that the source c
 <img src="images/ignore/positron-05_ignore-saved.png" alt="Screen capture of Positron where the Git pane shows un-committed edits to the '.gitignore'" width="50%"/>
 </p>
 
-# BASEMENT
-
-
-
-
-
-
-## Interacting with the `.gitignore`
-
-Once you have the one, you can open the `.gitignore` by clicking it from the "Files" pane of RStudio.
-
-<p align="center">
-<img src="images/git_ignore/ignore-5-rstudio-files.png" alt="Screenshot of the 'files' pane in RStudio which includes the .Rproj file, the README, and the gitignore" width="65%"/>
-</p>
-
-After you click it you'll be looking at a file that looks very similar to any other file in RStudio.
-
-<p align="center">
-<img src="images/git_ignore/ignore-6-viewing.png" alt="Screenshot of the gitignore open in RStudio looking similar to any other file in RStudio" width="100%"/>
-</p>
-
-Now let's add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.
-
-If we add `*.Rproj` to our `.gitignore`, the Git pane will show that the only change is that lines have been added to the `.gitignore`. The .Rproj file with the double yellow question marks next to it is gone!
-
-<p align="center">
-<img src="images/git_ignore/ignore-7-editing.png" alt="Screenshot of RStudio demonstrating that when a file name or extension is added to the gitignore and that change is saved then the file in question disappears from RStudio's Git pane" width="100%"/>
-</p>
-
-Once you've edited the `.gitignore` it is generally a good practice to push those changes as soon as possible. If you flag a certain file (or folder) to be ignored while someone else is depending on it, if you wait to push the change you can risk a serious conflict. Or, they might commit a file you want ignored which is frustrating to remove (see "Exceptions to the `.gitignore`" below).
-
-<p align="center">
-<img src="images/git_ignore/ignore-8-commit.png" alt="Screenshot of RStudio's commit window where the change to the gitignore is being committed" width="80%"/>
-</p>
-
-Only the commit is pictured above, but pushing & pulling works in the same way here as it does elsewhere.
-
-## Our Recommendations
-
-There are many different opinions on what should go into a `.gitignore` but we have a few suggestions that might prove helpful (or are at least worth considering).
-
-1. **Use the GitHub `.gitignore` template for your chosen programming environment**
-
-    - There are a lot of small files that typical users don't care about that your project will accumulate over its lifecycle. If you don't flag these in the `.gitignore` it can become difficult to sort through your repository
-
-2. **Add `.DS_Store`**
-
-    - Macs create a "Desktop Services Store" file (or ".DS_Store" for short) every time you open a folder. This file is invisible in your file manager but _can_ be committed. This file has no practical value in your project and a separate one exists in every subfolder so tracking them can quickly clutter a repository if you use subfolders
-
-3. **Other Considerations**
-
-    - Some people recommend adding <u>everything your script creates</u> to the `.gitignore`. The theory being that if someone wants to see those outputs, they would only need to run your script(s) in order to create their own versions
-    - Another way of thinking about this is to create a dedicated folder to store products in (e.g., "data", "exports", etc.) and then add that folder to the `.gitignore`. This means you don't need to worry about adding specific files to the `.gitignore` so long as all the files live in a folder you've already designated as something for Git to not track
-
-4. Do you have another idea for what you typically add to a `.gitignore`?
-
-    - Please share it with us by [posting an Issue](https://github.com/lter/workshop-github/issues); we'd love to hear from you!
-
-### Should You Ignore the .Rproj File?
-
-If you are an RStudio user, you *could* choose to add the R project file to your `.gitignore`. <u>However</u>, this is a somewhat thorny decision with strong arguments on both sides. We'll try to summarize some of the big considerations below to help inform your decision.
-
-#### Option A: **Commit** the .Rproj
-
-There are (in our opinion) three strong arguments for committing the .Rproj:
-
-1. Ease of Access
-
-    - For non-R users, it can be really helpful to have just one file that they need to double click in order to open and interact with the whole R project. By committing the .Rproj, you make the post-clone start up instructions much simpler (i.e., "click the file ending in '.Rproj' and you're good to go")
-
-2. Facilitate Cloning Outside of RStudio
-
-    - While our workshop has exclusively covered cloning a repo through RStudio, it is absolutely possible to clone without using RStudio. If someone goes this route, and the .Rproj is not already included in the repo, they will be left without one. So, after the clone they would then have an extra step to create their own .Rproj if they wanted to use RStudio to interact with the code
-    - Note that if everyone on your team is cloning via RStudio, this is not really an issue because cloning via RStudio *creates* a new .Rproj if one does not already exist
-
-3. Enforce Project Settings
-
-    - Fundamentally, the .Rproj is a list of settings that you're using for a specific project in RStudio. If you wanted to create some defaults of those settings for anyone who cloned your repository, you could commit your .Rproj with your preferred settings
-    - That said, any member of your team who changed those settings would have the option to commit the corresponding change to the .Rproj file and the next time you **<span style="color:blue">pull</span>** you would have their settings instead
-
-#### Option B: Ignore the .Rproj
-
-We feel there are some serious reasons for ignoring the .Rproj as well:
-
-1. Risk of Deletion
-
-    - Say you decide to commit your .Rproj, what happens if someone deletes it and **<span style="color:green">pushes</span>** that deletion? This can happen if team members clone their version of the repo with a different name resulting in two local .Rproj files where one is redundant from that team member's perspective
-    - If a .Rproj is committed and then subsequently deleted, everyone who **<span style="color:blue">pulls</span>** that change will delete their local project. This results in an instant error that can be difficult to recognize if you don't know beforehand about this risk. The only fix is for all affected users to re-clone the repository
-    - So, if you add the .Rproj to the `.gitignore` preemptively, you can avoid the risk of this happening at some later stage; you could also add it as "`*.Rproj`" so regardless of the name of the file it will be ignored if the file type is .Rproj
-
-2. Loss of Flexibility
-
-    - When you commit your .Rproj you are "locking in" the name of your project. If your preliminary data exploration and analyses bring new hypotheses and goals to light you may want to change your project name to better match this new framing. If you had previously committed your .Rproj, it can be a hassle to change its name and **<span style="color:green">push</span>** this change
-    - Alternatively, you may want to change your GitHub repository name after publication to share keywords with your final manuscript title or the journal name to make the repository more easily searchable by your readers. Technically you could change the GitHub repository name without changing the corresponding .Rproj filename but there will be some disonance there if your readers clone your code
-
-3. Preserve Team Members' Local Filing Decisions
-
-    - Most working group members are involved in a staggering variety of pursuits in addition to their role in a synthesis working group. People tend to have their own filing systems in their computers to help them quickly and easily navigate among their different projects
-    - If you **commit** the .Rproj, you force everyone who clones your repository to use your naming convention which can be a hurdle (albeit likely a minor one) as they juggle their responsibilities
-
-#### Decision
-
-Ultimately, this is up to you and your team to decide! Hopefully our outlined reasons for and against adding the .Rproj to the `.gitignore` help inform this decision and we are happy to discuss this more if you have follow up questions!
+::::
 
 ## Ignoring Previously Tracked Content
 
-Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by Git and every time you alter that file RStudio's "Git" pane will notify you that the file changed by placing the blue "M" next to the file's name. Let's say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop Git from tracking *future* changes to the file. If this is the case, you'll need to do the following:
+Imagine a situation where you commit a file that you don't want Git to track and push that commit before realizing your mistake. Now that file is tracked by Git and every time you alter that file, it will show up in your IDE's version control pane. If you add the file to your `.gitignore` now, you won't be able to delete it because Git will stop tracking new changes (even deletions).
 
-1. Either (A) delete the file or (B) move it out of the repository's folder
+To resolve this, do the following:
 
-    - Either option will register as "deleting" the file from Git's perspective
+1. Delete the offending file(s)
+    - If you don't want to actually delete them, just move the file(s) out of the folder tracked by Git and move them back after step 3
+2. Commit the deletion
+3. Add the file(s) to the `.gitignore`
+4. Commit the change to the `.gitignore`
+5. **<span style="color:green">push</span>/sync** your changes with GitHub
 
-2. **Commit** the deletion
+## LTER SciComp Recommendations
 
-3. **<span style="color:green">Push</span>** that change
+There are many different opinions on what should go into a `.gitignore` but see below for some recommendations of things to ignore from the makers of this workshop. Feel free to disregard any that you don't feel apply to your needs.
 
-4. Add the name of that file to your `.gitignore`
+### Start with the GitHub Template
 
-Once you've done these steps, even if you put the file back in your repository, Git won't track its addition or any changes to it over time.
+**When you create a repository, use GitHub to add the template `.gitignore` for your chosen programming language.** There are a lot of small files that typical users don't care about that your project will accumulate over its lifecycle. If you don't flag these in the `.gitignore` it can become difficult to sort through your repository.
+
+### Ignore Script Inputs and Outputs
+
+**Version control is only meant to track code files so everything else should be ignored.** You should store your inputs somewhere that your collaborators can access them and--at the end of your project--archive them in a FAIR (<u>F</u>indable, <u>A</u>ccessible, <u>I</u>nteroperable, and <u>R</u>eusable) repository. Anyone wanting access to script outputs should be able to use those inputs to run the code themselves and generate them. Alternately, you may also want to upload script outputs to some static platform (e.g., Google Drive, Dropbox) so non-coders can easily access them there. In either case, **Git should not be used to track/store anything other than code files.**
+
+One way of doing this fairly efficiently is to create dedicated folders for storing inputs or outputs (e.g., "data/", "graphs/", "results/") and then add those folder names to the `.gitignore`. You could also ignore certain file types--as demonstrated above--if your inputs/outputs belong to a relatively small set of file types.
+
+### Ignore the ".DS_Store" File
+
+**If you are a {{< fa brands apple >}} Mac user, you should ignore the ".DS_Store" file.** Macs create a "Desktop Services Store" file (or ".DS_Store" for short) every time you open a folder. This file is invisible in your file manager but _can_ be committed. This file has no practical value in your project and a separate one exists in every subfolder so tracking them can quickly clutter a repository if you use subfolders.
+
+### Ignore the R Project File
+
+**If you are an RStudio user, you should ignore the ".Rproj" file.** This opinion is a relatively contentious one as RStudio users are deeply divided on whether to ignore this file or commit it. We recommend ignoring it for two reasons:
+
+1. **If you commit your .Rproj file and someone later deletes it, the next time you pull, <u>Git will delete your .Rproj file</u> and cause RStudio to unexpectedly quit**--costing you all of your uncommitted edits. You will then need to create a new .Rproj in the desired folder and re-connect it to Git/GitHub.
+2. **All group members may have different names for their .Rproj files which means you could have as many of these files in your GitHub repository as there are collaborators.** This is cumbersome to sort through and attempts to fix this _post hoc_ run the risk outlined in the first point.
+
+If these risks are not sufficient to sway you, consider that the .Rproj file serves almost no purpose in the first place. In theory, the .Rproj file can be used to define some RStudio settings for anyone who uses that .Rproj but few R users actually use it for this purpose and instead mostly use it as a shortcut to open the relevant project in RStudio.
+
+Ultimately, this is up to you and your team to decide! Hopefully the rationale we provided above helps inform this decision and we are happy to discuss this more if you have follow up questions.
