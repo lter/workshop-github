@@ -5,6 +5,7 @@ This reflects the current state of the repository. Changes from the preceding ve
 - Added Zenodo DOI and full workshop citation to README and homepage of workshop
 - Clarified GitHub 'by itself' versus 'with an IDE' and made minor edits to both original topics in service of making this distinction clear
 - Tweaked sidebar to make a new 'background' section to house the workflows module and some of the Git-specific background that previously was the start of what is now called the 'GitHub by itself' module
+- Overhauled all IDE-related tutorials to use new, more clear images and explanatory text for both RStudio and Positron
 
 ## Version 1.3
 
