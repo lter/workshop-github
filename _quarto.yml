@@ -36,7 +36,7 @@ website:
           - conflicts.qmd
           - branches.qmd
           - forks.qmd
-          - git_ignore.qmd
+          - git-ignore.qmd
       - section: "Project Management"
         contents: 
           - issues.qmd
