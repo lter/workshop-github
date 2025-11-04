@@ -46,6 +46,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-b57e1bc1b8ac0aad98d9d543ffd833ba.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 
 <meta name="twitter:title" content="Branches – SciComp Workshop - Collaborative Coding with GitHub">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://lter.github.io/workshop-github/images/branches/git-branch-workflow.png">
+<meta name="twitter:image" content="https://lter.github.io/workshop-github/images/graphics/git-branch-workflow.png">
 <meta name="twitter:image:alt" content="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch">
 <meta name="twitter:image-height" content="1374">
 <meta name="twitter:image-width" content="1876">
@@ -361,13 +363,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github.html" class="sidebar-item-text sidebar-link">
+  <a href="./browser.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">With a Browser</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rstudio.html" class="sidebar-item-text sidebar-link">
+  <a href="./ide.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">With an IDE</span></a>
   </div>
 </li>
@@ -402,8 +404,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git_ignore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The <code>.gitignore</code></span></a>
+  <a href="./git-ignore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The .gitignore</span></a>
   </div>
 </li>
       </ul>
@@ -478,11 +480,15 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
   <li><a href="#what-is-a-branch" id="toc-what-is-a-branch" class="nav-link" data-scroll-target="#what-is-a-branch">What is a Branch?</a></li>
-  <li><a href="#brief-overview-of-branch-workflow" id="toc-brief-overview-of-branch-workflow" class="nav-link" data-scroll-target="#brief-overview-of-branch-workflow">Brief Overview of Branch Workflow</a></li>
+  <li><a href="#branch-workflow-overview" id="toc-branch-workflow-overview" class="nav-link" data-scroll-target="#branch-workflow-overview">Branch Workflow Overview</a></li>
   <li><a href="#create-a-branch" id="toc-create-a-branch" class="nav-link" data-scroll-target="#create-a-branch">Create a Branch</a></li>
   <li><a href="#work-in-the-branch" id="toc-work-in-the-branch" class="nav-link" data-scroll-target="#work-in-the-branch">Work in the Branch</a></li>
-  <li><a href="#closing-a-branch" id="toc-closing-a-branch" class="nav-link" data-scroll-target="#closing-a-branch">Closing a Branch</a></li>
-  <li><a href="#update-local-repository" id="toc-update-local-repository" class="nav-link" data-scroll-target="#update-local-repository">Update Local Repository</a></li>
+  <li><a href="#merging-branches" id="toc-merging-branches" class="nav-link" data-scroll-target="#merging-branches">Merging Branches</a>
+  <ul class="collapse">
+  <li><a href="#open-merge-a-pull-request" id="toc-open-merge-a-pull-request" class="nav-link" data-scroll-target="#open-merge-a-pull-request">Open &amp; Merge a Pull Request</a></li>
+  <li><a href="#github-branch-housekeeping" id="toc-github-branch-housekeeping" class="nav-link" data-scroll-target="#github-branch-housekeeping">GitHub Branch Housekeeping</a></li>
+  <li><a href="#update-your-local-clone" id="toc-update-your-local-clone" class="nav-link" data-scroll-target="#update-your-local-clone">Update your Local Clone</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -522,16 +528,16 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-is-a-branch" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-branch">What is a Branch?</h2>
-<p>A <strong>branch</strong> is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don’t want to risk damaging the version of your code that already works. Note that “branch” can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., “commit”, “push”, etc.).</p>
+<p>A <strong>“branch”</strong> is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don’t want to risk damaging the version of your code that already works. Note that “branch” can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., “commit”, “push”, etc.).</p>
 <p>Branches are typically created with <strong>the intent to put the work in the branch back into the main branch when you are done with it.</strong> Implicit in that rationale is the fact that most branches are created with a specific task/sub-task in mind and known to be temporary from the outset.</p>
 <p>As an example, imagine that you want to put a better engine in your car but you don’t want to risk damaging your car as you go about that job. In Git terms you could create a branch to work on those mechanical improvements while at the same time preserving your original car separately (in the “main” branch). When you’re done experimenting and happy with the new version of your car, you can merge the two cars keeping all of the improvements you made in your branch.</p>
 <p>Even if you think you’ve never worked with Git branches you actually have! All Git repositories actually start in a branch named “main” so even if you’ve never intentionally created a branch, you’ve been working in your “main” branch all along.</p>
 </section>
-<section id="brief-overview-of-branch-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="brief-overview-of-branch-workflow">Brief Overview of Branch Workflow</h2>
+<section id="branch-workflow-overview" class="level2">
+<h2 class="anchored" data-anchor-id="branch-workflow-overview">Branch Workflow Overview</h2>
 <p>Before diving into the specifics of how to use branches while working with Git, let’s take a look at a general overview of that process.</p>
 <p>As with many other Git operations, the first thing to do is <strong><span style="color:blue">pull</span></strong> from GitHub to your local repository to ensure that you’re working with the most up-to-date version of everything in the repo (see <strong>Step 1</strong> below).</p>
-<p>Once that is done, you can create a branch on your local machine (automatically shifting your RStudio project into that new branch). Doing this on your machine also updates GitHub to show that there are multiple branches (see <strong>Step 2</strong> below).</p>
+<p>Once that is done, you can create a branch on your local machine. This will automatically shift your IDE into that new branch. Doing this on your machine also updates GitHub to show that there are multiple branches (see <strong>Step 2</strong> below).</p>
 <p>Once you have created a branch you can work in it locally (and via GitHub directly) as you would normally. You can <strong><span style="color:gold">edit</span></strong> your files locally, <strong>commit</strong> those changes, <strong><span style="color:blue">pull</span></strong> from GitHub (within the branch), and <strong><span style="color:green">push</span></strong> to GitHub (see <strong>Steps 3-4</strong> below).</p>
 <p>When you are done working with the branch (i.e., you’ve finished the task for which you created the branch), you can use GitHub to merge your branch with the main one (see <strong>Step 5</strong> below). This puts all of the content in your branch into the main one now (which puts your local version of the “main” branch behind!).</p>
 <p>Once the two branches are merged on GitHub, go back to your local computer, manually change the branch to the main branch and pull (see <strong>Step 7</strong> below). This updates your local version of the main branch and avoids future problems.</p>
@@ -539,104 +545,180 @@ ul.task-list li input[type="checkbox"] {
 <p>However, deletion of the branch either locally or via GitHub <strong>must</strong> come <em>after</em> step 5!</p>
 <p>As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts (again, see “Appendix A: Conflicts”).</p>
 <p align="center">
-<img src="images/branches/git-branch-workflow.png" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" width="75%">
+<img src="images/graphics/git-branch-workflow.png" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" width="75%">
 </p>
 <p>Now we’ve gone over this big picture overview, let’s walk step-by-step through creating, working in and ultimately merging branches!</p>
 </section>
 <section id="create-a-branch" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-branch">Create a Branch</h2>
-<p>Before you create a branch, <strong><span style="color:blue">pull</span></strong> from GitHub as a precaution so that you are certain your local repository has the most up-to-date content.</p>
-<p>That done, click the <strong><span style="color:purple">purple</span></strong> button in the Git tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.</p>
+<p><strong><em>Before</em> you create a branch, <span style="color:blue">pull</span> from/sync with GitHub</strong> as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your banch and want to merge it back into the main flow of your repository.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">In RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">In Positron</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>To create a branch, click the <strong><span style="color:purple">purple</span></strong> button in the “Git” tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.</p>
 <p align="center">
-<img src="images/branches/branches-1-new-branch-button.png" alt="Screenshot of the set of buttons in RStudio's Git pane" width="75%">
+<img src="images/branches/rstudio-01_start.png" alt="Screen capture of RStudio" width="100%">
 </p>
-<p>In the resulting dialogue box, give your new branch an informative name. In this example we haven’t given our new branch a great name but in a “real” repository you will greatly appreciate having concise but descriptive branch names.</p>
-<p>Once you’re happy with the name, click “<strong>Create</strong>” (you can ignore the other options and buttons on this dialogue box).</p>
+<p>In the resulting dialogue box, <strong>give your new branch an informative name.</strong> In this example we haven’t given our new branch a great name but in a “real” repository you will greatly appreciate having concise but descriptive branch names. Once you’re happy with the name, <strong>click the “Create” button</strong> (you can ignore the other options and buttons on this dialogue box).</p>
 <p align="center">
-<img src="images/branches/branches-2-name-new-branch.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="65%">
+<img src="images/branches/rstudio-02_branch-details.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="50%">
 </p>
 <p>This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.</p>
 <p align="center">
-<img src="images/branches/branches-2b-success-dialogue.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="75%">
+<img src="images/branches/rstudio-03_branch-message.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="80%">
 </p>
-<p>You will also notice that in your Git tab where previously it said “main” it now shows whatever name you chose for your branch.</p>
+<p>You may also notice that in your Git tab where previously it said “main” it now shows whatever name you chose for your branch.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>To begin, <strong>go to the “source control” section of Positron.</strong></p>
 <p align="center">
-<img src="images/branches/branches-2c-new-branch.png" alt="Screenshot of RStudio's Git pane where it can be seen that the branch name has changed to the new branch created earlier" width="75%">
+<img src="images/branches/positron-01_start.png" alt="Screen capture of Positron" width="100%">
 </p>
+<p>To create a branch, <strong>hover over the “Changes” dropdown menu and click <code>...</code></strong> to expand the set of Git operations that are visible. From there, <strong>scroll down to “Branch” and click it.</strong> Finally, <strong>click “Create Branch…”.</strong></p>
+<p align="center">
+<img src="images/branches/positron-02_new-branch.png" alt="Screenshot of the dropdown menu in Positron for creating a new branch" width="80%">
+</p>
+<p>In the resulting field (top middle of Positron), <strong>give your new branch an informative name.</strong> In this example we haven’t given our new branch a great name but in a “real” repository you will greatly appreciate having concise but descriptive branch names. Once you’re happy with the name, <strong>hit the Enter key on your computer.</strong></p>
+<p align="center">
+<img src="images/branches/positron-03_branch-details.png" alt="Screenshot of the field in Positron where you type new branch names" width="100%">
+</p>
+<p>Now that you’ve made your new branch locally, you need to send it up to GitHub. Positron calls this “Publishing” but this isn’t conceptually different from any other sync/push–essentially you’re just letting GitHub know that you have a branch locally that it doesn’t have a record of yet. To publish the branch, <strong>click the “Publish Branch” button.</strong></p>
+<p align="center">
+<img src="images/branches/positron-04_publish-branch.png" alt="Screenshot of the Positron 'source control' pane where the 'Publish Branch' button is active" width="80%">
+</p>
+<p>You’ll know that this worked when you look at the branch diagram in the bottom left corner of Positron’s source control menu. Note how the second commit from the top has the “origin/main” label while the top-most one has the label that matches whatever you named your new branch.</p>
+<p align="center">
+<img src="images/branches/positron-05_published.png" alt="Screenshot of the Positron 'source control' pane after a new branch has been published" width="80%">
+</p>
+</div>
+</div>
+</div>
 </section>
 <section id="work-in-the-branch" class="level2">
 <h2 class="anchored" data-anchor-id="work-in-the-branch">Work in the Branch</h2>
-<p>You can now work in a branch <em>in the same way</em> that you work with GitHub via RStudio when you are not using branches.</p>
+<p>You can now work in a branch <em>in the same way</em> that you work with GitHub via your IDE of choice when you are not using branches.</p>
 <ol type="1">
 <li>Make <strong><span style="color:gold">edits</span></strong></li>
 <li><strong>Commit</strong> changes locally</li>
 <li><strong><span style="color:blue">Pull</span></strong> from GitHub to reduce the chances of a conflict</li>
 <li><strong><span style="color:green">Push</span></strong> your committed changes to GitHub</li>
 </ol>
-<p>The reason you use the same workflow is–as previously stated–even if you don’t typically use branches, all work in Git is functionally done in the “main” branch of your repository.</p>
-<p>For a more in-depth review of the RStudio-GitHub workflow, see Chapter 3: Using GitHub via Rstudio</p>
+<p>The reason you use the same workflow is–as previously stated–even if you don’t typically use branches, all work in Git is functionally done in the “main” branch of your repository so your work in this new branch should use the same order of operations as work done in the “main” branch.</p>
 </section>
-<section id="closing-a-branch" class="level2">
-<h2 class="anchored" data-anchor-id="closing-a-branch">Closing a Branch</h2>
-<p>Once you’ve completely finished working in your branch, <strong><span style="color:green">push</span></strong> your work (if your local files are ahead of the GitHub versions) and go to your repository’s GitHub page.</p>
-<p>On that page GitHub will helpfully have created a button at the top of the screen notifying you that your branch had recent pushes and will offer a <span style="color:green">green</span> button to “Compare &amp; pull request”.</p>
-<p>Click that button.</p>
+<section id="merging-branches" class="level2">
+<h2 class="anchored" data-anchor-id="merging-branches">Merging Branches</h2>
+<p>When you are done with your work in the branch, you will want to merge your new branch with the “main” branch of the repository. This branch merging is most easily done via GitHub so the following instructions are agnostic to IDE and purposefully exclude the repository name from the screen capture area. To start, <strong><span style="color:green">push</span>/sync your final commit(s) from your local branch with GitHub.</strong></p>
+<section id="open-merge-a-pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="open-merge-a-pull-request">Open &amp; Merge a Pull Request</h3>
+<p>After you <span style="color:green">push</span>/sync your changes, GitHub should recognize this and automatically create a button at the top of your repository’s home page for you to start the process of creating a “pull request.” Pull requests are how you merge branches on GitHub and the entire process is conducted entirely in the browser so we’ll leave our IDEs until the pull request is completed.</p>
+<p>To start the branch merging process, <strong>click the “Compare &amp; pull request” button</strong></p>
 <p align="center">
-<img src="images/branches/branches-6-pull-request-start.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="100%">
+<img src="images/branches/github-01_pr-button.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="80%">
 </p>
 <p>You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.</p>
-<p>Once you’re satisfied with your title and message, click the <span style="color:green">green</span> “Create pull request” button.</p>
+<p>Once you’re satisfied with your title and message, <strong>click the “Create pull request” button.</strong></p>
 <p align="center">
-<img src="images/branches/branches-7-pull-request-msg.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%">
+<img src="images/branches/github-02_pr-details.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%">
 </p>
-<p>That done, GitHub will send you to a page that looks very much like a Github issue (see the chapter on issues). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.</p>
-<p>Those commits are “live” and function as hyperlinks in case you want to view how your code is preserved in GitHub.</p>
-<p>Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to RStudio and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.</p>
-<p>You or your team can post messages on a pull request as needed (see the text box at the bottom of the below picture).</p>
-<p>If you are ready to merge a pull request from your branch into the “main” branch click the intuitively-named <span style="color:green">green</span> “Merge pull request” button.</p>
+<p>That done, GitHub will send you to a page that looks very much like a Github issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.</p>
+<p>Those commits are hyperlinks in case you want to view the specific differences to files edited in this branch.</p>
+<p>Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to your IDE and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.</p>
+<p>You or your team can also post messages on a pull request as needed (see the text box at the bottom of the below picture).</p>
+<p>If you are ready to merge a pull request from your branch into the “main” branch <strong>click the “Merge pull request” button.</strong></p>
 <p align="center">
-<img src="images/branches/branches-8-active-pull-request.png" alt="Screenshot of an open pull request on GitHub" width="100%">
+<img src="images/branches/github-03_pr-open.png" alt="Screenshot of an open pull request on GitHub" width="100%">
 </p>
 <p>GitHub will open another text box where you can add a commit message to your acceptance of the pull request. If whoever opened the pull request was sufficiently detailed in their opening comment(s) this may not need to be terribly detailed but it can’t hurt!</p>
-<p>Once your message is written, click the <span style="color:green">green</span> “Confirm merge” button.</p>
+<p>Once your message is written, <strong>click the “Confirm merge” button.</strong></p>
 <p align="center">
-<img src="images/branches/branches-9-pull-request-accept-msg.png" alt="Screenshot of the menu that opens on GitHub when you click 'merge pull request' where you are prompted to add an optional description before clicking 'confirm merge'" width="100%">
+<img src="images/branches/github-04_pr-merge-message.png" alt="Screenshot of the menu that opens on GitHub when you click 'merge pull request' where you are prompted to add an optional description before clicking 'confirm merge'" width="100%">
 </p>
-<p>The green ‘open’ buttons will change to purple and will use the “merge” icon of two streams combining. As with GitHub issues you can continue to post comments on a merged pull request if you feel it will be valuable for posterity to do so.</p>
-<p>GitHub will also handily create a “Delete branch” button at the bottom of the pull request’s timeline. We recommend that you click it given that your branch’s purpose is served and having irrelevant branches clutters your GitHub and may even cause problems if you have two similarly-named branches where one has been merged and the other has not.</p>
+<p>Your pull request has now been merged! Now we need to do some minor housekeeping in GitHub that–fortunately–GitHub makes really accessible.</p>
+</section>
+<section id="github-branch-housekeeping" class="level3">
+<h3 class="anchored" data-anchor-id="github-branch-housekeeping">GitHub Branch Housekeeping</h3>
+<p>Branches are meant to be short-lived and deleted once the specific purpose for which they were created has been accomplished. So, once the pull request is merged, we should <strong>click the “Delete branch” button.</strong> This will ensure that the number of active branches remains manageable and also will let you re-use branch names later on if you deem that necessary.</p>
 <p align="center">
-<img src="images/branches/branches-10-successful-merge.png" alt="Screenshot of a closed pull request on GitHub with a 'delete branch' button provided" width="100%">
+<img src="images/branches/github-05_pr-merged.png" alt="Screenshot of a closed pull request on GitHub with a 'delete branch' button provided" width="100%">
 </p>
-<p>After you click “Delete branch” it will be replaced by a “Restore branch” button so you could always reclaim it if need be.</p>
+<p>After you click “Delete branch” it will be replaced by a “Restore branch” button so you could always reclaim it if the deletion was premature.</p>
 <p align="center">
-<img src="images/branches/branches-11-deleted-branch.png" alt="Screenshot of a pull request on GitHub after the 'delete branch' button has been clicked and replaced by a 'restore branch' button" width="100%">
+<img src="images/branches/github-06_pr-delete-branch.png" alt="Screenshot of a pull request on GitHub after the 'delete branch' button has been clicked and replaced by a 'restore branch' button" width="100%">
 </p>
-<p>Finally, return to the “Code” tab of your GitHub repository and you can see that the changes we implemented in the branch are now part of the repository’s “main” branch. The branch name is displayed just above the last commit message and the first file in the repository but below the different tab names.</p>
+<p>Finally, if we return to the home page of the repository, we can see that the most recent commit is whatever we put in the pull request text field right before we merged it.</p>
 <p align="center">
-<img src="images/branches/branches-12-github-repo-post-merge.png" alt="Screenshot of the GitHub repository after the pull request was merged showing that the most recent commit was the merging of the PR" width="100%">
+<img src="images/branches/github-07_repo-home.png" alt="Screenshot of a the home page of a GitHub repository where the most recent commit matches the pull request commit message from an earlier screen capture" width="100%">
 </p>
 </section>
-<section id="update-local-repository" class="level2">
-<h2 class="anchored" data-anchor-id="update-local-repository">Update Local Repository</h2>
-<p>Now that GitHub has been told to integrate your branch content with the “main” branch, you need to let RStudio know that integration has taken place!</p>
-<p>First, click the name of the branch to see all the branch names in your repository and select the “main” branch to flip your local repository over to that branch.</p>
+<section id="update-your-local-clone" class="level3">
+<h3 class="anchored" data-anchor-id="update-your-local-clone">Update your Local Clone</h3>
+<p>Now that the branches have been merged on GitHub, we need to make sure our local clone gets those updates from GitHub. This is particularly important if our IDE is still in the branch we created earlier because–now that we’ve deleted the branch’s counterpart in Github–we’ll get an error if we attempt to push from that branch.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">In RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">In Positron</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<section id="get-updates" class="level4">
+<h4 class="anchored" data-anchor-id="get-updates">Get Updates</h4>
+<p>First, in the top right corner of RStudio, <strong>click the active branch name and switch to back to the “main” branch.</strong> Note that you may want to close your open files before doing this, particularly if some files were created in the branch because they wouldn’t yet exist in the “main” branch locally (you merged on GitHub with the pull request but haven’t pulled those updates locally).</p>
 <p align="center">
-<img src="images/branches/branches-14-switch-local-to-main.png" alt="Screenshot of RStudio after the branch name was clicked (in the Git pane) showing that the new branch and the 'main' branch are options" width="75%">
+<img src="images/branches/post-branch_rstudio-01_switch.png" alt="Screenshot of the Git branch dropdown menu in RStudio" width="50%">
 </p>
-<p>Notice though that our script went back to the pre-merge version but don’t panic!</p>
-<p>In order to update your local version of the repository all that you need to do is click the <strong><span style="color:blue">pull</span></strong> button. This brings the content you just merged via GitHub (see above) into your local repository.</p>
+<p>This should create a message that looks like the following image. You should <strong>ignore the part of the message telling you that your are up to date</strong>; you are not up to date with GitHub yet. The message is referring to the status of your local clone’s version of the “main” branch.</p>
 <p align="center">
-<img src="images/branches/branches-15-notice-outdated-script.png" alt="Screenshot of RStudio after showing the original (pre-pull request) version of the script" width="100%">
+<img src="images/branches/post-branch_rstudio-02_switch-message.png" alt="Screenshot of the Git message in RStudio when switching branches" width="80%">
 </p>
-<p>You will get a success message indicating the changes to each file in the same way any other <strong><span style="color:blue">pull</span></strong> would. You can notice between this picture and the previous that the code automatically changes when the <strong><span style="color:blue">pull</span></strong> is complete.</p>
+<p>Now that you’re back in the “main” branch, <strong>pull the latest changes from GitHub.</strong> You should receive all of the commits that you just merged via pull request earlier. This will create a message that is something like the following image–though of course it will list all changed files so it may be a longer message than what is pictured below if you edited more files.</p>
 <p align="center">
-<img src="images/branches/branches-16-pull-merged-repo.png" alt="Screenshot of the message in RStudio when you pull after merging a pull request on GitHub" width="75%">
+<img src="images/branches/post-branch_rstudio-03_pull-main.png" alt="Screenshot of the Git message in RStudio when switching branches" width="80%">
 </p>
-<p>Now that you merged your branch with the main branch on GitHub and pulled that merged content down to your local version you have successfully start-to-finish used branches in your workflow.</p>
-<p>Many branches can exist at the same time and sometimes it helpful to create a branch starting from another branch, but these special cases obey the same basic structure described above and are outside the scope of this primer.</p>
-<p>That said, we recommend branches as one way to avoid conflicts when you and your collaborators want to work simultaneously in the same repository on different scripts!</p>
+</section>
+<section id="branch-housekeeping" class="level4">
+<h4 class="anchored" data-anchor-id="branch-housekeeping">Branch Housekeeping</h4>
+<p>Now that our “main” branch is updated, we need to do the same sort of branch housekeeping that we did in GitHub after merging the pull request. In RStudio’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane, <strong>delete the finished branch with the following command line code.</strong> <em>Remember to replace “BRANCH_NAME” with whatever you named your branch!</em></p>
+<pre><code>git branch -d BRANCH_NAME</code></pre>
+<p>Once you’ve deleted that branch, you’ll need to “prune” your branches. The previous code deleted the local version of your branch but your IDE still ‘thinks’ that GitHub has an equivalent of the branch. To reduce the potential for confusion, <strong>prune your local clone with the following command line code.</strong> Just like branch deletion, this should code should be run in RStudio’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane.</p>
+<pre><code>git remote update origin --prune</code></pre>
+<p>You can confirm that these two lines of code worked as expected by clicking the “main” branch name in RStudio’s Git pane. The resulting dropdown of local and remote branches should only list the “main” branch under each sub-heading.</p>
+<p align="center">
+<img src="images/branches/post-branch_rstudio-06_confirm-prune.png" alt="Screenshot of the Git branch dropdown menu in RStudio" width="50%">
+</p>
+</section>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>First, in the “source control” part of Positron, <strong>hover over the “Changes” menu and click <code>...</code></strong> to expand the set of Git operations that are visible. In the resulting dropdown, <strong>scroll down and click “Checkout to…”.</strong> Note that you may want to close your open files before doing this, particularly if some files were created in the branch because they wouldn’t yet exist in the “main” branch locally (you merged on GitHub with the pull request but haven’t pulled those updates locally).</p>
+<p align="center">
+<img src="images/branches/post-branch_positron-01_switch.png" alt="Screenshot of the Git operations dropdown menu in Positron with the 'checkout to...' menu highlighted" width="50%">
+</p>
+<p>This should open up a list of the available branches in the top middle of Positron. <strong>Find the “main” branch in the list of available branches and click it.</strong></p>
+<p align="center">
+<img src="images/branches/post-branch_positron-02_switch-dest.png" alt="Screenshot of the Git operations dropdown menu in Positron" width="80%">
+</p>
+<p>Now that you’re back in the “main” branch, <strong>pull the latest changes from GitHub.</strong> You should receive all of the commits that you just merged via pull request earlier.</p>
+<p align="center">
+<img src="images/branches/post-branch_positron-03_pull.png" alt="Screenshot of the Git operations dropdown menu in Positron with the 'pull' menu highlighted" width="50%">
+</p>
+<p>You will know this was successful when you <strong>look at the branch diagram at the bottom of the “source control” menu</strong> and see that the line for your experimental branch now re-connects to the leftmost branch’s line.</p>
+<p align="center">
+<img src="images/branches/post-branch_positron-04_success.png" alt="Screenshot of the branch diagram in Positron's source control menu" width="50%">
+</p>
+<section id="branch-housekeeping-1" class="level4">
+<h4 class="anchored" data-anchor-id="branch-housekeeping-1">Branch Housekeeping</h4>
+<p>Now that our “main” branch is updated, we need to do the same sort of branch housekeeping that we did in GitHub after merging the pull request. In Positron’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane, <strong>delete the finished branch with the following command line code.</strong> <em>Remember to replace “BRANCH_NAME” with whatever you named your branch!</em></p>
+<pre><code>git branch -d BRANCH_NAME</code></pre>
+<p>Once you’ve deleted that branch, you’ll need to “prune” your branches. The previous code deleted the local version of your branch but your IDE still ‘thinks’ that GitHub has an equivalent of the branch. To reduce the potential for confusion, <strong>prune your local clone with the following command line code.</strong> Just like branch deletion, this should code should be run in Positron’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane.</p>
+<pre><code>git remote update origin --prune</code></pre>
+<p>You can confirm that these two lines of code worked as expected by clicking the “Checkout to…” button in the dropdown menu of Git operations. The resulting list of branches should only list the “main” branch under each sub-heading.</p>
+<p align="center">
+<img src="images/branches/post-branch_positron-05_confirm-prune.png" alt="Screenshot of the Git branch dropdown menu in Positron" width="80%">
+</p>
+</section>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
