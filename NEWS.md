@@ -2,7 +2,7 @@
 
 This reflects the current state of the repository. Changes from the preceding version/GitHub release are listed here as they are made.
 
-- No changes (yet)
+- Added configuration of GitHub username and email with `usethis::use_git_config` to RStudio preparation steps
 
 ## Version 2.0
 
