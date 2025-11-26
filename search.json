@@ -733,7 +733,7 @@
     "href": "ide.html",
     "title": "Using GitHub with an IDE",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the IDE-to-GitHub order of operations\nDefine fundamental Git vocabulary\nCreate a local version-controlled repository that is connected to GitHub",
+    "text": "WarningIMPORTANT: Do the Preparation Steps!!!\n\n\n\nYou can only successfully complete this module if you have done the “Workshop Preparation” steps for RStudio or Positron in this website’s homepage! It doesn’t matter whether you choose RStudio or Positron but you must have done all of the steps for one of those programs or you will encounter errors later. Later workshop modules also require this preparation but this is the most frequently-used module and thus particularly warrants this reminder.",
     "crumbs": [
       "Using GitHub...",
       "With an IDE"
@@ -743,8 +743,8 @@
     "objectID": "ide.html#module-learning-objectives",
     "href": "ide.html#module-learning-objectives",
     "title": "Using GitHub with an IDE",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the IDE-to-GitHub order of operations\nDefine fundamental Git vocabulary\nCreate a local version-controlled repository that is connected to GitHub",
+    "section": "Module Learning Objectives",
+    "text": "Module Learning Objectives\nBy the end of this module, you will be able to:\n\nDescribe the IDE-to-GitHub order of operations\nDefine fundamental Git vocabulary\nCreate a local version-controlled repository that is connected to GitHub",
     "crumbs": [
       "Using GitHub...",
       "With an IDE"
