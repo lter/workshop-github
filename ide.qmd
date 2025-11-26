@@ -2,6 +2,12 @@
 title: "Using GitHub with an IDE"
 ---
 
+:::{.callout-warning}
+### IMPORTANT: Do the Preparation Steps!!!
+
+**You can only successfully complete this module if you have done the "Workshop Preparation" steps for RStudio or Positron in [this website's homepage](https://lter.github.io/workshop-github/)!** It doesn't matter whether you choose RStudio or Positron but you must have done _all_ of the steps for one of those programs or you _will_ encounter errors later. Later workshop modules also require this preparation but this is the most frequently-used module and thus particularly warrants this reminder.
+:::
+
 ## Module Learning Objectives
 
 By the end of this module, you will be able to:
