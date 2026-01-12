@@ -27,7 +27,7 @@ If your institution has a dedicated IT team that has sole power to install softw
 There are a couple of distinct use-cases you might have for GitHub that will affect what preparation you need to do before this workshop. Consider the tabs below and follow all of the numbered steps in the choice that best fits your needs.
 
 ::::{.panel-tabset}
-### GitHub By Itself
+### GitHub with a Browser
 
 #### 1. Create a GitHub Account
 
