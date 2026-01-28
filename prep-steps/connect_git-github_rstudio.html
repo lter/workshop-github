@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -73,9 +73,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-520d21fb888682e5a111b09f26a88404.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -522,6 +522,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p><strong>All of the code chunks for authenticating with a token are <i class="fa-brands fa-r-project" aria-label="r-project"></i> R code that should be run in the “Console” pane of RStudio.</strong> You may also create a script and run the code from there if you so desire but you’ll likely only need this code once so the script’s value would be short-lived.</p>
+<details>
+<summary>
+“Classic” versus “Fine-Grained” Tokens
+</summary>
+<p>If you follow the steps outlined below, you will make a “classic” token. This is the recommended method! GitHub also supports “fine-grained” tokens but they are a little more error-prone for the ways working groups tend to use GitHub.</p>
+<p>For all the nitty gritty detail, check out <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">GitHub’s documentation on tokens</a> but essentially fine-grained tokens only work for repositories that you personally own. Because LTER working groups tend to work primarily in a repository owned by the <a href="https://github.com/lter">LTER Network Office GitHub Organization</a>, this means that <u>a fine-grained token won’t let you edit your group’s repository</u>.</p>
+<p>So, <strong>make sure that you make a “classic” token!</strong> Feel free to reach out to the SciComp team if questions arise on this point!</p>
+</details>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the `usethis` and `gitcreds` packages</span></span>
 <span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"usethis"</span>, <span class="st">"gitcreds"</span>))</span>
@@ -560,7 +568,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This line of code will prompt you to paste your token in the “Console” tab. After you do so (and hit “Enter”), your token will be safely stored in RStudio!</p>
 <section id="further-information" class="level5">
 <h5 class="anchored" data-anchor-id="further-information">Further Information</h5>
-<p>You may also find <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub’s PAT tutorial</a> (this is the link referenced in the first token-authentication code chunk!) or the <a href="https://happygitwithr.com/https-pat.html">Happy Git with R PAT tutorial</a> helpful.</p>
+<p>You may also find <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic">GitHub’s PAT tutorial</a> (this is the link referenced in the first token-authentication code chunk!) or the <a href="https://happygitwithr.com/https-pat.html">Happy Git with R PAT tutorial</a> helpful.</p>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
