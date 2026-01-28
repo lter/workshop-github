@@ -12,6 +12,17 @@ Follow the steps of your chosen authentication method in the tabs below.
 
 **All of the code chunks for authenticating with a token are {{< fa brands r-project >}} R code that should be run in the "Console" pane of RStudio.** You may also create a script and run the code from there if you so desire but you'll likely only need this code once so the script's value would be short-lived.
 
+<details>
+<summary>"Classic" versus "Fine-Grained" Tokens</summary>
+
+If you follow the steps outlined below, you will make a "classic" token. This is the recommended method! GitHub also supports "fine-grained" tokens but they are a little more error-prone for the ways working groups tend to use GitHub.
+
+For all the nitty gritty detail, check out [GitHub's documentation on tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) but essentially fine-grained tokens only work for repositories that you personally own. Because LTER working groups tend to work primarily in a repository owned by the [LTER Network Office GitHub Organization](https://github.com/lter), this means that <u>a fine-grained token won't let you edit your group's repository</u>.
+
+So, **make sure that you make a "classic" token!** Feel free to reach out to the SciComp team if questions arise on this point!
+
+</details>
+
 ```{r token-process-1}
 #| eval: false
 
@@ -43,7 +54,7 @@ This line of code will prompt you to paste your token in the "Console" tab. Afte
 
 ##### Further Information
 
-You may also find [GitHub's PAT tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) (this is the link referenced in the first token-authentication code chunk!) or the [Happy Git with R PAT tutorial](https://happygitwithr.com/https-pat.html) helpful.
+You may also find [GitHub's PAT tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) (this is the link referenced in the first token-authentication code chunk!) or the [Happy Git with R PAT tutorial](https://happygitwithr.com/https-pat.html) helpful.
 
 #### SSH Key
 
