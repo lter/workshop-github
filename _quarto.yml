@@ -31,6 +31,8 @@ website:
             href: browser.qmd
           - text: "With an IDE"
             href: ide.qmd
+          - text: "As a Working Group"
+            href: group-recs.qmd
       - section: "Advanced Topics"
         contents: 
           - conflicts.qmd

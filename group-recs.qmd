@@ -1,0 +1,67 @@
+---
+title: "Working Group Recommendations"
+---
+
+Much of this workshop's materials were built with the implicit audience of synthesis working groups. These groups are highly-collaborative and usually do an _excellent_ job of distributing the workload of writing and maintaining code among their membership.
+
+However, it is important to remember that while Git is a phenomenal tool for collaboration, it is _not_ Google Docs! <u>You can work together but you cannot work simultaneously in the same files</u>. Working groups have to be especially diligent about how they work together to avoid dreaded "merge conflicts" (for more details, see the ["Conflicts"](https://lter.github.io/workshop-github/conflicts.html) page).
+
+Git and GitHub support a number of methods for working together while still avoiding merge conflicts. That said, **some methods of Git collaboration work better than others for working groups!** See the sections below for more information on the available methods and whether we (the LTER Network Office) recommend them for working groups.
+
+:::{.panel-tabset}
+## Separate Scripts
+
+At it's simplest, you can make a separate script for each group member and have each of you work _exclusively_ in your own script. If no one ever works in your script you will never have a merge conflict even if you are working in your script at the same time as someone else is working in theirs.
+
+You can do this by all working on separate scripts that are trying to do the same thing or you can delegate a particular script in the workflow to a single person (e.g., one person is the only one allowed to edit the 'data wrangling' script, another is the only one allowed to edit the 'analysis' script, etc.)
+
+Groups that use the strategy of having everyone work on the same problems (or explore the same data) in their own script have inreasingly relied on a "sandbox" or "explore" folder. The scripts in that folder have either no or very limited style or quality standards and are meant just for people to have a version-controlled place to work without the pressure of creating publication-quality code. The 'real' scripts for the group live either in the top-level of the repository or in their own folder. Groups can then delete this exploratory folder before publishing their code (e.g., on Zenodo) so that you can explore collaboratively without sharing these sorts of 'stepping stone' code files as part of the final product.
+
+**Recommendation: Worth Discussing!**
+
+## Separate Shifts
+
+You might also decide to work together on the same scripts and just stagger the time that you are doing stuff so that all of your changes are made, committed, and pushed before the next person begins work. This is a particularly nice option if you have people in different time zones because someone in Maine can work on code likely before another team member living in Oregon has even woken up, much less started working on code.
+
+For this to work _you will need to communicate extensively with the rest of your team_ so that you are _absolutely sure_ that you won't start working before someone else has finished their edits.
+
+**Recommendation: Worth Discussing!**
+
+## Forks
+
+GitHub does offer a "fork" feature where people can make a copy of a given repository that they then 'own'. Forks are connected to the source repository and you can open a pull request to get the edits from one fork into the source repository.
+
+This may sound like a perfect fit for collaboration but in reality it introduces significant hurdles! Consider the following:
+
+1. It is difficult to know where the "best" version of the code lives
+
+It is equally likely for the primary code version to be in any group member's fork (or the original fork). So if you want to re-run a set of analyses you'll need to hunt down which fork the current script lives in rather than consulting a single repository in which you all work together.
+
+2. You essentially guarantee significant merge conflicts
+
+If everyone is working independently and submitting pull requests to merge back into the main repository you all but ensure that people will make different edits that GitHub then doesn't know how to resolve. The pull request will tell you that there are merge conflicts but you still need to fix them yourself--and now that fixing effort must be done in someone else's fork of the repository.
+
+3. It's not the intended use of GitHub forks
+
+Forks are intended for when you want to take a set of code and then "go your own way" with that code base. While there is a mechanism for contributing those edits back to the main repository it's really better used when you never intend to do a pull request and thus don't have to worry about eventual merge conflicts. A good example here is you might attend a workshop and decide to offer a similar workshop yourself. You could then fork the original workshop's repository to serve as a starting point for your version and save yourself from unnecessary labor. It would be bizarre for you to suggest that your workshop should _replace_ the original one even if did begin with that content.
+
+**Recommendation: Don't Do This**
+
+## Branches
+
+Git also offers a "branch" feature which is similar to GitHub forks in some ways. Branches create parallel workspaces within a single repository as opposed to forks that create a copy of a repository under a different GitHub user.
+
+Branches have the same hurdles as forks so check out the first two points in the "Forks" tab. Also, just like forks, this isn't how branches were meant to be used either! Branches exist so that you can leave some version of the code untouched while simultaneously developing some improvement in a branch. That way an external user (i.e., someone not in the group) experiences a seamless upgrade while still allowing you to have a messy development period. Branches _are not_ intended for multiple people to be working on the same things at the same time and merge conflicts are the likely outcome of using branches in this way.
+
+**Recommendation: Don't Do This^\*^**
+
+^\*^ There is an exception! <u>You can/should use branches **if** your group develops something that needs to have a stable version while you work on a separate, parallel version</u>. A group website or an R package would be archetypal examples of where you wouldn't want to break your repository while implementing a change or improvement.
+
+## Single Author
+
+If the jargon or perceived technical hurdle of the other collaboration methods outlined in this workshop is intimidating or opaque, you may be tempted to just delegate all code editing to a single person in the group. While this strategy does greatly reduce the risk of a merge conflict it is also _deeply inequitable_ as it places an unfair share of the labor of the project on one person.
+
+Practically-speaking this also encourages an atmosphere where only one person can even read your group's code. This makes it difficult for other group members to contribute and ultimately may cause your group to 'miss out on' novel insights. Keep in mind too that there is a big difference between code that _can_ be read by others but generally is not and code that _cannot_ be understood by others.
+
+**Recommendation: Don't Do This**
+:::
