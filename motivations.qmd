@@ -2,12 +2,15 @@
 title: "Workflows"
 ---
 
-## Module Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
 By the end of this module, you will be able to:
 
 - <u>Describe</u> various coding workflows
 - <u>Paraphrase</u> how version control workflows facilitate collaboration on code products
+
+:::
 
 ## Workflow Options
 
