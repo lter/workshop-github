@@ -16,15 +16,22 @@ By the end of this module, you will be able to:
 
 ## What is a Fork?
 
-A **fork** is a duplicate of a Git repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.
+A **fork** is a duplicate of a GitHub repository that has a different owner than the original. Any repository that you can view on GitHub, you can fork. This includes (1) any public repository, and (2) private repositories to which you have access.
 
-The difference between **forks** and **branches** is a source of great confusion for many (even veteran!) Git users but hopefully this list helps to clarify:
+Forks are most commonly used when you want to use someone else's work to 'jump start' your own, but aren't collaborating with that person / likely don't want to re-integrate your changes into their version of the project. For example, if you attend a workshop that has a GitHub repository full of examples, you might fork that repository and change the examples for your subject area so that you can use it in your own version of the workshop.
 
-1. A fork creates a new repository while a branch exists within a given repository
+### Forks versus Branches
 
-2. A fork is owned by a different user/organization than the original, a branch does not change repository ownership
+The difference between **forks** and **branches** is a source of great confusion for many (even veteran!) Git and GitHub users but hopefully this list helps to clarify!
 
-3. A fork's "parent" repository is not recognized by Git but Git does 'know' which branch a given branch originates from.
+| **FAQ** | **Fork** | **Branch** |
+|:----------------|:---:|:---:|
+| Does making one also create a new repository? | Yes! | No |
+| Does repository ownership change when you make one? | Yes! | No |
+| Does <u>Git</u> know the "parent" repository/branch? | No | Yes! |
+| Does <u>GitHub</u> know the "parent" repository/branch | Yes! | Yes! |
+
+As the table above indicates, **a fork is fundamentally a GitHub operation, _not_ a Git operation.**
 
 ## Choosing Whether to Fork or to Branch
 
@@ -32,13 +39,13 @@ A good rule of thumb for whether you should *fork* or *branch* a repository is b
 
 If you are largely independent from the repository's owner, fork that repository to get your own copy to independently work in. If you are actively collaborating, it is likely that you'll want to work in a branch.
 
-It is important to note that both forks and branches can be merged back into their source (the "main" branch for branches and the original repository for forks) via **pull request** so you need not worry that choosing one or the other will preclude integration with the source.
+It is important to note that both forks and branches can be merged back into their source (the "main" branch for branches and the original repository for forks) via **pull request** so you need not worry that choosing one or the other will preclude integration with the source. Branches within a repository just make it easier for all collaborators to see all edits while forks make that less visible.
 
 ## Brief Overview of Fork Workflow
 
-Forking is (arguably) one of the more straightforward Git workflows but before we cover it in detail, let's review the broader context.
+Forking is (arguably) one of the more straightforward GitHub operations but before we cover it in detail, let's review the broader context.
 
-You begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient "Fork" button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository in your profile's repository list.
+You begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient "Fork" button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository that is owned by your GitHub identity.
 
 Once the fork is created, you simply clone the repository as you would when beginning work with any other GitHub repository.
 
