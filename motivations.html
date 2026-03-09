@@ -46,6 +46,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-764318607858309afd87bb640d38c024.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -476,15 +478,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#workflow-options" id="toc-workflow-options" class="nav-link" data-scroll-target="#workflow-options">Workflow Options</a>
+  <li><a href="#workflow-options" id="toc-workflow-options" class="nav-link active" data-scroll-target="#workflow-options">Workflow Options</a>
   <ul class="collapse">
   <li><a href="#individual-workflow" id="toc-individual-workflow" class="nav-link" data-scroll-target="#individual-workflow">Individual Workflow</a></li>
-  <li><a href="#data-lifecycle-considerations" id="toc-data-lifecycle-considerations" class="nav-link" data-scroll-target="#data-lifecycle-considerations">Data Lifecycle Considerations</a></li>
   <li><a href="#synthesis-workflow" id="toc-synthesis-workflow" class="nav-link" data-scroll-target="#synthesis-workflow">Synthesis Workflow</a></li>
   <li><a href="#synthesis-workflow-on-nceas-server" id="toc-synthesis-workflow-on-nceas-server" class="nav-link" data-scroll-target="#synthesis-workflow-on-nceas-server">Synthesis Workflow on NCEAS’ Server</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul></li>
+  <li><a href="#data-lifecycle-considerations" id="toc-data-lifecycle-considerations" class="nav-link" data-scroll-target="#data-lifecycle-considerations">Data Lifecycle Considerations</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -513,14 +514,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Describe</u> various coding workflows</li>
 <li><u>Paraphrase</u> how version control workflows facilitate collaboration on code products</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="workflow-options" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-options">Workflow Options</h2>
 <p>If you are working on any file that is the product of iterative edits, you have had to develop a workflow to approach that task. This could be a scientific paper, analytic code, or a presentation. There are many possible ways you could approach this task leveraging any number of software and hardware options but before we get into our discussion today about collaborative research using GitHub we would like to–briefly–outline some of the typical forms these workflows can take and how they fit into a broader framework of individual and synthesis science.</p>
@@ -532,16 +545,6 @@ ul.task-list li input[type="checkbox"] {
 <p>Another limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.</p>
 <p align="center">
 <img src="images/workflow_options/workflow-no-version-control.png" alt="Graphic of a blue-gray rectangle next to an emoji of a computer and a smaller person labeled 'you'. The left half of the rectangle has a folder emoji labeled 'code' while the right has a folder labeled 'data'. The 'code' half has a file with a circular arrow above it labeled 'edit and save'" width="65%">
-</p>
-</section>
-<section id="data-lifecycle-considerations" class="level3">
-<h3 class="anchored" data-anchor-id="data-lifecycle-considerations">Data Lifecycle Considerations</h3>
-<p>The above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.</p>
-<p>Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not <em>as</em> limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.</p>
-<p>However, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.</p>
-<p>Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.</p>
-<p align="center">
-<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%">
 </p>
 </section>
 <section id="synthesis-workflow" class="level3">
@@ -570,9 +573,19 @@ ul.task-list li input[type="checkbox"] {
 <p>While each approach offers its own strengths and weaknesses, in our experience many scientists avoid the latter two options due to knowledge barriers about how to get set up in these programs and websites, much less how to actually navigate those systems once set up!</p>
 <p>Today, we will strive to cover the fundamentals of using a version control system in your workflow (Option 2) and–for some groups, depending on interest–how to extend that workflow further and leverage NCEAS’ server to share data and work on code.</p>
 <p>Please don’t hesitate to ask questions and remember that this link is a resource that you should feel free to refer back to if you ever need a refresher or wish to teach peers! There are supplementary appendices as well which we do not anticipate being able to get to today but we do think are likely to be valuable to you as your confidence with these systems grows.</p>
-
-
 </section>
+</section>
+<section id="data-lifecycle-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="data-lifecycle-considerations">Data Lifecycle Considerations</h2>
+<p>The above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.</p>
+<p>Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not <em>as</em> limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.</p>
+<p>However, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.</p>
+<p>Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.</p>
+<p align="center">
+<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%">
+</p>
+
+
 </section>
 
 </main> <!-- /main -->
