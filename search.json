@@ -359,18 +359,7 @@
     "href": "git-background.html",
     "title": "Git Background",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine “version control”\nDescribe the difference between Git and GitHub",
-    "crumbs": [
-      "General Background",
-      "Git Background"
-    ]
-  },
-  {
-    "objectID": "git-background.html#module-learning-objectives",
-    "href": "git-background.html#module-learning-objectives",
-    "title": "Git Background",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine “version control”\nDescribe the difference between Git and GitHub",
+    "text": "Tip Learning Objectives\n\n\n\n\n\nBy the end of this module, you will be able to:\n\nDefine “version control”\nDescribe the difference between Git and GitHub",
     "crumbs": [
       "General Background",
       "Git Background"
