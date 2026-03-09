@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -478,8 +481,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#merge-conflict-definition" id="toc-merge-conflict-definition" class="nav-link" data-scroll-target="#merge-conflict-definition">Merge Conflict Definition</a></li>
+  <li><a href="#merge-conflict-definition" id="toc-merge-conflict-definition" class="nav-link active" data-scroll-target="#merge-conflict-definition">Merge Conflict Definition</a></li>
   <li><a href="#general-conflict-resolution-strategy" id="toc-general-conflict-resolution-strategy" class="nav-link" data-scroll-target="#general-conflict-resolution-strategy">General Conflict Resolution Strategy</a></li>
   <li><a href="#fixing-conflicts" id="toc-fixing-conflicts" class="nav-link" data-scroll-target="#fixing-conflicts">Fixing Conflicts</a></li>
   <li><a href="#avoiding-conflicts" id="toc-avoiding-conflicts" class="nav-link" data-scroll-target="#avoiding-conflicts">Avoiding Conflicts</a></li>
@@ -511,30 +513,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Describe</u> the causes of merge conflicts</li>
 <li><u>Explain</u> how to avoid merge conflicts</li>
 <li><u>Summarize</u> what to do if a merge conflict occurs</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="merge-conflict-definition" class="level2">
 <h2 class="anchored" data-anchor-id="merge-conflict-definition">Merge Conflict Definition</h2>
 <p>Merge conflicts (a.k.a. “conflicts”) are a normal part of the Git workflow so <em>don’t get discouraged when you run into them!</em> <strong>They occur when Git cannot figure out how to automatically merge new changes together.</strong> The most common cause of a merge conflict is when you and a collaborator both edit the same lines in the same file and one of you pushes without first pulling the most recent version from GitHub.</p>
 <p>For a visual demonstration of this, see the graphic below. Note that though this has visual similarity to the workflow diagrams that can be found throughout this website we do not recommend intentionally causing a merge conflict <i class="fa-solid fa-face-laugh-wink" aria-label="face-laugh-wink"></i></p>
-<p align="center">
-<img src="images/graphics/git-conflict-cause.png" alt="Graphic of three vertical rectangles, the left and right ones labeled 'you' and 'other' while the center has a happy cloud emoji. Both side rectangles pull a given file from Github then edit that file in different ways. The first person is able to successfully push without issue but the second person to push gets a conflict" width="60%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/graphics/git-conflict-cause.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/graphics/git-conflict-cause.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Graphic of three vertical rectangles, the left and right ones labeled 'you' and 'other' while the center has a happy cloud emoji. Both side rectangles pull a given file from Github then edit that file in different ways. The first person is able to successfully push without issue but the second person to push gets a conflict"></a></p>
+</figure>
+</div>
 </section>
 <section id="general-conflict-resolution-strategy" class="level2">
 <h2 class="anchored" data-anchor-id="general-conflict-resolution-strategy">General Conflict Resolution Strategy</h2>
 <p>If you encounter a conflict, Git will combine your local version of the conflicted file with its equivalent in GitHub. In order to resolve the conflict, you’ll need to manually tweak the local file(s) to decide what the script should look like then commit/push that file as normal.</p>
 <p>We can see those steps visually in the following workflow diagram:</p>
-<p align="center">
-<img src="images/graphics/git-conflict-workflow.png" alt="Graphic indicating the process of resolving a conflict when one occurs. After the initial conflict (caused when pushing a file from your machine differs from the GitHub version of that file), the combined file is auto-generated on your machine and you must then resolve the changes manually. These changes can then be committed and pushed up to GitHub" width="60%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/graphics/git-conflict-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/graphics/git-conflict-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Graphic indicating the process of resolving a conflict when one occurs. After the initial conflict (caused when pushing a file from your machine differs from the GitHub version of that file), the combined file is auto-generated on your machine and you must then resolve the changes manually. These changes can then be committed and pushed up to GitHub"></a></p>
+</figure>
+</div>
 </section>
 <section id="fixing-conflicts" class="level2">
 <h2 class="anchored" data-anchor-id="fixing-conflicts">Fixing Conflicts</h2>
@@ -544,17 +562,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>After we attempt to push our local commit in RStudio, we get an intimidating dialog that looks like the following image. If we look at the lines of that message that start with <code>hint:</code> you can see that RStudio is warning us about why the push failed and how to go about fixing it in reasonably human-readable terms.</p>
-<p align="center">
-<img src="images/conflicts/rstudio-01_conflict.png" alt="Screen capture of RStudio message warning about a merge conflict" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/rstudio-01_conflict.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/conflicts/rstudio-01_conflict.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screen capture of RStudio message warning about a merge conflict"></a></p>
+</figure>
+</div>
 <p>Let’s follow RStudio’s advice and <strong>pull the latest changes from GitHub.</strong> This will cause another scary dialog about how the ‘automatic merge’ failed but this means we are on the road to a resolution.</p>
-<p align="center">
-<img src="images/conflicts/rstudio-02_pull-conflict.png" alt="Screen capture of RStudio message warning about post-merge conflict auto-merge failure" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/rstudio-02_pull-conflict.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/conflicts/rstudio-02_pull-conflict.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screen capture of RStudio message warning about post-merge conflict auto-merge failure"></a></p>
+</figure>
+</div>
 <p>If we look at the offending file, we’ll see a horrible-looking chimera file of the version we had locally versus what it looked like on GitHub before we attempted to push. You will see that Git inserted a line of <code>&lt;&lt;&lt;&lt;</code>, <code>====</code>, and <code>&gt;&gt;&gt;&gt;</code> to encapsulate the version of the original lines we had locally versus what was on GitHub respectively.</p>
-<p align="center">
-<img src="images/conflicts/rstudio-03_auto-merge.png" alt="Screen capture of RStudio where a conflicted file has been auto-merged by GitHub" width="100%">
-</p>
+<p><a href="images/conflicts/rstudio-03_auto-merge.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/conflicts/rstudio-03_auto-merge.png" class="img-fluid" alt="Screen capture of RStudio where a conflicted file has been auto-merged by GitHub"></a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -570,27 +590,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Once Git has combined the two versions of the file, <strong>it is up to us to read through the script and edit it so that it looks right to us.</strong> At a minimum, this involves deleting the weird lines (in the screen capture below they are liens 1, 5, and 8) but in more difficult cases you may need to consider which version of the line is the one you want to retain.</p>
 <p>In this case, we can retain both lines of code without damaging either so let’s just delete the special character lines.</p>
-<p align="center">
-<img src="images/conflicts/rstudio-04_repair-script.png" alt="Screen capture of a script in RStudio where the merge conflict lines have been removed" width="100%">
-</p>
+<p><a href="images/conflicts/rstudio-04_repair-script.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/conflicts/rstudio-04_repair-script.png" class="img-fluid" alt="Screen capture of a script in RStudio where the merge conflict lines have been removed"></a></p>
 <p>Once you are confident you’ve fixed the conflict, <strong>commit the changes you made to resolve the conflict.</strong> This is done in the same way that you’d normally make a commit.</p>
-<p align="center">
-<img src="images/conflicts/rstudio-05_commit-repairs.png" alt="Screen capture of a commit in RStudio with the message 'fixing conflict'" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/rstudio-05_commit-repairs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/conflicts/rstudio-05_commit-repairs.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screen capture of a commit in RStudio with the message 'fixing conflict'"></a></p>
+</figure>
+</div>
 <p>Before you push, <strong>take note that the Git pane is telling you that you are two commits ahead of ‘origin/main’.</strong> This is because both your original commit and your second commit (fixing the conflict) have yet to be pushed back up to GitHub–your first push failed because of the merge conflict. Once you’ve noted that, <strong>push your changes.</strong></p>
-<p align="center">
-<img src="images/conflicts/rstudio-06_push.png" alt="Screen capture of a script in RStudio where the merge conflict lines have been removed" width="100%">
-</p>
+<p><a href="images/conflicts/rstudio-06_push.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/conflicts/rstudio-06_push.png" class="img-fluid" alt="Screen capture of a script in RStudio where the merge conflict lines have been removed"></a></p>
 <p>Your RStudio should now look how it did before you got the conflict and you can continue working normally–hopefully having learned a lesson in proactive communication with your collaborators.</p>
-<p align="center">
-<img src="images/conflicts/rstudio-07_fixed.png" alt="Screen capture of RStudio with an open script" width="100%">
-</p>
+<p><a href="images/conflicts/rstudio-07_fixed.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/conflicts/rstudio-07_fixed.png" class="img-fluid" alt="Screen capture of RStudio with an open script"></a></p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>After we attempt to sync our local commit in Positron, we get an intimidating warning about a merge conflict (see pop-up in the bottom right) and our script header is filled with gross special chacters in red text.</p>
-<p align="center">
-<img src="images/conflicts/positron-01_conflict.png" alt="Screen capture of Positron message warning about a merge conflict" width="100%">
-</p>
+<p><a href="images/conflicts/positron-01_conflict.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/conflicts/positron-01_conflict.png" class="img-fluid" alt="Screen capture of Positron message warning about a merge conflict"></a></p>
 <p>Because Positron’s default Git interaction is “sync” (a combination of a push and a pull) the local version of our script and the version on GitHub have already been auto-merged by Git. This means we are on the road to a resolution.</p>
 <p>If we look at the offending file, we’ll see a horrible-looking chimera file of the version we had locally versus what it looked like on GitHub before we attempted to push. You will see that Git inserted a line of <code>&lt;&lt;&lt;&lt;</code>, <code>====</code>, and <code>&gt;&gt;&gt;&gt;</code> to encapsulate the version of the original lines we had locally versus what was on GitHub respectively.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -609,21 +623,29 @@ ul.task-list li input[type="checkbox"] {
 <p>Once Git has combined the two versions of the file, <strong>it is up to us to read through the script and edit it so that it looks right to us.</strong> At a minimum, this involves deleting the weird lines (in the screen capture below they are liens 1, 5, and 8) but in more difficult cases you may need to consider which version of the line is the one you want to retain.</p>
 <p>Positron also helpfully provides buttons over each merge that allow us to quickly choose which version of the code we want but we could also edit the script manually.</p>
 <p>In this case, we can retain both lines of code without damaging either so let’s just delete the special character lines.</p>
-<p align="center">
-<img src="images/conflicts/positron-02_repair-script.png" alt="Screen capture of a script in Positron without merge conflict lines" width="60%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/positron-02_repair-script.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/conflicts/positron-02_repair-script.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Screen capture of a script in Positron without merge conflict lines"></a></p>
+</figure>
+</div>
 <p>Once you are confident you’ve fixed the conflict, <strong>commit the changes you made to resolve the conflict.</strong> This is done in the same way that you’d normally make a commit. Note you will likely want to <strong>replace the default merge conflict commit message with something that is more human-readable.</strong></p>
-<p align="center">
-<img src="images/conflicts/positron-03_commit-repairs.png" alt="Screen capture of a commit in Positron with the message 'fixing conflict'" width="60%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/positron-03_commit-repairs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/conflicts/positron-03_commit-repairs.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Screen capture of a commit in Positron with the message 'fixing conflict'"></a></p>
+</figure>
+</div>
 <p>Before you sync, <strong>take note that the “Sync Changes” button is telling you that you have two changes to contribute.</strong> This is because both your original commit and your second commit (fixing the conflict) have yet to be pushed back up to GitHub–your first push failed because of the merge conflict. Once you’ve noted that, <strong>sync your changes.</strong></p>
-<p align="center">
-<img src="images/conflicts/positron-04_sync.png" alt="Screen capture of a script in Positron where the merge conflict lines have been removed" width="60%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/positron-04_sync.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/conflicts/positron-04_sync.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Screen capture of a script in Positron where the merge conflict lines have been removed"></a></p>
+</figure>
+</div>
 <p>Your Positron should now look how it did before you got the conflict and you can continue working normally–hopefully having learned a lesson in proactive communication with your collaborators.</p>
-<p align="center">
-<img src="images/conflicts/positron-05_fixed.png" alt="Screen capture of Positron with an open script" width="60%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/conflicts/positron-05_fixed.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/conflicts/positron-05_fixed.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%" alt="Screen capture of Positron with an open script"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -1112,6 +1134,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
