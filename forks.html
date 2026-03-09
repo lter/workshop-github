@@ -46,6 +46,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-764318607858309afd87bb640d38c024.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -476,8 +481,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#what-is-a-fork" id="toc-what-is-a-fork" class="nav-link" data-scroll-target="#what-is-a-fork">What is a Fork?</a></li>
+  <li><a href="#what-is-a-fork" id="toc-what-is-a-fork" class="nav-link active" data-scroll-target="#what-is-a-fork">What is a Fork?</a>
+  <ul class="collapse">
+  <li><a href="#forks-versus-branches" id="toc-forks-versus-branches" class="nav-link" data-scroll-target="#forks-versus-branches">Forks versus Branches</a></li>
+  </ul></li>
   <li><a href="#choosing-whether-to-fork-or-to-branch" id="toc-choosing-whether-to-fork-or-to-branch" class="nav-link" data-scroll-target="#choosing-whether-to-fork-or-to-branch">Choosing Whether to Fork or to Branch</a></li>
   <li><a href="#brief-overview-of-fork-workflow" id="toc-brief-overview-of-fork-workflow" class="nav-link" data-scroll-target="#brief-overview-of-fork-workflow">Brief Overview of Fork Workflow</a></li>
   <li><a href="#create-a-fork" id="toc-create-a-fork" class="nav-link" data-scroll-target="#create-a-fork">Create a Fork</a></li>
@@ -509,66 +516,105 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Define</u> “fork” in the context of Git/GitHub</li>
 <li><u>Contrast</u> forks with branches</li>
 <li><u>Use</u> the fork feature on GitHub for an existing repository</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="what-is-a-fork" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-fork">What is a Fork?</h2>
-<p>A <strong>fork</strong> is a duplicate of a Git repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.</p>
-<p>The difference between <strong>forks</strong> and <strong>branches</strong> is a source of great confusion for many (even veteran!) Git users but hopefully this list helps to clarify:</p>
-<ol type="1">
-<li><p>A fork creates a new repository while a branch exists within a given repository</p></li>
-<li><p>A fork is owned by a different user/organization than the original, a branch does not change repository ownership</p></li>
-<li><p>A fork’s “parent” repository is not recognized by Git but Git does ‘know’ which branch a given branch originates from.</p></li>
-</ol>
+<p>A <strong>fork</strong> is a duplicate of a GitHub repository that has a different owner than the original. Any repository that you can view on GitHub, you can fork. This includes (1) any public repository, and (2) private repositories to which you have access.</p>
+<p>Forks are most commonly used when you want to use someone else’s work to ‘jump start’ your own, but aren’t collaborating with that person / likely don’t want to re-integrate your changes into their version of the project. For example, if you attend a workshop that has a GitHub repository full of examples, you might fork that repository and change the examples for your subject area so that you can use it in your own version of the workshop.</p>
+<section id="forks-versus-branches" class="level3">
+<h3 class="anchored" data-anchor-id="forks-versus-branches">Forks versus Branches</h3>
+<p>The difference between <strong>forks</strong> and <strong>branches</strong> is a source of great confusion for many (even veteran!) Git and GitHub users but hopefully this list helps to clarify!</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>FAQ</strong></th>
+<th style="text-align: center;"><strong>Fork</strong></th>
+<th style="text-align: center;"><strong>Branch</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Does making one also create a new repository?</td>
+<td style="text-align: center;">Yes!</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Does repository ownership change when you make one?</td>
+<td style="text-align: center;">Yes!</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Does <u>Git</u> know the “parent” repository/branch?</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes!</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Does <u>GitHub</u> know the “parent” repository/branch</td>
+<td style="text-align: center;">Yes!</td>
+<td style="text-align: center;">Yes!</td>
+</tr>
+</tbody>
+</table>
+<p>As the table above indicates, <strong>a fork is fundamentally a GitHub operation, <em>not</em> a Git operation.</strong></p>
+</section>
 </section>
 <section id="choosing-whether-to-fork-or-to-branch" class="level2">
 <h2 class="anchored" data-anchor-id="choosing-whether-to-fork-or-to-branch">Choosing Whether to Fork or to Branch</h2>
 <p>A good rule of thumb for whether you should <em>fork</em> or <em>branch</em> a repository is based on whether you’re working independently from the owner of the repository versus collaborating actively with them.</p>
 <p>If you are largely independent from the repository’s owner, fork that repository to get your own copy to independently work in. If you are actively collaborating, it is likely that you’ll want to work in a branch.</p>
-<p>It is important to note that both forks and branches can be merged back into their source (the “main” branch for branches and the original repository for forks) via <strong>pull request</strong> so you need not worry that choosing one or the other will preclude integration with the source.</p>
+<p>It is important to note that both forks and branches can be merged back into their source (the “main” branch for branches and the original repository for forks) via <strong>pull request</strong> so you need not worry that choosing one or the other will preclude integration with the source. Branches within a repository just make it easier for all collaborators to see all edits while forks make that less visible.</p>
 </section>
 <section id="brief-overview-of-fork-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="brief-overview-of-fork-workflow">Brief Overview of Fork Workflow</h2>
-<p>Forking is (arguably) one of the more straightforward Git workflows but before we cover it in detail, let’s review the broader context.</p>
-<p>You begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient “Fork” button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository in your profile’s repository list.</p>
+<p>Forking is (arguably) one of the more straightforward GitHub operations but before we cover it in detail, let’s review the broader context.</p>
+<p>You begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient “Fork” button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository that is owned by your GitHub identity.</p>
 <p>Once the fork is created, you simply clone the repository as you would when beginning work with any other GitHub repository.</p>
 <p>From there on you work as your normally would with GitHub: <strong><span style="color:gold">edit</span></strong>, <strong>commit</strong>, <strong><span style="color:blue">pull</span></strong>, and <strong><span style="color:green">push</span></strong>.</p>
-<p>While it is not shown in the below diagram, if needed you can submit a “pull request” (see Appendix B: Branches) to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.</p>
-<p align="center">
-<img src="images/forks/git-fork-workflow.png" alt="Graphic of the workflow when using forks. Begins by forking someone else's repository then working in your fork as you normally would" width="75%">
-</p>
+<p>While it is not shown in the below diagram, if needed you can submit a “pull request” to merge your version of the repository with the version you initially forked from. This is not a required part of the workflow which is why it is excluded from the diagram.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/forks/git-fork-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/forks/git-fork-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%" alt="Graphic of the workflow when using forks. Begins by forking someone else's repository then working in your fork as you normally would"></a></p>
+</figure>
+</div>
 <p>Now we’ve covered the general operation of forking, let’s go over the specifics step-by-step.</p>
 </section>
 <section id="create-a-fork" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-fork">Create a Fork</h2>
 <p>On GitHub, navigate to the repository that you would like to fork for your own use. Note that in this case the repository we created to take these screen captures is very new but this need not be the case!</p>
 <p>In the top right of the repository’s GitHub page there is a “Fork” button (between “Unwatch” and “Star”), click it to begin forking.</p>
-<p align="center">
-<img src="images/forks/forks-1-start.png" alt="Screenshot of the top of a GitHub repository including the 'fork' button in the top right (in-line with the name of the repository)" width="100%">
-</p>
+<p><a href="images/forks/forks-1-start.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/forks/forks-1-start.png" class="img-fluid" alt="Screenshot of the top of a GitHub repository including the 'fork' button in the top right (in-line with the name of the repository)"></a></p>
 <p>This redirects you to a page that is very similar to the page for creating a new repository <em>de novo</em>.</p>
 <p>Here you can select who you want to own the repository from a dropdown including any organizations you are a member of and your username if you want to personally own the fork. You can also change the repository name (though the default is to retain the same name) and add a description of your purpose for the fork.</p>
 <p>You may notice that in this page you do not have the option to specify public versus private or any of the ‘initialize’ steps (e.g., README, gitignore, or licence). Forks will inherit these settings from the repository they are forked from so they do not need to specified here.</p>
 <p>Once you are happy with the owner of the fork, the name, and the description, click the <span style="color:green">green</span> “Create fork” button.</p>
-<p align="center">
-<img src="images/forks/forks-2-name-fork.png" alt="Screenshot of the GitHub interface for making a fork (where the repository can be renamed and have a description added)" width="100%">
-</p>
+<p><a href="images/forks/forks-2-name-fork.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/forks/forks-2-name-fork.png" class="img-fluid" alt="Screenshot of the GitHub interface for making a fork (where the repository can be renamed and have a description added)"></a></p>
 <p>Depending on the amount of content in the repository you are forking and your internet speed this may take anywhere from a few seconds to 1-2 minutes so you will need to wait for a moment while GitHub creates a new duplicate repository under the control of the owner you specified.</p>
 <p>After the process completes the page will refresh and you will find yourself on the landing page for your new forked repository!</p>
-<p align="center">
-<img src="images/forks/forks-3-fork-landing-page.png" alt="Screenshot of the forked repository owned by a different owner than the original repository" width="100%">
-</p>
+<p><a href="images/forks/forks-3-fork-landing-page.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/forks/forks-3-fork-landing-page.png" class="img-fluid" alt="Screenshot of the forked repository owned by a different owner than the original repository"></a></p>
 <p>This repository has a fork icon in the top left (to the left of the owner/repository name) and includes a link to the repository that it came from just beneath that.</p>
 <p>The other salient difference is that between the branch and “Code” buttons and the list of files there is a bar that indicates whether the fork is up to date with the repository it was forked from.</p>
 <p>If the “parent” repository is updated (i.e., someone pushes changes to it after you forked) you can click the “Fetch upstream” button to integrate those changes with your fork.</p>
-<p>If you decide that your changes are a meaningful improvement that the parent repository could benefit from, you can click the “Contribute” button to begin the process of submitting a pull request to integrate your edits with the parent (see Appendix B: Branches for instructions on submitting a pull request).</p>
+<p>If you decide that your changes are a meaningful improvement that the parent repository could benefit from, you can click the “Contribute” button to begin the process of submitting a pull request to integrate your edits with the parent.</p>
 <p>From here on you can work within your fork as you would within any other repository! <strong><span style="color:purple">Clone</span></strong> the fork into your local computer and work as you normally would.</p>
 
 
@@ -1046,6 +1092,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
