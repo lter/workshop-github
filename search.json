@@ -59,18 +59,7 @@
     "href": "projects.html",
     "title": "GitHub Projects",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nIdentify the three available project view options\nExplain how issues can get added to projects",
-    "crumbs": [
-      "Project Management",
-      "GitHub Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#module-learning-objectives",
-    "href": "projects.html#module-learning-objectives",
-    "title": "GitHub Projects",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nIdentify the three available project view options\nExplain how issues can get added to projects",
+    "text": "Tip Learning Objectives\n\n\n\n\n\nBy the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nIdentify the three available project view options\nExplain how issues can get added to projects",
     "crumbs": [
       "Project Management",
       "GitHub Projects"
@@ -241,18 +230,7 @@
     "href": "milestones.html",
     "title": "GitHub Milestones",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
-    "crumbs": [
-      "Project Management",
-      "GitHub Milestones"
-    ]
-  },
-  {
-    "objectID": "milestones.html#module-learning-objectives",
-    "href": "milestones.html#module-learning-objectives",
-    "title": "GitHub Milestones",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
+    "text": "Tip Learning Objectives\n\n\n\n\n\nBy the end of this module, you will be able to:\n\nDefine what is a milestone in the context of GitHub\nExplain how GitHub milestones can be useful\nCreate a new GitHub milestone in an existing repository",
     "crumbs": [
       "Project Management",
       "GitHub Milestones"
@@ -744,18 +722,7 @@
     "href": "issues.html",
     "title": "GitHub Issues",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
-    "crumbs": [
-      "Project Management",
-      "GitHub Issues"
-    ]
-  },
-  {
-    "objectID": "issues.html#module-learning-objectives",
-    "href": "issues.html#module-learning-objectives",
-    "title": "GitHub Issues",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
+    "text": "Tip Learning Objectives\n\n\n\n\n\nBy the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue",
     "crumbs": [
       "Project Management",
       "GitHub Issues"
