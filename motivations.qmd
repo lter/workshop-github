@@ -27,20 +27,6 @@ Another limitation of this approach is that to work collaboratively, everything 
 <img src="images/workflow_options/workflow-no-version-control.png" alt="Graphic of a blue-gray rectangle next to an emoji of a computer and a smaller person labeled 'you'. The left half of the rectangle has a folder emoji labeled 'code' while the right has a folder labeled 'data'. The 'code' half has a file with a circular arrow above it labeled 'edit and save'" width="65%"/>
 </p>
 
-### Data Lifecycle Considerations
-
-The above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.
-
-Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not _as_ limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.
-
-However, for larger teams--especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)--the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.
-
-Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is "version control" systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.
-
-<p align="center">
-<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%"/>
-</p>
-
 ### Synthesis Workflow
 
 Version control systems preserve the iterative changes you and your team make to code and allow for informative titles and messages to be attached to these snapshots. This offers a clear advantage over ambiguous time-stamped versions preserved by cloud storage systems as it facilitates re-visiting code long after or by new team members who were not present for the initial writing. This approach is what we will be covering in greater depth in a few moments but the broad strokes are that you would preserve the history of your work and ensure that everyone uses the "right" version of the code.
@@ -78,3 +64,17 @@ While each approach offers its own strengths and weaknesses, in our experience m
 Today, we will strive to cover the fundamentals of using a version control system in your workflow (Option 2) and--for some groups, depending on interest--how to extend that workflow further and leverage NCEAS' server to share data and work on code.
 
 Please don't hesitate to ask questions and remember that this link is a resource that you should feel free to refer back to if you ever need a refresher or wish to teach peers! There are supplementary appendices as well which we do not anticipate being able to get to today but we do think are likely to be valuable to you as your confidence with these systems grows.
+
+## Data Lifecycle Considerations
+
+The above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.
+
+Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not _as_ limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.
+
+However, for larger teams--especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)--the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.
+
+Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is "version control" systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.
+
+<p align="center">
+<img src="images/workflow_options/data-lifecycle.png" alt="a set of labels placed in a ring labeled 'the data lifecycle'. Beginning at the top and working clockwise the labels include, 'plan', 'collect', 'assure', 'describe', 'preserve', 'discover', 'integrate', and 'analyze'" width="75%"/>
+</p>
