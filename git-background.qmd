@@ -2,12 +2,15 @@
 title: "Git Background"
 ---
 
-## Module Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
 By the end of this module, you will be able to:
 
 - <u>Define</u> "version control"
 - <u>Describe</u> the difference between Git and GitHub
+
+:::
 
 ## Version Control Background
 
