@@ -38,58 +38,128 @@ Comments can be used to have a full dialogue among different users -- potentiall
 
 ![](images/issues/googledrive-issue_03-comments){fig-alt="Screenshot of the conversation between a user and a package maintainer in a particular issue"}
 
+## Finding Issues in a Repository
 
+Before we get into creating our own, it'll be helpful to cover where issues live in GitHub. If you go to the landing page of any repository, you'll see the--perhaps familiar--facets of the code component of GitHub: the repository's name, the most recent commit, the files and folders in the repository, and so on.
 
+If you look **above the repository's name** you'll see that all of this information is actually just one tab of the repository (labeled "{{< fa code >}} Code"). Note the **<span style="color:orange">orange</span>** underline of that tab in the screen capture below.
 
-## Creating your First Issue
+![](images/issues/find-issue_01-repo.png){fig-alt="Screenshot of the landing page of a GitHub repository"}
 
-When you first visit the Issues tab of your repository it won't include any open issues and will look like this.
+The next tab over is labeled "{{< fa regular circle-dot >}} Issue", **click that tab!** You should now see the list of all issues in the repository. As we can see in the screen capture below, the most recent few issues (sorted to the top, just like commits), are focused on a cohort of LTER SPARC groups.
 
-![](images/issues/issues-4-create-first-issue.png){fig-alt="Screenshot of the issues tab for a repository without any issues"}
+If we look just above the first issue we can see that 10 issues are "open" (i.e., active) and 90 are closed. By default only the open ones are displayed. Your group may not need that many issues so don't worry too much about how many you've got!
 
-To create an issue, click the **<span style="color:green">green button</span>** and a new page will open that looks like the below.
+![](images/issues/find-issue_02-issue.png){fig-alt="Screenshot of the 'issues' tab of a GitHub repository with a number of open issues displayed"}
 
-![](images/issues/issues-5-issue-options.png){fig-alt="Screenshot of a newly-opened issue with empty fields for the title and description"}
+### What If There Aren't Any Issues?
 
-In this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.
+If you click into the 'Issues' tab of a repository that doesn't have any, you'll get a screen like the following screen capture. Not that other than the absence of issues, the screen looks the same as when their are issues (i.e., the same buttons and search/filter fields are available to you).
 
-While issue comments are completely free for you to use as you see fit, it is important to remember that **your most frequent collaborator is yourself in the future** so a future version of yourself will absolutely thank you for including extra information when you first open an issue. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.
+![](images/issues/find-issue_03-no-issues.png){fig-alt="Screenshot of the 'issues' tab of a GitHub repository with no issues (either open or closed)"}
 
-In addition to the title and main body of the issue you can also see a sidebar on the right containing other options for adding detail to an issue. In particular, the **"Assignees"** and **"Labels"** sections can be useful in delegating a task to a specific person or naming the category that this task falls under respectively.
+## Creating an Issue
 
-Returning to our `googledrive` example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.
+Let's open a new issue to demonstrate some of the useful features they provide. **Click the "New issue" button** to begin. This will open a dialog menu where we can begin to create our issue. Let's **start by adding a title and then clicking the "Create" button.** We could do more setup stuff through this window but let's start with the bare minimum for demonstrative purposes.
 
-![](images/issues/googledrive-issue_04-labels.png){fig-alt="Screenshot of several issues open on the 'googledrive' R package, each of which has more than one 'label' to help categorize issues"}
+:::{.callout-important icon="false" collapse="true"}
+### "Meta" Screenshot Acknowledgement
 
-When you are creating your first issue however you won't have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.
+You may recognize that the issue used in this demo is about improving the module you are currently working through. We hope that isn't distracting but it felt more efficient to improve this module and document the process for use in it at the same time than invent a fake issue while also needing to document our process for improving this issue.
 
-To see the current label options, click the "Labels" text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click "Edit labels" to create new labels or modify the template labels.
-
-![](images/issues/issues-6-label-options.png){fig-alt="Screenshot of the dropdown that appears when adding a label (from the available set of options) to an issue"}
-
-:::callout-note
-## Practice - Labels
-
-What are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories? 
 :::
 
-## Opening an Issue
+![](images/issues/make-issue_01-title.png){fig-alt="Screenshot of the dialog menu in GitHub when you start to create a new issue with only a title filled out" fig-align="center" width="75%"}
 
-Once you've filled out the title and comment of the issue the **<span style="color:green">green "Submit new issue" button</span>** will become clickable and you can click it to open your issue. You can either add labels or assign users to the issue during the initial opening phase or after the fact.
+Clicking "Create" should automatically redirect you to the page for your new issue. It will automatically be given a unique (to this repository) number (we'll get to why that's useful later) that you can see next to the issue's title at the top of the screen.
 
-Issues are automatically viewed as a sequential series of events from the first comment so all future additions to the issue will be added beneath that first comment that defines the title of the issue.
+**There are two main categories of useful information in an issue: comments and metadata.** Comments take up the majority of the horizontal area (see the wide left column) while metadata information occupies a thin column on the right side of the screen.
 
-At the bottom of the issue there will be an open text box that you can add to with whatever information you feel is valuable in the context of this task. We will talk about closing issues in a moment but even when issues are closed they are always accessible so all documentation within an issue can be used later and is well worth any energy investment you can make.
+![](images/issues/make-issue_02-home.png){fig-alt="Screenshot of a newly-opened GitHub issue with only a title filled out"}
 
-There is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful.
+### Metadata
 
-![](images/issues/issues-7-started-issue.png){fig-alt="Screenshot of an opened issue with an informative yet concise title and two labels"}
+When we create issues, we like to **start with the metadata** as this information is more useful when thinking things through from a strategic project management perspective. To clarify, the comments are also useful but they are specific to the task at hand, **the metadata allow you to categorize how this issue supports the larger vision for the project.**
+
+The three facets of an issue's metadata that you're most likely to use are:
+
+1. Assignees
+    - These people will get email notifications of all activity in the issue
+2. Labels
+    - Categorical descriptors for what kind of issue this is. These can be customized and have been heavily customized in the screen captures to fllow
+3. Type
+    - An interesting level one step "above" labels. The example below uses the Agile software development framework, but--like labels--you can customize these to fit your group's needs (for more info on Agile see [here](https://en.wikipedia.org/wiki/Agile_software_development))
+
+Let's customize those three fields for the issue we just opened. To customize any part of issue metadata **click the gear icon to the right of the field you want to edit.** That will open a list of possible options for that field so you can just choose the one(s) that apply to this issue. After you've selected some information for the issue's metadata, your siderbar might look like the screen capture below.
+
+![](images/issues/make-issue_03-meta.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue with some fields filled out" fig-align="center" width="40%"}
+
+### Comments
+
+Once you're happy with the metadata, we can edit the first comment. "Edit" not "make" because the first comment is actually the field below the title that we left blank when we opened the issue initially. To edit that comment, **click the ellipsis (...) in the top right corner of the first coment and select the "{{< fa pencil >}} Edit" option.** Note that GitHub issues accept Markdown syntax so any tips or tricks you've picked up in styling the plain text of RMarkdown or Quarto files should also apply to beautifying your issue.
+
+:::{.panel-tabset}
+#### Finished Comment
+
+After you've edited your issue's first comment it might look something like this.
+
+![](images/issues/make-issue_05-comment-front.png){fig-alt="Screenshot of an issue with an edited top-level comment and some metadata filled out"}
+
+#### Markdown 'Behind the Scenes'
+
+This is the 'back end' of the issue displayed in the other tabset panel. Note the Markdown tricks being applied to for both form and function purposes.
+
+![](images/issues/make-issue_04-comment-back.png){fig-alt="Screenshot of an issue comment being edited with Markdown syntax"}
+
+:::
+
+While issue comments are completely free for you to use as you see fit, it is important to remember that **your most frequent collaborator is yourself in the future** so a future version of yourself will absolutely thank you for including as much useful context as possible. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.
+
+### Inter-Issue Relationships
+
+While technically a facet of the metadata, it is worthwhile to make some specific time to discuss issue "relationships." Once you have a number of issues open, it's likely that a number of them will be related! Possibly because one requires another to be completed before it can be started or maybe a number of small tasks all support a single, larger task.
+
+Whatever the specifics, you can formally enshrine this in GitHub by editing a piece of the issue's metadata in the right sidebar beneath most of the other issue metadata elements. **The "Relationships" piece is towards the bottom of the metadata sidebar** (just beneath "Milestone").
+
+![](images/issues/issue-relationship_00-area.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue" fig-align="center" width="40%"}
+
+Once you find it, **click the gear icon.** For working groups, "Add parent" is likely to be the most useful but if you want to add one of the other types of relationship instead, you absolutely can! Note that _each issue can only have one parent_, though you can change that relationship to a different issue if need be.
+
+![](images/issues/issue-relationship_01-type.png){fig-alt="Screenshot of the 'issue relationships' dropdown menu in GitHub with 'Add parent', 'Mark as blocked by' and 'Mark as blocking' as options" fig-align="center" width="40%"}
+
+Regardless of the type of relationship you pick, you will now be in a dropdown menu with all the issue in this repository as options to be added as in-relationship with your current issue. You can either scroll through this list or type words that are in the title of the issue with which you want to connect your current one.
+
+![](images/issues/issue-relationship_02-options.png){fig-alt="Screenshot of GitHub issue 'relationship' dropdown open showing a selection of recent issues in the same repository" fig-align="center" width="40%"}
+
+After you select one, the "Relationships" heading should clearly state which issue this one is linked with and if you click it, it will direct you to that other issue.
+
+![](images/issues/issue-relationship_03-done.png){fig-alt="Screenshot of a GitHub issue with a linked parent" fig-align="center" width="40%"}
+
+If you do visit the other issue, you can see all of its sub-issues in a convenient list beneath the first comment of that issue. It may look something like the following:
+
+![](images/issues/issue-relationship_04-from-parent.png){fig-alt="Screenshot of a GitHub issue with at least one sub-issue"}
+
+#### Working Group Use-Cases for Nesting Issues
+
+Some use-cases of this feature for working groups include:
+
+- Easily find all issues related to a topic (even closed ones) by having a parent issue that is never closed
+- Create an issue for each manuscript section and link actionable tasks for each underneath that one
+- Make an issue for each sub-team then nest issue that _team_ is responsible for as children to that parent
+
+## Closing an Issue
+
+When you're done with an issue, simply click the "Close issue" button. It will still be findable in your repository, it just won't show up by default when you go to the "Issues tab". In order to see all the closed issues on a repository, simply **click the Closed** button in the top left of the "Issues" tab of the relevant repository.
+
+![](images/issues/closed-issues.png){fig-alt="Screenshot of the closed issues section of a repository in GitHub"}
+
+So, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents! This greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. 
 
 ## Appropriate Issue Scope
 
 As a brief aside from the nuts and bolts of how to create and manage an issue, it is important to discuss appropriate issue scope.
 
-Essentially, an issue should- as much as possible-directly correspond to either a single task or a single conversation. It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.
+Essentially, **an issue should directly correspond to either a single task or a single judgement call.** It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.
 
 Personally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are **S**pecific, **M**easurable, **A**ttainable, **R**elevant, and **T**ime-specific), but there are many established ways of partitioning a larger project to achievable sub-tasks and you should use whichever is most intuitive to you.
 
@@ -100,29 +170,3 @@ If issues seem like something that your group is broadly interested in it may be
 
 Now that we've covered what issues are and how to open them, let's take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!
 :::
-
-## Closing an Issue
-
-So, let's imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.
-
-If you scroll to the bottom of that issue (where the adding comment textbox is) you will see a **<span style="color:purple">purple</span>** button titled "Close issue".
-
-![](images/issues/issues-8-prepping-to-close-issue.png){fig-alt="Screenshot of the bottom of a Github issue where the purple 'close issue' button can be found"}
-
-After clicking that button a **<span style="color:purple">purple</span>** check mark will appear on the bottom of the issue's timeline that identifies the issue as closed and credits the user who closed it.
-
-![](images/issues/issues-9-closed-issue.png){fig-alt="Screenshot of a closed GitHub issue where a purple checkmark is included in the history of the issue to indicate that it is closed"}
-
-When you return to your issue list you will see that issue is now absent from the list. However, next to the "[number] Open" button you can see a check mark with the number of closed issues.
-
-![](images/issues/issues-10-revisiting-issue-list.png){fig-alt="Screenshot of the 'issues' tab of a GitHub issue where there is one closed issue but no open ones"}
-
-Clicking that "Closed" button will access all past issues that are now closed.
-
-![](images/issues/issues-11-finding-closed-issues.png){fig-alt="Screenshot of the list of closed issues on a GitHub repository"}
-
-So, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.
-
-This greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.
-
-As pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we'd encourage you to try using them in case they do prove helpful to your team!
