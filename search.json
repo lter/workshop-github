@@ -900,18 +900,7 @@
     "href": "readmes.html",
     "title": "Informative READMEs",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository",
-    "crumbs": [
-      "Other Topics",
-      "Informative READMEs"
-    ]
-  },
-  {
-    "objectID": "readmes.html#module-learning-objectives",
-    "href": "readmes.html#module-learning-objectives",
-    "title": "Informative READMEs",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository",
+    "text": "Tip Learning Objectives\n\n\n\n\n\nBy the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository",
     "crumbs": [
       "Other Topics",
       "Informative READMEs"
@@ -933,7 +922,7 @@
     "href": "readmes.html#example-readme",
     "title": "Informative READMEs",
     "section": "Example README",
-    "text": "Example README\n\nLet’s check out the README for the R package lterpalettefinder as one example of an informative README. This R package was developed by the LTER Network Office to share official palettes derived from photos taken at LTER sites and evolved to include a suite of R functions that allow color palettes to be extracted from any user-supplied photo.\nThe README for lterpalettefinder is crucial because it provides the following information:\n\nBrief description of the purpose / utility of the package\nInstructions on how to install the “development version” of the package\n\nThis is useful because the version of a package that is on CRAN (and can be installed with install.packages()) is often less up-to-date than the version that is available on GitHub\n\nList of current functions and what they do\nHex logo of the package\n\nVisitors to the README see the following:\n\n\n\nThis README contains a bunch of “bonus” information including nice aesthetic touches and various “badges” denoting timing of last commit and that the package has no errors among other things.\nThe “README.Rmd” file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).\n\n\n\nIf you click that file, you can view the “raw” file which is written in “markdown syntax”. Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.\nThe main take away here is that “under the hood”, this package’s README landing page is generated from the formatting specified in this “raw” file. Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!",
+    "text": "Example README\n\nLet’s check out the README for the R package lterpalettefinder as one example of an informative README. This R package was developed by the LTER Network Office to share official palettes derived from photos taken at LTER sites and evolved to include a suite of R functions that allow color palettes to be extracted from any user-supplied photo.\nThe README for lterpalettefinder is crucial because it provides the following information:\n\nBrief description of the purpose / utility of the package\nInstructions on how to install the “development version” of the package\n\nThis is useful because the version of a package that is on CRAN (and can be installed with install.packages()) is often less up-to-date than the version that is available on GitHub\n\nList of current functions and what they do\nHex logo of the package\n\nVisitors to the README see the following:\n\nThis README contains a bunch of “bonus” information including nice aesthetic touches and various “badges” denoting timing of last commit and that the package has no errors among other things.\nThe “README.Rmd” file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).\n\nIf you click that file, you can view the “raw” file which is written in “markdown syntax”. Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.\nThe main take away here is that “under the hood”, this package’s README landing page is generated from the formatting specified in this “raw” file. Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!",
     "crumbs": [
       "Other Topics",
       "Informative READMEs"

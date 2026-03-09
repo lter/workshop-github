@@ -46,6 +46,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-764318607858309afd87bb640d38c024.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -476,8 +481,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#what-is-a-readme" id="toc-what-is-a-readme" class="nav-link" data-scroll-target="#what-is-a-readme">What is a README?</a></li>
+  <li><a href="#what-is-a-readme" id="toc-what-is-a-readme" class="nav-link active" data-scroll-target="#what-is-a-readme">What is a README?</a></li>
   <li><a href="#example-readme" id="toc-example-readme" class="nav-link" data-scroll-target="#example-readme">Example README</a></li>
   <li><a href="#writing-a-readme" id="toc-writing-a-readme" class="nav-link" data-scroll-target="#writing-a-readme">Writing a README</a></li>
   <li><a href="#other-resources-for-readmes" id="toc-other-resources-for-readmes" class="nav-link" data-scroll-target="#other-resources-for-readmes">Other Resources for READMEs</a></li>
@@ -509,14 +513,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Describe</u> the value of an informative README</li>
 <li><u>Refine</u> a README on an existing repository</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="what-is-a-readme" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-readme">What is a README?</h2>
 <p>A README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder’s contents. However, you are responsible for creating a README and adding content to it so its value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.</p>
@@ -538,21 +554,16 @@ ul.task-list li input[type="checkbox"] {
 <li>Hex logo of the package</li>
 </ul>
 <p>Visitors to <a href="https://github.com/lter/lterpalettefinder#readme">the README</a> see the following:</p>
-<p align="center">
-<img src="images/readme/readme-1-example.png" alt="Screenshot of the full README on the GitHub repository of the 'lterpalettefinder' R package" width="100%">
-</p>
+<p><a href="images/readme/readme-1-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/readme/readme-1-example.png" class="img-fluid" alt="Screenshot of the full README on the GitHub repository of the 'lterpalettefinder' R package"></a></p>
 <p>This README contains a bunch of “bonus” information including nice aesthetic touches and various “badges” denoting timing of last commit and that the package has no errors among other things.</p>
 <p>The “README.Rmd” file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).</p>
-<p align="center">
-<img src="images/readme/readme-2-example-home.png" alt="Screenshot of the files in the 'lterpalettefinder' R package GitHub repository showing that there is both a README.md and a README.Rmd" width="100%">
-</p>
+<p><a href="images/readme/readme-2-example-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/readme/readme-2-example-home.png" class="img-fluid" alt="Screenshot of the files in the 'lterpalettefinder' R package GitHub repository showing that there is both a README.md and a README.Rmd"></a></p>
 <p>If you click that file, you can view the “raw” file which is written in “markdown syntax”. Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.</p>
 <p><strong>The main take away here is that “under the hood”, this package’s README landing page is generated from the formatting specified in this “raw” file.</strong> Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!</p>
+<p><a href="images/readme/readme-3-example-raw-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/readme/readme-3-example-raw-1.png" class="img-fluid" alt="Screenshot of the 'raw' view of the top half of the README.Rmd file from the previous screenshot"></a></p>
+<p><a href="images/readme/readme-4-example-raw-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/readme/readme-4-example-raw-2.png" class="img-fluid" alt="Screenshot of the 'raw' view of the bottom half of the README.Rmd file from the previous screenshot"></a></p>
 <p align="center">
-<img src="images/readme/readme-3-example-raw-1.png" alt="Screenshot of the 'raw' view of the top half of the README.Rmd file from the previous screenshot" width="100%">
-</p>
-<p align="center">
-<img src="images/readme/readme-4-example-raw-2.png" alt="Screenshot of the 'raw' view of the bottom half of the README.Rmd file from the previous screenshot" width="100%">
+<img src="" alt="" width="100%">
 </p>
 </section>
 <section id="writing-a-readme" class="level2">
@@ -570,7 +581,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="other-resources-for-readmes" class="level2">
 <h2 class="anchored" data-anchor-id="other-resources-for-readmes">Other Resources for READMEs</h2>
 <p><a href="https://samanthacsik.github.io/">Sam Csik</a> created <a href="https://ucsb-meds.github.io/README-guidelines/">guidelines for READMEs</a> for the Master of Environmental Data Science (MEDS) program at UCSB with a companion <a href="https://ucsb-meds.github.io/EDS-296-DS-portfolios/course-materials/materials/readme-guidelines-slides.html#/title-slide">slide deck</a> and both are extremely useful for the what/when/where of great READMEs.</p>
-<p><a href="https://github.com/navendu-pottekkat">Navendu Pottekkat</a> made <a href="https://github.com/navendu-pottekkat/awesome-readme/tree/master#readme">a really cool “Awesome README”</a> that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. <em>This type of aesthetic modification is <strong>not</strong> required</em> but can be a fun way of making your README stand out!</p>
+<p><a href="https://github.com/pottekkat">Navendu Pottekkat</a> made <a href="https://github.com/navendu-pottekkat/awesome-readme/tree/master#readme">a really cool “Awesome README”</a> that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. <em>This type of aesthetic modification is <strong>not</strong> required</em> but can be a fun way of making your README stand out!</p>
 
 
 </section>
@@ -1047,6 +1058,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
