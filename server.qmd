@@ -174,53 +174,58 @@ If you are more comfortable with a CLI (<u>C</u>ommand <u>L</u>ine <u>I</u>nterf
 
 This portion of the tutorial is focused on using the command line to interact with the server. That said, if you're interested in the command line more generally or for other purposes, please reach out to [our team](https://lter.github.io/scicomp/staff.html)!
 
-#### CLI Option A: `scp`
+#### Option A: `scp`
+
+:::{.panel-tabset}
+#### Upload _One_ File
 
 The `scp` command can be used to _upload_ a file or folder from your computer to the server.
 
-1A. Navigate to the folder <u>on your computer</u> containing the file(s) you want to upload
-
-```
-cd [folder]
-```
-
-- Note that if the folder name has spaces you'll need to "escape" the space by using a backslash (`\`)
+1. Navigate to the folder <u>on your computer</u> containing the file(s) you want to upload
+    - Note that if the folder name has spaces you'll need to "escape" the space by using a backslash (`\`)
 
 ```
 cd [folder\ name]
 ```
 
-2A. Now you can upload that file to the server!
+2. Now you can upload that file to the server!
 
 ```
 scp [file_name] [user]@aurora.nceas.ucsb.edu:/[path/to/destination_folder/]
 ```
 
+#### Upload _Many_ Files
+
 If instead you'd like to upload all of the files in a folder, do the following:
 
-1B. Navigate to the folder containing the folder on your computer you want to upload (using `cd`)
+1. Navigate to the folder containing the folder on your computer you want to upload (using `cd`)
 
 ```
 cd [folder]
 ```
 
-2B. Use `scp` with the recursive option (`-r`) to upload all of the files in that folder
+2. Use `scp` with the recursive option (`-r`) to upload all of the files in that folder
+    - Note that this uploads all of the files in the folder _not_ the folder itself so you may want to create a new folder on the server to upload your local folder's contents into.
 
 ```
 scp -r [folder] [user]@aurora.nceas.ucsb.edu:/[path/to/destination_folder/]
 ```
 
-- Note that this uploads all of the files in the folder *not* the folder itself so you may want to create a new folder on the server to upload your local folder's contents into.
+#### Download Many Files
 
-Finally, note that you can also *download* files from the server to your local machine by simply switching the order of the machines:
+You can also _download_ files from the server to your local machine by simply switching the order of the machines from how you upload many files to the server.
 
 ```
 scp [user]@aurora.nceas.ucsb.edu:/[path/to/server_folder/file_name] [local_folder] 
 ```
+:::
 
-#### CLI Option B: `sftp`
+#### Option B: `sftp`
 
-The `get` command can be used to *download* a file.
+:::{.panel-tabset}
+#### Download One File
+
+The `get` command can be used to _download_ a file.
 
 1. Connect to the server
 
@@ -237,12 +242,11 @@ cd [your_group_folder]
 ```
 
 3. If needed, continue using `cd` to get to the subfolder you want to access. Remember to "escape" any spaces in the folder name with backslashes!
+    - Note that most of the bash command will work, so you can use `ls` to list files and `pwd` to check your current path.
 
 ```
 cd [subfolder]
 ```
-
-Note that most of the bash command will work, so you can use `ls` to list files and `pwd` to check your current path.
 
 4. When you are in the folder containing the file(s) you want, download the file you want
 
@@ -250,14 +254,23 @@ Note that most of the bash command will work, so you can use `ls` to list files 
 get [file_name_server]
 ```
 
-5. You can also upload a local file to the server by using the `put` sFTP command
+5. When you are done downloading, close the connection to the server
+
+```
+exit
+```
+
+#### Upload One File
+
+1. You can also upload a local file to the server by using the `put` sFTP command
 
 ```
 put [file_name_local]
 ```
 
-6. When you are done downloading, close the connection to the server
+2. When you are done uploading, close the connection to the server
 
 ```
 exit
 ```
+:::
