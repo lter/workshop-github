@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -478,16 +481,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#what-is-a-branch" id="toc-what-is-a-branch" class="nav-link" data-scroll-target="#what-is-a-branch">What is a Branch?</a></li>
+  <li><a href="#what-is-a-branch" id="toc-what-is-a-branch" class="nav-link active" data-scroll-target="#what-is-a-branch">What is a Branch?</a></li>
   <li><a href="#branch-workflow-overview" id="toc-branch-workflow-overview" class="nav-link" data-scroll-target="#branch-workflow-overview">Branch Workflow Overview</a></li>
   <li><a href="#create-a-branch" id="toc-create-a-branch" class="nav-link" data-scroll-target="#create-a-branch">Create a Branch</a></li>
   <li><a href="#work-in-the-branch" id="toc-work-in-the-branch" class="nav-link" data-scroll-target="#work-in-the-branch">Work in the Branch</a></li>
   <li><a href="#merging-branches" id="toc-merging-branches" class="nav-link" data-scroll-target="#merging-branches">Merging Branches</a>
   <ul class="collapse">
   <li><a href="#open-merge-a-pull-request" id="toc-open-merge-a-pull-request" class="nav-link" data-scroll-target="#open-merge-a-pull-request">Open &amp; Merge a Pull Request</a></li>
-  <li><a href="#github-branch-housekeeping" id="toc-github-branch-housekeeping" class="nav-link" data-scroll-target="#github-branch-housekeeping">GitHub Branch Housekeeping</a></li>
-  <li><a href="#update-your-local-clone" id="toc-update-your-local-clone" class="nav-link" data-scroll-target="#update-your-local-clone">Update your Local Clone</a></li>
+  <li><a href="#github-post-merge-housekeeping" id="toc-github-post-merge-housekeeping" class="nav-link" data-scroll-target="#github-post-merge-housekeeping">GitHub Post-Merge Housekeeping</a></li>
+  <li><a href="#update-the-local-clone" id="toc-update-the-local-clone" class="nav-link" data-scroll-target="#update-the-local-clone">Update the Local Clone</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -517,15 +519,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Define</u> “branch” in the context of Git/GitHub</li>
 <li><u>Summarize</u> the main steps of a workflow that uses branches</li>
 <li><u>Create</u> a branch on an existing repository</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="what-is-a-branch" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-branch">What is a Branch?</h2>
 <p>A <strong>“branch”</strong> is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don’t want to risk damaging the version of your code that already works. Note that “branch” can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., “commit”, “push”, etc.).</p>
@@ -543,10 +557,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Once the two branches are merged on GitHub, go back to your local computer, manually change the branch to the main branch and pull (see <strong>Step 7</strong> below). This updates your local version of the main branch and avoids future problems.</p>
 <p>Given that most branches are not used again after they are merged, it is often a good housekeeping step to then <strong>delete</strong> your branch on GitHub and locally once you have successfully merged the pull request (see <strong>Steps 6 &amp; 8</strong> below). Note that in the below diagram step 6 and 8 occur on either side of step 7 but in truth they can both come after depending on your preference.</p>
 <p>However, deletion of the branch either locally or via GitHub <strong>must</strong> come <em>after</em> step 5!</p>
-<p>As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts (again, see “Appendix A: Conflicts”).</p>
-<p align="center">
-<img src="images/graphics/git-branch-workflow.png" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" width="75%">
-</p>
+<p>As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/graphics/git-branch-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/graphics/git-branch-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch"></a></p>
+</figure>
+</div>
 <p>Now we’ve gone over this big picture overview, let’s walk step-by-step through creating, working in and ultimately merging branches!</p>
 </section>
 <section id="create-a-branch" class="level2">
@@ -557,40 +573,44 @@ ul.task-list li input[type="checkbox"] {
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>To create a branch, click the <strong><span style="color:purple">purple</span></strong> button in the “Git” tab of RStudio that shows two rectangles connected by a diamond at right-angles from one another.</p>
-<p align="center">
-<img src="images/branches/rstudio-01_start.png" alt="Screen capture of RStudio" width="100%">
-</p>
+<p><a href="images/branches/rstudio-01_start.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/branches/rstudio-01_start.png" class="img-fluid" alt="Screen capture of RStudio"></a></p>
 <p>In the resulting dialogue box, <strong>give your new branch an informative name.</strong> In this example we haven’t given our new branch a great name but in a “real” repository you will greatly appreciate having concise but descriptive branch names. Once you’re happy with the name, <strong>click the “Create” button</strong> (you can ignore the other options and buttons on this dialogue box).</p>
-<p align="center">
-<img src="images/branches/rstudio-02_branch-details.png" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/rstudio-02_branch-details.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/branches/rstudio-02_branch-details.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the menu that opens when you click the purple 'create branch' button in RStudio. Includes a text field for the branch name as well as a some other checkboxes/options (that can be safely left at their default settings in many cases)"></a></p>
+</figure>
+</div>
 <p>This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.</p>
-<p align="center">
-<img src="images/branches/rstudio-03_branch-message.png" alt="Screenshot of the text returned when you create a branch in RStudio" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/rstudio-03_branch-message.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/branches/rstudio-03_branch-message.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the text returned when you create a branch in RStudio"></a></p>
+</figure>
+</div>
 <p>You may also notice that in your Git tab where previously it said “main” it now shows whatever name you chose for your branch.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>To begin, <strong>go to the “source control” section of Positron.</strong></p>
-<p align="center">
-<img src="images/branches/positron-01_start.png" alt="Screen capture of Positron" width="100%">
-</p>
+<p><a href="images/branches/positron-01_start.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/branches/positron-01_start.png" class="img-fluid" alt="Screen capture of Positron"></a></p>
 <p>To create a branch, <strong>hover over the “Changes” dropdown menu and click <code>...</code></strong> to expand the set of Git operations that are visible. From there, <strong>scroll down to “Branch” and click it.</strong> Finally, <strong>click “Create Branch…”.</strong></p>
-<p align="center">
-<img src="images/branches/positron-02_new-branch.png" alt="Screenshot of the dropdown menu in Positron for creating a new branch" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/positron-02_new-branch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/branches/positron-02_new-branch.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the dropdown menu in Positron for creating a new branch"></a></p>
+</figure>
+</div>
 <p>In the resulting field (top middle of Positron), <strong>give your new branch an informative name.</strong> In this example we haven’t given our new branch a great name but in a “real” repository you will greatly appreciate having concise but descriptive branch names. Once you’re happy with the name, <strong>hit the Enter key on your computer.</strong></p>
-<p align="center">
-<img src="images/branches/positron-03_branch-details.png" alt="Screenshot of the field in Positron where you type new branch names" width="100%">
-</p>
+<p><a href="images/branches/positron-03_branch-details.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/branches/positron-03_branch-details.png" class="img-fluid" alt="Screenshot of the field in Positron where you type new branch names"></a></p>
 <p>Now that you’ve made your new branch locally, you need to send it up to GitHub. Positron calls this “Publishing” but this isn’t conceptually different from any other sync/push–essentially you’re just letting GitHub know that you have a branch locally that it doesn’t have a record of yet. To publish the branch, <strong>click the “Publish Branch” button.</strong></p>
-<p align="center">
-<img src="images/branches/positron-04_publish-branch.png" alt="Screenshot of the Positron 'source control' pane where the 'Publish Branch' button is active" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/positron-04_publish-branch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/branches/positron-04_publish-branch.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the Positron 'source control' pane where the 'Publish Branch' button is active"></a></p>
+</figure>
+</div>
 <p>You’ll know that this worked when you look at the branch diagram in the bottom left corner of Positron’s source control menu. Note how the second commit from the top has the “origin/main” label while the top-most one has the label that matches whatever you named your new branch.</p>
-<p align="center">
-<img src="images/branches/positron-05_published.png" alt="Screenshot of the Positron 'source control' pane after a new branch has been published" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/positron-05_published.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/branches/positron-05_published.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the Positron 'source control' pane after a new branch has been published"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -613,46 +633,36 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="open-merge-a-pull-request">Open &amp; Merge a Pull Request</h3>
 <p>After you <span style="color:green">push</span>/sync your changes, GitHub should recognize this and automatically create a button at the top of your repository’s home page for you to start the process of creating a “pull request.” Pull requests are how you merge branches on GitHub and the entire process is conducted entirely in the browser so we’ll leave our IDEs until the pull request is completed.</p>
 <p>To start the branch merging process, <strong>click the “Compare &amp; pull request” button</strong></p>
-<p align="center">
-<img src="images/branches/github-01_pr-button.png" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/github-01_pr-button.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/branches/github-01_pr-button.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of a repository in GitHub where the 'compare and pull request' button is being offered because GitHub detected a push in the branch"></a></p>
+</figure>
+</div>
 <p>You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.</p>
 <p>Once you’re satisfied with your title and message, <strong>click the “Create pull request” button.</strong></p>
-<p align="center">
-<img src="images/branches/github-02_pr-details.png" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description" width="100%">
-</p>
+<p><a href="images/branches/github-02_pr-details.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/branches/github-02_pr-details.png" class="img-fluid" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description"></a></p>
 <p>That done, GitHub will send you to a page that looks very much like a Github issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.</p>
 <p>Those commits are hyperlinks in case you want to view the specific differences to files edited in this branch.</p>
 <p>Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to your IDE and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.</p>
 <p>You or your team can also post messages on a pull request as needed (see the text box at the bottom of the below picture).</p>
 <p>If you are ready to merge a pull request from your branch into the “main” branch <strong>click the “Merge pull request” button.</strong></p>
-<p align="center">
-<img src="images/branches/github-03_pr-open.png" alt="Screenshot of an open pull request on GitHub" width="100%">
-</p>
+<p><a href="images/branches/github-03_pr-open.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/branches/github-03_pr-open.png" class="img-fluid" alt="Screenshot of an open pull request on GitHub"></a></p>
 <p>GitHub will open another text box where you can add a commit message to your acceptance of the pull request. If whoever opened the pull request was sufficiently detailed in their opening comment(s) this may not need to be terribly detailed but it can’t hurt!</p>
 <p>Once your message is written, <strong>click the “Confirm merge” button.</strong></p>
-<p align="center">
-<img src="images/branches/github-04_pr-merge-message.png" alt="Screenshot of the menu that opens on GitHub when you click 'merge pull request' where you are prompted to add an optional description before clicking 'confirm merge'" width="100%">
-</p>
+<p><a href="images/branches/github-04_pr-merge-message.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/branches/github-04_pr-merge-message.png" class="img-fluid" alt="Screenshot of the menu that opens on GitHub when you click 'merge pull request' where you are prompted to add an optional description before clicking 'confirm merge'"></a></p>
 <p>Your pull request has now been merged! Now we need to do some minor housekeeping in GitHub that–fortunately–GitHub makes really accessible.</p>
 </section>
-<section id="github-branch-housekeeping" class="level3">
-<h3 class="anchored" data-anchor-id="github-branch-housekeeping">GitHub Branch Housekeeping</h3>
+<section id="github-post-merge-housekeeping" class="level3">
+<h3 class="anchored" data-anchor-id="github-post-merge-housekeeping">GitHub Post-Merge Housekeeping</h3>
 <p>Branches are meant to be short-lived and deleted once the specific purpose for which they were created has been accomplished. So, once the pull request is merged, we should <strong>click the “Delete branch” button.</strong> This will ensure that the number of active branches remains manageable and also will let you re-use branch names later on if you deem that necessary.</p>
-<p align="center">
-<img src="images/branches/github-05_pr-merged.png" alt="Screenshot of a closed pull request on GitHub with a 'delete branch' button provided" width="100%">
-</p>
+<p><a href="images/branches/github-05_pr-merged.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/branches/github-05_pr-merged.png" class="img-fluid" alt="Screenshot of a closed pull request on GitHub with a 'delete branch' button provided"></a></p>
 <p>After you click “Delete branch” it will be replaced by a “Restore branch” button so you could always reclaim it if the deletion was premature.</p>
-<p align="center">
-<img src="images/branches/github-06_pr-delete-branch.png" alt="Screenshot of a pull request on GitHub after the 'delete branch' button has been clicked and replaced by a 'restore branch' button" width="100%">
-</p>
+<p><a href="images/branches/github-06_pr-delete-branch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="images/branches/github-06_pr-delete-branch.png" class="img-fluid" alt="Screenshot of a pull request on GitHub after the 'delete branch' button has been clicked and replaced by a 'restore branch' button"></a></p>
 <p>Finally, if we return to the home page of the repository, we can see that the most recent commit is whatever we put in the pull request text field right before we merged it.</p>
-<p align="center">
-<img src="images/branches/github-07_repo-home.png" alt="Screenshot of a the home page of a GitHub repository where the most recent commit matches the pull request commit message from an earlier screen capture" width="100%">
-</p>
+<p><a href="images/branches/github-07_repo-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="images/branches/github-07_repo-home.png" class="img-fluid" alt="Screenshot of a the home page of a GitHub repository where the most recent commit matches the pull request commit message from an earlier screen capture"></a></p>
 </section>
-<section id="update-your-local-clone" class="level3">
-<h3 class="anchored" data-anchor-id="update-your-local-clone">Update your Local Clone</h3>
+<section id="update-the-local-clone" class="level3">
+<h3 class="anchored" data-anchor-id="update-the-local-clone">Update the Local Clone</h3>
 <p>Now that the branches have been merged on GitHub, we need to make sure our local clone gets those updates from GitHub. This is particularly important if our IDE is still in the branch we created earlier because–now that we’ve deleted the branch’s counterpart in Github–we’ll get an error if we attempt to push from that branch.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">In RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">In Positron</a></li></ul>
@@ -661,17 +671,23 @@ ul.task-list li input[type="checkbox"] {
 <section id="get-updates" class="level4">
 <h4 class="anchored" data-anchor-id="get-updates">Get Updates</h4>
 <p>First, in the top right corner of RStudio, <strong>click the active branch name and switch to back to the “main” branch.</strong> Note that you may want to close your open files before doing this, particularly if some files were created in the branch because they wouldn’t yet exist in the “main” branch locally (you merged on GitHub with the pull request but haven’t pulled those updates locally).</p>
-<p align="center">
-<img src="images/branches/post-branch_rstudio-01_switch.png" alt="Screenshot of the Git branch dropdown menu in RStudio" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_rstudio-01_switch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="images/branches/post-branch_rstudio-01_switch.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the Git branch dropdown menu in RStudio"></a></p>
+</figure>
+</div>
 <p>This should create a message that looks like the following image. You should <strong>ignore the part of the message telling you that your are up to date</strong>; you are not up to date with GitHub yet. The message is referring to the status of your local clone’s version of the “main” branch.</p>
-<p align="center">
-<img src="images/branches/post-branch_rstudio-02_switch-message.png" alt="Screenshot of the Git message in RStudio when switching branches" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_rstudio-02_switch-message.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="images/branches/post-branch_rstudio-02_switch-message.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the Git message in RStudio when switching branches"></a></p>
+</figure>
+</div>
 <p>Now that you’re back in the “main” branch, <strong>pull the latest changes from GitHub.</strong> You should receive all of the commits that you just merged via pull request earlier. This will create a message that is something like the following image–though of course it will list all changed files so it may be a longer message than what is pictured below if you edited more files.</p>
-<p align="center">
-<img src="images/branches/post-branch_rstudio-03_pull-main.png" alt="Screenshot of the Git message in RStudio when switching branches" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_rstudio-03_pull-main.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="images/branches/post-branch_rstudio-03_pull-main.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the Git message in RStudio when switching branches"></a></p>
+</figure>
+</div>
 </section>
 <section id="branch-housekeeping" class="level4">
 <h4 class="anchored" data-anchor-id="branch-housekeeping">Branch Housekeeping</h4>
@@ -680,28 +696,38 @@ ul.task-list li input[type="checkbox"] {
 <p>Once you’ve deleted that branch, you’ll need to “prune” your branches. The previous code deleted the local version of your branch but your IDE still ‘thinks’ that GitHub has an equivalent of the branch. To reduce the potential for confusion, <strong>prune your local clone with the following command line code.</strong> Just like branch deletion, this should code should be run in RStudio’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane.</p>
 <pre><code>git remote update origin --prune</code></pre>
 <p>You can confirm that these two lines of code worked as expected by clicking the “main” branch name in RStudio’s Git pane. The resulting dropdown of local and remote branches should only list the “main” branch under each sub-heading.</p>
-<p align="center">
-<img src="images/branches/post-branch_rstudio-06_confirm-prune.png" alt="Screenshot of the Git branch dropdown menu in RStudio" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_rstudio-06_confirm-prune.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="images/branches/post-branch_rstudio-06_confirm-prune.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the Git branch dropdown menu in RStudio"></a></p>
+</figure>
+</div>
 </section>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>First, in the “source control” part of Positron, <strong>hover over the “Changes” menu and click <code>...</code></strong> to expand the set of Git operations that are visible. In the resulting dropdown, <strong>scroll down and click “Checkout to…”.</strong> Note that you may want to close your open files before doing this, particularly if some files were created in the branch because they wouldn’t yet exist in the “main” branch locally (you merged on GitHub with the pull request but haven’t pulled those updates locally).</p>
-<p align="center">
-<img src="images/branches/post-branch_positron-01_switch.png" alt="Screenshot of the Git operations dropdown menu in Positron with the 'checkout to...' menu highlighted" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_positron-01_switch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="images/branches/post-branch_positron-01_switch.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the Git operations dropdown menu in Positron with the 'checkout to...' menu highlighted"></a></p>
+</figure>
+</div>
 <p>This should open up a list of the available branches in the top middle of Positron. <strong>Find the “main” branch in the list of available branches and click it.</strong></p>
-<p align="center">
-<img src="images/branches/post-branch_positron-02_switch-dest.png" alt="Screenshot of the Git operations dropdown menu in Positron" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_positron-02_switch-dest.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="images/branches/post-branch_positron-02_switch-dest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the Git operations dropdown menu in Positron"></a></p>
+</figure>
+</div>
 <p>Now that you’re back in the “main” branch, <strong>pull the latest changes from GitHub.</strong> You should receive all of the commits that you just merged via pull request earlier.</p>
-<p align="center">
-<img src="images/branches/post-branch_positron-03_pull.png" alt="Screenshot of the Git operations dropdown menu in Positron with the 'pull' menu highlighted" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_positron-03_pull.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="images/branches/post-branch_positron-03_pull.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the Git operations dropdown menu in Positron with the 'pull' menu highlighted"></a></p>
+</figure>
+</div>
 <p>You will know this was successful when you <strong>look at the branch diagram at the bottom of the “source control” menu</strong> and see that the line for your experimental branch now re-connects to the leftmost branch’s line.</p>
-<p align="center">
-<img src="images/branches/post-branch_positron-04_success.png" alt="Screenshot of the branch diagram in Positron's source control menu" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_positron-04_success.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="images/branches/post-branch_positron-04_success.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the branch diagram in Positron's source control menu"></a></p>
+</figure>
+</div>
 <section id="branch-housekeeping-1" class="level4">
 <h4 class="anchored" data-anchor-id="branch-housekeeping-1">Branch Housekeeping</h4>
 <p>Now that our “main” branch is updated, we need to do the same sort of branch housekeeping that we did in GitHub after merging the pull request. In Positron’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane, <strong>delete the finished branch with the following command line code.</strong> <em>Remember to replace “BRANCH_NAME” with whatever you named your branch!</em></p>
@@ -709,9 +735,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Once you’ve deleted that branch, you’ll need to “prune” your branches. The previous code deleted the local version of your branch but your IDE still ‘thinks’ that GitHub has an equivalent of the branch. To reduce the potential for confusion, <strong>prune your local clone with the following command line code.</strong> Just like branch deletion, this should code should be run in Positron’s <i class="fa-solid fa-terminal" aria-label="terminal"></i> “Terminal” pane.</p>
 <pre><code>git remote update origin --prune</code></pre>
 <p>You can confirm that these two lines of code worked as expected by clicking the “Checkout to…” button in the dropdown menu of Git operations. The resulting list of branches should only list the “main” branch under each sub-heading.</p>
-<p align="center">
-<img src="images/branches/post-branch_positron-05_confirm-prune.png" alt="Screenshot of the Git branch dropdown menu in Positron" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/branches/post-branch_positron-05_confirm-prune.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="images/branches/post-branch_positron-05_confirm-prune.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the Git branch dropdown menu in Positron"></a></p>
+</figure>
+</div>
 </section>
 </div>
 </div>
@@ -1193,6 +1221,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
