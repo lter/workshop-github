@@ -1,14 +1,18 @@
 ---
 title: "The .gitignore"
+lightbox: true
 ---
 
-## Module Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
 By the end of this module, you will be able to:
 
 - <u>Create</u> a ".gitignore" in a repository using a GitHub template
 - <u>Explain</u> the purpose of a ".gitignore" in collaborative projects
 - <u>Evaluate</u> the content you think might warrant adding to the ".gitignore"
+
+:::
 
 ## Overview
 
@@ -57,21 +61,15 @@ Taken together, **the following demonstration of how to use a ".gitignore" will 
 
 To begin, we can **check the Git pane of RStudio to confirm that Git does see "data.csv"** even though Git is not tracking it currently.
 
-<p align="center">
-<img src="images/ignore/rstudio-01_untracked-csv.png" alt="Screen capture of RStudio where the Git pane shows an untracked file named 'data.csv'" width="100%"/>
-</p>
+![](images/ignore/rstudio-01_untracked-csv.png){fig-alt="Screen capture of RStudio where the Git pane shows an untracked file named 'data.csv'"}
 
 With that confirmed, **click over to the "Files" pane.** Because the ".gitignore" file starts with a period, it is likely invisible to your standard file explorer program but RStudio's "Files" pane does see it and easily lets you interact with it.
 
-<p align="center">
-<img src="images/ignore/rstudio-02_files.png" alt="Screen capture of RStudio with the 'Files' pane open" width="100%"/>
-</p>
+![](images/ignore/rstudio-02_files.png){fig-alt="Screen capture of RStudio with the 'Files' pane open"}
 
 In the "Files" pane, **click the ".gitignore" to open it**. If you scroll through you can see that the template from GitHub includes a number of files, many of which you may never have seen (again, often because they start with a period and are thus not easily visible).
 
-<p align="center">
-<img src="images/ignore/rstudio-03_ignore-open.png" alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open" width="100%"/>
-</p>
+![](images/ignore/rstudio-03_ignore-open.png){fig-alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open"}
 
 While currently we only have "data.csv" in our working directory, we can safely assume that we don't want _any_ CSVs to be tracked by Git. So, rather than entering "data.csv" into the ".gitignore", let's **add a wildcard for _all_ CSVs by entering "\*.csv" at the bottom of the ".gitignore".** Note that in the below screen shot, we haven't saved our edits to the ".gitignore" so the "Git" pane still (1) shows "data.csv" and (2) _does not_ show any modifications to the ".gitignore".
 
@@ -81,35 +79,25 @@ While currently we only have "data.csv" in our working directory, we can safely 
 You can enter comments in the ".gitignore" in the same way you would in R/Python code: by adding a `#` to the start of the line. This can be helpful if you want to add small documentation of what is being ignored or why it is being ignored.
 :::
 
-<p align="center">
-<img src="images/ignore/rstudio-04_ignore-unsaved.png" alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open and edited but with unsaved changes" width="100%"/>
-</p>
+![](images/ignore/rstudio-04_ignore-unsaved.png){fig-alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open and edited but with unsaved changes"}
 
 Once you **save the edits to the ".gitignore"**, you'll notice that the Git pane automatically updates to (1) no longer show "data.csv" and (2) show that the ".gitignore" has been modified since the last commit. You can then **commit and push your edits to the ".gitignore" in the same way you would edits to any other file.**
 
-<p align="center">
-<img src="images/ignore/rstudio-05_ignore-saved.png" alt="Screen capture of RStudio where the Git pane shows un-committed edits to the '.gitignore'" width="100%"/>
-</p>
+![](images/ignore/rstudio-05_ignore-saved.png){fig-alt="Screen capture of RStudio where the Git pane shows un-committed edits to the '.gitignore'"}
 
 ### In Positron
 
 To begin, we can **check the "source control" pane of Positron to confirm that Git does see "data.csv"** even though Git is not tracking it currently.
 
-<p align="center">
-<img src="images/ignore/positron-01_untracked-csv.png" alt="Screen capture of Positron where the source control pane shows an untracked file named 'data.csv'" width="50%"/>
-</p>
+![](images/ignore/positron-01_untracked-csv.png){fig-alt="Screen capture of Positron where the source control pane shows an untracked file named 'data.csv'" fig-align="center" width="50%"}
 
 With that confirmed, **click over to the "Explorer" pane.** Because the ".gitignore" file starts with a period, it is likely invisible to your standard file explorer program but Positron's "Explorer" pane does see it and easily lets you interact with it.
 
-<p align="center">
-<img src="images/ignore/positron-02_files.png" alt="Screen capture of Positron with the 'Explorer' pane open" width="50%"/>
-</p>
+![](images/ignore/positron-02_files.png){fig-alt="Screen capture of Positron with the 'Explorer' pane open" fig-align="center" width="50%"}
 
 In the "Explorer" pane, **click the ".gitignore" to open it**. If you scroll through you can see that the template from GitHub includes a number of files, many of which you may never have seen (again, often because they start with a period and are thus not easily visible).
 
-<p align="center">
-<img src="images/ignore/positron-03_ignore-open.png" alt="Screen capture of Positron with the R template '.gitignore' from GitHub open" width="50%"/>
-</p>
+![](images/ignore/positron-03_ignore-open.png){fig-alt="Screen capture of Positron with the R template '.gitignore' from GitHub open" fig-align="center" width="50%"}
 
 While currently we only have "data.csv" in our working directory, we can safely assume that we don't want _any_ CSVs to be tracked by Git. So, rather than entering "data.csv" into the ".gitignore", let's **add a wildcard for _all_ CSVs by entering "\*.csv" at the bottom of the ".gitignore".** Note that in the below screen shot, we haven't saved our edits to the ".gitignore" so the "source control" pane still (1) shows "data.csv" and (2) _does not_ show any modifications to the ".gitignore".
 
@@ -119,15 +107,11 @@ While currently we only have "data.csv" in our working directory, we can safely 
 You can enter comments in the ".gitignore" in the same way you would in R/Python code: by adding a `#` to the start of the line. This can be helpful if you want to add small documentation of what is being ignored or why it is being ignored.
 :::
 
-<p align="center">
-<img src="images/ignore/positron-04_ignore-unsaved.png" alt="Screen capture of Positron with the R template '.gitignore' from GitHub open and edited but with unsaved changes" width="50%"/>
-</p>
+![](images/ignore/positron-04_ignore-unsaved.png){fig-alt="Screen capture of Positron with the R template '.gitignore' from GitHub open and edited but with unsaved changes" fig-align="center" width="50%"}
 
 Once you **save the edits to the ".gitignore"**, you'll notice that the source control pane automatically updates to (1) no longer show "data.csv" and (2) show that the ".gitignore" has been modified since the last commit. You can then **commit and push your edits to the ".gitignore" in the same way you would edits to any other file.**
 
-<p align="center">
-<img src="images/ignore/positron-05_ignore-saved.png" alt="Screen capture of Positron where the Git pane shows un-committed edits to the '.gitignore'" width="50%"/>
-</p>
+![](images/ignore/positron-05_ignore-saved.png){fig-alt="Screen capture of Positron where the Git pane shows un-committed edits to the '.gitignore'" fig-align="center" width="50%"}
 
 ::::
 
