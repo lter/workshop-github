@@ -2,13 +2,16 @@
 title: "GitHub Milestones"
 ---
 
-## Module Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
 By the end of this module, you will be able to:
 
 - <u>Define</u> what is a milestone in the context of GitHub
 - <u>Explain</u> how GitHub milestones can be useful
 - <u>Create</u> a new GitHub milestone in an existing repository
+
+:::
 
 ## What is a Milestone?
 

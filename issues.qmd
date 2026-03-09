@@ -2,13 +2,16 @@
 title: "GitHub Issues"
 ---
 
-## Module Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
 By the end of this module, you will be able to:
 
 - <u>Define</u> an issue in the context of GitHub
 - <u>Create</u> a new issue in an existing repository
 - <u>Explain</u> considerations for creating a useful, appropriately-scoped issue
+
+:::
 
 ## What is an Issue?
 

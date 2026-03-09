@@ -2,13 +2,16 @@
 title: "GitHub Projects"
 ---
 
-## Module Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
 By the end of this module, you will be able to:
 
 - <u>Define</u> a project in the context of GitHub
 - <u>Identify</u> the three available project view options
 - <u>Explain</u> how issues can get added to projects
+
+:::
 
 ## What is a Project?
 
