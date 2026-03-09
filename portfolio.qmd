@@ -17,11 +17,11 @@ By the end of this module, you will be able to:
 
 ## Why Use GitHub as a Portfolio?
 
-GitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work. A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you've accomplished as well! You can utilize GitHub's existing functionalities to curate your own portfolio. 
+GitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! **A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work.** A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you've accomplished as well! You can utilize GitHub's existing functionalities to curate your own portfolio. 
 
-## Strengthen your presence on GitHub
+## Strengthen Your GitHub Presence
 
-### Flesh out your profile
+### Customize Your Profile
 
 Filling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top right corner and go to "Your profile". 
 
@@ -35,9 +35,9 @@ There, you will have options to edit your icon, name, biography, pronouns, workp
 
 ![](images/portfolio/portfolio-profile-3.png){fig-alt="Screenshot of the user information on a GitHub profile where the 'edit' button has been clicked and all fields are edit-able" fig-align="center" width="30%"}
 
-Alternatively, you can also edit your profile by clicking on your icon in the top left corner to go to "Settings", then "Public profile". 
+Alternatively, you can also edit your profile by clicking on your icon in the top right corner to go to "Settings", then "Public profile". 
 
-### Pin repositories
+### Pin Repositories
 
 Additionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility to visitors. 
 
@@ -51,12 +51,13 @@ When you're picking out your top repositories we recommend including repositorie
 - Showcase a breadth of skills
 - Demonstrate significant expertise in a narrow range of skills
 - You're proud of / were significant to your career
+- You could paraphrase in an interview context
 
 ## Special README
 
-A fun secret feature of GitHub is that you can have a "special README" displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile. 
+A fun semi-secret feature of GitHub is that you can have a "special README" displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile.
 
-To get started, from your profile landing page, click on the ➕ button and select "New repository".
+To get started, from your profile landing page, click on the dropdown menu with a {{< fa plus >}} icon in the top right corner of your profile (just to the left of the profile circle) and select "New repository".
 
 ![](images/portfolio/portfolio-README-1.png){fig-alt="Screenshot of the dialogue menu for creating a new repository from the GitHub user's profile" fig-align="center" width="50%"}
 
@@ -82,7 +83,9 @@ You can add [emojis](https://docs.github.com/en/get-started/writing-on-github/ge
 
 ## Informative READMEs
 
-On a related note, an informative README **in each repository** is crucial to orienting your audience to the files in and purpose of each repository. It's good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the Scientific Computing team's guide to writing informative READMEs [here](https://lter.github.io/workshop-github/readmes.html)!
+On a related note, an informative README **in each repository** is crucial to orienting your audience to the files in and purpose of each repository. It's good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. 
+
+This workshop contains a module that is focused on this topic! Look for "Informative READMEs" in the sidebar on the left.
 
 ## How to Stand Out
 
@@ -92,13 +95,16 @@ If you act on the suggestions we've outlined above you will already be well on t
 
 Personal websites are a cool way to visually convey everything that goes into a portfolio--your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone's personal website rather than their GitHub profile. A further benefit of creating a personal website is that you will learn (and demonstrate!) a suite of additional skills that contribute to your portfolio in and of themselves.
 
-Although the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you're interested, check out the SciComp team's workshop on [building a website with Quarto](https://lter.github.io/workshop-quarto/). Also feel free to check out [Sam Csik](https://samanthacsik.github.io/)'s tutorials on how to [create](https://ucsb-meds.github.io/creating-quarto-websites/) and [customize](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) your website using [Quarto](https://quarto.org/). 
+Although the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you're interested, **check out the SciComp team's workshop on [building a website with Quarto](https://lter.github.io/workshop-quarto/).** Also feel free to check out [Sam Csik](https://samanthacsik.github.io/)'s tutorials on how to [create](https://ucsb-meds.github.io/creating-quarto-websites/) and [customize](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) your website using [Quarto](https://quarto.org/). 
 
 Since this will be a personal website deployed through [GitHub Pages](https://pages.github.com/), remember to name your Quarto project and GitHub repo: `<YOUR-GITHUB-USERNAME>.github.io`, replacing `<YOUR-GITHUB-USERNAME>` with your actual username. You're only allowed one user website with the github.io suffix. Follow the instructions in the linked tutorials to deploy the website via GitHub when you're done! If all goes well, your website will be live at: https://\<YOUR-GITHUB-USERNAME\>.github.io/
 
-If you're looking for some inspiration, check out Angel's ([angelchen7.github.io](https://angelchen7.github.io/)) and Nick's websites ([njlyon0.github.io](https://njlyon0.github.io/))!
+If you're looking for some inspiration, check out the personal websites of some members of the LTER SciComp team: 
 
-### Team up with Peers
+- Angel Chen - [angelchen7.github.io](https://angelchen7.github.io/)
+- Nick Lyon - [njlyon0.github.io](https://njlyon0.github.io/)
+
+### Team Up with Peers
 
 Within any career path some of the best people to get professional feedback from are your peers! Your colleagues have applied to the same types of positions that you have and often have crucial insight that can help you learn from both the successes and the pitfalls that they have encountered. In addition, they can a well-trained critical eye that can help you improve your portfolio in ways you may never have imagined by yourself.
 
