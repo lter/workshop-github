@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -478,8 +481,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#creating-a-.gitignore" id="toc-creating-a-.gitignore" class="nav-link" data-scroll-target="#creating-a-.gitignore">Creating a “.gitignore”</a></li>
   <li><a href="#using-a-.gitignore" id="toc-using-a-.gitignore" class="nav-link" data-scroll-target="#using-a-.gitignore">Using a “.gitignore”</a></li>
   <li><a href="#ignoring-previously-tracked-content" id="toc-ignoring-previously-tracked-content" class="nav-link" data-scroll-target="#ignoring-previously-tracked-content">Ignoring Previously Tracked Content</a></li>
@@ -518,15 +520,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Create</u> a “.gitignore” in a repository using a GitHub template</li>
 <li><u>Explain</u> the purpose of a “.gitignore” in collaborative projects</li>
 <li><u>Evaluate</u> the content you think might warrant adding to the “.gitignore”</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>A “.gitignore” is a file you can use to tell Git what <em>not</em> to track. <strong>Any file/folder whose name is in the “.gitignore” will not be tracked by Git.</strong> This is useful if you want to include data in your local version of your repository but don’t want to risk sharing that data by committing it to a public GitHub repository. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.</p>
@@ -562,17 +576,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>To begin, we can <strong>check the Git pane of RStudio to confirm that Git does see “data.csv”</strong> even though Git is not tracking it currently.</p>
-<p align="center">
-<img src="images/ignore/rstudio-01_untracked-csv.png" alt="Screen capture of RStudio where the Git pane shows an untracked file named 'data.csv'" width="100%">
-</p>
+<p><a href="images/ignore/rstudio-01_untracked-csv.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/ignore/rstudio-01_untracked-csv.png" class="img-fluid" alt="Screen capture of RStudio where the Git pane shows an untracked file named 'data.csv'"></a></p>
 <p>With that confirmed, <strong>click over to the “Files” pane.</strong> Because the “.gitignore” file starts with a period, it is likely invisible to your standard file explorer program but RStudio’s “Files” pane does see it and easily lets you interact with it.</p>
-<p align="center">
-<img src="images/ignore/rstudio-02_files.png" alt="Screen capture of RStudio with the 'Files' pane open" width="100%">
-</p>
+<p><a href="images/ignore/rstudio-02_files.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/ignore/rstudio-02_files.png" class="img-fluid" alt="Screen capture of RStudio with the 'Files' pane open"></a></p>
 <p>In the “Files” pane, <strong>click the “.gitignore” to open it</strong>. If you scroll through you can see that the template from GitHub includes a number of files, many of which you may never have seen (again, often because they start with a period and are thus not easily visible).</p>
-<p align="center">
-<img src="images/ignore/rstudio-03_ignore-open.png" alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open" width="100%">
-</p>
+<p><a href="images/ignore/rstudio-03_ignore-open.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/ignore/rstudio-03_ignore-open.png" class="img-fluid" alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open"></a></p>
 <p>While currently we only have “data.csv” in our working directory, we can safely assume that we don’t want <em>any</em> CSVs to be tracked by Git. So, rather than entering “data.csv” into the “.gitignore”, let’s <strong>add a wildcard for <em>all</em> CSVs by entering “*.csv” at the bottom of the “.gitignore”.</strong> Note that in the below screen shot, we haven’t saved our edits to the “.gitignore” so the “Git” pane still (1) shows “data.csv” and (2) <em>does not</em> show any modifications to the “.gitignore”.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -587,27 +595,29 @@ ul.task-list li input[type="checkbox"] {
 <p>You can enter comments in the “.gitignore” in the same way you would in R/Python code: by adding a <code>#</code> to the start of the line. This can be helpful if you want to add small documentation of what is being ignored or why it is being ignored.</p>
 </div>
 </div>
-<p align="center">
-<img src="images/ignore/rstudio-04_ignore-unsaved.png" alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open and edited but with unsaved changes" width="100%">
-</p>
+<p><a href="images/ignore/rstudio-04_ignore-unsaved.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/ignore/rstudio-04_ignore-unsaved.png" class="img-fluid" alt="Screen capture of RStudio with the R template '.gitignore' from GitHub open and edited but with unsaved changes"></a></p>
 <p>Once you <strong>save the edits to the “.gitignore”</strong>, you’ll notice that the Git pane automatically updates to (1) no longer show “data.csv” and (2) show that the “.gitignore” has been modified since the last commit. You can then <strong>commit and push your edits to the “.gitignore” in the same way you would edits to any other file.</strong></p>
-<p align="center">
-<img src="images/ignore/rstudio-05_ignore-saved.png" alt="Screen capture of RStudio where the Git pane shows un-committed edits to the '.gitignore'" width="100%">
-</p>
+<p><a href="images/ignore/rstudio-05_ignore-saved.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/ignore/rstudio-05_ignore-saved.png" class="img-fluid" alt="Screen capture of RStudio where the Git pane shows un-committed edits to the '.gitignore'"></a></p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>To begin, we can <strong>check the “source control” pane of Positron to confirm that Git does see “data.csv”</strong> even though Git is not tracking it currently.</p>
-<p align="center">
-<img src="images/ignore/positron-01_untracked-csv.png" alt="Screen capture of Positron where the source control pane shows an untracked file named 'data.csv'" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/ignore/positron-01_untracked-csv.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/ignore/positron-01_untracked-csv.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screen capture of Positron where the source control pane shows an untracked file named 'data.csv'"></a></p>
+</figure>
+</div>
 <p>With that confirmed, <strong>click over to the “Explorer” pane.</strong> Because the “.gitignore” file starts with a period, it is likely invisible to your standard file explorer program but Positron’s “Explorer” pane does see it and easily lets you interact with it.</p>
-<p align="center">
-<img src="images/ignore/positron-02_files.png" alt="Screen capture of Positron with the 'Explorer' pane open" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/ignore/positron-02_files.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/ignore/positron-02_files.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screen capture of Positron with the 'Explorer' pane open"></a></p>
+</figure>
+</div>
 <p>In the “Explorer” pane, <strong>click the “.gitignore” to open it</strong>. If you scroll through you can see that the template from GitHub includes a number of files, many of which you may never have seen (again, often because they start with a period and are thus not easily visible).</p>
-<p align="center">
-<img src="images/ignore/positron-03_ignore-open.png" alt="Screen capture of Positron with the R template '.gitignore' from GitHub open" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/ignore/positron-03_ignore-open.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/ignore/positron-03_ignore-open.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screen capture of Positron with the R template '.gitignore' from GitHub open"></a></p>
+</figure>
+</div>
 <p>While currently we only have “data.csv” in our working directory, we can safely assume that we don’t want <em>any</em> CSVs to be tracked by Git. So, rather than entering “data.csv” into the “.gitignore”, let’s <strong>add a wildcard for <em>all</em> CSVs by entering “*.csv” at the bottom of the “.gitignore”.</strong> Note that in the below screen shot, we haven’t saved our edits to the “.gitignore” so the “source control” pane still (1) shows “data.csv” and (2) <em>does not</em> show any modifications to the “.gitignore”.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -622,13 +632,17 @@ ul.task-list li input[type="checkbox"] {
 <p>You can enter comments in the “.gitignore” in the same way you would in R/Python code: by adding a <code>#</code> to the start of the line. This can be helpful if you want to add small documentation of what is being ignored or why it is being ignored.</p>
 </div>
 </div>
-<p align="center">
-<img src="images/ignore/positron-04_ignore-unsaved.png" alt="Screen capture of Positron with the R template '.gitignore' from GitHub open and edited but with unsaved changes" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/ignore/positron-04_ignore-unsaved.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/ignore/positron-04_ignore-unsaved.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screen capture of Positron with the R template '.gitignore' from GitHub open and edited but with unsaved changes"></a></p>
+</figure>
+</div>
 <p>Once you <strong>save the edits to the “.gitignore”</strong>, you’ll notice that the source control pane automatically updates to (1) no longer show “data.csv” and (2) show that the “.gitignore” has been modified since the last commit. You can then <strong>commit and push your edits to the “.gitignore” in the same way you would edits to any other file.</strong></p>
-<p align="center">
-<img src="images/ignore/positron-05_ignore-saved.png" alt="Screen capture of Positron where the Git pane shows un-committed edits to the '.gitignore'" width="50%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/ignore/positron-05_ignore-saved.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/ignore/positron-05_ignore-saved.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screen capture of Positron where the Git pane shows un-committed edits to the '.gitignore'"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -1150,6 +1164,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
