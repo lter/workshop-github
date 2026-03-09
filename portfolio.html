@@ -46,6 +46,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-764318607858309afd87bb640d38c024.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-5cf720dae406e52a69c0813258ef5a2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -476,19 +481,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
-  <li><a href="#why-use-github-as-a-portfolio" id="toc-why-use-github-as-a-portfolio" class="nav-link" data-scroll-target="#why-use-github-as-a-portfolio">Why Use GitHub as a Portfolio?</a></li>
-  <li><a href="#strengthen-your-presence-on-github" id="toc-strengthen-your-presence-on-github" class="nav-link" data-scroll-target="#strengthen-your-presence-on-github">Strengthen your presence on GitHub</a>
+  <li><a href="#why-use-github-as-a-portfolio" id="toc-why-use-github-as-a-portfolio" class="nav-link active" data-scroll-target="#why-use-github-as-a-portfolio">Why Use GitHub as a Portfolio?</a></li>
+  <li><a href="#strengthen-your-github-presence" id="toc-strengthen-your-github-presence" class="nav-link" data-scroll-target="#strengthen-your-github-presence">Strengthen Your GitHub Presence</a>
   <ul class="collapse">
-  <li><a href="#flesh-out-your-profile" id="toc-flesh-out-your-profile" class="nav-link" data-scroll-target="#flesh-out-your-profile">Flesh out your profile</a></li>
-  <li><a href="#pin-repositories" id="toc-pin-repositories" class="nav-link" data-scroll-target="#pin-repositories">Pin repositories</a></li>
+  <li><a href="#customize-your-profile" id="toc-customize-your-profile" class="nav-link" data-scroll-target="#customize-your-profile">Customize Your Profile</a></li>
+  <li><a href="#pin-repositories" id="toc-pin-repositories" class="nav-link" data-scroll-target="#pin-repositories">Pin Repositories</a></li>
   </ul></li>
   <li><a href="#special-readme" id="toc-special-readme" class="nav-link" data-scroll-target="#special-readme">Special README</a></li>
   <li><a href="#informative-readmes" id="toc-informative-readmes" class="nav-link" data-scroll-target="#informative-readmes">Informative READMEs</a></li>
   <li><a href="#how-to-stand-out" id="toc-how-to-stand-out" class="nav-link" data-scroll-target="#how-to-stand-out">How to Stand Out</a>
   <ul class="collapse">
   <li><a href="#create-a-personal-website" id="toc-create-a-personal-website" class="nav-link" data-scroll-target="#create-a-personal-website">Create a Personal Website</a></li>
-  <li><a href="#team-up-with-peers" id="toc-team-up-with-peers" class="nav-link" data-scroll-target="#team-up-with-peers">Team up with Peers</a></li>
+  <li><a href="#team-up-with-peers" id="toc-team-up-with-peers" class="nav-link" data-scroll-target="#team-up-with-peers">Team Up with Peers</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/workshop-github/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -518,8 +522,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="module-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Explain</u> the benefits of using GitHub as a portfolio</li>
@@ -527,74 +541,84 @@ ul.task-list li input[type="checkbox"] {
 <li><u>Create</u> a “special README” on your profile</li>
 <li><u>Add</u> informative READMEs to your repositories</li>
 </ul>
-</section>
+</div>
+</div>
+</div>
 <section id="why-use-github-as-a-portfolio" class="level2">
 <h2 class="anchored" data-anchor-id="why-use-github-as-a-portfolio">Why Use GitHub as a Portfolio?</h2>
-<p>GitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work. A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you’ve accomplished as well! You can utilize GitHub’s existing functionalities to curate your own portfolio.</p>
+<p>GitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! <strong>A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work.</strong> A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you’ve accomplished as well! You can utilize GitHub’s existing functionalities to curate your own portfolio.</p>
 </section>
-<section id="strengthen-your-presence-on-github" class="level2">
-<h2 class="anchored" data-anchor-id="strengthen-your-presence-on-github">Strengthen your presence on GitHub</h2>
-<section id="flesh-out-your-profile" class="level3">
-<h3 class="anchored" data-anchor-id="flesh-out-your-profile">Flesh out your profile</h3>
-<p>Filling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top left corner and go to “Your profile”.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-profile-1.png" alt="Screenshot of the sidebar of GitHub where a user can navigate among different facets of their GitHub presence" width="30%">
-</p>
+<section id="strengthen-your-github-presence" class="level2">
+<h2 class="anchored" data-anchor-id="strengthen-your-github-presence">Strengthen Your GitHub Presence</h2>
+<section id="customize-your-profile" class="level3">
+<h3 class="anchored" data-anchor-id="customize-your-profile">Customize Your Profile</h3>
+<p>Filling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top right corner and go to “Your profile”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/portfolio/portfolio-profile-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/portfolio/portfolio-profile-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%" alt="Screenshot of the sidebar of GitHub where a user can navigate among different facets of their GitHub presence"></a></p>
+</figure>
+</div>
 <p>Then select “Edit profile” on the right hand panel.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-profile-2.png" alt="Screenshot of the user information on the left side of the Github profile window" width="30%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/portfolio/portfolio-profile-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/portfolio/portfolio-profile-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%" alt="Screenshot of the user information on the left side of the Github profile window"></a></p>
+</figure>
+</div>
 <p>There, you will have options to edit your icon, name, biography, pronouns, workplace, location, website, and social media accounts. If you have links to other websites that contain your work, it’s a good idea to cross-reference them here so people can find you elsewhere.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-profile-3.png" alt="Screenshot of the user information on a GitHub profile where the 'edit' button has been clicked and all fields are edit-able" width="30%">
-</p>
-<p>Alternatively, you can also edit your profile by clicking on your icon in the top left corner to go to “Settings”, then “Public profile”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/portfolio/portfolio-profile-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/portfolio/portfolio-profile-3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%" alt="Screenshot of the user information on a GitHub profile where the 'edit' button has been clicked and all fields are edit-able"></a></p>
+</figure>
+</div>
+<p>Alternatively, you can also edit your profile by clicking on your icon in the top right corner to go to “Settings”, then “Public profile”.</p>
 </section>
 <section id="pin-repositories" class="level3">
-<h3 class="anchored" data-anchor-id="pin-repositories">Pin repositories</h3>
+<h3 class="anchored" data-anchor-id="pin-repositories">Pin Repositories</h3>
 <p>Additionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility to visitors.</p>
 <p>To choose which repositories to pin, navigate to the “Your profile” tab again and click “Customize your pins”. Once you’ve pinned the repositories you particularly want to highlight you can reorder your pinned repos by dragging the 6 dots at the top right corner.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-pinned.png" alt="Screenshot of the pinned repositories for a user where the grid of six squares in the top right of one of the pinned repositories is circled in red" width="100%">
-</p>
+<p><a href="images/portfolio/portfolio-pinned.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/portfolio/portfolio-pinned.png" class="img-fluid" alt="Screenshot of the pinned repositories for a user where the grid of six squares in the top right of one of the pinned repositories is circled in red"></a></p>
 <p>When you’re picking out your top repositories we recommend including repositories that:</p>
 <ul>
 <li>You’re excited about (passion is always worth highlighting!)</li>
 <li>Showcase a breadth of skills</li>
 <li>Demonstrate significant expertise in a narrow range of skills</li>
 <li>You’re proud of / were significant to your career</li>
+<li>You could paraphrase in an interview context</li>
 </ul>
 </section>
 </section>
 <section id="special-readme" class="level2">
 <h2 class="anchored" data-anchor-id="special-readme">Special README</h2>
-<p>A fun secret feature of GitHub is that you can have a “special README” displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile.</p>
-<p>To get started, from your profile landing page, click on the ➕ button and select “New repository”.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-README-1.png" alt="Screenshot of the dialogue menu for creating a new repository from the GitHub user's profile" width="50%">
-</p>
+<p>A fun semi-secret feature of GitHub is that you can have a “special README” displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile.</p>
+<p>To get started, from your profile landing page, click on the dropdown menu with a <i class="fa-solid fa-plus" aria-label="plus"></i> icon in the top right corner of your profile (just to the left of the profile circle) and select “New repository”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/portfolio/portfolio-README-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/portfolio/portfolio-README-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Screenshot of the dialogue menu for creating a new repository from the GitHub user's profile"></a></p>
+</figure>
+</div>
 <p>Name your new repo the same name as your username. A notification should pop up indicating that you’re creating a special repo.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-README-2.png" alt="Screenshot of the new repository menu in GitHub where GitHub is adding a dialogue indicating the repository is 'special' because its name matches the user's name" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/portfolio/portfolio-README-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/portfolio/portfolio-README-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of the new repository menu in GitHub where GitHub is adding a dialogue indicating the repository is 'special' because its name matches the user's name"></a></p>
+</figure>
+</div>
 <p>Feel free to write an optional description. Set the repo visibility to public and make sure to check the box to initialize the repo with a README file. Click on the “Create repository” button once you’re done!</p>
-<p align="center">
-<img src="images/portfolio/portfolio-README-3.png" alt="Screenshot of making the special repository where the 'add a README' box is checked but no other fields are changed from their defaults" width="80%">
-</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/portfolio/portfolio-README-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/portfolio/portfolio-README-3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Screenshot of making the special repository where the 'add a README' box is checked but no other fields are changed from their defaults"></a></p>
+</figure>
+</div>
 <p>This is what the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the “Edit README” button to get started. Note that you <em>could</em> clone the special repo and edit from whatever code/text editor you prefer but given that the only editing you’ll do is to a markdown file that seems excessive to us.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-README-4.png" alt="Screenshot of a user's special repository after it has been created and the README contains only default content" width="100%">
-</p>
+<p><a href="images/portfolio/portfolio-README-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/portfolio/portfolio-README-4.png" class="img-fluid" alt="Screenshot of a user's special repository after it has been created and the README contains only default content"></a></p>
 <p>GitHub will have already populated README.md with a template that you can use as a starting point. Edit this Markdown file to your own liking. Here is a <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github">handy guide</a> on formatting your text if you are not familiar with Markdown syntax.</p>
 <p>Some nice sections to include in your README.md are an “About me” section that gives a background on your work and interests, a contributions/achievements section, and a section on any other communities you’re involved in.</p>
-<p align="center">
-<img src="images/portfolio/portfolio-README-5.png" alt="Screenshot of a special repository's README where invisible elements are revealed by editing the file" width="100%">
-</p>
+<p><a href="images/portfolio/portfolio-README-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/portfolio/portfolio-README-5.png" class="img-fluid" alt="Screenshot of a special repository's README where invisible elements are revealed by editing the file"></a></p>
 <p>You can add <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emoji">emojis</a>, <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images">images and GIFs</a> so have fun editing your special README.</p>
 </section>
 <section id="informative-readmes" class="level2">
 <h2 class="anchored" data-anchor-id="informative-readmes">Informative READMEs</h2>
-<p>On a related note, an informative README <strong>in each repository</strong> is crucial to orienting your audience to the files in and purpose of each repository. It’s good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the Scientific Computing team’s guide to writing informative READMEs <a href="https://lter.github.io/workshop-github/readmes.html">here</a>!</p>
+<p>On a related note, an informative README <strong>in each repository</strong> is crucial to orienting your audience to the files in and purpose of each repository. It’s good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike.</p>
+<p>This workshop contains a module that is focused on this topic! Look for “Informative READMEs” in the sidebar on the left.</p>
 </section>
 <section id="how-to-stand-out" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-stand-out">How to Stand Out</h2>
@@ -602,12 +626,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="create-a-personal-website" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-personal-website">Create a Personal Website</h3>
 <p>Personal websites are a cool way to visually convey everything that goes into a portfolio–your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone’s personal website rather than their GitHub profile. A further benefit of creating a personal website is that you will learn (and demonstrate!) a suite of additional skills that contribute to your portfolio in and of themselves.</p>
-<p>Although the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you’re interested, check out the SciComp team’s workshop on <a href="https://lter.github.io/workshop-quarto/">building a website with Quarto</a>. Also feel free to check out <a href="https://samanthacsik.github.io/">Sam Csik</a>’s tutorials on how to <a href="https://ucsb-meds.github.io/creating-quarto-websites/">create</a> and <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">customize</a> your website using <a href="https://quarto.org/">Quarto</a>.</p>
+<p>Although the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you’re interested, <strong>check out the SciComp team’s workshop on <a href="https://lter.github.io/workshop-quarto/">building a website with Quarto</a>.</strong> Also feel free to check out <a href="https://samanthacsik.github.io/">Sam Csik</a>’s tutorials on how to <a href="https://ucsb-meds.github.io/creating-quarto-websites/">create</a> and <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">customize</a> your website using <a href="https://quarto.org/">Quarto</a>.</p>
 <p>Since this will be a personal website deployed through <a href="https://pages.github.com/">GitHub Pages</a>, remember to name your Quarto project and GitHub repo: <code>&lt;YOUR-GITHUB-USERNAME&gt;.github.io</code>, replacing <code>&lt;YOUR-GITHUB-USERNAME&gt;</code> with your actual username. You’re only allowed one user website with the github.io suffix. Follow the instructions in the linked tutorials to deploy the website via GitHub when you’re done! If all goes well, your website will be live at: https://&lt;YOUR-GITHUB-USERNAME&gt;.github.io/</p>
-<p>If you’re looking for some inspiration, check out Angel’s (<a href="https://angelchen7.github.io/">angelchen7.github.io</a>) and Nick’s websites (<a href="https://njlyon0.github.io/">njlyon0.github.io</a>)!</p>
+<p>If you’re looking for some inspiration, check out the personal websites of some members of the LTER SciComp team:</p>
+<ul>
+<li>Angel Chen - <a href="https://angelchen7.github.io/">angelchen7.github.io</a></li>
+<li>Nick Lyon - <a href="https://njlyon0.github.io/">njlyon0.github.io</a></li>
+</ul>
 </section>
 <section id="team-up-with-peers" class="level3">
-<h3 class="anchored" data-anchor-id="team-up-with-peers">Team up with Peers</h3>
+<h3 class="anchored" data-anchor-id="team-up-with-peers">Team Up with Peers</h3>
 <p>Within any career path some of the best people to get professional feedback from are your peers! Your colleagues have applied to the same types of positions that you have and often have crucial insight that can help you learn from both the successes and the pitfalls that they have encountered. In addition, they can a well-trained critical eye that can help you improve your portfolio in ways you may never have imagined by yourself.</p>
 <p>Once you have a draft portfolio, share it with your peers, advisers, and mentors for feedback. Write down their suggestions and act on all of the ones that seem reasonable to you. If you’d like, repeat this process of iterative revision for as long as you feel that it is needed! It may also make sense to gather other peers without GitHub portfolios into a journal club-style group and meet regularly to develop and critique one another’s materials.</p>
 
@@ -1087,6 +1115,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
