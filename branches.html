@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:title" content="Branches – SciComp Workshop - Collaborative Coding with GitHub">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://lter.github.io/workshop-github/images/graphics/git-branch-workflow.png">
-<meta name="twitter:image:alt" content="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch">
+<meta name="twitter:image:alt" content="Graphic demonstrating the process of using branches on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch">
 <meta name="twitter:image-height" content="1374">
 <meta name="twitter:image-width" content="1876">
 <meta name="twitter:card" content="summary_large_image">
@@ -560,14 +560,14 @@ ul.task-list li input[type="checkbox"] {
 <p>As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/graphics/git-branch-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/graphics/git-branch-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%" alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch"></a></p>
+<p><a href="images/graphics/git-branch-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/graphics/git-branch-workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%" alt="Graphic demonstrating the process of using branches on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch"></a></p>
 </figure>
 </div>
 <p>Now we’ve gone over this big picture overview, let’s walk step-by-step through creating, working in and ultimately merging branches!</p>
 </section>
 <section id="create-a-branch" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-branch">Create a Branch</h2>
-<p><strong><em>Before</em> you create a branch, <span style="color:blue">pull</span> from/sync with GitHub</strong> as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your banch and want to merge it back into the main flow of your repository.</p>
+<p><strong><em>Before</em> you create a branch, <span style="color:blue">pull</span> from/sync with GitHub</strong> as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your branch and want to merge it back into the main flow of your repository.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">In RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">In Positron</a></li></ul>
 <div class="tab-content">
@@ -641,7 +641,7 @@ ul.task-list li input[type="checkbox"] {
 <p>You will then be prompted to write a title and message for your pull request to give some broader context for what the branch does. This is especially valuable if you are not the one reviewing pull requests as this can help someone quickly familiarize themselves with what you have done.</p>
 <p>Once you’re satisfied with your title and message, <strong>click the “Create pull request” button.</strong></p>
 <p><a href="images/branches/github-02_pr-details.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/branches/github-02_pr-details.png" class="img-fluid" alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description"></a></p>
-<p>That done, GitHub will send you to a page that looks very much like a Github issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.</p>
+<p>That done, GitHub will send you to a page that looks very much like a GitHub issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.</p>
 <p>Those commits are hyperlinks in case you want to view the specific differences to files edited in this branch.</p>
 <p>Note also that if you realize you forgot to do something in your branch (or if someone asks you change something) you can return to your IDE and commit/pull/push and it will automatically update on the pull request. Pull requests are for merging a whole branch, not for merging just a part of the work in the branch.</p>
 <p>You or your team can also post messages on a pull request as needed (see the text box at the bottom of the below picture).</p>
@@ -663,7 +663,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="update-the-local-clone" class="level3">
 <h3 class="anchored" data-anchor-id="update-the-local-clone">Update the Local Clone</h3>
-<p>Now that the branches have been merged on GitHub, we need to make sure our local clone gets those updates from GitHub. This is particularly important if our IDE is still in the branch we created earlier because–now that we’ve deleted the branch’s counterpart in Github–we’ll get an error if we attempt to push from that branch.</p>
+<p>Now that the branches have been merged on GitHub, we need to make sure our local clone gets those updates from GitHub. This is particularly important if our IDE is still in the branch we created earlier because–now that we’ve deleted the branch’s counterpart in GitHub–we’ll get an error if we attempt to push from that branch.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">In RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">In Positron</a></li></ul>
 <div class="tab-content">
