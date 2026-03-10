@@ -3,6 +3,8 @@
 This reflects the current state of the repository. Changes from the preceding version/GitHub release are listed here as they are made.
 
 - Added configuration of GitHub username and email with `usethis::use_git_config` to RStudio preparation steps
+- Overhauled GitHub issue and project modules to reflect newly-available features and current LTER guidance
+- Added "lightbox effect" to all images so they can be clicked to zoom in
 
 ## Version 2.0
 
