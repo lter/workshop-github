@@ -9,6 +9,7 @@ lightbox: true
 By the end of this module, you will be able to:
 
 - <u>Define</u> a project in the context of GitHub
+- <u>Explain</u> in what contexts Projects are useful
 - <u>Identify</u> the three available project view options
 - <u>Explain</u> how issues can get added to projects
 
@@ -16,15 +17,25 @@ By the end of this module, you will be able to:
 
 ## What is a Project?
 
-Projects are GitHub's primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. **A project acts as an umbrella that includes many issues** and tracks their inter-relationships and where they fit in a bigger-picture view of a project.
+Projects are GitHub's primary _strategic_ project management tool. While issues can be very useful for particular tasks at a tactical, on-the-ground level, they are less valuable for making larger-scale plans and tracking evolving priorities. **A project acts as an umbrella that includes many issues** and tracks their inter-relationships and where they fit in a bigger-picture view of a project.
+
+## Using Projects
+
+Projects can be super useful, but they also include a non-trivial amount of setup and maintenance. So, **you should use a GitHub Project _only_ if <u>most</u> of the following applies to you:**
+
+1. You use issues _extensively_
+2. You have at least three repositories, all with their own issues
+3. Project management is exciting to you
+
+At the LTER SciComp team we use Projects extensively, but that's because all three of those statements apply to us! For many working groups, **using issues and issue metadata can be enough for the scale of their project.** However, if you do decide you want to use Projects, check out the information contained in this module!
 
 ## Project Ownership
 
-Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the project. The list of all projects owned by an Organization/User can be accessed via the "projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
+**Projects can only be owned by a particular user or an organization.** In either case, any number of users can be allowed access to the project. The list of all projects owned by an organization/user can be accessed via the "projects" tab. Note that this tab's name is consistent for users and organizations; organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
 
 ![](images/projects/projects-1-org.png){fig-alt="Screenshot of the 'projects' tab of a GitHub organization"}
 
-Once a project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository ("lter-sparc-soil-p").
+Once a project has been created, **it can be "linked" to any number of repositories owned by the same entity.** This can be done from the "Projects" tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository owned by the LTER GitHub organization.
 
 ![](images/projects/projects-2-linking.png){fig-alt="Screenshot of the 'projects' tab of a particular repository"}
 
