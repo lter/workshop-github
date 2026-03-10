@@ -498,6 +498,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#working-group-use-cases-for-nesting-issues" id="toc-working-group-use-cases-for-nesting-issues" class="nav-link" data-scroll-target="#working-group-use-cases-for-nesting-issues">Working Group Use-Cases for Nesting Issues</a></li>
   </ul></li>
+  <li><a href="#value-of-issue-numbers" id="toc-value-of-issue-numbers" class="nav-link" data-scroll-target="#value-of-issue-numbers">Value of Issue Numbers</a></li>
   <li><a href="#closing-an-issue" id="toc-closing-an-issue" class="nav-link" data-scroll-target="#closing-an-issue">Closing an Issue</a></li>
   <li><a href="#appropriate-issue-scope" id="toc-appropriate-issue-scope" class="nav-link" data-scroll-target="#appropriate-issue-scope">Appropriate Issue Scope</a></li>
   </ul>
@@ -765,10 +766,29 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
+<section id="value-of-issue-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="value-of-issue-numbers">Value of Issue Numbers</h2>
+<p>Earlier in this module, we promised to get into why the unique number of each issue is useful. Simply put, <strong>you can reference issues in commits or in other issue by using their number!</strong></p>
+<p>When you make a commit, add a hashtag/pound sign (<code>#</code>) and the number of the issue that you want to reference. This will have two key results.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Issue Linked to Commit</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Commit Appears in Issue</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Most directly, the <strong>issue number in the commit message on GitHub will become a hyperlink to that issue.</strong> Anywhere the commit appears (on GitHub), the issue will be linked and easily findable.</p>
+<p><a href="images/issues/number-ref_01-commit.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="images/issues/number-ref_01-commit.png" class="img-fluid" alt="Screenshot of a GitHub repository where the most recent commit has an issue number that is a hyperlink"></a></p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>The other feature is a little less obvious in the moment but wonderful for documenting how issues and code edits can be in conversation with one another. The <strong>commit message will show up in the comment history of the issue.</strong> So, when you are scrolling through the comments of an issue, commits that reference that issue will be visible and in chronological order with the comments. So if one comment said “can you fix this?” there could be a commit immediately below it where the commit message is “fixed per #12”.</p>
+<p><a href="images/issues/number-ref_02-issue.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="images/issues/number-ref_02-issue.png" class="img-fluid" alt="Screenshot of a commit message in the history of an issue because it included that issue's number"></a></p>
+</div>
+</div>
+</div>
+<p><strong>By leveraging this feature, you can greatly simplify your commit messages</strong> because you can be confident that some of the necessary context and rationale are described in the issue and so do not need to be re-hashed in your commit message.</p>
+</section>
 <section id="closing-an-issue" class="level2">
 <h2 class="anchored" data-anchor-id="closing-an-issue">Closing an Issue</h2>
 <p>When you’re done with an issue, simply click the “Close issue” button. It will still be findable in your repository, it just won’t show up by default when you go to the “Issues tab”. In order to see all the closed issues on a repository, simply <strong>click the Closed</strong> button in the top left of the “Issues” tab of the relevant repository.</p>
-<p><a href="images/issues/closed-issues.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="images/issues/closed-issues.png" class="img-fluid" alt="Screenshot of the closed issues section of a repository in GitHub"></a></p>
+<p><a href="images/issues/closed-issues.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="images/issues/closed-issues.png" class="img-fluid" alt="Screenshot of the closed issues section of a repository in GitHub"></a></p>
 <p>So, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents! This greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents.</p>
 </section>
 <section id="appropriate-issue-scope" class="level2">

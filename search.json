@@ -773,6 +773,17 @@
     ]
   },
   {
+    "objectID": "issues.html#value-of-issue-numbers",
+    "href": "issues.html#value-of-issue-numbers",
+    "title": "GitHub Issues",
+    "section": "Value of Issue Numbers",
+    "text": "Value of Issue Numbers\nEarlier in this module, we promised to get into why the unique number of each issue is useful. Simply put, you can reference issues in commits or in other issue by using their number!\nWhen you make a commit, add a hashtag/pound sign (#) and the number of the issue that you want to reference. This will have two key results.\n\nIssue Linked to CommitCommit Appears in Issue\n\n\nMost directly, the issue number in the commit message on GitHub will become a hyperlink to that issue. Anywhere the commit appears (on GitHub), the issue will be linked and easily findable.\n\n\n\nThe other feature is a little less obvious in the moment but wonderful for documenting how issues and code edits can be in conversation with one another. The commit message will show up in the comment history of the issue. So, when you are scrolling through the comments of an issue, commits that reference that issue will be visible and in chronological order with the comments. So if one comment said “can you fix this?” there could be a commit immediately below it where the commit message is “fixed per #12”.\n\n\n\n\nBy leveraging this feature, you can greatly simplify your commit messages because you can be confident that some of the necessary context and rationale are described in the issue and so do not need to be re-hashed in your commit message.",
+    "crumbs": [
+      "Project Management",
+      "GitHub Issues"
+    ]
+  },
+  {
     "objectID": "issues.html#closing-an-issue",
     "href": "issues.html#closing-an-issue",
     "title": "GitHub Issues",
