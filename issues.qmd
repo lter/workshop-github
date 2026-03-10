@@ -54,7 +54,7 @@ If we look just above the first issue we can see that 10 issues are "open" (i.e.
 
 ### What If There Aren't Any Issues?
 
-If you click into the 'Issues' tab of a repository that doesn't have any, you'll get a screen like the following screen capture. Not that other than the absence of issues, the screen looks the same as when their are issues (i.e., the same buttons and search/filter fields are available to you).
+If you click into the 'Issues' tab of a repository that doesn't have any, you'll get a screen like the following screen capture. Note that other than the absence of issues, the screen looks the same as when there are issues (i.e., the same buttons and search/filter fields are still available).
 
 ![](images/issues/find-issue_03-no-issues.png){fig-alt="Screenshot of the 'issues' tab of a GitHub repository with no issues (either open or closed)"}
 
@@ -65,13 +65,13 @@ Let's open a new issue to demonstrate some of the useful features they provide. 
 :::{.callout-important icon="false" collapse="true"}
 ### "Meta" Screenshot Acknowledgement
 
-You may recognize that the issue used in this demo is about improving the module you are currently working through. We hope that isn't distracting but it felt more efficient to improve this module and document the process for use in it at the same time than invent a fake issue while also needing to document our process for improving this issue.
+You may recognize that the issue used in this demo is about improving the module you are currently working through. We hope that isn't distracting but it felt more efficient to improve this module and document the process for use in it at the same time than invent a fake issue while also needing to document our process for improving this part of the workshop.
 
 :::
 
 ![](images/issues/make-issue_01-title.png){fig-alt="Screenshot of the dialog menu in GitHub when you start to create a new issue with only a title filled out" fig-align="center" width="75%"}
 
-Clicking "Create" should automatically redirect you to the page for your new issue. It will automatically be given a unique (to this repository) number (we'll get to why that's useful later) that you can see next to the issue's title at the top of the screen.
+Clicking "Create" should automatically redirect you to the page for your new issue. It will automatically be given a unique (to this repository) number that you can see next to the issue's title at the top of the screen. We'll get to why the issue number is useful later.
 
 **There are two main categories of useful information in an issue: comments and metadata.** Comments take up the majority of the horizontal area (see the wide left column) while metadata information occupies a thin column on the right side of the screen.
 
@@ -86,9 +86,9 @@ The three facets of an issue's metadata that you're most likely to use are:
 1. Assignees
     - These people will get email notifications of all activity in the issue
 2. Labels
-    - Categorical descriptors for what kind of issue this is. These can be customized and have been heavily customized in the screen captures to fllow
+    - Categorical descriptors for what kind of issue this is. These can be customized and have been heavily customized in the screen captures to follow
 3. Type
-    - An interesting level one step "above" labels. The example below uses the Agile software development framework, but--like labels--you can customize these to fit your group's needs (for more info on Agile see [here](https://en.wikipedia.org/wiki/Agile_software_development))
+    - An interesting step one level "above" labels. The example below uses the Agile software development framework, but--like labels--you can customize these to fit your group's needs (for more info on Agile see [here](https://en.wikipedia.org/wiki/Agile_software_development))
 
 Let's customize those three fields for the issue we just opened. To customize any part of issue metadata **click the gear icon to the right of the field you want to edit.** That will open a list of possible options for that field so you can just choose the one(s) that apply to this issue. After you've selected some information for the issue's metadata, your siderbar might look like the screen capture below.
 
@@ -107,23 +107,23 @@ After you've edited your issue's first comment it might look something like this
 
 #### Markdown 'Behind the Scenes'
 
-This is the 'back end' of the issue displayed in the other tabset panel. Note the Markdown tricks being applied to for both form and function purposes.
+This is the 'back end' of the issue displayed in the other tabset panel. Note the Markdown tricks being applied for both form and function purposes.
 
 ![](images/issues/make-issue_04-comment-back.png){fig-alt="Screenshot of an issue comment being edited with Markdown syntax"}
 
 :::
 
-While issue comments are completely free for you to use as you see fit, it is important to remember that **your most frequent collaborator is yourself in the future** so a future version of yourself will absolutely thank you for including as much useful context as possible. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.
+While issue comments are completely free for you to use as you see fit, it is important to remember that _your most frequent collaborator is yourself in the future_ so a future version of yourself will absolutely thank you if you **include as much useful context as possible.** In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.
 
 ### Inter-Issue Relationships
 
-While technically a facet of the metadata, it is worthwhile to make some specific time to discuss issue "relationships." Once you have a number of issues open, it's likely that a number of them will be related! Possibly because one requires another to be completed before it can be started or maybe a number of small tasks all support a single, larger task.
+While technically a facet of the metadata, it is worthwhile to make some specific time to discuss issue "relationships." Once you have a number of issues open, it's likely that some of them will be related! Possibly because one requires another to be completed before it can be started or maybe a number of small tasks all support a single, larger task.
 
 Whatever the specifics, you can formally enshrine this in GitHub by editing a piece of the issue's metadata in the right sidebar beneath most of the other issue metadata elements. **The "Relationships" piece is towards the bottom of the metadata sidebar** (just beneath "Milestone").
 
 ![](images/issues/issue-relationship_00-area.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue" fig-align="center" width="40%"}
 
-Once you find it, **click the gear icon.** For working groups, "Add parent" is likely to be the most useful but if you want to add one of the other types of relationship instead, you absolutely can! Note that _each issue can only have one parent_, though you can change that relationship to a different issue if need be.
+Once you find it, **click the gear icon.** For synthesis working groups, "Add parent" is likely to be the most useful but if you want to add one of the other types of relationship instead, you absolutely can! Note that _each issue can only have one parent_, though you can change that relationship to a different issue if need be.
 
 ![](images/issues/issue-relationship_01-type.png){fig-alt="Screenshot of the 'issue relationships' dropdown menu in GitHub with 'Add parent', 'Mark as blocked by' and 'Mark as blocking' as options" fig-align="center" width="40%"}
 
@@ -141,10 +141,10 @@ If you do visit the other issue, you can see all of its sub-issues in a convenie
 
 #### Working Group Use-Cases for Nesting Issues
 
-Some use-cases of this feature for working groups include:
+Some use-cases of this feature for working groups include the following:
 
 - Easily find all issues related to a topic (even closed ones) by having a parent issue that is never closed
-- Create an issue for each manuscript section and link actionable tasks for each underneath that one
+- Create an issue for each manuscript section and link actionable tasks for each underneath their respective parent
 - Make an issue for each sub-team then nest issue that _team_ is responsible for as children to that parent
 
 ## Closing an Issue
