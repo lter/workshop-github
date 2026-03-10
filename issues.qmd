@@ -267,6 +267,13 @@ The other feature is a little less obvious in the moment but wonderful for docum
 
 **By leveraging this feature, you can greatly simplify your commit messages** because you can be confident that some of the necessary context and rationale are described in the issue and so do not need to be re-hashed in your commit message.
 
+### Referencing Issue in Other Repositories
+
+You can even reference issues in other repositories! However, the necessary syntax does change slightly. Once you adopt that syntax though, the referenced number would have the same behavior described above when referencing issues with commits in the same repository
+
+- Commit referencing an issue in _the same repository_: `fix qc code per #12`
+- Commit reference an issue in _a different repository_: `fix qc code per user/repo#12`
+
 ## Closing an Issue
 
 When you're done with an issue, simply click the "Close issue" button. It will still be findable in your repository, it just won't show up by default when you go to the "Issues tab". In order to see all the closed issues on a repository, simply **click the Closed** button in the top left of the "Issues" tab of the relevant repository.
