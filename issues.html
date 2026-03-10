@@ -493,7 +493,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a></li>
   <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments</a></li>
-  <li><a href="#inter-issue-relationships" id="toc-inter-issue-relationships" class="nav-link" data-scroll-target="#inter-issue-relationships">Inter-Issue Relationships</a></li>
+  </ul></li>
+  <li><a href="#inter-issue-relationships" id="toc-inter-issue-relationships" class="nav-link" data-scroll-target="#inter-issue-relationships">Inter-Issue Relationships</a>
+  <ul class="collapse">
+  <li><a href="#working-group-use-cases-for-nesting-issues" id="toc-working-group-use-cases-for-nesting-issues" class="nav-link" data-scroll-target="#working-group-use-cases-for-nesting-issues">Working Group Use-Cases for Nesting Issues</a></li>
   </ul></li>
   <li><a href="#closing-an-issue" id="toc-closing-an-issue" class="nav-link" data-scroll-target="#closing-an-issue">Closing an Issue</a></li>
   <li><a href="#appropriate-issue-scope" id="toc-appropriate-issue-scope" class="nav-link" data-scroll-target="#appropriate-issue-scope">Appropriate Issue Scope</a></li>
@@ -646,8 +649,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>While issue comments are completely free for you to use as you see fit, it is important to remember that <em>your most frequent collaborator is yourself in the future</em> so a future version of yourself will absolutely thank you if you <strong>include as much useful context as possible.</strong> In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.</p>
 </section>
-<section id="inter-issue-relationships" class="level3">
-<h3 class="anchored" data-anchor-id="inter-issue-relationships">Inter-Issue Relationships</h3>
+</section>
+<section id="inter-issue-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="inter-issue-relationships">Inter-Issue Relationships</h2>
 <p>While technically a facet of the metadata, it is worthwhile to make some specific time to discuss issue “relationships.” Once you have a number of issues open, it’s likely that some of them will be related! Possibly because one requires another to be completed before it can be started or maybe a number of small tasks all support a single, larger task.</p>
 <p>Whatever the specifics, you can formally enshrine this in GitHub by editing a piece of the issue’s metadata in the right sidebar beneath most of the other issue metadata elements. <strong>The “Relationships” piece is towards the bottom of the metadata sidebar</strong> (just beneath “Milestone”).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -675,15 +679,90 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>If you do visit the other issue, you can see all of its sub-issues in a convenient list beneath the first comment of that issue. It may look something like the following:</p>
 <p><a href="images/issues/issue-relationship_04-from-parent.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="images/issues/issue-relationship_04-from-parent.png" class="img-fluid" alt="Screenshot of a GitHub issue with at least one sub-issue"></a></p>
-<section id="working-group-use-cases-for-nesting-issues" class="level4">
-<h4 class="anchored" data-anchor-id="working-group-use-cases-for-nesting-issues">Working Group Use-Cases for Nesting Issues</h4>
+<section id="working-group-use-cases-for-nesting-issues" class="level3">
+<h3 class="anchored" data-anchor-id="working-group-use-cases-for-nesting-issues">Working Group Use-Cases for Nesting Issues</h3>
 <p>Some use-cases of this feature for working groups include the following:</p>
-<ul>
-<li>Easily find all issues related to a topic (even closed ones) by having a parent issue that is never closed</li>
-<li>Create an issue for each manuscript section and link actionable tasks for each underneath their respective parent</li>
-<li>Make an issue for each sub-team then nest issue that <em>team</em> is responsible for as children to that parent</li>
-</ul>
-</section>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Findable Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Delegating Writing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Sub-Team Work Plans</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Easily find all issues related to a topic (even closed ones) by <strong>having a parent issue that is never closed</strong>–even when all of its sub-issues are closed. In this instance, your issue structure might look like the following diagram.</p>
+<p>In the diagram below, open issues have a <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> while closed issues have a <i class="fa-regular fa-circle-check" aria-label="circle-check"></i>.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><i class="fa-brands fa-github" aria-label="github"></i> Group Repository<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Data Discovery (#1)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Find Equatorial Data (#2)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Identify Spatial Data Source (#3)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Find Trait Data (#5)<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Quality Control (#4)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Files without years (#6)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Relative Abundance Data (#7)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Identify Spatial Data Source (#8)<br>
+&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Analysis Judgement Calls (#9)</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Distance/Dissimilarity Metric Options (#10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Normalize data? (#11)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Analyze within or across ecosystem (#12)</p>
+</div><div class="column" style="width:45%;">
+<p><br>
+</p>
+<p>By leaving the parent issues open (in this example, numbers 1, 4, and 9) all of the sub-issues are easily findable if one of these judgement calls need to be revisited (whether to change track or write the relevant portion of a manuscript).</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Create <strong>an issue for each manuscript section</strong> and link actionable tasks for each underneath their respective parent. In this instance, your issue structure might look like the following diagram.</p>
+<p>In the diagram below, open issues have a <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> while closed issues have a <i class="fa-regular fa-circle-check" aria-label="circle-check"></i>.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><i class="fa-brands fa-github" aria-label="github"></i> Group Repository<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Introduction (#1)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> gather references (#6)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Outline and draft section (#8)<br>
+&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> <strong>Methods (#2)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Review data wrangling/analysis code (#7)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Outline and draft section (#9)<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Results (#3)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Settle on final figures (#10)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Outline and draft section (#11)<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Discussion (#4)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Review results draft (#12)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Outline and draft section (#14)<br>
+&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Abstract (#5)</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Draft section (#13)</p>
+</div><div class="column" style="width:45%;">
+<p><br>
+</p>
+<p>In this use-case, you can absolutely close parent issues after their sub-issues are all completed (see the “Methods” issue in the diagram above).</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Make <strong>an issue for each sub-team</strong> then nest issues that <em>team</em> is responsible for as children to that parent. In this instance, your issue structure might look like the following diagram.</p>
+<p>In the diagram below, open issues have a <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> while closed issues have a <i class="fa-regular fa-circle-check" aria-label="circle-check"></i>.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><i class="fa-brands fa-github" aria-label="github"></i> Group Repository<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Data Team (#1)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Fill out Data Inventory for all datasets (#4)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Data Purgatory (#7)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Check taxonomic names (#8)<br>
+&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Analysis Team (#2)</strong><br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Analyze abundance data (#5)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Multivariate stats for community comp. (#6)<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Draft figures of core story (#9)<br>
+&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> <strong>Writing Team (#3)</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|– <i class="fa-regular fa-circle-check" aria-label="circle-check"></i> Outline introduction and find sources (#10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; <i class="fa-regular fa-circle-dot" aria-label="circle-dot"></i> Draft abstract for ESA (#11)</p>
+</div><div class="column" style="width:45%;">
+<p><br>
+</p>
+<p>In this use-case, you likely wouldn’t close the parent issues; or at least you wouldn’t close them until that team was finished with all of their work.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="closing-an-issue" class="level2">
