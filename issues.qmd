@@ -115,7 +115,7 @@ This is the 'back end' of the issue displayed in the other tabset panel. Note th
 
 While issue comments are completely free for you to use as you see fit, it is important to remember that _your most frequent collaborator is yourself in the future_ so a future version of yourself will absolutely thank you if you **include as much useful context as possible.** In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.
 
-### Inter-Issue Relationships
+## Inter-Issue Relationships
 
 While technically a facet of the metadata, it is worthwhile to make some specific time to discuss issue "relationships." Once you have a number of issues open, it's likely that some of them will be related! Possibly because one requires another to be completed before it can be started or maybe a number of small tasks all support a single, larger task.
 
@@ -139,13 +139,110 @@ If you do visit the other issue, you can see all of its sub-issues in a convenie
 
 ![](images/issues/issue-relationship_04-from-parent.png){fig-alt="Screenshot of a GitHub issue with at least one sub-issue"}
 
-#### Working Group Use-Cases for Nesting Issues
+### Working Group Use-Cases for Nesting Issues
 
 Some use-cases of this feature for working groups include the following:
 
-- Easily find all issues related to a topic (even closed ones) by having a parent issue that is never closed
-- Create an issue for each manuscript section and link actionable tasks for each underneath their respective parent
-- Make an issue for each sub-team then nest issue that _team_ is responsible for as children to that parent
+
+:::{.panel-tabset}
+#### Findable Documentation
+
+Easily find all issues related to a topic (even closed ones) by **having a parent issue that is never closed**--even when all of its sub-issues are closed. In this instance, your issue structure might look like the following diagram.
+
+In the diagram below, open issues have a {{< fa regular circle-dot >}} while closed issues have a {{< fa regular circle-check >}}.
+
+::::{.columns}
+:::{.column width="55%"}
+{{< fa brands github >}} Group Repository  
+&nbsp;|-- {{< fa regular circle-dot >}} **Data Discovery (#1)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-dot >}} Find Equatorial Data (#2)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Identify Spatial Data Source (#3)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-check >}} Find Trait Data (#5)    
+&nbsp;|-- {{< fa regular circle-dot >}} **Quality Control (#4)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Files without years (#6)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Relative Abundance Data (#7)  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-check >}} Identify Spatial Data Source (#8)    
+&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} **Analysis Judgement Calls (#9)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Distance/Dissimilarity Metric Options (#10)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Normalize data? (#11)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Analyze within or across ecosystem (#12)    
+
+:::
+:::{.column width="45%"}
+
+\
+
+By leaving the parent issues open (in this example, numbers 1, 4, and 9) all of the sub-issues are easily findable if one of these judgement calls need to be revisited (whether to change track or write the relevant portion of a manuscript).
+
+:::
+::::
+
+#### Delegating Writing
+
+Create **an issue for each manuscript section** and link actionable tasks for each underneath their respective parent. In this instance, your issue structure might look like the following diagram.
+
+In the diagram below, open issues have a {{< fa regular circle-dot >}} while closed issues have a {{< fa regular circle-check >}}.
+
+::::{.columns}
+:::{.column width="55%"}
+
+{{< fa brands github >}} Group Repository  
+&nbsp;|-- {{< fa regular circle-dot >}} **Introduction (#1)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} gather references (#6)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Outline and draft section (#8)    
+&nbsp;|-- {{< fa regular circle-check >}} **Methods (#2)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Review data wrangling/analysis code (#7)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-check >}} Outline and draft section (#9)    
+&nbsp;|-- {{< fa regular circle-dot >}} **Results (#3)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Settle on final figures (#10)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Outline and draft section (#11)  
+&nbsp;|-- {{< fa regular circle-dot >}} **Discussion (#4)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-dot >}} Review results draft (#12)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Outline and draft section (#14)  
+&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} **Abstract (#5)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Draft section (#13)
+
+:::
+:::{.column width="45%"}
+
+\
+
+In this use-case, you can absolutely close parent issues after their sub-issues are all completed (see the "Methods" issue in the diagram above).
+
+:::
+::::
+
+#### Sub-Team Work Plans
+
+Make **an issue for each sub-team** then nest issues that _team_ is responsible for as children to that parent. In this instance, your issue structure might look like the following diagram.
+
+In the diagram below, open issues have a {{< fa regular circle-dot >}} while closed issues have a {{< fa regular circle-check >}}.
+
+::::{.columns}
+:::{.column width="55%"}
+{{< fa brands github >}} Group Repository  
+&nbsp;|-- {{< fa regular circle-dot >}} **Data Team (#1)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Fill out Data Inventory for all datasets (#4)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-dot >}} Data Purgatory (#7)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Check taxonomic names (#8)    
+&nbsp;|-- {{< fa regular circle-dot >}} **Analysis Team (#2)**  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Analyze abundance data (#5)   
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-dot >}} Multivariate stats for community comp. (#6)  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Draft figures of core story (#9)    
+&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} **Writing Team (#3)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- {{< fa regular circle-check >}} Outline introduction and find sources (#10)   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp; {{< fa regular circle-dot >}} Draft abstract for ESA (#11)    
+
+:::
+:::{.column width="45%"}
+
+\
+
+In this use-case, you likely wouldn't close the parent issues; or at least you wouldn't close them until that team was finished with all of their work.
+
+:::
+::::
+:::
 
 ## Closing an Issue
 
