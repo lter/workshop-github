@@ -498,7 +498,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#working-group-use-cases-for-nesting-issues" id="toc-working-group-use-cases-for-nesting-issues" class="nav-link" data-scroll-target="#working-group-use-cases-for-nesting-issues">Working Group Use-Cases for Nesting Issues</a></li>
   </ul></li>
-  <li><a href="#value-of-issue-numbers" id="toc-value-of-issue-numbers" class="nav-link" data-scroll-target="#value-of-issue-numbers">Value of Issue Numbers</a></li>
+  <li><a href="#value-of-issue-numbers" id="toc-value-of-issue-numbers" class="nav-link" data-scroll-target="#value-of-issue-numbers">Value of Issue Numbers</a>
+  <ul class="collapse">
+  <li><a href="#referencing-issue-in-other-repositories" id="toc-referencing-issue-in-other-repositories" class="nav-link" data-scroll-target="#referencing-issue-in-other-repositories">Referencing Issue in Other Repositories</a></li>
+  </ul></li>
   <li><a href="#closing-an-issue" id="toc-closing-an-issue" class="nav-link" data-scroll-target="#closing-an-issue">Closing an Issue</a></li>
   <li><a href="#appropriate-issue-scope" id="toc-appropriate-issue-scope" class="nav-link" data-scroll-target="#appropriate-issue-scope">Appropriate Issue Scope</a></li>
   </ul>
@@ -784,6 +787,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p><strong>By leveraging this feature, you can greatly simplify your commit messages</strong> because you can be confident that some of the necessary context and rationale are described in the issue and so do not need to be re-hashed in your commit message.</p>
+<section id="referencing-issue-in-other-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="referencing-issue-in-other-repositories">Referencing Issue in Other Repositories</h3>
+<p>You can even reference issues in other repositories! However, the necessary syntax does change slightly. Once you adopt that syntax though, the referenced number would have the same behavior described above when referencing issues with commits in the same repository</p>
+<ul>
+<li>Commit referencing an issue in <em>the same repository</em>: <code>fix qc code per #12</code></li>
+<li>Commit reference an issue in <em>a different repository</em>: <code>fix qc code per user/repo#12</code></li>
+</ul>
+</section>
 </section>
 <section id="closing-an-issue" class="level2">
 <h2 class="anchored" data-anchor-id="closing-an-issue">Closing an Issue</h2>
