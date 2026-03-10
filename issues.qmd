@@ -244,6 +244,29 @@ In this use-case, you likely wouldn't close the parent issues; or at least you w
 ::::
 :::
 
+## Value of Issue Numbers
+
+Earlier in this module, we promised to get into why the unique number of each issue is useful. Simply put, **you can reference issues in commits or in other issue by using their number!**
+
+When you make a commit, add a hashtag/pound sign (`#`) and the number of the issue that you want to reference. This will have two key results.
+
+:::{.panel-tabset}
+### Issue Linked to Commit
+
+Most directly, the **issue number in the commit message on GitHub will become a hyperlink to that issue.** Anywhere the commit appears (on GitHub), the issue will be linked and easily findable.
+
+![](images/issues/number-ref_01-commit.png){fig-alt="Screenshot of a GitHub repository where the most recent commit has an issue number that is a hyperlink"}
+
+### Commit Appears in Issue
+
+The other feature is a little less obvious in the moment but wonderful for documenting how issues and code edits can be in conversation with one another. The **commit message will show up in the comment history of the issue.** So, when you are scrolling through the comments of an issue, commits that reference that issue will be visible and in chronological order with the comments. So if one comment said "can you fix this?" there could be a commit immediately below it where the commit message is "fixed per #12".
+
+![](images/issues/number-ref_02-issue.png){fig-alt="Screenshot of a commit message in the history of an issue because it included that issue's number"}
+
+:::
+
+**By leveraging this feature, you can greatly simplify your commit messages** because you can be confident that some of the necessary context and rationale are described in the issue and so do not need to be re-hashed in your commit message.
+
 ## Closing an Issue
 
 When you're done with an issue, simply click the "Close issue" button. It will still be findable in your repository, it just won't show up by default when you go to the "Issues tab". In order to see all the closed issues on a repository, simply **click the Closed** button in the top left of the "Issues" tab of the relevant repository.
