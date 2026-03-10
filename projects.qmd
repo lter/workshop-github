@@ -51,7 +51,7 @@ Note that the issue above has the view set to nest issues beneath their parent i
 
 ### Customizing Project Interface
 
-You can change which metadata fields are visible, how issues are grouped or sorted, and even the project view itself by clicking the "{{< fa gear >}} View" button (top right corner) and customizing the options within the resulting dropdown menu.
+You can change which metadata fields are visible, how issues are grouped or sorted, and even the project view itself by clicking the "{{< fa gear >}} View" button (top right corner) and customizing the options within the resulting dropdown menu. 
 
 ![](images/projects/project-views_01-options.png){fig-alt="Screenshot of the 'View' settings menu in a GitHub project" fig-align="center" width="50%"}
 
