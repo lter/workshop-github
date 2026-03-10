@@ -20,7 +20,7 @@ Merge conflicts (a.k.a. "conflicts") are a normal part of the Git workflow so _d
 
 For a visual demonstration of this, see the graphic below. Note that though this has visual similarity to the workflow diagrams that can be found throughout this website we do not recommend intentionally causing a merge conflict {{< fa face-laugh-wink >}}
 
-![](images/graphics/git-conflict-cause.png){fig-alt="Graphic of three vertical rectangles, the left and right ones labeled 'you' and 'other' while the center has a happy cloud emoji. Both side rectangles pull a given file from Github then edit that file in different ways. The first person is able to successfully push without issue but the second person to push gets a conflict" fig-align="center" width="60%"}
+![](images/graphics/git-conflict-cause.png){fig-alt="Graphic of three vertical rectangles, the left and right ones labeled 'you' and 'other' while the center has a happy cloud emoji. Both side rectangles pull a given file from GitHub then edit that file in different ways. The first person is able to successfully push without issue but the second person to push gets a conflict" fig-align="center" width="60%"}
 
 ## General Conflict Resolution Strategy
 

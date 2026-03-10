@@ -82,7 +82,7 @@ Once you've chosen your project, the metadata sidebar should update to show whic
 
 ![](images/projects/issue-to-proj_03-status.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue with the dropdown menu of available project status options expanded" fig-align="center" width="40%"}
 
-Once you've done this, the chosen status should be visible in the metadata of the issue. If you change the status (either from the issue or from the project), it'll update here. The history of statusses of this issue will also appear in the chronological comments on the left sidebar of the issue.
+Once you've done this, the chosen status should be visible in the metadata of the issue. If you change the status (either from the issue or from the project), it'll update here. The history of statuses of this issue will also appear in the chronological comments on the left sidebar of the issue.
 
 ![](images/projects/issue-to-proj_04-done.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue where a project has been selected and the status is 'Active Progress'" fig-align="center" width="40%"}
 

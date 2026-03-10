@@ -52,7 +52,7 @@ An example of what that email may look like is included below but there are two 
 
 If you have not received that email, check your Spam folder for emails from Thomas Hetmank (hetmank \[at\] nceas.ucsb.edu) or Nick Outin (outin \[at\] nceas.ucsb.edu). If you have not received the email and it is not in your Spam, reach out to our team and we will work to get an invite sent to you.
 
-![](images/server/server-login-3-invite-email.png){fig-alt="Screenshot of an email with the subject line 'Account on Aurora' and body text including a server host link, usernae, and password (covered by a red box)" fig-align="center" width="85%"}
+![](images/server/server-login-3-invite-email.png){fig-alt="Screenshot of an email with the subject line 'Account on Aurora' and body text including a server host link, username, and password (covered by a red box)" fig-align="center" width="85%"}
 
 ### Signing Into the Server
 

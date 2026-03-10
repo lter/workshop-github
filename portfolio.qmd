@@ -29,7 +29,7 @@ Filling out your profile details is an easy way to get started on your portfolio
 
 Then select "Edit profile" on the right hand panel. 
 
-![](images/portfolio/portfolio-profile-2.png){fig-alt="Screenshot of the user information on the left side of the Github profile window" fig-align="center" width="30%"}
+![](images/portfolio/portfolio-profile-2.png){fig-alt="Screenshot of the user information on the left side of the GitHub profile window" fig-align="center" width="30%"}
 
 There, you will have options to edit your icon, name, biography, pronouns, workplace, location, website, and social media accounts. If you have links to other websites that contain your work, it's a good idea to cross-reference them here so people can find you elsewhere.
 

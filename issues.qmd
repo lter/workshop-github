@@ -96,7 +96,7 @@ Let's customize those three fields for the issue we just opened. To customize an
 
 ### Comments
 
-Once you're happy with the metadata, we can edit the first comment. "Edit" not "make" because the first comment is actually the field below the title that we left blank when we opened the issue initially. To edit that comment, **click the ellipsis (...) in the top right corner of the first coment and select the "{{< fa pencil >}} Edit" option.** Note that GitHub issues accept Markdown syntax so any tips or tricks you've picked up in styling the plain text of RMarkdown or Quarto files should also apply to beautifying your issue.
+Once you're happy with the metadata, we can edit the first comment. "Edit" not "make" because the first comment is actually the field below the title that we left blank when we opened the issue initially. To edit that comment, **click the ellipsis (...) in the top right corner of the first comment and select the "{{< fa pencil >}} Edit" option.** Note that GitHub issues accept Markdown syntax so any tips or tricks you've picked up in styling the plain text of RMarkdown or Quarto files should also apply to beautifying your issue.
 
 :::{.panel-tabset}
 #### Finished Comment

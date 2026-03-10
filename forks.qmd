@@ -69,7 +69,7 @@ This redirects you to a page that is very similar to the page for creating a new
 
 Here you can select who you want to own the repository from a dropdown including any organizations you are a member of and your username if you want to personally own the fork. You can also change the repository name (though the default is to retain the same name) and add a description of your purpose for the fork.
 
-You may notice that in this page you do not have the option to specify public versus private or any of the 'initialize' steps (e.g., README, gitignore, or licence). Forks will inherit these settings from the repository they are forked from so they do not need to specified here.
+You may notice that in this page you do not have the option to specify public versus private or any of the 'initialize' steps (e.g., README, gitignore, or license). Forks will inherit these settings from the repository they are forked from so they do not need to specified here.
 
 Once you are happy with the owner of the fork, the name, and the description, click the <span style="color:green">green</span> "Create fork" button.
 

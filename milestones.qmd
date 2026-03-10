@@ -58,7 +58,7 @@ You can always go back to the "Milestones" page and click "Edit" if you need to 
 
 To add issues/pull requests to your milestone, you can click on your milestone and add them directly there. 
 
-![](images/milestones/milestones-7-add.png){fig-alt="Screenshot of Github where a milestone that has no issues displays a central 'create new issue' button"}
+![](images/milestones/milestones-7-add.png){fig-alt="Screenshot of GitHub where a milestone that has no issues displays a central 'create new issue' button"}
 
 Or you can go to your issues/pull requests page and select the checkboxes next to the issues/pull requests you want to associate with a milestone. Then click on the "Milestone" dropdown menu to add them to the milestone.
 

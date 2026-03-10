@@ -44,13 +44,13 @@ However, deletion of the branch either locally or via GitHub **must** come *afte
 
 As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we've discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas*ier*) workflow for working together while avoiding conflicts.
 
-![](images/graphics/git-branch-workflow.png){fig-alt="Graphic demonstrating the process of using brances on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" fig-align="center" width="75%"}
+![](images/graphics/git-branch-workflow.png){fig-alt="Graphic demonstrating the process of using branches on a Git/GitHub repository. Essentially you pull the latest changes before making a branch, then make the branch and work in it. Once you're happy with your progress, you can submit a pull request to merge your work back into the 'main' branch and then you delete your branch" fig-align="center" width="75%"}
 
 Now we've gone over this big picture overview, let's walk step-by-step through creating, working in and ultimately merging branches!
 
 ## Create a Branch
 
-**_Before_ you create a branch, <span style="color:blue">pull</span> from/sync with GitHub** as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your banch and want to merge it back into the main flow of your repository.
+**_Before_ you create a branch, <span style="color:blue">pull</span> from/sync with GitHub** as a precaution so that you are certain your local repository has the most up-to-date content. Failing to do so is a recipe for a brutal merge conflict when you are finished with your branch and want to merge it back into the main flow of your repository.
 
 :::{.panel-tabset}
 
@@ -123,7 +123,7 @@ Once you're satisfied with your title and message, **click the "Create pull requ
 
 ![](images/branches/github-02_pr-details.png){fig-alt="Screenshot of GitHub when you open a pull request and are prompted to give it a title and description"}
 
-That done, GitHub will send you to a page that looks very much like a Github issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.
+That done, GitHub will send you to a page that looks very much like a GitHub issue (see the module on issues for more detail). At the top is whatever title and message you just wrote when opening the pull request following by a list of all of the commits in that branch.
 
 Those commits are hyperlinks in case you want to view the specific differences to files edited in this branch.
 
@@ -159,7 +159,7 @@ Finally, if we return to the home page of the repository, we can see that the mo
 
 ### Update the Local Clone
 
-Now that the branches have been merged on GitHub, we need to make sure our local clone gets those updates from GitHub. This is particularly important if our IDE is still in the branch we created earlier because--now that we've deleted the branch's counterpart in Github--we'll get an error if we attempt to push from that branch.
+Now that the branches have been merged on GitHub, we need to make sure our local clone gets those updates from GitHub. This is particularly important if our IDE is still in the branch we created earlier because--now that we've deleted the branch's counterpart in GitHub--we'll get an error if we attempt to push from that branch.
 
 ::::{.panel-tabset}
 ### In RStudio

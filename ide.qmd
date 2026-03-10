@@ -47,7 +47,7 @@ Finally, it will be helpful to introduce four key pieces of vocabulary before we
 Some IDEs (e.g., Positron, VS Code) combine a pull and a push into a single operation called a "sync". These IDEs also support pulling and pushing separately so you may want to do those operations separately until you are completely comfortable with the necessary order of operations.
 :::
 
-![](images/graphics/git-vocabulary.png){fig-alt="Graphics demonstrating a clone (copy entire folder from GitHub to a copmputer), a commit (putting local changes into the staging area), a pull (overwriting local copies with GitHub versions of the same), and a push (overwriting GitHub versions of files with the committed local versions)" fig-align="center" width="70%"}
+![](images/graphics/git-vocabulary.png){fig-alt="Graphics demonstrating a clone (copy entire folder from GitHub to a computer), a commit (putting local changes into the staging area), a pull (overwriting local copies with GitHub versions of the same), and a push (overwriting GitHub versions of files with the committed local versions)" fig-align="center" width="70%"}
 
 ## Cloning a Repository
 
@@ -221,9 +221,9 @@ If your personal access token (PAT) was not set up correctly with RStudio or if 
 
 Once you have a new file in your cloned folder (i.e., the folder on your computer that you've told Git to track). Positron should display the Git status of the file next to the file's name. In this case, because this a new file that isn't yet tracked by Git, there should be a `U` indicating that it is "untracked."
 
-Let's get ready to commit our new script by **clicking the "Source Control" piece of the left sidebar.** That button should have a red "1" next ot it and its icon looks like this: {{< fa code-branch >}}
+Let's get ready to commit our new script by **clicking the "Source Control" piece of the left sidebar.** That button should have a red "1" next to it and its icon looks like this: {{< fa code-branch >}}
 
-![](images/commit/positron-01_new-file.png){fig-alt="Screenshot of Positron with an open script untracked by Git with one uncommitted change. Lack of commit is identified by red number '1' in the leftsidebar"}
+![](images/commit/positron-01_new-file.png){fig-alt="Screenshot of Positron with an open script untracked by Git with one uncommitted change. Lack of commit is identified by red number '1' in the left sidebar"}
 
 Once you are in the source control menu, you should see a list of the files with changes--currently only the new file that you just made.
 
