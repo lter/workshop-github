@@ -24,6 +24,8 @@ Projects are GitHub's primary _strategic_ project management tool. While issues 
 Projects can be super useful, but they also include a non-trivial amount of setup and maintenance. So, **you should use a GitHub Project _only_ if <u>most</u> of the following applies to you:**
 
 1. You use issues _extensively_
+2. You use many metadata features within issues
+    - E.g., assignees, labels, issue relationships
 2. You have at least three repositories, all with their own issues
 3. Project management is exciting to you
 
@@ -41,66 +43,59 @@ Once a project has been created, **it can be "linked" to any number of repositor
 
 ## Using Projects
 
-Within the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub project to let each team member track all of their Issues *and* ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.
+Within the team that created this workshop, we use issues to track and document the work that we do on behalf of working groups. Because there are so many issues spread across so many repositories, we are an ideal candidate to maximize the value of GitHub projects. See below for a screenshot of what our project looks like (as of early spring 2026).
 
-See below for a screenshot of what such a project looks like for one team member.
+![](images/projects/project-ex_scicomp.png){fig-alt="Screenshot of an open project in 'table' view with many open issues with a number of visible metadata fields as columns"}
 
-![](images/projects/projects-3-example.png){fig-alt="Screenshot of an open project in 'board' view with many open issues categorized into user-defined columns"}
+Note that the issue above has the view set to nest issues beneath their parent issue because our team also extensively uses the issue "relationship" feature. See the issues module for more detail on that feature.
 
-When using a project you can add or remove the columns (the above example has four columns) and individual issue "cards" can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this project are automatically moved to the "Done" column).
+### Customizing Project Interface
 
-## Project "Views"
+You can change which metadata fields are visible, how issues are grouped or sorted, and even the project view itself by clicking the "{{< fa gear >}} View" button (top right corner) and customizing the options within the resulting dropdown menu.
 
-GitHub supports three different view options within projects. You can have as many views as you'd like, including duplicates of the same category of view. Views can be created or toggled between in the top left of the screen, just beneath the project title.
+![](images/projects/project-views_01-options.png){fig-alt="Screenshot of the 'View' settings menu in a GitHub project" fig-align="center" width="50%"}
 
-![](images/projects/projects-4-view-tabs.png){fig-alt="Screenshot of the 'project views' section of an open GitHub project" fig-align="center" width="45%"}
+If you want, you can also add and customize multiple separate views in the same project! This is a great choice if your group includes a variety of thinking or learning styles and the separate tabs will all have the same issues included.
 
-Accepted project view options are "Board", "Table", and "Roadmap." We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).
-
-### Board View
-
-The first view option (and in our opinion the best for working groups) is the "board" option. In this view, issues are tracked in vertical columns and can be dragged among columns at will. Columns are often used to denote issue status such that columns further to the right are closer to finished. Column names, colors, and description text can all be edited to fit your team's needs.
-
-![](images/projects/projects-3-example.png){fig-alt="Screenshot of an open project in 'board' view with many open issues categorized into user-defined columns"}
-
-### Table View
-
-The second view option is the 'table' option. This view stacks all current tasks vertically and automatically sorts them by the task status (equivalent to the columns in the board view). If your team typically uses an MS Excel / Google Sheet file to track your ongoing work, this project view would represent the closest user interface match.
-
-![](images/projects/projects-5-table.png){fig-alt="Screenshot of an open project in 'table' view where issues are shown in a stack instead of in separate columns"}
-
-### Roadmap View
-
-The final view option is the 'roadmap'. This view allows for tracking of issues through time more explicitly than the other two view options. You can choose the temporal specificity that makes most sense for your work (allowed options include daily, monthly, quarterly, and yearly breakdowns). Tasks then show up as a long bar in their row extending from whatever their start date is to the user-defined end date. Note that for this view to work you will need to add specific start/end dates to _every_ issue.
-
-![](images/projects/projects-6-roadmap.png){fig-alt="Screenshot of an open project in 'roadmap' view where a project is shown with issues in rows ordered by the due dates defined in each"}
+![](images/projects/project-views_02-tabs.png){fig-alt="screenshot of the tabs at the top of a GitHub project" fig-align="center" width="60%"}
 
 ## Integrating Issues
 
-Once you've created the project(s) you want, issues can be added to them as desired! You can either add issues at the Issue creation stage or from the project itself after the Issue has been created.
+After you make a project, you'll want to add issues to it! **You can either add issues to a project from the issue itself or from the project directly.** See the tabs below for instructions of either approach.
 
-### Adding from an Issue
+:::{.panel-tabset}
+### From Issue
 
-When you first create an issue you can add it to one or more projects by clicking the gear icon in the sidebar of options on the right side of the screen.
+Adding an issue to a project can be done **from the issue's metadata options.** You can do this when you first create an issue or after the fact. In the screen captures below, we'll show how to do this with an existing issue.
 
-![](images/projects/projects-7a-add-from-issue.png){fig-alt="Screenshot of a new issue being created in GitHub"}
+To start, **go to the issue you want to add**. Once you're there, look at the metadata sidebar and **find the "Projects" section** (should be just above "Milestone" and just below "Type"). Next, **click the {{< fa gear >}} gear icon** in the top right corner of that option.
 
-Upon clicking that icon, a small window will pop up and will allow you to choose any project (A) you've interacted with recently, (B) that is linked to this particular repository, and/or (C) that is owned by the Organization/User that owns the repository. If there are many projects that meet these criteria there is also a handy search bar that lets you search through for a specific project by name.
+This should give you a list of the projects that: (1) you have recently opened, or (2) are linked to the repository in which the issue lives. **Check the box next to the project to which you want to add this issue.**
 
-![](images/projects/projects-7b-add-from-issue.png){fig-alt="Screenshot of the small pop-up menu that opens when you try to add an issue to an existing project" fig-align="center" width="40%"}
+![](images/projects/issue-to-proj_01-meta.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue with the 'Projects' option open" fig-align="center" width="40%"}
 
-### Adding from a Project
+Once you've chosen your project, the metadata sidebar should update to show which project the issue is now linked to. However, it adds a new sub-field called "Status" that likely says "No status". **"Status" is a project option that you can use to track the lifecycle of an issue.** The default options are "To Do", "In Progress", and "Done" but you can add custom ones if you want!
 
-If you'd prefer, you can add existing issues to a project from the project's home screen. Once in the project, click the "Add item" button at the bottom of the screen and begin typing the name of the issue. Clicking an issue's name will then automatically add it to the project and will allow you to "triage" it (i.e., add the issue to the column indicating its current status).
+![](images/projects/issue-to-proj_02-no-status.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue where a project has been selected but the status says 'no status'" fig-align="center" width="40%"}
 
-![](images/projects/projects-8-add-from-project.png){fig-alt="Screenshot of part of a 'board' view GitHub project with the 'add item' button conspicuous at the bottom of each column" fig-align="center" width="75%"}
+**Click "No status" to see a dropdown menu** of statuses available in your project **and pick one from the list.** In this case, we'll pick "Active Progress" as we are currently working on this issue.
 
-## Maximizing Project Utility
+![](images/projects/issue-to-proj_03-status.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue with the dropdown menu of available project status options expanded" fig-align="center" width="40%"}
 
-It may go without saying, but projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of projects are as follows:
+Once you've done this, the chosen status should be visible in the metadata of the issue. If you change the status (either from the issue or from the project), it'll update here. The history of statusses of this issue will also appear in the chronological comments on the left sidebar of the issue.
 
-1. Giving Issues clear and short titles
-2. "Assigning" Issues to particular users
-3. Using labels to group Issues into useful categories
+![](images/projects/issue-to-proj_04-done.png){fig-alt="Screenshot of the metadata sidebar of a GitHub issue where a project has been selected and the status is 'Active Progress'" fig-align="center" width="40%"}
 
-If your team is considering these three points, then adopting GitHub projects will further empower your ability to track your internal tasks over time. Feel free to consult the "Issues" page of this workshop for more information!
+### From Project
+
+Adding an issue to a project can be done **from the project itself** as well. This is a little more straightforward than adding from the issue as some pieces of data (e.g., project status) are specified implicitly depending on where in the project you add the new issue.
+
+At the bottom of most project views, there should be a small {{< fa plus >}} plus sign button. Click it and you'll be able to either (A) add a new issue that is attached to this project, (B) create a "draft", or (C) add an existing issue from a repository to which this project is linked. 
+
+If you start typing the title of an issue, this dropdown menu should automatically update itself with issues in repositories linked to this project that have a partial match to what you are typing.
+
+![](images/projects/proj-to-issue_01-add-item.png){fig-alt="Screenshot of the 'add item' menu in a GitHub project with some options on adding or making a new issue" fig-align="center" width="75%"}
+
+A "draft" in this context is sort of a partial issue that is specific to projects and can't be created elsewhere. For the sake of clarity, we recommend either making a new issue or adding an existing one rather than using this somewhat ambiguous option.
+
+:::
