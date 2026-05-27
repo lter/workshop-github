@@ -47,4 +47,5 @@ vignettes/*.pdf
 
 # Quarto rendering folders
 /.quarto/
+**/*.quarto_ipynb
 docs/
